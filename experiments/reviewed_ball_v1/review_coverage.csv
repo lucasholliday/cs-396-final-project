@@ -1,0 +1,33 @@
+shot_id,reviewed_points,notes
+sid_1_01,3,
+sid_1_04,3,
+sid_1_07,3,
+sid_1_10,3,
+sid_1_13,3,
+sid_1_16,3,
+sid_1_18,3,
+rohan_1_01,3,
+rohan_1_04,3,
+rohan_1_05,3,Departure timing manually corrected from stationary-ball original panels.
+rohan_2_01,2,
+rohan_2_04,4,
+rohan_2_07,3,
+rohan_2_10,2,
+lucas_1_01,3,
+lucas_1_04,1,Single confidently visible early flight point; later ball indistinct; no extrapolated points.
+lucas_1_07,3,
+lucas_1_10,1,Single confidently visible early flight point; later ball indistinct; no extrapolated points.
+lucas_1_12,2,
+andrew_1_01,2,
+andrew_1_04,3,
+andrew_1_07,1,Single clear early point; later flight occluded/ambiguous.
+andrew_1_10,1,Single clear early point; later flight occluded/ambiguous.
+andrew_1_11,1,Strong rightward flight; leaves crop quickly.
+eduardo_1_01,3,
+eduardo_1_04,3,
+eduardo_1_07,3,Mat ball moved outside original seed ROI; timing and seed manually corrected.
+eduardo_1_10,3,Mat ball moved outside original seed ROI; timing and seed manually corrected.
+eduardo_1_13,0,Flight not confidently localized against bright background; abstain.
+eduardo_1_16,2,Mat ball moved outside original seed ROI; timing and seed manually corrected.
+eduardo_1_19,3,Mat ball moved outside original seed ROI; timing and seed manually corrected.
+eduardo_1_20,2,

@@ -35,3 +35,8 @@
 - A universal impact offset from watch gyro peak is unsupported: first-shot native review panels capture different stages across sessions. Early-window experiments must not be called verified pre-impact. Existing whole-swing identity remains accepted.
 - New point references are approximate AI annotations of unmarked frames with stated uncertainty, not external or second-reviewer ground truth. Entire ball tracks remain unvalidated.
 - Browser automation unavailable/timed out. Local viewer media/data and JS checks passed, actual browser interaction verification remains unperformed.
+
+## Contact and threshold studies — 2026-11-18
+User cannot identify exact chunk/thin shot IDs; confirms short carry is a useful broad mishit indicator and lateral outcomes can indicate directional misses. These do not establish ground-first/face-edge/hosel labels. Carry cutoffs 80/100/120 yd are explicit outcome proxies, not contact-quality truth.
+Later Eduardo ball positions fall outside the original narrow seed ROI. Five candidate departure windows were visually corrected only for the separate reviewed-ball pilot; original generated panels archived. 78 approximate AI-reviewed ball points across 31/32 deterministically selected shots are distinct from unreviewed detector outputs, with source hashes and 16 px uncertainty; second reviewer pending. They support an assisted feasibility study, not autonomous accuracy.
+Acceleration clipping descriptors are newly evaluated as censoring patterns in a separate ablation; saturated amplitudes remain excluded as physical measurements. Exact impact times and actual high-frequency collision waveforms are unverified.

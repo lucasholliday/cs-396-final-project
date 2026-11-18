@@ -1,0 +1,1497 @@
+[
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 39.46818970503181,
+      "ridge10": 47.09799913078104,
+      "extra_trees": 38.691143606393624,
+      "svr": 34.64159291297601
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 51.202380952380956,
+      "ridge10": 47.7553902413926,
+      "extra_trees": 44.695825176366846,
+      "svr": 44.60357340581374
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.83805668016194,
+      "ridge10": 35.20851464782727,
+      "extra_trees": 34.875107503607516,
+      "svr": 34.428790833556775
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 46.9859943977591,
+      "ridge10": 34.29520951506567,
+      "extra_trees": 39.25519848284434,
+      "svr": 47.19742958945364
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 45.33403361344538,
+      "ridge10": 38.450635068684676,
+      "extra_trees": 45.30427274731441,
+      "svr": 43.29601427186538
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 39.46818970503181,
+      "ridge10": 29.006958320671572,
+      "extra_trees": 36.118675294116585,
+      "svr": 26.82851130163401
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 51.202380952380956,
+      "ridge10": 31.30689244175058,
+      "extra_trees": 41.606754326646474,
+      "svr": 40.99972156041852
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.83805668016194,
+      "ridge10": 29.075243176893892,
+      "extra_trees": 35.674292715531585,
+      "svr": 28.396503430485364
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 46.9859943977591,
+      "ridge10": 35.011878154737595,
+      "extra_trees": 39.60656487022414,
+      "svr": 27.02898927488228
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 45.33403361344538,
+      "ridge10": 32.11027157264431,
+      "extra_trees": 40.43968000971432,
+      "svr": 29.001440787944176
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 0,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 39.46818970503181,
+      "ridge10": 30.665378567121543,
+      "extra_trees": 35.61341602841604,
+      "svr": 34.524736846166725
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 51.202380952380956,
+      "ridge10": 40.45690179746483,
+      "extra_trees": 40.559746913580234,
+      "svr": 42.9682801714496
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 37.83805668016194,
+      "ridge10": 26.26107499128805,
+      "extra_trees": 33.70892480667481,
+      "svr": 31.689585751381795
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 46.9859943977591,
+      "ridge10": 30.35018581081601,
+      "extra_trees": 37.796854377104374,
+      "svr": 43.78855606959119
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 45.33403361344538,
+      "ridge10": 31.632165611589674,
+      "extra_trees": 39.65533056758056,
+      "svr": 40.25858815494532
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.220474262579527,
+      "ridge10": 12.64676369156716,
+      "extra_trees": 6.320546474821475,
+      "svr": 5.950745827105245
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 7.608298319327731,
+      "ridge10": 6.738254833698748,
+      "extra_trees": 8.268551003086422,
+      "svr": 7.775692672201079
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 6.217351069982649,
+      "ridge10": 7.594792112769134,
+      "extra_trees": 5.392593389018388,
+      "svr": 5.726748068824368
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 7.237605042016806,
+      "ridge10": 6.683617765173662,
+      "extra_trees": 7.441674992985405,
+      "svr": 7.538834610452447
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.82219887955182,
+      "ridge10": 10.309291923852106,
+      "extra_trees": 7.101227106381273,
+      "svr": 6.680615292959413
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.220474262579527,
+      "ridge10": 4.280328038412882,
+      "extra_trees": 5.795587054615804,
+      "svr": 3.995903761750647
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 7.608298319327731,
+      "ridge10": 5.720346826786687,
+      "extra_trees": 6.8992477011595925,
+      "svr": 6.227893951106208
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.217351069982649,
+      "ridge10": 5.268447193332026,
+      "extra_trees": 5.941289818338808,
+      "svr": 5.173412360573193
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 7.237605042016806,
+      "ridge10": 5.119823261360033,
+      "extra_trees": 5.813322453585802,
+      "svr": 5.022895616399513
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 6.82219887955182,
+      "ridge10": 5.04705524701434,
+      "extra_trees": 6.284745927647156,
+      "svr": 5.070412878670189
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.220474262579527,
+      "ridge10": 6.842902820938913,
+      "extra_trees": 5.950234147334147,
+      "svr": 5.499959458813667
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 7.608298319327731,
+      "ridge10": 6.128680683222103,
+      "extra_trees": 7.474741942239859,
+      "svr": 7.31137914052042
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 6.217351069982649,
+      "ridge10": 5.112470918306089,
+      "extra_trees": 5.439386734561738,
+      "svr": 5.3973556092004324
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 7.237605042016806,
+      "ridge10": 5.665212996000979,
+      "extra_trees": 5.985201233565815,
+      "svr": 7.103863613893911
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch angle (deg)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.82219887955182,
+      "ridge10": 6.7347071145617265,
+      "extra_trees": 6.614269994588746,
+      "svr": 6.262534363710557
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 7.259514170040486,
+      "ridge10": 11.6649139432957,
+      "extra_trees": 6.553930183420568,
+      "svr": 6.774489147372681
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 8.900245098039216,
+      "ridge10": 10.14279653447835,
+      "extra_trees": 7.722417746913581,
+      "svr": 8.704161159109267
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 8.028744939271254,
+      "ridge10": 10.433204533854894,
+      "extra_trees": 6.945422792022792,
+      "svr": 7.444849251753917
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 7.036694677871149,
+      "ridge10": 8.209806559369314,
+      "extra_trees": 7.689717350088184,
+      "svr": 6.865769745825323
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 8.993872549019608,
+      "ridge10": 9.666392621070473,
+      "extra_trees": 8.884338392857144,
+      "svr": 8.772288767776745
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 7.259514170040486,
+      "ridge10": 2.9778219676424538,
+      "extra_trees": 5.77625995791583,
+      "svr": 2.685595084564918
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 8.900245098039216,
+      "ridge10": 3.6520024783289338,
+      "extra_trees": 6.264161696799931,
+      "svr": 4.13091058995285
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 8.028744939271254,
+      "ridge10": 3.7059388651284952,
+      "extra_trees": 6.420262058750216,
+      "svr": 3.7346946151825957
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 7.036694677871149,
+      "ridge10": 3.160960223921506,
+      "extra_trees": 6.1278703242744905,
+      "svr": 4.480242467437656
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 8.993872549019608,
+      "ridge10": 3.594197426585764,
+      "extra_trees": 6.918320135941581,
+      "svr": 4.046957610534682
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 7.259514170040486,
+      "ridge10": 5.639345675406717,
+      "extra_trees": 5.258107488807489,
+      "svr": 6.161504045357612
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 8.900245098039216,
+      "ridge10": 6.264262991063558,
+      "extra_trees": 6.5049920304232804,
+      "svr": 8.178373386344918
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 8.028744939271254,
+      "ridge10": 6.823374563001774,
+      "extra_trees": 5.98606957408688,
+      "svr": 6.976887812735882
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 7.036694677871149,
+      "ridge10": 4.72675415721475,
+      "extra_trees": 6.505562369729035,
+      "svr": 6.558840754280254
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "Launch direction (deg; R+)",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 8.993872549019608,
+      "ridge10": 5.627033611600012,
+      "extra_trees": 7.084385916706751,
+      "svr": 8.457935700864576
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.587016167940151,
+      "logistic": 1.0240581137865883,
+      "extra_trees": 0.5916051023609047
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.8478897916292073,
+      "logistic": 0.7536621990250234,
+      "extra_trees": 0.7302937263227013
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6417339373744112,
+      "logistic": 0.9464592688157923,
+      "extra_trees": 0.6043877778632732
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9791056635882028,
+      "logistic": 0.7181817975363244,
+      "extra_trees": 0.6789298653249424
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7835628719869471,
+      "logistic": 1.0596809030870733,
+      "extra_trees": 0.7030570175782452
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.587016167940151,
+      "logistic": 0.5343013101976632,
+      "extra_trees": 0.6400992600050531
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.8478897916292073,
+      "logistic": 0.4093871367458604,
+      "extra_trees": 0.6151129884605506
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6417339373744112,
+      "logistic": 0.45782622767531655,
+      "extra_trees": 0.6509400582111466
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9791056635882028,
+      "logistic": 0.892099834079516,
+      "extra_trees": 0.6383994414819782
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7835628719869471,
+      "logistic": 0.4655946098458692,
+      "extra_trees": 0.6535881621288997
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.587016167940151,
+      "logistic": 0.5771392023838379,
+      "extra_trees": 0.5750820730393923
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.8478897916292073,
+      "logistic": 0.6529261591483357,
+      "extra_trees": 0.6725759549914901
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6417339373744112,
+      "logistic": 0.7527488309730596,
+      "extra_trees": 0.5774964599067274
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9791056635882028,
+      "logistic": 0.7761907229217693,
+      "extra_trees": 0.6729616565988937
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "short_carry",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7835628719869471,
+      "logistic": 0.7613122164698852,
+      "extra_trees": 0.6753693922167937
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5007651000817334,
+      "logistic": 0.8270018724038549,
+      "extra_trees": 0.6374560296440257
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6662887113681571,
+      "logistic": 1.2105386519312866,
+      "extra_trees": 0.6784223997510508
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5007651000817334,
+      "logistic": 0.6430749766030203,
+      "extra_trees": 0.6211334966122875
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6873136214068868,
+      "logistic": 0.8161015125725952,
+      "extra_trees": 0.6149135434627497
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6437999642354363,
+      "logistic": 0.8225582645138895,
+      "extra_trees": 0.7074679555230473
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5007651000817334,
+      "logistic": 0.42965354221524193,
+      "extra_trees": 0.6266164369541266
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6662887113681571,
+      "logistic": 0.46319419006628126,
+      "extra_trees": 0.6410733981016481
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5007651000817334,
+      "logistic": 0.4629991569686063,
+      "extra_trees": 0.6571875095268236
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6873136214068868,
+      "logistic": 0.6137882244302743,
+      "extra_trees": 0.6249861553084535
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6437999642354363,
+      "logistic": 0.46325305231277,
+      "extra_trees": 0.6479260777039668
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5007651000817334,
+      "logistic": 0.4436775532151986,
+      "extra_trees": 0.5923523543497654
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6662887113681571,
+      "logistic": 1.0941149991465027,
+      "extra_trees": 0.6289268771123195
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5007651000817334,
+      "logistic": 0.538905682155339,
+      "extra_trees": 0.5891303798694806
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6873136214068868,
+      "logistic": 0.6390904623192942,
+      "extra_trees": 0.6112681144768486
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "low_launch",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6437999642354363,
+      "logistic": 0.5772245349073518,
+      "extra_trees": 0.6556938807758724
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.4664949104136661,
+      "logistic": 0.6071080210696735,
+      "extra_trees": 0.5329155310109839
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7668244265180567,
+      "logistic": 0.5393193337868368,
+      "extra_trees": 0.7166553453111879
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6045232399889269,
+      "logistic": 0.9283486934837668,
+      "extra_trees": 0.6089403518965293
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.8302778585367182,
+      "logistic": 0.4879626166896716,
+      "extra_trees": 0.5980195143494804
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7182752623391525,
+      "logistic": 0.6495207268571997,
+      "extra_trees": 0.6605216412629681
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.4664949104136661,
+      "logistic": 0.587224343208052,
+      "extra_trees": 0.6346411084070751
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7668244265180567,
+      "logistic": 0.7385971571058491,
+      "extra_trees": 0.653684858815041
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6045232399889269,
+      "logistic": 0.5545461419941553,
+      "extra_trees": 0.6530972632634213
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.8302778585367182,
+      "logistic": 0.7814537514158562,
+      "extra_trees": 0.6638506421678421
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7182752623391525,
+      "logistic": 0.6195804572326181,
+      "extra_trees": 0.6726130591758496
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.4664949104136661,
+      "logistic": 0.5121565471396792,
+      "extra_trees": 0.5078027952067993
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7668244265180567,
+      "logistic": 0.5705045309676936,
+      "extra_trees": 0.6592020013753698
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6045232399889269,
+      "logistic": 0.8801633316818159,
+      "extra_trees": 0.6040878930792173
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.8302778585367182,
+      "logistic": 0.5216115772427047,
+      "extra_trees": 0.5960675758827468
+    }
+  },
+  {
+    "cohort": "reviewed_all",
+    "task": "directional_miss",
+    "features": "camera_watch_reviewed_ball",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7182752623391525,
+      "logistic": 0.6482917362066193,
+      "extra_trees": 0.6478937201775233
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 41.5578231292517,
+      "ridge10": 27.549149520794476,
+      "extra_trees": 36.32899155958679,
+      "svr": 24.499229928499556
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 62.60000000000001,
+      "ridge10": 54.47984337934702,
+      "extra_trees": 56.323399764844254,
+      "svr": 34.00882349261366
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 48.85531135531136,
+      "ridge10": 35.38908557029952,
+      "extra_trees": 45.45110792294125,
+      "svr": 34.79687167566387
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 50.52061747776034,
+      "ridge10": 61.27638742672372,
+      "extra_trees": 43.112735410973464,
+      "svr": 30.533848182384354
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 52.71610845295056,
+      "ridge10": 37.89811479062585,
+      "extra_trees": 47.2800479228374,
+      "svr": 34.65816634949627
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball_club_contact",
+    "fold": 0,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 41.5578231292517,
+      "ridge10": 36.141220398309706,
+      "extra_trees": 37.54092126480219,
+      "svr": 39.22514392678389
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball_club_contact",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 62.60000000000001,
+      "ridge10": 46.880376955139795,
+      "extra_trees": 55.95350705467369,
+      "svr": 53.377739181571236
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball_club_contact",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 48.85531135531136,
+      "ridge10": 49.07479829715027,
+      "extra_trees": 47.25601060139153,
+      "svr": 48.131044708270416
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball_club_contact",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 50.52061747776034,
+      "ridge10": 54.09818137965532,
+      "extra_trees": 44.24951274298888,
+      "svr": 49.24572204380964
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "Carry flat (yd)",
+    "features": "reviewed_ball_club_contact",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 52.71610845295056,
+      "ridge10": 39.27300882390821,
+      "extra_trees": 46.24013561681983,
+      "svr": 46.031387389054565
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7754454903529487,
+      "logistic": 0.40319509523148417,
+      "extra_trees": 0.6304186083299358
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 1.0838008669937185,
+      "logistic": 0.9270343666984725,
+      "extra_trees": 0.649251678070171
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 1.1203060049833464,
+      "logistic": 0.8693573183119367,
+      "extra_trees": 0.6670745233769799
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 1.1203060049833464,
+      "logistic": 0.7676513878741448,
+      "extra_trees": 0.6486293865162204
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9584864015828417,
+      "logistic": 0.69364007887621,
+      "extra_trees": 0.6685161626134737
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball_club_contact",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7754454903529487,
+      "logistic": 0.6112803944697067,
+      "extra_trees": 0.633798389649584
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball_club_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 1.0838008669937185,
+      "logistic": 0.8821378933867651,
+      "extra_trees": 0.7180572927430797
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball_club_contact",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 1.1203060049833464,
+      "logistic": 1.3196817576258226,
+      "extra_trees": 0.7379955149864882
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball_club_contact",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 1.1203060049833464,
+      "logistic": 1.301152004773842,
+      "extra_trees": 0.7610646516944882
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "short_carry",
+    "features": "reviewed_ball_club_contact",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.9584864015828417,
+      "logistic": 0.5945951557781347,
+      "extra_trees": 0.6989273688072056
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.616352788686848,
+      "logistic": 0.27789218054172515,
+      "extra_trees": 0.6183156217184892
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7078458163220859,
+      "logistic": 0.5332331423971955,
+      "extra_trees": 0.6546077730504644
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 2,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.616352788686848,
+      "logistic": 0.5215307956220567,
+      "extra_trees": 0.6544432266464797
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7754454903529487,
+      "logistic": 0.4944404835721644,
+      "extra_trees": 0.6297641033643109
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6770203624371472,
+      "logistic": 0.45265628205408026,
+      "extra_trees": 0.6444160124173021
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball_club_contact",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.616352788686848,
+      "logistic": 0.4627146899011275,
+      "extra_trees": 0.5803435375693655
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball_club_contact",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7078458163220859,
+      "logistic": 0.3922455818193762,
+      "extra_trees": 0.5944978446792263
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball_club_contact",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.616352788686848,
+      "logistic": 0.766701415051992,
+      "extra_trees": 0.5753434739320723
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball_club_contact",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7754454903529487,
+      "logistic": 0.7303195004759849,
+      "extra_trees": 0.6066653078547595
+    }
+  },
+  {
+    "cohort": "reviewed_matched_club",
+    "task": "low_launch",
+    "features": "reviewed_ball_club_contact",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6770203624371472,
+      "logistic": 0.7707902840362779,
+      "extra_trees": 0.6680046329224347
+    }
+  }
+]

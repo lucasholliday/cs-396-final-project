@@ -35,3 +35,6 @@ The next dataset should secure the SD card, preserve label exports/photos, ident
 
 ## Completion boundary
 This delivery completes a reproducible initial research study and review tooling with the available recordings. It does not complete the long-term product objective. More tuning of these 72 outcomes is not an untouched validation set. Browser playback still requires a successful local UI check; that attempt timed out and was not repeated. The documented next work is measurement validation and additional acquisition, not a claim that current experimental tracking is production-ready.
+
+## Follow-up requested by the user — 2026-11-18
+The research continued beyond this initial delivery. Reviewed early-flight points now support a small assisted-tracking pilot (31 shots), with lower carry error and better short-shot detection than body/watch on the identical cohort. More detailed club-contact descriptors give mixed outcomes. Range-restricted carry and a separate short-shot gate were tested at 80/100/120 yd; the easier conditional task must not be confused with deployable accuracy. Read contact_quality_results.md and carry_threshold_results.md for executed results, limitations and reproduction.

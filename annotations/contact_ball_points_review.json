@@ -1,0 +1,507 @@
+{
+  "metadata": {
+    "reviewer": "AI visual inspection of unmarked sheets and native crops",
+    "coordinate_system": "local 390x550 review panel; native coordinates = [300+2*x,650+2*y]",
+    "uncertainty_native_px": 16,
+    "status": "approximate visually reviewed sparse points; second reviewer outstanding; not certified full trajectories",
+    "selection": "every third ordinal beginning at one plus final shot of each session; 32 shots; not selected by outcome"
+  },
+  "points": {
+    "sid_1_01": [
+      [
+        1,
+        208,
+        238
+      ],
+      [
+        2,
+        212,
+        158
+      ],
+      [
+        3,
+        216,
+        99
+      ]
+    ],
+    "sid_1_04": [
+      [
+        1,
+        237,
+        232
+      ],
+      [
+        2,
+        253,
+        139
+      ],
+      [
+        3,
+        265,
+        74
+      ]
+    ],
+    "sid_1_07": [
+      [
+        1,
+        235,
+        239
+      ],
+      [
+        2,
+        253,
+        143
+      ],
+      [
+        3,
+        266,
+        78
+      ]
+    ],
+    "sid_1_10": [
+      [
+        1,
+        228,
+        226
+      ],
+      [
+        2,
+        241,
+        136
+      ],
+      [
+        3,
+        251,
+        73
+      ]
+    ],
+    "sid_1_13": [
+      [
+        1,
+        228,
+        224
+      ],
+      [
+        2,
+        235,
+        139
+      ],
+      [
+        3,
+        244,
+        79
+      ]
+    ],
+    "sid_1_16": [
+      [
+        1,
+        218,
+        271
+      ],
+      [
+        2,
+        224,
+        197
+      ],
+      [
+        3,
+        232,
+        131
+      ]
+    ],
+    "sid_1_18": [
+      [
+        1,
+        202,
+        304
+      ],
+      [
+        3,
+        206,
+        195
+      ],
+      [
+        4,
+        210,
+        163
+      ]
+    ],
+    "rohan_1_01": [
+      [
+        1,
+        206,
+        349
+      ],
+      [
+        2,
+        211,
+        295
+      ],
+      [
+        3,
+        216,
+        260
+      ]
+    ],
+    "rohan_1_04": [
+      [
+        1,
+        269,
+        272
+      ],
+      [
+        3,
+        319,
+        152
+      ],
+      [
+        4,
+        339,
+        119
+      ]
+    ],
+    "rohan_1_05": [
+      [
+        1,
+        142,
+        335
+      ],
+      [
+        2,
+        98,
+        227
+      ],
+      [
+        3,
+        59,
+        171
+      ]
+    ],
+    "rohan_2_01": [
+      [
+        2,
+        159,
+        123
+      ],
+      [
+        3,
+        153,
+        65
+      ]
+    ],
+    "rohan_2_04": [
+      [
+        1,
+        193,
+        315
+      ],
+      [
+        2,
+        185,
+        229
+      ],
+      [
+        3,
+        178,
+        161
+      ],
+      [
+        4,
+        173,
+        113
+      ]
+    ],
+    "rohan_2_07": [
+      [
+        1,
+        210,
+        305
+      ],
+      [
+        3,
+        198,
+        206
+      ],
+      [
+        4,
+        192,
+        172
+      ]
+    ],
+    "rohan_2_10": [
+      [
+        1,
+        184,
+        332
+      ],
+      [
+        2,
+        167,
+        282
+      ]
+    ],
+    "lucas_1_01": [
+      [
+        1,
+        222,
+        272
+      ],
+      [
+        2,
+        227,
+        207
+      ],
+      [
+        3,
+        231,
+        156
+      ]
+    ],
+    "lucas_1_04": [
+      [
+        1,
+        266,
+        369
+      ]
+    ],
+    "lucas_1_07": [
+      [
+        1,
+        239,
+        284
+      ],
+      [
+        2,
+        250,
+        213
+      ],
+      [
+        3,
+        257,
+        164
+      ]
+    ],
+    "lucas_1_10": [
+      [
+        1,
+        283,
+        378
+      ]
+    ],
+    "lucas_1_12": [
+      [
+        3,
+        223,
+        161
+      ],
+      [
+        4,
+        224,
+        124
+      ]
+    ],
+    "andrew_1_01": [
+      [
+        1,
+        180,
+        309
+      ],
+      [
+        2,
+        161,
+        237
+      ]
+    ],
+    "andrew_1_04": [
+      [
+        1,
+        203,
+        330
+      ],
+      [
+        2,
+        191,
+        270
+      ],
+      [
+        3,
+        182,
+        229
+      ]
+    ],
+    "andrew_1_07": [
+      [
+        1,
+        166.5,
+        315
+      ]
+    ],
+    "andrew_1_10": [
+      [
+        1,
+        162.5,
+        315
+      ]
+    ],
+    "andrew_1_11": [
+      [
+        1,
+        371,
+        264
+      ]
+    ],
+    "eduardo_1_01": [
+      [
+        1,
+        213,
+        258
+      ],
+      [
+        2,
+        219,
+        181
+      ],
+      [
+        3,
+        224,
+        117
+      ]
+    ],
+    "eduardo_1_04": [
+      [
+        3,
+        222,
+        125
+      ],
+      [
+        4,
+        227,
+        82
+      ],
+      [
+        5,
+        230,
+        49
+      ]
+    ],
+    "eduardo_1_07": [
+      [
+        1,
+        246,
+        296
+      ],
+      [
+        3,
+        240,
+        161
+      ],
+      [
+        4,
+        237,
+        116
+      ]
+    ],
+    "eduardo_1_10": [
+      [
+        2,
+        250,
+        207
+      ],
+      [
+        3,
+        251,
+        155
+      ],
+      [
+        4,
+        249,
+        114
+      ]
+    ],
+    "eduardo_1_13": [],
+    "eduardo_1_16": [
+      [
+        1,
+        231,
+        354
+      ],
+      [
+        4,
+        194,
+        176
+      ]
+    ],
+    "eduardo_1_19": [
+      [
+        1,
+        237,
+        254
+      ],
+      [
+        2,
+        231,
+        191
+      ],
+      [
+        3,
+        226,
+        132
+      ]
+    ],
+    "eduardo_1_20": [
+      [
+        1,
+        332,
+        398
+      ],
+      [
+        2,
+        372,
+        355
+      ]
+    ]
+  },
+  "seed_overrides_native": {
+    "eduardo_1_07": [
+      810,
+      1650
+    ],
+    "eduardo_1_10": [
+      814,
+      1636
+    ],
+    "eduardo_1_13": [
+      810,
+      1640
+    ],
+    "eduardo_1_16": [
+      812,
+      1650
+    ],
+    "eduardo_1_19": [
+      814,
+      1638
+    ],
+    "eduardo_1_20": [
+      810,
+      1640
+    ],
+    "rohan_1_05": [
+      692,
+      1570
+    ]
+  },
+  "review_notes": {
+    "eduardo_1_13": "Flight not confidently localized against bright background; abstain.",
+    "andrew_1_11": "Strong rightward flight; leaves crop quickly.",
+    "lucas_1_04": "Single confidently visible early flight point; later ball indistinct; no extrapolated points.",
+    "lucas_1_10": "Single confidently visible early flight point; later ball indistinct; no extrapolated points.",
+    "andrew_1_07": "Single clear early point; later flight occluded/ambiguous.",
+    "andrew_1_10": "Single clear early point; later flight occluded/ambiguous.",
+    "rohan_1_05": "Departure timing manually corrected from stationary-ball original panels.",
+    "eduardo_1_07": "Mat ball moved outside original seed ROI; timing and seed manually corrected.",
+    "eduardo_1_10": "Mat ball moved outside original seed ROI; timing and seed manually corrected.",
+    "eduardo_1_16": "Mat ball moved outside original seed ROI; timing and seed manually corrected.",
+    "eduardo_1_19": "Mat ball moved outside original seed ROI; timing and seed manually corrected."
+  }
+}

@@ -1,0 +1,709 @@
+cohort,task,features,fold,shot_id,golfer,actual,predicted,model
+reviewed_all,Carry flat (yd),camera_watch,0,andrew_1_01,Andrew,29.0,93.19744857359784,svr
+reviewed_all,Carry flat (yd),camera_watch,0,andrew_1_04,Andrew,21.0,87.56865642889032,svr
+reviewed_all,Carry flat (yd),camera_watch,0,andrew_1_07,Andrew,27.0,80.25540601949172,svr
+reviewed_all,Carry flat (yd),camera_watch,0,andrew_1_10,Andrew,31.0,86.84981809221291,svr
+reviewed_all,Carry flat (yd),camera_watch,0,andrew_1_11,Andrew,83.0,88.05942213379407,svr
+reviewed_all,Carry flat (yd),camera_watch,1,eduardo_1_01,Eduardo,125.0,120.61731337676505,svr
+reviewed_all,Carry flat (yd),camera_watch,1,eduardo_1_04,Eduardo,112.0,70.13293342568946,svr
+reviewed_all,Carry flat (yd),camera_watch,1,eduardo_1_07,Eduardo,112.0,101.78028103434958,svr
+reviewed_all,Carry flat (yd),camera_watch,1,eduardo_1_10,Eduardo,105.0,67.6865273992023,svr
+reviewed_all,Carry flat (yd),camera_watch,1,eduardo_1_16,Eduardo,80.0,94.87339648259,svr
+reviewed_all,Carry flat (yd),camera_watch,1,eduardo_1_19,Eduardo,83.0,66.17940057664941,svr
+reviewed_all,Carry flat (yd),camera_watch,1,eduardo_1_20,Eduardo,6.0,98.72224914163891,svr
+reviewed_all,Carry flat (yd),camera_watch,2,lucas_1_01,Lucas,155.0,94.48924744652861,svr
+reviewed_all,Carry flat (yd),camera_watch,2,lucas_1_04,Lucas,26.0,108.10574011625258,svr
+reviewed_all,Carry flat (yd),camera_watch,2,lucas_1_07,Lucas,146.0,115.10470740356769,svr
+reviewed_all,Carry flat (yd),camera_watch,2,lucas_1_10,Lucas,16.0,101.08220785700976,svr
+reviewed_all,Carry flat (yd),camera_watch,2,lucas_1_12,Lucas,128.0,120.34884083597733,svr
+reviewed_all,Carry flat (yd),camera_watch,3,rohan_1_01,Rohan,20.0,127.05592085597675,ridge10
+reviewed_all,Carry flat (yd),camera_watch,3,rohan_1_04,Rohan,105.0,132.10327700073952,ridge10
+reviewed_all,Carry flat (yd),camera_watch,3,rohan_1_05,Rohan,38.0,101.38693381780425,ridge10
+reviewed_all,Carry flat (yd),camera_watch,3,rohan_2_01,Rohan,132.0,126.7605162721359,ridge10
+reviewed_all,Carry flat (yd),camera_watch,3,rohan_2_04,Rohan,32.0,118.57552749460451,ridge10
+reviewed_all,Carry flat (yd),camera_watch,3,rohan_2_07,Rohan,125.0,106.21400280143294,ridge10
+reviewed_all,Carry flat (yd),camera_watch,3,rohan_2_10,Rohan,106.0,96.85974412125654,ridge10
+reviewed_all,Carry flat (yd),camera_watch,4,sid_1_01,Sid,126.0,140.90450489995777,ridge10
+reviewed_all,Carry flat (yd),camera_watch,4,sid_1_04,Sid,122.0,128.46290710598697,ridge10
+reviewed_all,Carry flat (yd),camera_watch,4,sid_1_07,Sid,129.0,114.22773458292363,ridge10
+reviewed_all,Carry flat (yd),camera_watch,4,sid_1_10,Sid,132.0,113.64198378430322,ridge10
+reviewed_all,Carry flat (yd),camera_watch,4,sid_1_13,Sid,134.0,120.96783528764306,ridge10
+reviewed_all,Carry flat (yd),camera_watch,4,sid_1_16,Sid,81.0,115.94711859473844,ridge10
+reviewed_all,Carry flat (yd),camera_watch,4,sid_1_18,Sid,121.0,129.9139420209295,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,0,andrew_1_01,Andrew,29.0,82.93262830385474,svr
+reviewed_all,Carry flat (yd),reviewed_ball,0,andrew_1_04,Andrew,21.0,67.17685266827854,svr
+reviewed_all,Carry flat (yd),reviewed_ball,0,andrew_1_07,Andrew,27.0,80.9136630654915,svr
+reviewed_all,Carry flat (yd),reviewed_ball,0,andrew_1_10,Andrew,31.0,80.919502369903,svr
+reviewed_all,Carry flat (yd),reviewed_ball,0,andrew_1_11,Andrew,83.0,83.13511364095815,svr
+reviewed_all,Carry flat (yd),reviewed_ball,1,eduardo_1_01,Eduardo,125.0,117.610507332799,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,1,eduardo_1_04,Eduardo,112.0,110.96290461804536,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,1,eduardo_1_07,Eduardo,112.0,109.00327040352408,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,1,eduardo_1_10,Eduardo,105.0,96.48991093508656,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,1,eduardo_1_16,Eduardo,80.0,70.06314409289037,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,1,eduardo_1_19,Eduardo,83.0,126.41269507282082,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,1,eduardo_1_20,Eduardo,6.0,38.84347131369035,ridge10
+reviewed_all,Carry flat (yd),reviewed_ball,2,lucas_1_01,Lucas,155.0,123.2100542125694,svr
+reviewed_all,Carry flat (yd),reviewed_ball,2,lucas_1_04,Lucas,26.0,45.790899284926866,svr
+reviewed_all,Carry flat (yd),reviewed_ball,2,lucas_1_07,Lucas,146.0,122.87121464877231,svr
+reviewed_all,Carry flat (yd),reviewed_ball,2,lucas_1_10,Lucas,16.0,37.0519298408516,svr
+reviewed_all,Carry flat (yd),reviewed_ball,2,lucas_1_12,Lucas,128.0,107.10845025742958,svr
+reviewed_all,Carry flat (yd),reviewed_ball,3,rohan_1_01,Rohan,20.0,35.5435706930642,svr
+reviewed_all,Carry flat (yd),reviewed_ball,3,rohan_1_04,Rohan,105.0,95.307067119701,svr
+reviewed_all,Carry flat (yd),reviewed_ball,3,rohan_1_05,Rohan,38.0,28.219422534130487,svr
+reviewed_all,Carry flat (yd),reviewed_ball,3,rohan_2_01,Rohan,132.0,100.32797383700311,svr
+reviewed_all,Carry flat (yd),reviewed_ball,3,rohan_2_04,Rohan,32.0,54.79541024805155,svr
+reviewed_all,Carry flat (yd),reviewed_ball,3,rohan_2_07,Rohan,125.0,72.45232571465317,svr
+reviewed_all,Carry flat (yd),reviewed_ball,3,rohan_2_10,Rohan,106.0,32.229982961151755,svr
+reviewed_all,Carry flat (yd),reviewed_ball,4,sid_1_01,Sid,126.0,124.6230457633824,svr
+reviewed_all,Carry flat (yd),reviewed_ball,4,sid_1_04,Sid,122.0,131.5438429203599,svr
+reviewed_all,Carry flat (yd),reviewed_ball,4,sid_1_07,Sid,129.0,131.7625645265634,svr
+reviewed_all,Carry flat (yd),reviewed_ball,4,sid_1_10,Sid,132.0,124.27547096052422,svr
+reviewed_all,Carry flat (yd),reviewed_ball,4,sid_1_13,Sid,134.0,121.94054991609813,svr
+reviewed_all,Carry flat (yd),reviewed_ball,4,sid_1_16,Sid,81.0,116.93436405412228,svr
+reviewed_all,Carry flat (yd),reviewed_ball,4,sid_1_18,Sid,121.0,65.01587160267879,svr
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,0,andrew_1_01,Andrew,29.0,67.87301716839706,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,0,andrew_1_04,Andrew,21.0,56.53265006764601,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,0,andrew_1_07,Andrew,27.0,69.8996546057763,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,0,andrew_1_10,Andrew,31.0,66.54689853059355,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,0,andrew_1_11,Andrew,83.0,47.31342775282083,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,1,eduardo_1_01,Eduardo,125.0,131.64024657558005,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,1,eduardo_1_04,Eduardo,112.0,75.94050250273114,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,1,eduardo_1_07,Eduardo,112.0,106.86738261069763,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,1,eduardo_1_10,Eduardo,105.0,74.11908818156854,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,1,eduardo_1_16,Eduardo,80.0,78.86054340537272,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,1,eduardo_1_19,Eduardo,83.0,103.59874147495108,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,1,eduardo_1_20,Eduardo,6.0,47.75959499138251,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,2,lucas_1_01,Lucas,155.0,91.63231891497884,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,2,lucas_1_04,Lucas,26.0,80.78071458278338,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,2,lucas_1_07,Lucas,146.0,118.40018062482048,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,2,lucas_1_10,Lucas,16.0,80.16068193843374,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,2,lucas_1_12,Lucas,128.0,128.5496133624774,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,3,rohan_1_01,Rohan,20.0,66.46711688864713,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,3,rohan_1_04,Rohan,105.0,86.36400611819421,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,3,rohan_1_05,Rohan,38.0,66.03644877005463,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,3,rohan_2_01,Rohan,132.0,114.28753150742521,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,3,rohan_2_04,Rohan,32.0,71.93009777160344,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,3,rohan_2_07,Rohan,125.0,82.22486099892843,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,3,rohan_2_10,Rohan,106.0,51.387580561226535,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,4,sid_1_01,Sid,126.0,134.7810979488063,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,4,sid_1_04,Sid,122.0,128.77586897140733,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,4,sid_1_07,Sid,129.0,118.2479174712347,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,4,sid_1_10,Sid,132.0,123.56388416538198,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,4,sid_1_13,Sid,134.0,129.69751883192848,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,4,sid_1_16,Sid,81.0,96.61720557736555,ridge10
+reviewed_all,Carry flat (yd),camera_watch_reviewed_ball,4,sid_1_18,Sid,121.0,99.51739230855584,ridge10
+reviewed_all,Launch angle (deg),camera_watch,0,andrew_1_01,Andrew,13.3,17.14323124610391,svr
+reviewed_all,Launch angle (deg),camera_watch,0,andrew_1_04,Andrew,7.9,13.863249981293295,svr
+reviewed_all,Launch angle (deg),camera_watch,0,andrew_1_07,Andrew,11.1,15.268755324722123,svr
+reviewed_all,Launch angle (deg),camera_watch,0,andrew_1_10,Andrew,7.1,14.592621205638183,svr
+reviewed_all,Launch angle (deg),camera_watch,0,andrew_1_11,Andrew,23.4,13.461453509688216,svr
+reviewed_all,Launch angle (deg),camera_watch,1,eduardo_1_01,Eduardo,21.0,19.906213403869145,ridge10
+reviewed_all,Launch angle (deg),camera_watch,1,eduardo_1_04,Eduardo,21.2,15.362939292715364,ridge10
+reviewed_all,Launch angle (deg),camera_watch,1,eduardo_1_07,Eduardo,18.6,15.57147085538448,ridge10
+reviewed_all,Launch angle (deg),camera_watch,1,eduardo_1_10,Eduardo,18.3,13.181969387453144,ridge10
+reviewed_all,Launch angle (deg),camera_watch,1,eduardo_1_16,Eduardo,15.6,13.579672443046025,ridge10
+reviewed_all,Launch angle (deg),camera_watch,1,eduardo_1_19,Eduardo,22.1,12.720655489739654,ridge10
+reviewed_all,Launch angle (deg),camera_watch,1,eduardo_1_20,Eduardo,0.7,15.480692656391998,ridge10
+reviewed_all,Launch angle (deg),camera_watch,2,lucas_1_01,Lucas,17.0,18.769194227994205,extra_trees
+reviewed_all,Launch angle (deg),camera_watch,2,lucas_1_04,Lucas,2.1,19.033594035594028,extra_trees
+reviewed_all,Launch angle (deg),camera_watch,2,lucas_1_07,Lucas,16.5,20.502167941317932,extra_trees
+reviewed_all,Launch angle (deg),camera_watch,2,lucas_1_10,Lucas,2.4,19.03032378547376,extra_trees
+reviewed_all,Launch angle (deg),camera_watch,2,lucas_1_12,Lucas,18.6,20.62941106301105,extra_trees
+reviewed_all,Launch angle (deg),camera_watch,3,rohan_1_01,Rohan,6.0,32.813630444238186,ridge10
+reviewed_all,Launch angle (deg),camera_watch,3,rohan_1_04,Rohan,16.3,36.578882414326344,ridge10
+reviewed_all,Launch angle (deg),camera_watch,3,rohan_1_05,Rohan,23.1,28.34640417112601,ridge10
+reviewed_all,Launch angle (deg),camera_watch,3,rohan_2_01,Rohan,24.1,30.45612403047393,ridge10
+reviewed_all,Launch angle (deg),camera_watch,3,rohan_2_04,Rohan,22.3,34.77880502055327,ridge10
+reviewed_all,Launch angle (deg),camera_watch,3,rohan_2_07,Rohan,11.0,28.716764086505705,ridge10
+reviewed_all,Launch angle (deg),camera_watch,3,rohan_2_10,Rohan,4.3,28.794750791279938,ridge10
+reviewed_all,Launch angle (deg),camera_watch,4,sid_1_01,Sid,21.5,16.53480231929289,svr
+reviewed_all,Launch angle (deg),camera_watch,4,sid_1_04,Sid,25.1,16.80143721166368,svr
+reviewed_all,Launch angle (deg),camera_watch,4,sid_1_07,Sid,24.3,17.785548863412718,svr
+reviewed_all,Launch angle (deg),camera_watch,4,sid_1_10,Sid,23.3,16.440260527783252,svr
+reviewed_all,Launch angle (deg),camera_watch,4,sid_1_13,Sid,22.8,17.598672937570143,svr
+reviewed_all,Launch angle (deg),camera_watch,4,sid_1_16,Sid,20.7,18.063120467503108,svr
+reviewed_all,Launch angle (deg),camera_watch,4,sid_1_18,Sid,11.7,17.970885350839854,svr
+reviewed_all,Launch angle (deg),reviewed_ball,0,andrew_1_01,Andrew,13.3,15.96908870389529,svr
+reviewed_all,Launch angle (deg),reviewed_ball,0,andrew_1_04,Andrew,7.9,13.638944896353873,svr
+reviewed_all,Launch angle (deg),reviewed_ball,0,andrew_1_07,Andrew,11.1,16.52925717133841,svr
+reviewed_all,Launch angle (deg),reviewed_ball,0,andrew_1_10,Andrew,7.1,16.871088019000425,svr
+reviewed_all,Launch angle (deg),reviewed_ball,0,andrew_1_11,Andrew,23.4,15.562812917570884,svr
+reviewed_all,Launch angle (deg),reviewed_ball,1,eduardo_1_01,Eduardo,21.0,20.242251275949965,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,1,eduardo_1_04,Eduardo,21.2,17.89944052135049,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,1,eduardo_1_07,Eduardo,18.6,19.141668939523313,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,1,eduardo_1_10,Eduardo,18.3,16.759423518676662,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,1,eduardo_1_16,Eduardo,15.6,13.645484890932714,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,1,eduardo_1_19,Eduardo,22.1,21.663816969629842,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,1,eduardo_1_20,Eduardo,0.7,8.612060198552209,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,2,lucas_1_01,Lucas,17.0,21.90593416085057,svr
+reviewed_all,Launch angle (deg),reviewed_ball,2,lucas_1_04,Lucas,2.1,8.680566192862546,svr
+reviewed_all,Launch angle (deg),reviewed_ball,2,lucas_1_07,Lucas,16.5,22.04653801376316,svr
+reviewed_all,Launch angle (deg),reviewed_ball,2,lucas_1_10,Lucas,2.4,8.11526564734724,svr
+reviewed_all,Launch angle (deg),reviewed_ball,2,lucas_1_12,Lucas,18.6,20.42748537793681,svr
+reviewed_all,Launch angle (deg),reviewed_ball,3,rohan_1_01,Rohan,6.0,7.461756410263295,svr
+reviewed_all,Launch angle (deg),reviewed_ball,3,rohan_1_04,Rohan,16.3,15.86141105762527,svr
+reviewed_all,Launch angle (deg),reviewed_ball,3,rohan_1_05,Rohan,23.1,11.355140815948298,svr
+reviewed_all,Launch angle (deg),reviewed_ball,3,rohan_2_01,Rohan,24.1,18.762708404657733,svr
+reviewed_all,Launch angle (deg),reviewed_ball,3,rohan_2_04,Rohan,22.3,12.265984085774148,svr
+reviewed_all,Launch angle (deg),reviewed_ball,3,rohan_2_07,Rohan,11.0,16.253744825545905,svr
+reviewed_all,Launch angle (deg),reviewed_ball,3,rohan_2_10,Rohan,4.3,11.510013931098392,svr
+reviewed_all,Launch angle (deg),reviewed_ball,4,sid_1_01,Sid,21.5,18.59167376968528,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,4,sid_1_04,Sid,25.1,18.49479258127821,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,4,sid_1_07,Sid,24.3,18.453922003399143,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,4,sid_1_10,Sid,23.3,19.390064094217223,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,4,sid_1_13,Sid,22.8,19.5962584524731,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,4,sid_1_16,Sid,20.7,15.498976879634895,ridge10
+reviewed_all,Launch angle (deg),reviewed_ball,4,sid_1_18,Sid,11.7,12.978759225767435,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,0,andrew_1_01,Andrew,13.3,17.007194017270432,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,0,andrew_1_04,Andrew,7.9,13.58324338889544,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,0,andrew_1_07,Andrew,11.1,15.772909493792552,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,0,andrew_1_10,Andrew,7.1,15.28288856008767,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,0,andrew_1_11,Andrew,23.4,13.18516592368468,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,1,eduardo_1_01,Eduardo,21.0,21.08077334960531,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,1,eduardo_1_04,Eduardo,21.2,19.891803807234165,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,1,eduardo_1_07,Eduardo,18.6,17.748472363928297,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,1,eduardo_1_10,Eduardo,18.3,15.840023965468017,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,1,eduardo_1_16,Eduardo,15.6,12.001024611034326,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,1,eduardo_1_19,Eduardo,22.1,18.06195852965425,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,1,eduardo_1_20,Eduardo,0.7,9.566504368624976,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,2,lucas_1_01,Lucas,17.0,18.860487876188326,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,2,lucas_1_04,Lucas,2.1,13.264206460251227,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,2,lucas_1_07,Lucas,16.5,19.86709728865,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,2,lucas_1_10,Lucas,2.4,14.396839904952042,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,2,lucas_1_12,Lucas,18.6,17.263861210443995,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,3,rohan_1_01,Rohan,6.0,21.043431070376844,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,3,rohan_1_04,Rohan,16.3,28.724875836550883,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,3,rohan_1_05,Rohan,23.1,20.71327469913548,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,3,rohan_2_01,Rohan,24.1,27.35815294755441,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,3,rohan_2_04,Rohan,22.3,25.31653305840386,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,3,rohan_2_07,Rohan,11.0,23.72089663057178,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,3,rohan_2_10,Rohan,4.3,20.074599686303568,ridge10
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,4,sid_1_01,Sid,21.5,17.258905794639443,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,4,sid_1_04,Sid,25.1,17.049323846903388,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,4,sid_1_07,Sid,24.3,17.655854529532675,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,4,sid_1_10,Sid,23.3,17.320637113456268,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,4,sid_1_13,Sid,22.8,17.870248137022372,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,4,sid_1_16,Sid,20.7,17.727971079313527,svr
+reviewed_all,Launch angle (deg),camera_watch_reviewed_ball,4,sid_1_18,Sid,11.7,17.164534667135396,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,0,andrew_1_01,Andrew,-12.1,1.221372751322752,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,0,andrew_1_04,Andrew,-8.9,-3.8605695767195787,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,0,andrew_1_07,Andrew,-18.6,-0.10059417989417994,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,0,andrew_1_10,Andrew,-22.2,-3.8022452380952383,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,0,andrew_1_11,Andrew,26.3,-3.5694698412698425,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,1,eduardo_1_01,Eduardo,0.3,1.1379938672438668,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,1,eduardo_1_04,Eduardo,-0.1,-0.25186962481962477,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,1,eduardo_1_07,Eduardo,-4.4,0.17860555555555538,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,1,eduardo_1_10,Eduardo,-4.8,0.17753689273689274,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,1,eduardo_1_16,Eduardo,-9.7,-4.879734271284269,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,1,eduardo_1_19,Eduardo,-6.5,-2.6701895622895644,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,1,eduardo_1_20,Eduardo,14.5,-2.6969430014430023,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,2,lucas_1_01,Lucas,0.9,-3.414685401635401,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,2,lucas_1_04,Lucas,4.4,-4.441560173160172,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,2,lucas_1_07,Lucas,3.5,-1.8658801106301113,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,2,lucas_1_10,Lucas,12.1,-4.960391702741703,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,2,lucas_1_12,Lucas,0.2,-1.8249295815295814,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch,3,rohan_1_01,Rohan,0.4,-1.5186783092678193,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,3,rohan_1_04,Rohan,8.3,-1.5241978914103311,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,3,rohan_1_05,Rohan,-23.1,-1.5375721108328948,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,3,rohan_2_01,Rohan,-9.5,-1.5283218414122395,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,3,rohan_2_04,Rohan,-5.3,-1.5237628268510015,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,3,rohan_2_07,Rohan,-7.9,-1.5225065899210057,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,3,rohan_2_10,Rohan,-11.7,-1.5247413962085963,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,4,sid_1_01,Sid,-2.1,-2.4461992442706277,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,4,sid_1_04,Sid,4.3,-1.0355142451780943,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,4,sid_1_07,Sid,4.2,-0.4456031579452464,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,4,sid_1_10,Sid,2.0,-0.9852406944321772,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,4,sid_1_13,Sid,1.2,-2.2514650980813693,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,4,sid_1_16,Sid,-0.4,-3.4356744485535247,svr
+reviewed_all,Launch direction (deg; R+),camera_watch,4,sid_1_18,Sid,-1.7,-1.8183140684477974,svr
+reviewed_all,Launch direction (deg; R+),reviewed_ball,0,andrew_1_01,Andrew,-12.1,-11.164834181565784,svr
+reviewed_all,Launch direction (deg; R+),reviewed_ball,0,andrew_1_04,Andrew,-8.9,-8.01489273744677,svr
+reviewed_all,Launch direction (deg; R+),reviewed_ball,0,andrew_1_07,Andrew,-18.6,-11.550708693186372,svr
+reviewed_all,Launch direction (deg; R+),reviewed_ball,0,andrew_1_10,Andrew,-22.2,-11.35366925441255,svr
+reviewed_all,Launch direction (deg; R+),reviewed_ball,0,andrew_1_11,Andrew,26.3,1.9863430725797964,svr
+reviewed_all,Launch direction (deg; R+),reviewed_ball,1,eduardo_1_01,Eduardo,0.3,-0.42924292910665396,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,1,eduardo_1_04,Eduardo,-0.1,-1.3481829072246059,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,1,eduardo_1_07,Eduardo,-4.4,-4.146770051075798,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,1,eduardo_1_10,Eduardo,-4.8,-3.7779199127019227,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,1,eduardo_1_16,Eduardo,-9.7,-8.01149253311454,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,1,eduardo_1_19,Eduardo,-6.5,-5.100020324046364,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,1,eduardo_1_20,Eduardo,14.5,6.394681433845131,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,2,lucas_1_01,Lucas,0.9,0.44807362965172937,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,2,lucas_1_04,Lucas,4.4,5.437108564600722,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,2,lucas_1_07,Lucas,3.5,2.9752035080297596,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,2,lucas_1_10,Lucas,12.1,8.73866831706148,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,2,lucas_1_12,Lucas,0.2,-2.625867063722043,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,3,rohan_1_01,Rohan,0.4,-2.25854675434149,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,3,rohan_1_04,Rohan,8.3,6.978084264315252,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,3,rohan_1_05,Rohan,-23.1,-12.553953969560894,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,3,rohan_2_01,Rohan,-9.5,-5.481750202832896,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,3,rohan_2_04,Rohan,-5.3,-5.875407901121044,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,3,rohan_2_07,Rohan,-7.9,-7.650996144295184,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,3,rohan_2_10,Rohan,-11.7,-10.593823511845592,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,4,sid_1_01,Sid,-2.1,-2.1757156015198755,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,4,sid_1_04,Sid,4.3,1.902654491668864,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,4,sid_1_07,Sid,4.2,2.0812729645219132,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,4,sid_1_10,Sid,2.0,0.9822579204937059,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,4,sid_1_13,Sid,1.2,0.6596626708730606,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,4,sid_1_16,Sid,-0.4,-1.6322464837343602,ridge10
+reviewed_all,Launch direction (deg; R+),reviewed_ball,4,sid_1_18,Sid,-1.7,-3.408041088718573,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,0,andrew_1_01,Andrew,-12.1,-3.9718433862433886,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,0,andrew_1_04,Andrew,-8.9,-5.95920925925926,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,0,andrew_1_07,Andrew,-18.6,-4.446551322751323,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,0,andrew_1_10,Andrew,-22.2,-6.751185714285716,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,0,andrew_1_11,Andrew,26.3,1.8578084656084655,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,1,eduardo_1_01,Eduardo,0.3,-0.09307384019674991,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,1,eduardo_1_04,Eduardo,-0.1,-3.242069827296014,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,1,eduardo_1_07,Eduardo,-4.4,-6.187902203515666,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,1,eduardo_1_10,Eduardo,-4.8,-5.276300695472765,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,1,eduardo_1_16,Eduardo,-9.7,-9.510943426397104,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,1,eduardo_1_19,Eduardo,-6.5,-8.414118582261695,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,1,eduardo_1_20,Eduardo,14.5,5.477983912968757,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,2,lucas_1_01,Lucas,0.9,0.6256927128427127,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,2,lucas_1_04,Lucas,4.4,0.6089037518037514,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,2,lucas_1_07,Lucas,3.5,2.339238936988939,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,2,lucas_1_10,Lucas,12.1,-0.13873193843193854,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,2,lucas_1_12,Lucas,0.2,-2.12968011063011,extra_trees
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,3,rohan_1_01,Rohan,0.4,-5.1968246671498655,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,3,rohan_1_04,Rohan,8.3,2.3118980613364135,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,3,rohan_1_05,Rohan,-23.1,-10.461386782183205,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,3,rohan_2_01,Rohan,-9.5,-4.693607078346393,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,3,rohan_2_04,Rohan,-5.3,-5.1132298778419285,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,3,rohan_2_07,Rohan,-7.9,-8.564327423709686,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,3,rohan_2_10,Rohan,-11.7,-16.3220857663568,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,4,sid_1_01,Sid,-2.1,4.864988628119546,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,4,sid_1_04,Sid,4.3,6.643361388875903,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,4,sid_1_07,Sid,4.2,4.751650578176431,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,4,sid_1_10,Sid,2.0,5.736084517011296,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,4,sid_1_13,Sid,1.2,6.394394864192526,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,4,sid_1_16,Sid,-0.4,0.11770117454159301,ridge10
+reviewed_all,Launch direction (deg; R+),camera_watch_reviewed_ball,4,sid_1_18,Sid,-1.7,3.8658619555185756,ridge10
+reviewed_all,short_carry,camera_watch,0,andrew_1_01,Andrew,1.0,0.23076923076923078,prior
+reviewed_all,short_carry,camera_watch,0,andrew_1_04,Andrew,1.0,0.23076923076923078,prior
+reviewed_all,short_carry,camera_watch,0,andrew_1_07,Andrew,1.0,0.23076923076923078,prior
+reviewed_all,short_carry,camera_watch,0,andrew_1_10,Andrew,1.0,0.23076923076923078,prior
+reviewed_all,short_carry,camera_watch,0,andrew_1_11,Andrew,0.0,0.23076923076923078,prior
+reviewed_all,short_carry,camera_watch,1,eduardo_1_01,Eduardo,0.0,0.24324028665200548,extra_trees
+reviewed_all,short_carry,camera_watch,1,eduardo_1_04,Eduardo,0.0,0.46211997780985514,extra_trees
+reviewed_all,short_carry,camera_watch,1,eduardo_1_07,Eduardo,0.0,0.47711187694414064,extra_trees
+reviewed_all,short_carry,camera_watch,1,eduardo_1_10,Eduardo,0.0,0.6316860342611289,extra_trees
+reviewed_all,short_carry,camera_watch,1,eduardo_1_16,Eduardo,0.0,0.5593221395365944,extra_trees
+reviewed_all,short_carry,camera_watch,1,eduardo_1_19,Eduardo,0.0,0.5985514043968123,extra_trees
+reviewed_all,short_carry,camera_watch,1,eduardo_1_20,Eduardo,1.0,0.49888510850385437,extra_trees
+reviewed_all,short_carry,camera_watch,2,lucas_1_01,Lucas,0.0,0.3887953684623509,extra_trees
+reviewed_all,short_carry,camera_watch,2,lucas_1_04,Lucas,1.0,0.36668015817000044,extra_trees
+reviewed_all,short_carry,camera_watch,2,lucas_1_07,Lucas,0.0,0.2410499500607225,extra_trees
+reviewed_all,short_carry,camera_watch,2,lucas_1_10,Lucas,1.0,0.28036098674666043,extra_trees
+reviewed_all,short_carry,camera_watch,2,lucas_1_12,Lucas,0.0,0.26290790617114174,extra_trees
+reviewed_all,short_carry,camera_watch,3,rohan_1_01,Rohan,1.0,0.6322579033838148,extra_trees
+reviewed_all,short_carry,camera_watch,3,rohan_1_04,Rohan,0.0,0.643338360860952,extra_trees
+reviewed_all,short_carry,camera_watch,3,rohan_1_05,Rohan,1.0,0.6618227072006283,extra_trees
+reviewed_all,short_carry,camera_watch,3,rohan_2_01,Rohan,0.0,0.512995861805902,extra_trees
+reviewed_all,short_carry,camera_watch,3,rohan_2_04,Rohan,1.0,0.6791430220178336,extra_trees
+reviewed_all,short_carry,camera_watch,3,rohan_2_07,Rohan,0.0,0.6354096713848746,extra_trees
+reviewed_all,short_carry,camera_watch,3,rohan_2_10,Rohan,0.0,0.6997850330645747,extra_trees
+reviewed_all,short_carry,camera_watch,4,sid_1_01,Sid,0.0,0.34024197276398055,extra_trees
+reviewed_all,short_carry,camera_watch,4,sid_1_04,Sid,0.0,0.342713475092574,extra_trees
+reviewed_all,short_carry,camera_watch,4,sid_1_07,Sid,0.0,0.35011595745672575,extra_trees
+reviewed_all,short_carry,camera_watch,4,sid_1_10,Sid,0.0,0.3712489449461437,extra_trees
+reviewed_all,short_carry,camera_watch,4,sid_1_13,Sid,0.0,0.35196557647067256,extra_trees
+reviewed_all,short_carry,camera_watch,4,sid_1_16,Sid,0.0,0.37446722265456844,extra_trees
+reviewed_all,short_carry,camera_watch,4,sid_1_18,Sid,0.0,0.32959494348954527,extra_trees
+reviewed_all,short_carry,reviewed_ball,0,andrew_1_01,Andrew,1.0,0.5084243321834722,logistic
+reviewed_all,short_carry,reviewed_ball,0,andrew_1_04,Andrew,1.0,0.6547702425054573,logistic
+reviewed_all,short_carry,reviewed_ball,0,andrew_1_07,Andrew,1.0,0.5233221134794672,logistic
+reviewed_all,short_carry,reviewed_ball,0,andrew_1_10,Andrew,1.0,0.4985294701151429,logistic
+reviewed_all,short_carry,reviewed_ball,0,andrew_1_11,Andrew,0.0,0.43504376310084325,logistic
+reviewed_all,short_carry,reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.17897206050440678,logistic
+reviewed_all,short_carry,reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.2720600772049364,logistic
+reviewed_all,short_carry,reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.25416025098763706,logistic
+reviewed_all,short_carry,reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.3713736802292534,logistic
+reviewed_all,short_carry,reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.6206841511853597,logistic
+reviewed_all,short_carry,reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.1575462075261188,logistic
+reviewed_all,short_carry,reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.7550800780134289,logistic
+reviewed_all,short_carry,reviewed_ball,2,lucas_1_01,Lucas,0.0,0.18338881456783965,logistic
+reviewed_all,short_carry,reviewed_ball,2,lucas_1_04,Lucas,1.0,0.5505541502621416,logistic
+reviewed_all,short_carry,reviewed_ball,2,lucas_1_07,Lucas,0.0,0.1676917018725492,logistic
+reviewed_all,short_carry,reviewed_ball,2,lucas_1_10,Lucas,1.0,0.5824552039723389,logistic
+reviewed_all,short_carry,reviewed_ball,2,lucas_1_12,Lucas,0.0,0.304936866903988,logistic
+reviewed_all,short_carry,reviewed_ball,3,rohan_1_01,Rohan,1.0,0.5367521377021794,extra_trees
+reviewed_all,short_carry,reviewed_ball,3,rohan_1_04,Rohan,0.0,0.46438749219472053,extra_trees
+reviewed_all,short_carry,reviewed_ball,3,rohan_1_05,Rohan,1.0,0.5542829565002597,extra_trees
+reviewed_all,short_carry,reviewed_ball,3,rohan_2_01,Rohan,0.0,0.47744008275180494,extra_trees
+reviewed_all,short_carry,reviewed_ball,3,rohan_2_04,Rohan,1.0,0.5362281920277701,extra_trees
+reviewed_all,short_carry,reviewed_ball,3,rohan_2_07,Rohan,0.0,0.4697832660210286,extra_trees
+reviewed_all,short_carry,reviewed_ball,3,rohan_2_10,Rohan,0.0,0.558438157667656,extra_trees
+reviewed_all,short_carry,reviewed_ball,4,sid_1_01,Sid,0.0,0.1937574454932421,logistic
+reviewed_all,short_carry,reviewed_ball,4,sid_1_04,Sid,0.0,0.1714423905661834,logistic
+reviewed_all,short_carry,reviewed_ball,4,sid_1_07,Sid,0.0,0.17197859703679622,logistic
+reviewed_all,short_carry,reviewed_ball,4,sid_1_10,Sid,0.0,0.14333472517277127,logistic
+reviewed_all,short_carry,reviewed_ball,4,sid_1_13,Sid,0.0,0.13800142944903074,logistic
+reviewed_all,short_carry,reviewed_ball,4,sid_1_16,Sid,0.0,0.3594909826544365,logistic
+reviewed_all,short_carry,reviewed_ball,4,sid_1_18,Sid,0.0,0.5522818498641086,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,0,andrew_1_01,Andrew,1.0,0.445056434168838,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,0,andrew_1_04,Andrew,1.0,0.5988115118876056,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,0,andrew_1_07,Andrew,1.0,0.5434473554754418,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,0,andrew_1_10,Andrew,1.0,0.6057516440177907,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,0,andrew_1_11,Andrew,0.0,0.4979519368705827,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.05091834666296227,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.4334013910483521,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.19376626657263196,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.5511234628623319,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.4456441837106274,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.23098527915056835,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.5481879000344876,logistic
+reviewed_all,short_carry,camera_watch_reviewed_ball,2,lucas_1_01,Lucas,0.0,0.31644674708509374,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,2,lucas_1_04,Lucas,1.0,0.37496981331275414,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,2,lucas_1_07,Lucas,0.0,0.14544579235961438,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,2,lucas_1_10,Lucas,1.0,0.379667814678999,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,2,lucas_1_12,Lucas,0.0,0.3164323597557611,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,3,rohan_1_01,Rohan,1.0,0.6581266400669038,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,3,rohan_1_04,Rohan,0.0,0.5652050666054961,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,3,rohan_1_05,Rohan,1.0,0.6552801503543679,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,3,rohan_2_01,Rohan,0.0,0.4663037507346891,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,3,rohan_2_04,Rohan,1.0,0.6720725600999903,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,3,rohan_2_07,Rohan,0.0,0.5760259865816966,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,3,rohan_2_10,Rohan,0.0,0.6905787845946881,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,4,sid_1_01,Sid,0.0,0.2722456126385487,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,4,sid_1_04,Sid,0.0,0.2993031423016448,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,4,sid_1_07,Sid,0.0,0.3185451216733082,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,4,sid_1_10,Sid,0.0,0.3246768275978443,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,4,sid_1_13,Sid,0.0,0.30520020928040165,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,4,sid_1_16,Sid,0.0,0.37152056529447164,extra_trees
+reviewed_all,short_carry,camera_watch_reviewed_ball,4,sid_1_18,Sid,0.0,0.38318135015974275,extra_trees
+reviewed_all,low_launch,camera_watch,0,andrew_1_01,Andrew,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,0,andrew_1_04,Andrew,1.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,0,andrew_1_07,Andrew,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,0,andrew_1_10,Andrew,1.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,0,andrew_1_11,Andrew,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,1,eduardo_1_01,Eduardo,0.0,0.25,prior
+reviewed_all,low_launch,camera_watch,1,eduardo_1_04,Eduardo,0.0,0.25,prior
+reviewed_all,low_launch,camera_watch,1,eduardo_1_07,Eduardo,0.0,0.25,prior
+reviewed_all,low_launch,camera_watch,1,eduardo_1_10,Eduardo,0.0,0.25,prior
+reviewed_all,low_launch,camera_watch,1,eduardo_1_16,Eduardo,0.0,0.25,prior
+reviewed_all,low_launch,camera_watch,1,eduardo_1_19,Eduardo,0.0,0.25,prior
+reviewed_all,low_launch,camera_watch,1,eduardo_1_20,Eduardo,1.0,0.25,prior
+reviewed_all,low_launch,camera_watch,2,lucas_1_01,Lucas,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,2,lucas_1_04,Lucas,1.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,2,lucas_1_07,Lucas,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,2,lucas_1_10,Lucas,1.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,2,lucas_1_12,Lucas,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch,3,rohan_1_01,Rohan,1.0,0.6230737323438555,extra_trees
+reviewed_all,low_launch,camera_watch,3,rohan_1_04,Rohan,0.0,0.6249400108586645,extra_trees
+reviewed_all,low_launch,camera_watch,3,rohan_1_05,Rohan,0.0,0.7026603642297014,extra_trees
+reviewed_all,low_launch,camera_watch,3,rohan_2_01,Rohan,0.0,0.5192668937344389,extra_trees
+reviewed_all,low_launch,camera_watch,3,rohan_2_04,Rohan,0.0,0.7103879681006297,extra_trees
+reviewed_all,low_launch,camera_watch,3,rohan_2_07,Rohan,0.0,0.6592879025455236,extra_trees
+reviewed_all,low_launch,camera_watch,3,rohan_2_10,Rohan,1.0,0.6790524049313758,extra_trees
+reviewed_all,low_launch,camera_watch,4,sid_1_01,Sid,0.0,0.2916666666666667,prior
+reviewed_all,low_launch,camera_watch,4,sid_1_04,Sid,0.0,0.2916666666666667,prior
+reviewed_all,low_launch,camera_watch,4,sid_1_07,Sid,0.0,0.2916666666666667,prior
+reviewed_all,low_launch,camera_watch,4,sid_1_10,Sid,0.0,0.2916666666666667,prior
+reviewed_all,low_launch,camera_watch,4,sid_1_13,Sid,0.0,0.2916666666666667,prior
+reviewed_all,low_launch,camera_watch,4,sid_1_16,Sid,0.0,0.2916666666666667,prior
+reviewed_all,low_launch,camera_watch,4,sid_1_18,Sid,0.0,0.2916666666666667,prior
+reviewed_all,low_launch,reviewed_ball,0,andrew_1_01,Andrew,0.0,0.4054341954368258,logistic
+reviewed_all,low_launch,reviewed_ball,0,andrew_1_04,Andrew,1.0,0.575154436932577,logistic
+reviewed_all,low_launch,reviewed_ball,0,andrew_1_07,Andrew,0.0,0.4073316790061186,logistic
+reviewed_all,low_launch,reviewed_ball,0,andrew_1_10,Andrew,1.0,0.3739926275299108,logistic
+reviewed_all,low_launch,reviewed_ball,0,andrew_1_11,Andrew,0.0,0.5452805279881551,logistic
+reviewed_all,low_launch,reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.15689636410464466,logistic
+reviewed_all,low_launch,reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.31197175550766837,logistic
+reviewed_all,low_launch,reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.20026799159685832,logistic
+reviewed_all,low_launch,reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.3444003374631742,logistic
+reviewed_all,low_launch,reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.522806690112838,logistic
+reviewed_all,low_launch,reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.1137628120439853,logistic
+reviewed_all,low_launch,reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.8055718446464901,logistic
+reviewed_all,low_launch,reviewed_ball,2,lucas_1_01,Lucas,0.0,0.16818014835699993,logistic
+reviewed_all,low_launch,reviewed_ball,2,lucas_1_04,Lucas,1.0,0.592541781554242,logistic
+reviewed_all,low_launch,reviewed_ball,2,lucas_1_07,Lucas,0.0,0.165766133068189,logistic
+reviewed_all,low_launch,reviewed_ball,2,lucas_1_10,Lucas,1.0,0.6585734501691645,logistic
+reviewed_all,low_launch,reviewed_ball,2,lucas_1_12,Lucas,0.0,0.35558951564576613,logistic
+reviewed_all,low_launch,reviewed_ball,3,rohan_1_01,Rohan,1.0,0.7584149414582028,logistic
+reviewed_all,low_launch,reviewed_ball,3,rohan_1_04,Rohan,0.0,0.3740746992733849,logistic
+reviewed_all,low_launch,reviewed_ball,3,rohan_1_05,Rohan,0.0,0.5984149985357133,logistic
+reviewed_all,low_launch,reviewed_ball,3,rohan_2_01,Rohan,0.0,0.2507598222774712,logistic
+reviewed_all,low_launch,reviewed_ball,3,rohan_2_04,Rohan,0.0,0.5723525644184595,logistic
+reviewed_all,low_launch,reviewed_ball,3,rohan_2_07,Rohan,0.0,0.37911015348812627,logistic
+reviewed_all,low_launch,reviewed_ball,3,rohan_2_10,Rohan,1.0,0.6042563108400344,logistic
+reviewed_all,low_launch,reviewed_ball,4,sid_1_01,Sid,0.0,0.1646915682360858,logistic
+reviewed_all,low_launch,reviewed_ball,4,sid_1_04,Sid,0.0,0.16508933432554776,logistic
+reviewed_all,low_launch,reviewed_ball,4,sid_1_07,Sid,0.0,0.16656003285176868,logistic
+reviewed_all,low_launch,reviewed_ball,4,sid_1_10,Sid,0.0,0.13331013566975625,logistic
+reviewed_all,low_launch,reviewed_ball,4,sid_1_13,Sid,0.0,0.12684196181849497,logistic
+reviewed_all,low_launch,reviewed_ball,4,sid_1_16,Sid,0.0,0.3230065228695039,logistic
+reviewed_all,low_launch,reviewed_ball,4,sid_1_18,Sid,0.0,0.4984269640698279,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,0,andrew_1_01,Andrew,0.0,0.35022547301529067,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,0,andrew_1_04,Andrew,1.0,0.6692790439907281,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,0,andrew_1_07,Andrew,0.0,0.5254656609472299,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,0,andrew_1_10,Andrew,1.0,0.6617643745096418,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,0,andrew_1_11,Andrew,0.0,0.8259281491781503,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.17726602415621792,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.49363891605027466,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.3855825962950385,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.555035658070014,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.528600701512834,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.39691243020381983,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.4468479601940364,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,2,lucas_1_01,Lucas,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch_reviewed_ball,2,lucas_1_04,Lucas,1.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch_reviewed_ball,2,lucas_1_07,Lucas,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch_reviewed_ball,2,lucas_1_10,Lucas,1.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch_reviewed_ball,2,lucas_1_12,Lucas,0.0,0.19230769230769232,prior
+reviewed_all,low_launch,camera_watch_reviewed_ball,3,rohan_1_01,Rohan,1.0,0.6400139158352232,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,3,rohan_1_04,Rohan,0.0,0.5680614368460358,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,3,rohan_1_05,Rohan,0.0,0.6811061860541908,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,3,rohan_2_01,Rohan,0.0,0.46470983427100465,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,3,rohan_2_04,Rohan,0.0,0.6842449018284615,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,3,rohan_2_07,Rohan,0.0,0.5755083540762322,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,3,rohan_2_10,Rohan,1.0,0.6855382027109187,extra_trees
+reviewed_all,low_launch,camera_watch_reviewed_ball,4,sid_1_01,Sid,0.0,0.013362500392505956,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,4,sid_1_04,Sid,0.0,0.026729444237272276,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,4,sid_1_07,Sid,0.0,0.048922739205161894,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,4,sid_1_10,Sid,0.0,0.019154227751706096,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,4,sid_1_13,Sid,0.0,0.015533073287298024,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,4,sid_1_16,Sid,0.0,0.07404224093274292,logistic
+reviewed_all,low_launch,camera_watch_reviewed_ball,4,sid_1_18,Sid,0.0,0.0652353769934517,logistic
+reviewed_all,directional_miss,camera_watch,0,andrew_1_01,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch,0,andrew_1_04,Andrew,0.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch,0,andrew_1_07,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch,0,andrew_1_10,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch,0,andrew_1_11,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch,1,eduardo_1_01,Eduardo,0.0,0.057890157447601134,logistic
+reviewed_all,directional_miss,camera_watch,1,eduardo_1_04,Eduardo,0.0,0.4231121761797021,logistic
+reviewed_all,directional_miss,camera_watch,1,eduardo_1_07,Eduardo,0.0,0.37938903278208985,logistic
+reviewed_all,directional_miss,camera_watch,1,eduardo_1_10,Eduardo,0.0,0.4913859394296948,logistic
+reviewed_all,directional_miss,camera_watch,1,eduardo_1_16,Eduardo,0.0,0.48810295921670205,logistic
+reviewed_all,directional_miss,camera_watch,1,eduardo_1_19,Eduardo,0.0,0.42305225384153483,logistic
+reviewed_all,directional_miss,camera_watch,1,eduardo_1_20,Eduardo,1.0,0.27224462281798906,logistic
+reviewed_all,directional_miss,camera_watch,2,lucas_1_01,Lucas,0.0,0.2692307692307692,prior
+reviewed_all,directional_miss,camera_watch,2,lucas_1_04,Lucas,0.0,0.2692307692307692,prior
+reviewed_all,directional_miss,camera_watch,2,lucas_1_07,Lucas,0.0,0.2692307692307692,prior
+reviewed_all,directional_miss,camera_watch,2,lucas_1_10,Lucas,1.0,0.2692307692307692,prior
+reviewed_all,directional_miss,camera_watch,2,lucas_1_12,Lucas,0.0,0.2692307692307692,prior
+reviewed_all,directional_miss,camera_watch,3,rohan_1_01,Rohan,0.0,0.01270363154819346,logistic
+reviewed_all,directional_miss,camera_watch,3,rohan_1_04,Rohan,0.0,0.006590729677035215,logistic
+reviewed_all,directional_miss,camera_watch,3,rohan_1_05,Rohan,1.0,0.0459417508922173,logistic
+reviewed_all,directional_miss,camera_watch,3,rohan_2_01,Rohan,0.0,0.00958801055543641,logistic
+reviewed_all,directional_miss,camera_watch,3,rohan_2_04,Rohan,0.0,0.013587782726099373,logistic
+reviewed_all,directional_miss,camera_watch,3,rohan_2_07,Rohan,0.0,0.026546890580203566,logistic
+reviewed_all,directional_miss,camera_watch,3,rohan_2_10,Rohan,1.0,0.01271503865363181,logistic
+reviewed_all,directional_miss,camera_watch,4,sid_1_01,Sid,0.0,0.023079721438952015,logistic
+reviewed_all,directional_miss,camera_watch,4,sid_1_04,Sid,0.0,0.00927919564256005,logistic
+reviewed_all,directional_miss,camera_watch,4,sid_1_07,Sid,0.0,0.028381050276776735,logistic
+reviewed_all,directional_miss,camera_watch,4,sid_1_10,Sid,0.0,0.02362541372780733,logistic
+reviewed_all,directional_miss,camera_watch,4,sid_1_13,Sid,0.0,0.04481406881263529,logistic
+reviewed_all,directional_miss,camera_watch,4,sid_1_16,Sid,0.0,0.07257896368576243,logistic
+reviewed_all,directional_miss,camera_watch,4,sid_1_18,Sid,0.0,0.046920215754576965,logistic
+reviewed_all,directional_miss,reviewed_ball,0,andrew_1_01,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,reviewed_ball,0,andrew_1_04,Andrew,0.0,0.15384615384615385,prior
+reviewed_all,directional_miss,reviewed_ball,0,andrew_1_07,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,reviewed_ball,0,andrew_1_10,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,reviewed_ball,0,andrew_1_11,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.41365300233329116,extra_trees
+reviewed_all,directional_miss,reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.4865184240728171,extra_trees
+reviewed_all,directional_miss,reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.44111998299073957,extra_trees
+reviewed_all,directional_miss,reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.5019987308244938,extra_trees
+reviewed_all,directional_miss,reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.5123991454805898,extra_trees
+reviewed_all,directional_miss,reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.4345844030111179,extra_trees
+reviewed_all,directional_miss,reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.4992689906838309,extra_trees
+reviewed_all,directional_miss,reviewed_ball,2,lucas_1_01,Lucas,0.0,0.31572676689398177,logistic
+reviewed_all,directional_miss,reviewed_ball,2,lucas_1_04,Lucas,0.0,0.6615740818749755,logistic
+reviewed_all,directional_miss,reviewed_ball,2,lucas_1_07,Lucas,0.0,0.3203891768152158,logistic
+reviewed_all,directional_miss,reviewed_ball,2,lucas_1_10,Lucas,1.0,0.7046424394266224,logistic
+reviewed_all,directional_miss,reviewed_ball,2,lucas_1_12,Lucas,0.0,0.2680513639767411,logistic
+reviewed_all,directional_miss,reviewed_ball,3,rohan_1_01,Rohan,0.0,0.522440978266935,extra_trees
+reviewed_all,directional_miss,reviewed_ball,3,rohan_1_04,Rohan,0.0,0.49217181799151555,extra_trees
+reviewed_all,directional_miss,reviewed_ball,3,rohan_1_05,Rohan,1.0,0.5365249337544711,extra_trees
+reviewed_all,directional_miss,reviewed_ball,3,rohan_2_01,Rohan,0.0,0.48079859339003006,extra_trees
+reviewed_all,directional_miss,reviewed_ball,3,rohan_2_04,Rohan,0.0,0.5229546084276241,extra_trees
+reviewed_all,directional_miss,reviewed_ball,3,rohan_2_07,Rohan,0.0,0.47873560637704304,extra_trees
+reviewed_all,directional_miss,reviewed_ball,3,rohan_2_10,Rohan,1.0,0.5364480106775481,extra_trees
+reviewed_all,directional_miss,reviewed_ball,4,sid_1_01,Sid,0.0,0.31519750849577854,logistic
+reviewed_all,directional_miss,reviewed_ball,4,sid_1_04,Sid,0.0,0.3092813212473759,logistic
+reviewed_all,directional_miss,reviewed_ball,4,sid_1_07,Sid,0.0,0.31030193421430546,logistic
+reviewed_all,directional_miss,reviewed_ball,4,sid_1_10,Sid,0.0,0.2809292585168827,logistic
+reviewed_all,directional_miss,reviewed_ball,4,sid_1_13,Sid,0.0,0.27486257287959176,logistic
+reviewed_all,directional_miss,reviewed_ball,4,sid_1_16,Sid,0.0,0.43123980791995986,logistic
+reviewed_all,directional_miss,reviewed_ball,4,sid_1_18,Sid,0.0,0.5383098739608237,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,0,andrew_1_01,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch_reviewed_ball,0,andrew_1_04,Andrew,0.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch_reviewed_ball,0,andrew_1_07,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch_reviewed_ball,0,andrew_1_10,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch_reviewed_ball,0,andrew_1_11,Andrew,1.0,0.15384615384615385,prior
+reviewed_all,directional_miss,camera_watch_reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.05917401256075965,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.31972039699280763,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.3779604955765544,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.4514453948632959,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.5204692896405364,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.38035009655189805,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.3092399183555681,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,2,lucas_1_01,Lucas,0.0,0.33313473262314275,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,2,lucas_1_04,Lucas,0.0,0.3243880229595165,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,2,lucas_1_07,Lucas,0.0,0.19026913777881652,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,2,lucas_1_10,Lucas,1.0,0.4404065490710004,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,2,lucas_1_12,Lucas,0.0,0.28127930693649283,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,3,rohan_1_01,Rohan,0.0,0.049799099357477616,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,3,rohan_1_04,Rohan,0.0,0.02625530511703878,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,3,rohan_1_05,Rohan,1.0,0.07197683348198225,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,3,rohan_2_01,Rohan,0.0,0.008681978190121719,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,3,rohan_2_04,Rohan,0.0,0.0335961745188296,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,3,rohan_2_07,Rohan,0.0,0.034405154609331814,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,3,rohan_2_10,Rohan,1.0,0.03798137418275515,logistic
+reviewed_all,directional_miss,camera_watch_reviewed_ball,4,sid_1_01,Sid,0.0,0.33320559553168216,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,4,sid_1_04,Sid,0.0,0.3191324312232238,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,4,sid_1_07,Sid,0.0,0.32806486915566174,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,4,sid_1_10,Sid,0.0,0.3550910651818577,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,4,sid_1_13,Sid,0.0,0.3320646438907305,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,4,sid_1_16,Sid,0.0,0.38639114092310983,extra_trees
+reviewed_all,directional_miss,camera_watch_reviewed_ball,4,sid_1_18,Sid,0.0,0.3611595707503633,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball,0,andrew_1_01,Andrew,29.0,83.21074389241772,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,0,andrew_1_04,Andrew,21.0,58.63851830874325,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,0,andrew_1_07,Andrew,27.0,85.7374557895351,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,0,andrew_1_10,Andrew,31.0,88.24242816755344,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,1,eduardo_1_01,Eduardo,125.0,126.47948397410633,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,1,eduardo_1_04,Eduardo,112.0,77.34676325598302,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,1,eduardo_1_07,Eduardo,112.0,113.41646239926848,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,1,eduardo_1_10,Eduardo,105.0,119.52505946436915,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,1,eduardo_1_16,Eduardo,80.0,44.78795355104661,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,1,eduardo_1_19,Eduardo,83.0,111.65639114913652,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,1,eduardo_1_20,Eduardo,6.0,21.78203281770898,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,2,lucas_1_01,Lucas,155.0,120.20861129373733,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,2,lucas_1_04,Lucas,26.0,31.569533509591523,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,2,lucas_1_07,Lucas,146.0,115.89563133640503,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,2,lucas_1_10,Lucas,16.0,26.668379224872197,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,3,rohan_1_01,Rohan,20.0,30.83574234177538,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,3,rohan_2_01,Rohan,132.0,100.11864231854783,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,3,rohan_2_04,Rohan,32.0,44.79370242196484,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,3,rohan_2_07,Rohan,125.0,66.50459334974191,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,4,sid_1_01,Sid,126.0,127.04239147553355,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,4,sid_1_04,Sid,122.0,138.20866460367193,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,4,sid_1_07,Sid,129.0,138.45587469996107,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,4,sid_1_10,Sid,132.0,130.10309941423282,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,4,sid_1_13,Sid,134.0,127.35379364017696,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball,4,sid_1_16,Sid,81.0,122.64464944013176,svr
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,0,andrew_1_01,Andrew,29.0,52.25180505098737,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,0,andrew_1_04,Andrew,21.0,60.54979584047833,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,0,andrew_1_07,Andrew,27.0,32.89519428482301,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,0,andrew_1_10,Andrew,31.0,71.15067878567639,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,1,eduardo_1_01,Eduardo,125.0,115.45636645652317,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,1,eduardo_1_04,Eduardo,112.0,90.75328264166572,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,1,eduardo_1_07,Eduardo,112.0,82.3375102157062,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,1,eduardo_1_10,Eduardo,105.0,60.27844626757678,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,1,eduardo_1_16,Eduardo,80.0,43.027772460507116,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,1,eduardo_1_19,Eduardo,83.0,91.68583702972693,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,1,eduardo_1_20,Eduardo,6.0,59.37116925839881,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,2,lucas_1_01,Lucas,155.0,86.76024074074076,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,2,lucas_1_04,Lucas,26.0,58.47484511784514,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,2,lucas_1_07,Lucas,146.0,112.91152284752286,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,2,lucas_1_10,Lucas,16.0,58.76942616642618,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,3,rohan_1_01,Rohan,20.0,51.4496024531025,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,3,rohan_2_01,Rohan,132.0,80.70001250601248,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,3,rohan_2_04,Rohan,32.0,54.418165945166,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,3,rohan_2_07,Rohan,125.0,77.2251844636845,extra_trees
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,4,sid_1_01,Sid,126.0,108.06576943207189,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,4,sid_1_04,Sid,122.0,42.407157130907926,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,4,sid_1_07,Sid,129.0,104.72685207758587,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,4,sid_1_10,Sid,132.0,116.32718340207146,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,4,sid_1_13,Sid,134.0,91.41707746950215,ridge10
+reviewed_matched_club,Carry flat (yd),reviewed_ball_club_contact,4,sid_1_16,Sid,81.0,102.12312895771514,ridge10
+reviewed_matched_club,short_carry,reviewed_ball,0,andrew_1_01,Andrew,1.0,0.38598304087003554,logistic
+reviewed_matched_club,short_carry,reviewed_ball,0,andrew_1_04,Andrew,1.0,0.5602837251542672,logistic
+reviewed_matched_club,short_carry,reviewed_ball,0,andrew_1_07,Andrew,1.0,0.3779683873265791,logistic
+reviewed_matched_club,short_carry,reviewed_ball,0,andrew_1_10,Andrew,1.0,0.34052725231825676,logistic
+reviewed_matched_club,short_carry,reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.4027509680785838,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.5668598173190117,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.4340009206311093,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.551119297774682,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.5679704322070035,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.4334333026698743,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.5505699542033775,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,2,lucas_1_01,Lucas,0.0,0.4072012782539098,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,2,lucas_1_04,Lucas,1.0,0.5229770077417136,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,2,lucas_1_07,Lucas,0.0,0.40984774290037446,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,2,lucas_1_10,Lucas,1.0,0.5364405812052871,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,3,rohan_1_01,Rohan,1.0,0.5440892933462591,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,3,rohan_2_01,Rohan,0.0,0.5016684246839044,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,3,rohan_2_04,Rohan,1.0,0.5497969649889153,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,3,rohan_2_07,Rohan,0.0,0.4890184992166415,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,4,sid_1_01,Sid,0.0,0.40175542178190427,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,4,sid_1_04,Sid,0.0,0.428892765940525,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,4,sid_1_07,Sid,0.0,0.431184091636106,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,4,sid_1_10,Sid,0.0,0.4191819094211579,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,4,sid_1_13,Sid,0.0,0.4071797272062097,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball,4,sid_1_16,Sid,0.0,0.4436483612251999,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,0,andrew_1_01,Andrew,1.0,0.5820917850255212,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,0,andrew_1_04,Andrew,1.0,0.5646419522815521,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,0,andrew_1_07,Andrew,1.0,0.8920957745280222,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,0,andrew_1_10,Andrew,1.0,0.44196021024753623,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,1,eduardo_1_01,Eduardo,0.0,0.3230196253375808,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,1,eduardo_1_04,Eduardo,0.0,0.6391064777249156,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,1,eduardo_1_07,Eduardo,0.0,0.503867364330603,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,1,eduardo_1_10,Eduardo,0.0,0.5367388182578448,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,1,eduardo_1_16,Eduardo,0.0,0.6139941898892891,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,1,eduardo_1_19,Eduardo,0.0,0.4132000190053162,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,1,eduardo_1_20,Eduardo,1.0,0.6115286006855059,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,2,lucas_1_01,Lucas,0.0,0.421369351781116,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,2,lucas_1_04,Lucas,1.0,0.5948701864584215,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,2,lucas_1_07,Lucas,0.0,0.2979978496449082,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,2,lucas_1_10,Lucas,1.0,0.5710630306512657,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,3,rohan_1_01,Rohan,1.0,0.6261809417256987,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,3,rohan_2_01,Rohan,0.0,0.3869364165246515,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,3,rohan_2_04,Rohan,1.0,0.5715601648990393,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,3,rohan_2_07,Rohan,0.0,0.48042710079538675,extra_trees
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,4,sid_1_01,Sid,0.0,0.27284816456705696,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,4,sid_1_04,Sid,0.0,0.7631130111765835,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,4,sid_1_07,Sid,0.0,0.2662964421629602,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,4,sid_1_10,Sid,0.0,0.1384586864109541,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,4,sid_1_13,Sid,0.0,0.33752388749103884,logistic
+reviewed_matched_club,short_carry,reviewed_ball_club_contact,4,sid_1_16,Sid,0.0,0.21440420201363325,logistic
+reviewed_matched_club,low_launch,reviewed_ball,0,andrew_1_01,Andrew,0.0,0.19059600195719956,logistic
+reviewed_matched_club,low_launch,reviewed_ball,0,andrew_1_04,Andrew,1.0,0.35364140202275,logistic
+reviewed_matched_club,low_launch,reviewed_ball,0,andrew_1_07,Andrew,0.0,0.16841592445077452,logistic
+reviewed_matched_club,low_launch,reviewed_ball,0,andrew_1_10,Andrew,1.0,0.13689194746078348,logistic
+reviewed_matched_club,low_launch,reviewed_ball,1,eduardo_1_01,Eduardo,0.0,0.18989050762642543,logistic
+reviewed_matched_club,low_launch,reviewed_ball,1,eduardo_1_04,Eduardo,0.0,0.24528354027102256,logistic
+reviewed_matched_club,low_launch,reviewed_ball,1,eduardo_1_07,Eduardo,0.0,0.22191774594435623,logistic
+reviewed_matched_club,low_launch,reviewed_ball,1,eduardo_1_10,Eduardo,0.0,0.32390533975700997,logistic
+reviewed_matched_club,low_launch,reviewed_ball,1,eduardo_1_16,Eduardo,0.0,0.5149168704873472,logistic
+reviewed_matched_club,low_launch,reviewed_ball,1,eduardo_1_19,Eduardo,0.0,0.1270744891589974,logistic
+reviewed_matched_club,low_launch,reviewed_ball,1,eduardo_1_20,Eduardo,1.0,0.843456469161835,logistic
+reviewed_matched_club,low_launch,reviewed_ball,2,lucas_1_01,Lucas,0.0,0.22009338476384255,logistic
+reviewed_matched_club,low_launch,reviewed_ball,2,lucas_1_04,Lucas,1.0,0.6369478761117371,logistic
+reviewed_matched_club,low_launch,reviewed_ball,2,lucas_1_07,Lucas,0.0,0.2250352555351017,logistic
+reviewed_matched_club,low_launch,reviewed_ball,2,lucas_1_10,Lucas,1.0,0.7033619949608857,logistic
+reviewed_matched_club,low_launch,reviewed_ball,3,rohan_1_01,Rohan,1.0,0.7638860175029767,logistic
+reviewed_matched_club,low_launch,reviewed_ball,3,rohan_2_01,Rohan,0.0,0.2533647010597979,logistic
+reviewed_matched_club,low_launch,reviewed_ball,3,rohan_2_04,Rohan,0.0,0.5697236254420807,logistic
+reviewed_matched_club,low_launch,reviewed_ball,3,rohan_2_07,Rohan,0.0,0.3732431083246996,logistic
+reviewed_matched_club,low_launch,reviewed_ball,4,sid_1_01,Sid,0.0,0.2055846120990034,logistic
+reviewed_matched_club,low_launch,reviewed_ball,4,sid_1_04,Sid,0.0,0.23118016018686038,logistic
+reviewed_matched_club,low_launch,reviewed_ball,4,sid_1_07,Sid,0.0,0.23400044361691488,logistic
+reviewed_matched_club,low_launch,reviewed_ball,4,sid_1_10,Sid,0.0,0.1891467603557416,logistic
+reviewed_matched_club,low_launch,reviewed_ball,4,sid_1_13,Sid,0.0,0.17983723425858794,logistic
+reviewed_matched_club,low_launch,reviewed_ball,4,sid_1_16,Sid,0.0,0.3645024538339295,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,0,andrew_1_01,Andrew,0.0,0.14405681741638118,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,0,andrew_1_04,Andrew,1.0,0.37061774756558646,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,0,andrew_1_07,Andrew,0.0,0.22759548484375963,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,0,andrew_1_10,Andrew,1.0,0.22146780366169527,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,1,eduardo_1_01,Eduardo,0.0,0.4150159525382728,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,1,eduardo_1_04,Eduardo,0.0,0.8005207840844208,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,1,eduardo_1_07,Eduardo,0.0,0.7471794321615729,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,1,eduardo_1_10,Eduardo,0.0,0.8669763745198561,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,1,eduardo_1_16,Eduardo,0.0,0.9355749236257904,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,1,eduardo_1_19,Eduardo,0.0,0.4829987144662027,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,1,eduardo_1_20,Eduardo,1.0,0.9268081333649077,logistic
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,2,lucas_1_01,Lucas,0.0,0.4880754589383293,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,2,lucas_1_04,Lucas,1.0,0.6121670682973629,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,2,lucas_1_07,Lucas,0.0,0.38848387547272767,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,2,lucas_1_10,Lucas,1.0,0.6828745241361631,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,3,rohan_1_01,Rohan,1.0,0.5599094173069328,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,3,rohan_2_01,Rohan,0.0,0.28304078941873984,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,3,rohan_2_04,Rohan,0.0,0.4247609002565265,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,3,rohan_2_07,Rohan,0.0,0.44832220761121144,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,4,sid_1_01,Sid,0.0,0.44932557844417403,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,4,sid_1_04,Sid,0.0,0.3085172497963692,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,4,sid_1_07,Sid,0.0,0.3940756513329876,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,4,sid_1_10,Sid,0.0,0.3684664285694353,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,4,sid_1_13,Sid,0.0,0.4285427017682767,extra_trees
+reviewed_matched_club,low_launch,reviewed_ball_club_contact,4,sid_1_16,Sid,0.0,0.27361690177385156,extra_trees

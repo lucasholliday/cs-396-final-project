@@ -93,3 +93,17 @@ python scripts/verify_research_delivery.py
 Open `outputs/research_viewer/index.html` locally. The builder converts all overlays to browser-compatible H.264 and embeds estimated pose coordinates. Includes 76 shots, frame stepping, out-of-fold predictions, rotatable estimated skeletons and source-bound phase annotation export. Export marks before reload; they are not automatically saved. Browser UI verification could not complete because browser automation timed out; media/data checks passed. No service, upload or network library is used by the viewer.
 
 Read `reports/research_summary.md` for delivery status. Early-window results are not validated pre-impact/practice-swing predictions. Point references were approximated from unmarked native frames by AI visual review with explicit uncertainty, and still need a second reviewer. V5 tracking failed to recover Andrew/Eduardo representative flights. Phase candidates are not accepted annotations.
+
+## Contact quality and carry cutoffs
+New executed studies: `reports/contact_quality_results.md` and `reports/carry_threshold_results.md`. Reproduce with:
+```
+python scripts/contact_features.py
+python scripts/contact_benchmark.py
+python scripts/contact_diagnostics.py
+python scripts/contact_video_review.py
+python scripts/reviewed_ball_features.py
+python scripts/reviewed_ball_benchmark.py
+python scripts/carry_threshold_experiment.py
+python scripts/summarize_contact_studies.py
+```
+The reviewed-ball pilot is explicitly assisted, uses approximate source-bound AI annotations and still needs a second reviewer. Automatic ball proposals remain excluded. Conditional 100+ yd error must never be reported as end-to-end error: read the predicted acceptance, false accepts/rejects and conditional constant baseline alongside it. Contact flags predict short/low/directional outcomes, not validated chunk/thin/hosel mechanisms.

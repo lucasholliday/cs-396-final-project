@@ -1,0 +1,2222 @@
+[
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.6287257760247,
+      "ridge10": 35.38111062573309,
+      "extra_trees": 33.30780731675159,
+      "svr": 29.98237415341162
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 37.444915032679745,
+      "ridge10": 36.10352426147007,
+      "extra_trees": 40.5051146753171,
+      "svr": 38.581525075536945
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.80340802987861,
+      "ridge10": 35.984129762990655,
+      "extra_trees": 36.49555979135829,
+      "svr": 32.52985250499227
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 40.3137169427492,
+      "ridge10": 36.94103239673585,
+      "extra_trees": 39.345180661626294,
+      "svr": 39.360486391618124
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.85370357367667,
+      "ridge10": 33.036185848091996,
+      "extra_trees": 35.40089330353345,
+      "svr": 32.61597713390536
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.6287257760247,
+      "ridge10": 28.86333207736761,
+      "extra_trees": 30.324649002169416,
+      "svr": 26.126087866708822
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 37.444915032679745,
+      "ridge10": 31.727326081884463,
+      "extra_trees": 34.61487742627742,
+      "svr": 31.856087486654843
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.80340802987861,
+      "ridge10": 39.70646298302251,
+      "extra_trees": 34.96002529061352,
+      "svr": 31.4996942718904
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 40.3137169427492,
+      "ridge10": 39.45327181946716,
+      "extra_trees": 35.10909456213302,
+      "svr": 35.48023149049427
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.85370357367667,
+      "ridge10": 31.238165086783635,
+      "extra_trees": 31.40195317052417,
+      "svr": 28.40503347700971
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.6287257760247,
+      "ridge10": 34.6533330024457,
+      "extra_trees": 32.09566227005843,
+      "svr": 30.60638794552264
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 1,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.444915032679745,
+      "ridge10": 35.41483530720887,
+      "extra_trees": 38.5539665147271,
+      "svr": 33.82275761822814
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.80340802987861,
+      "ridge10": 36.828495120948496,
+      "extra_trees": 36.780506414065236,
+      "svr": 34.501279917652546
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 40.3137169427492,
+      "ridge10": 36.47977165462051,
+      "extra_trees": 39.48114842956189,
+      "svr": 34.79112465257552
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.85370357367667,
+      "ridge10": 32.53524161545781,
+      "extra_trees": 34.86849368192472,
+      "svr": 30.539478478207208
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.6287257760247,
+      "ridge10": 29.16913996439063,
+      "extra_trees": 28.701888202878003,
+      "svr": 28.323029946233174
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 37.444915032679745,
+      "ridge10": 32.01391029609255,
+      "extra_trees": 34.917127210197215,
+      "svr": 32.52661862823864
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.80340802987861,
+      "ridge10": 40.19718339768262,
+      "extra_trees": 34.46970287192836,
+      "svr": 34.294608432688136
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 40.3137169427492,
+      "ridge10": 40.23173028198597,
+      "extra_trees": 34.73805642896989,
+      "svr": 34.40384711034403
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.85370357367667,
+      "ridge10": 30.39002878850633,
+      "extra_trees": 30.92908334162644,
+      "svr": 28.98649310745427
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.6287257760247,
+      "ridge10": 29.895101011295342,
+      "extra_trees": 26.72239992245095,
+      "svr": 25.882400553880842
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 37.444915032679745,
+      "ridge10": 25.94051585724062,
+      "extra_trees": 25.892194206904197,
+      "svr": 26.196056564473096
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.80340802987861,
+      "ridge10": 31.24691846446532,
+      "extra_trees": 26.326372753245302,
+      "svr": 26.08525604507685
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 40.3137169427492,
+      "ridge10": 27.840444622296385,
+      "extra_trees": 24.930388463388457,
+      "svr": 25.96023008796255
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.85370357367667,
+      "ridge10": 28.77234682973627,
+      "extra_trees": 25.951579916571294,
+      "svr": 24.2309567274733
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.6287257760247,
+      "ridge10": 29.964002838199434,
+      "extra_trees": 26.197269841269843,
+      "svr": 24.827371805071678
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 37.444915032679745,
+      "ridge10": 30.46661070418392,
+      "extra_trees": 25.791562539682538,
+      "svr": 27.480998555012125
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.80340802987861,
+      "ridge10": 37.51340316363262,
+      "extra_trees": 29.25284604212054,
+      "svr": 28.308615806440766
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 40.3137169427492,
+      "ridge10": 37.57601859216685,
+      "extra_trees": 25.519202029452035,
+      "svr": 29.08673620581789
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.85370357367667,
+      "ridge10": 31.325728812699193,
+      "extra_trees": 24.6186955764542,
+      "svr": 23.969497327062104
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5687227980400972,
+      "logistic": 0.603960473735135,
+      "extra_trees": 0.598933658100087
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5007497544153701,
+      "logistic": 0.5750956159569348,
+      "extra_trees": 0.6325954712451264
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5584899168109848,
+      "logistic": 0.5922118134412622,
+      "extra_trees": 0.5951582651343769
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5714521452761212,
+      "logistic": 0.5637363418611587,
+      "extra_trees": 0.6025039170070454
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5456427474400672,
+      "logistic": 0.5483868468806748,
+      "extra_trees": 0.5601172689228818
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5687227980400972,
+      "logistic": 0.5927525577303416,
+      "extra_trees": 0.5904591325190351
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5007497544153701,
+      "logistic": 0.5666885214167047,
+      "extra_trees": 0.6161303961431818
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5584899168109848,
+      "logistic": 0.9035247977394197,
+      "extra_trees": 0.6049804985991697
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5714521452761212,
+      "logistic": 0.826868614447892,
+      "extra_trees": 0.5511450317906516
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5456427474400672,
+      "logistic": 0.5608964791977207,
+      "extra_trees": 0.49626641841246044
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5687227980400972,
+      "logistic": 0.5429994561204127,
+      "extra_trees": 0.5367433332481212
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5007497544153701,
+      "logistic": 0.5403594526695994,
+      "extra_trees": 0.590266302677882
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5584899168109848,
+      "logistic": 0.5645718798292084,
+      "extra_trees": 0.5783154700316255
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5714521452761212,
+      "logistic": 0.5110097065083518,
+      "extra_trees": 0.5754172163291165
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5456427474400672,
+      "logistic": 0.5076337068927226,
+      "extra_trees": 0.5254259806306337
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5687227980400972,
+      "logistic": 0.5332887512853488,
+      "extra_trees": 0.5216023415234609
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5007497544153701,
+      "logistic": 0.5318480588465041,
+      "extra_trees": 0.5870526970517247
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5584899168109848,
+      "logistic": 0.8509549056399861,
+      "extra_trees": 0.576731759270156
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5714521452761212,
+      "logistic": 0.7845604058532972,
+      "extra_trees": 0.5333642894739814
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5456427474400672,
+      "logistic": 0.45880997867417245,
+      "extra_trees": 0.47817117819919813
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5687227980400972,
+      "logistic": 0.5160093676456388,
+      "extra_trees": 0.5020970827767377
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5007497544153701,
+      "logistic": 0.4673679053909809,
+      "extra_trees": 0.4584505458831741
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5584899168109848,
+      "logistic": 0.5637666805654343,
+      "extra_trees": 0.4970661598050962
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.5714521452761212,
+      "logistic": 0.4375504652533718,
+      "extra_trees": 0.45295746028487716
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5456427474400672,
+      "logistic": 0.514285912583943,
+      "extra_trees": 0.46717397837708075
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5687227980400972,
+      "logistic": 0.5069665530543196,
+      "extra_trees": 0.4715125042266061
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5007497544153701,
+      "logistic": 0.45673428077536427,
+      "extra_trees": 0.44925650082958796
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5584899168109848,
+      "logistic": 0.7525428320976598,
+      "extra_trees": 0.48838331757542447
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5714521452761212,
+      "logistic": 0.6752902910958837,
+      "extra_trees": 0.4135513564262999
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5456427474400672,
+      "logistic": 0.458252716213906,
+      "extra_trees": 0.41719736220218384
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.46812349086755267,
+      "logistic": 0.5280652649269282,
+      "extra_trees": 0.4958888432305711
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.37298587882316697,
+      "logistic": 0.7281651323267719,
+      "extra_trees": 0.6115430156984826
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.47975755647637497,
+      "logistic": 0.7310261097255958,
+      "extra_trees": 0.6141514914416228
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45508847088192594,
+      "logistic": 0.7158155498745149,
+      "extra_trees": 0.6572546326014008
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45158929963493505,
+      "logistic": 0.6901963308426493,
+      "extra_trees": 0.6040724269189606
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.46812349086755267,
+      "logistic": 0.4706293742289089,
+      "extra_trees": 0.5236047324600016
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.37298587882316697,
+      "logistic": 0.8079084158775,
+      "extra_trees": 0.595137514462332
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.47975755647637497,
+      "logistic": 0.930110020329777,
+      "extra_trees": 0.6056649665267786
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45508847088192594,
+      "logistic": 0.9427966606983412,
+      "extra_trees": 0.5717649687329024
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45158929963493505,
+      "logistic": 0.8149503548349487,
+      "extra_trees": 0.5152597289230753
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.46812349086755267,
+      "logistic": 0.43225282377143026,
+      "extra_trees": 0.41832647844933857
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.37298587882316697,
+      "logistic": 0.6488449748016057,
+      "extra_trees": 0.5263456757858279
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.47975755647637497,
+      "logistic": 0.6731881870555341,
+      "extra_trees": 0.5668103754578872
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45508847088192594,
+      "logistic": 0.6321287952966517,
+      "extra_trees": 0.6050572399796491
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45158929963493505,
+      "logistic": 0.6329031755573066,
+      "extra_trees": 0.5436400930250338
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.46812349086755267,
+      "logistic": 0.3619008397035046,
+      "extra_trees": 0.41577134831401463
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.37298587882316697,
+      "logistic": 0.6782751835415152,
+      "extra_trees": 0.5218000998523208
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.47975755647637497,
+      "logistic": 0.8001864516541071,
+      "extra_trees": 0.5671625422726387
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45508847088192594,
+      "logistic": 0.8028040710426168,
+      "extra_trees": 0.5453888136392815
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45158929963493505,
+      "logistic": 0.6710228489852879,
+      "extra_trees": 0.4979216968618135
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.46812349086755267,
+      "logistic": 0.47671159887699593,
+      "extra_trees": 0.493056887730172
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.37298587882316697,
+      "logistic": 0.6328312303815976,
+      "extra_trees": 0.45808377375055204
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.47975755647637497,
+      "logistic": 0.6867386165538096,
+      "extra_trees": 0.5305819836926698
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45508847088192594,
+      "logistic": 0.6602133090246749,
+      "extra_trees": 0.5332565923256023
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45158929963493505,
+      "logistic": 0.675400912858127,
+      "extra_trees": 0.5427836622001282
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.46812349086755267,
+      "logistic": 0.33340114908643714,
+      "extra_trees": 0.4127005879749007
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.37298587882316697,
+      "logistic": 0.6388423514012377,
+      "extra_trees": 0.4703648794917582
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.47975755647637497,
+      "logistic": 0.825188825537805,
+      "extra_trees": 0.527605882469758
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45508847088192594,
+      "logistic": 0.8146336519439609,
+      "extra_trees": 0.503554362668632
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.45158929963493505,
+      "logistic": 0.7049836887781867,
+      "extra_trees": 0.48436131461876875
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 0,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 35.30346135609293,
+      "ridge10": 40.589827096711346,
+      "extra_trees": 40.606933970323865,
+      "svr": 39.114627445317545
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 1,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 52.756209150326804,
+      "ridge10": 58.20144602360928,
+      "extra_trees": 59.64876777623328,
+      "svr": 59.73798671576046
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 2,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 42.581522699169774,
+      "ridge10": 52.08715162435064,
+      "extra_trees": 50.33401189225419,
+      "svr": 46.23648495855505
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 3,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 38.44846632346633,
+      "ridge10": 51.99225817935458,
+      "extra_trees": 44.66670606771225,
+      "svr": 41.142618371874
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_baseline",
+    "fold": 4,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 44.539363816581556,
+      "ridge10": 66.81729525263118,
+      "extra_trees": 47.02306179557413,
+      "svr": 48.68879509715669
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 0,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 35.30346135609293,
+      "ridge10": 38.6017769917478,
+      "extra_trees": 41.49880524511225,
+      "svr": 44.15787146089676
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 1,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 52.756209150326804,
+      "ridge10": 61.196682191354185,
+      "extra_trees": 58.153461471450356,
+      "svr": 58.85443401628946
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 2,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 42.581522699169774,
+      "ridge10": 53.584182493548916,
+      "extra_trees": 46.53969077527412,
+      "svr": 46.40885986204472
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 3,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 38.44846632346633,
+      "ridge10": 38.69718562780092,
+      "extra_trees": 42.43546899363862,
+      "svr": 42.707454669289255
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_transients",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 44.539363816581556,
+      "ridge10": 47.77923425909082,
+      "extra_trees": 37.20515720583429,
+      "svr": 41.305081504406786
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 0,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 35.30346135609293,
+      "ridge10": 47.97794965810435,
+      "extra_trees": 37.50868094194804,
+      "svr": 36.77814475196219
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 1,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 52.756209150326804,
+      "ridge10": 57.11766534944981,
+      "extra_trees": 56.61723209978111,
+      "svr": 58.07854616154782
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 2,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 42.581522699169774,
+      "ridge10": 51.417024714525084,
+      "extra_trees": 49.09688374661401,
+      "svr": 44.496624627597555
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 38.44846632346633,
+      "ridge10": 35.47419045876523,
+      "extra_trees": 43.650577868240916,
+      "svr": 36.72795399876496
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_plus_clipping",
+    "fold": 4,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 44.539363816581556,
+      "ridge10": 53.087243570102316,
+      "extra_trees": 47.08974900369691,
+      "svr": 47.72730240409144
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 0,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 35.30346135609293,
+      "ridge10": 44.99989447717216,
+      "extra_trees": 38.402568221901554,
+      "svr": 40.96955270741512
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 1,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 52.756209150326804,
+      "ridge10": 57.95725164618903,
+      "extra_trees": 56.661391856001664,
+      "svr": 58.80905300962382
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 2,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 42.581522699169774,
+      "ridge10": 50.873571686344484,
+      "extra_trees": 47.30123916412805,
+      "svr": 46.34448259747869
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 38.44846632346633,
+      "ridge10": 38.25379071972565,
+      "extra_trees": 40.486086781934986,
+      "svr": 38.64460419196026
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "club_all_contact",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 44.539363816581556,
+      "ridge10": 47.08622911947003,
+      "extra_trees": 37.04970064233606,
+      "svr": 43.15348276934319
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 35.30346135609293,
+      "ridge10": 33.34109030863294,
+      "extra_trees": 26.364168907116273,
+      "svr": 33.42706567150869
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 52.756209150326804,
+      "ridge10": 50.19805890454601,
+      "extra_trees": 37.660236096413854,
+      "svr": 50.41311887740264
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 42.581522699169774,
+      "ridge10": 25.105395005367377,
+      "extra_trees": 32.358503349188545,
+      "svr": 37.89722501997694
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 38.44846632346633,
+      "ridge10": 25.848744041842213,
+      "extra_trees": 23.183030672369956,
+      "svr": 37.65236406911487
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 44.539363816581556,
+      "ridge10": 35.106134604799486,
+      "extra_trees": 36.709181999327825,
+      "svr": 40.153971006502594
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 35.30346135609293,
+      "ridge10": 45.24180441131487,
+      "extra_trees": 28.073141793878634,
+      "svr": 34.3597931564464
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 52.756209150326804,
+      "ridge10": 55.47000954313023,
+      "extra_trees": 43.29275861258083,
+      "svr": 53.24203070936907
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 42.581522699169774,
+      "ridge10": 32.002465865354914,
+      "extra_trees": 37.12431261022927,
+      "svr": 42.711352003952705
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 38.44846632346633,
+      "ridge10": 23.238284597578964,
+      "extra_trees": 26.309483229402854,
+      "svr": 35.59461410589531
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "Carry flat (yd)",
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 44.539363816581556,
+      "ridge10": 48.615190740525584,
+      "extra_trees": 34.66352342372135,
+      "svr": 42.37551200339895
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5097561892788043,
+      "logistic": 0.7934065826142885,
+      "extra_trees": 0.712332821016698
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9334468579508666,
+      "logistic": 0.8556664878761315,
+      "extra_trees": 0.8363754088506413
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.7901145824522289,
+      "logistic": 1.0940833384963142,
+      "extra_trees": 0.9599602967049461
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6329683043294173,
+      "logistic": 0.6267204409413757,
+      "extra_trees": 0.7855057507555617
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_baseline",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.7816625711010791,
+      "logistic": 0.5877337800533352,
+      "extra_trees": 0.6398381988425826
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5097561892788043,
+      "logistic": 0.9013622757851992,
+      "extra_trees": 0.6672590934742308
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9334468579508666,
+      "logistic": 1.1450454233484897,
+      "extra_trees": 0.8112694544121125
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.7901145824522289,
+      "logistic": 1.114403658652007,
+      "extra_trees": 0.863410281819127
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6329683043294173,
+      "logistic": 0.7276854908497575,
+      "extra_trees": 0.7426196678015243
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_transients",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7816625711010791,
+      "logistic": 0.8166543144237303,
+      "extra_trees": 0.6012770005718661
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5097561892788043,
+      "logistic": 0.5753780531989362,
+      "extra_trees": 0.6549266283901701
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9334468579508666,
+      "logistic": 0.8779873391464221,
+      "extra_trees": 0.7498986491844055
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.7901145824522289,
+      "logistic": 1.0179017116707003,
+      "extra_trees": 0.8771453019846618
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6329683043294173,
+      "logistic": 0.6160008119525736,
+      "extra_trees": 0.7135477040317257
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_plus_clipping",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7816625711010791,
+      "logistic": 0.7824618219382016,
+      "extra_trees": 0.676579114272949
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5097561892788043,
+      "logistic": 0.7098151611422148,
+      "extra_trees": 0.6550684311407492
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9334468579508666,
+      "logistic": 1.0587253293983385,
+      "extra_trees": 0.7363866966507934
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.7901145824522289,
+      "logistic": 1.1100077225324065,
+      "extra_trees": 0.8627944422143222
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6329683043294173,
+      "logistic": 0.8105083393006792,
+      "extra_trees": 0.7059281544902067
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "club_all_contact",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7816625711010791,
+      "logistic": 1.1342071320837583,
+      "extra_trees": 0.6310057701504755
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5097561892788043,
+      "logistic": 0.5768807102437115,
+      "extra_trees": 0.44049426947931086
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9334468579508666,
+      "logistic": 1.3182996143613561,
+      "extra_trees": 0.5843672321074731
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7901145824522289,
+      "logistic": 0.6540703804161893,
+      "extra_trees": 0.5714078691585253
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6329683043294173,
+      "logistic": 0.42829120568831314,
+      "extra_trees": 0.5443092176769075
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7816625711010791,
+      "logistic": 0.7022444396477446,
+      "extra_trees": 0.6283284139134547
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 0,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5097561892788043,
+      "logistic": 0.6048715363604814,
+      "extra_trees": 0.49073825765400925
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.9334468579508666,
+      "logistic": 0.9660428950290177,
+      "extra_trees": 0.583418270666687
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7901145824522289,
+      "logistic": 0.7918649108951366,
+      "extra_trees": 0.670123957783845
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6329683043294173,
+      "logistic": 0.5042318905619704,
+      "extra_trees": 0.5712728085045927
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "short_carry",
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.7816625711010791,
+      "logistic": 1.0744305635116536,
+      "extra_trees": 0.6167518371961154
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.3830115047811285,
+      "logistic": 0.888366970005041,
+      "extra_trees": 0.6248296115626157
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6130259096597321,
+      "logistic": 0.702080094894554,
+      "extra_trees": 0.6712483117238255
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5411755283537739,
+      "logistic": 1.4916245301105175,
+      "extra_trees": 0.7926160322970446
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5178054451111073,
+      "logistic": 0.7668824878456342,
+      "extra_trees": 0.7162802432282618
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_baseline",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5754872596979504,
+      "logistic": 0.5829381853813206,
+      "extra_trees": 0.64034023406543
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.3830115047811285,
+      "logistic": 1.4803394934966958,
+      "extra_trees": 0.6287873641559082
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 1,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6130259096597321,
+      "logistic": 0.9286153455939185,
+      "extra_trees": 0.6834086124925935
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5411755283537739,
+      "logistic": 1.8685074588116686,
+      "extra_trees": 0.7746391294146777
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5178054451111073,
+      "logistic": 0.9662336082153458,
+      "extra_trees": 0.6623604151524229
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_transients",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5754872596979504,
+      "logistic": 1.319831458873334,
+      "extra_trees": 0.6220520315413286
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.3830115047811285,
+      "logistic": 0.9796632499194948,
+      "extra_trees": 0.5623225066162829
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6130259096597321,
+      "logistic": 0.6013151480529183,
+      "extra_trees": 0.5767985803422164
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5411755283537739,
+      "logistic": 1.7187159190920298,
+      "extra_trees": 0.7087436939154
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5178054451111073,
+      "logistic": 0.8660274740215955,
+      "extra_trees": 0.5860027936018335
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_plus_clipping",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5754872596979504,
+      "logistic": 0.9992852115762606,
+      "extra_trees": 0.6698993046697493
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.3830115047811285,
+      "logistic": 1.2914316430031823,
+      "extra_trees": 0.6111771503052722
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6130259096597321,
+      "logistic": 0.6936100078558456,
+      "extra_trees": 0.5578339126603947
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5411755283537739,
+      "logistic": 2.016279783186702,
+      "extra_trees": 0.7596436907993932
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5178054451111073,
+      "logistic": 0.9632640885393602,
+      "extra_trees": 0.6020807744821352
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "club_all_contact",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5754872596979504,
+      "logistic": 1.4723956026337308,
+      "extra_trees": 0.6669519546657444
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.3830115047811285,
+      "logistic": 0.5547034637019317,
+      "extra_trees": 0.447174076533428
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6130259096597321,
+      "logistic": 1.8528551320126585,
+      "extra_trees": 0.5180962386901513
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.5411755283537739,
+      "logistic": 0.7274895973437426,
+      "extra_trees": 0.49121511174625376
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5178054451111073,
+      "logistic": 0.7251705346672972,
+      "extra_trees": 0.5275089719183469
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5754872596979504,
+      "logistic": 0.8083631128052974,
+      "extra_trees": 0.5976762066007771
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.3830115047811285,
+      "logistic": 0.7099966225664733,
+      "extra_trees": 0.4838507444612158
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "inner_scores": {
+      "prior": 0.6130259096597321,
+      "logistic": 1.2141882793963963,
+      "extra_trees": 0.5014251148618556
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5411755283537739,
+      "logistic": 1.1090391565454332,
+      "extra_trees": 0.5682683173952978
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5178054451111073,
+      "logistic": 0.5798745719726774,
+      "extra_trees": 0.5463576341605151
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "task": "low_launch",
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.5754872596979504,
+      "logistic": 1.2162196724153864,
+      "extra_trees": 0.6591607750029512
+    }
+  }
+]

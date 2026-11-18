@@ -1,0 +1,11 @@
+{
+  "seed":396,
+  "window_relative_to_club_gyro_peak_s":[-0.4,0.4],
+  "resample_hz":180,
+  "gyro_highpass_hz":20,
+  "short_carry_threshold_yd":60,
+  "low_launch_threshold_deg":10,
+  "classification_models":["prior","logistic","extra_trees"],
+  "regression_models":["mean","ridge10","extra_trees","svr"],
+  "notes":"Post-event measured waveform study. Labels are short carry / low launch proxies, never chunk/thin contact truth. Clipping descriptors encode observed censoring, not true acceleration magnitude. Thresholds fixed before model scoring."
+}
