@@ -85,3 +85,21 @@ See `data_collection_recommendations.md`. Highest-value work: validate automatic
 ## Camera-only event experiment
 On Sid's full session, a 20-fps compact bright-component disappearance detector proposed 29 events. All 18 distinct watch-reference swing neighborhoods had a candidate within ±1.5 s, with 11 extras. Native trajectory filtering retained 18 events: 15 matched distinct reference neighborhoods, three were extras, and three swings were missed (83.3% neighborhood precision/recall under this exploratory matching rule). Watch signals were used only for evaluation, not candidate detection or filtering. Thresholds/ROI were developed on this scene, so these are not held-out performance estimates or exact impact accuracy.
 Visual inspection of events 05/12/19/27 showed plausible flight in 05/19, a missed visible ball in 12, and leg/background confusion in 27. Counts of internally accepted trajectories must not be interpreted as validated ball tracking. Results: reports/camera_events/; diagnostic montages: outputs/camera_events/tracks/.
+
+## Early-window ablation (executed)
+Six additional nested carry comparisons use the same 72 shots and persisted outer splits. Inputs are limited to watch-peak-relative [-2.0, -0.8] seconds, with confidence-masked head/shoulder/hip movement and watch gyro/acceleration summaries. Inner training folds select the model family. No ball or outcome inputs.
+
+| Features | Within-session MAE (yd) | Held-out-golfer MAE (yd) |
+|---|---:|---:|
+| Early video | 30.54 | 40.05 |
+| Early watch | 30.02 | 47.33 |
+| Early video + watch | 30.24 | 43.26 |
+
+These features generalize worse than the full-swing versions. The ablation changes both time window and feature representation, so the difference cannot be attributed solely to follow-through. This is an **offline early-window experiment**, not a validated pre-impact/practice-swing model: video/watch offsets vary by session, and individual impact exclusion has not been verified. In particular, Rohan 2's first detected departure is earlier than the assumed typical Sid offset. No practice-swing carry claim follows from these results. Full artifacts: experiments/early_swing_v1/.
+
+## Point review, rejected improvements and phase proposals
+Eighteen unmarked native panels were exported, three for the first strike of each session, selected at fixed offsets from the watch proxy without reference to predicted trajectories. Eight panels contained confidently identifiable airborne balls: three Sid, three Lucas, two Andrew. Approximate AI visual annotations are source-hash-bound and carry 6–12 px uncertainty; a second reviewer is still needed. The six Sid/Lucas points coincide with v4 proposals (errors 0.54–4.19 px, below annotation uncertainty). Andrew's two visible flight points have no proposed track. This tiny, selected spot check does not establish general tracking accuracy; it cannot certify entire trajectories or permit ball features into ML. Other panels show stationary balls or ambiguous flight, demonstrating that a universal watch-to-impact offset is inadequate.
+
+A stationary-tail rule (three consecutive intervals below 200 px/s) reduces Sid's filtered camera events from 18 to 16: 15 reference neighborhoods and one extra leg-confusion event remain. It was developed on Sid, so this is a development result. Applying the frozen rule to all 76 cached shot proposals retains 35 of 36; counts are not accuracy. A separate v5 trial widens lateral search and allows shorter moving tracks to recover Andrew's leftward flight: still only four of six representative shots pass, with Andrew/Eduardo failing. Do not adopt it as an accuracy improvement.
+
+Top-of-backswing proposals use visible wrist-height extrema with observations on both sides: 52 candidates, 24 abstentions. These are unvalidated projected extrema, with no automatic impact label. Source-bound phase review/export is available in the local viewer. Estimated 3D skeleton playback and an exported side-by-side clip illustrate the cached model coordinates; no mesh, calibrated kinematics or coaching claims are made.

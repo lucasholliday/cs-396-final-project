@@ -31,3 +31,7 @@
 - Local Git repository on main now initialized with approval; system-package problems resolved by isolated .venv. Earlier home-repository/system-binary findings are historical. No remote or push.
 
 - Camera-only Sid filtering retained 18 proposals, of which 15 match reference neighborhoods and three are extras. Event 27 visibly tracks a leg/background; event 12 misses visible flight. No exact impact or point-tracking accuracy established.
+
+- A universal impact offset from watch gyro peak is unsupported: first-shot native review panels capture different stages across sessions. Early-window experiments must not be called verified pre-impact. Existing whole-swing identity remains accepted.
+- New point references are approximate AI annotations of unmarked frames with stated uncertainty, not external or second-reviewer ground truth. Entire ball tracks remain unvalidated.
+- Browser automation unavailable/timed out. Local viewer media/data and JS checks passed, actual browser interaction verification remains unperformed.

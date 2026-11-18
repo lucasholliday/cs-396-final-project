@@ -1,0 +1,30 @@
+{
+  "version": 5,
+  "before_peak_s": 1.25,
+  "duration_s": 1.65,
+  "native_crop": [
+    500,
+    700,
+    440,
+    1040
+  ],
+  "seed_region": [
+    80,
+    700,
+    300,
+    1000
+  ],
+  "seed_expected_xy": [
+    200,
+    865
+  ],
+  "difference_threshold": 30,
+  "minimum_track_points": 12,
+  "notes": "Development trial: wider lateral gate for Andrew leftward flight; trim stationary tails. Six representative shots; not held-out validation.",
+  "max_lateral_displacement": 300,
+  "trim_stationary_tail": true,
+  "minimum_span_s": 0.06,
+  "output_dir": "ball_batch_v5",
+  "cache_dir": "ball_v5",
+  "feature_prefix": "ball_v5"
+}

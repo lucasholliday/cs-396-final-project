@@ -1,0 +1,362 @@
+[
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera",
+    "fold": 0,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 36.13780487804878,
+      "ridge10": 33.955714243774146,
+      "extra_trees": 31.181827332739626,
+      "svr": 29.901270849512496
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera",
+    "fold": 1,
+    "selected": "extra_trees",
+    "inner_mae": {
+      "mean": 35.6377378010986,
+      "ridge10": 35.957127356455096,
+      "extra_trees": 31.029408722985423,
+      "svr": 32.67887688928537
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera",
+    "fold": 2,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 36.66314290841187,
+      "ridge10": 35.35511203878183,
+      "extra_trees": 34.562612184510655,
+      "svr": 32.651118462284614
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera",
+    "fold": 3,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 37.973666463562516,
+      "ridge10": 36.854125249423845,
+      "extra_trees": 32.658863327256775,
+      "svr": 32.625989042625704
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera",
+    "fold": 4,
+    "selected": "extra_trees",
+    "inner_mae": {
+      "mean": 37.55985586441752,
+      "ridge10": 37.142180175048026,
+      "extra_trees": 33.539306708193834,
+      "svr": 34.809631241614
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_watch",
+    "fold": 0,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 36.13780487804878,
+      "ridge10": 32.64545368931101,
+      "extra_trees": 28.4906217285334,
+      "svr": 28.225434664147855
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_watch",
+    "fold": 1,
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 35.6377378010986,
+      "ridge10": 29.76343135423254,
+      "extra_trees": 30.37311580463948,
+      "svr": 29.997769100628656
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_watch",
+    "fold": 2,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 36.66314290841187,
+      "ridge10": 32.709190239683856,
+      "extra_trees": 31.762167897719756,
+      "svr": 30.267782482158477
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_watch",
+    "fold": 3,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 37.973666463562516,
+      "ridge10": 33.04060369303571,
+      "extra_trees": 32.01240675866996,
+      "svr": 29.584806896039982
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_watch",
+    "fold": 4,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 37.55985586441752,
+      "ridge10": 32.67423992961346,
+      "extra_trees": 32.41714064535694,
+      "svr": 29.845589609693423
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera_watch",
+    "fold": 0,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 36.13780487804878,
+      "ridge10": 31.2076415855557,
+      "extra_trees": 29.745668480406923,
+      "svr": 27.351060345776478
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera_watch",
+    "fold": 1,
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 35.6377378010986,
+      "ridge10": 29.754862596172742,
+      "extra_trees": 29.995949907075563,
+      "svr": 29.845976323360507
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera_watch",
+    "fold": 2,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 36.66314290841187,
+      "ridge10": 31.94865578008051,
+      "extra_trees": 33.08210755764703,
+      "svr": 31.888186394033976
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera_watch",
+    "fold": 3,
+    "selected": "extra_trees",
+    "inner_mae": {
+      "mean": 37.973666463562516,
+      "ridge10": 32.9102945280311,
+      "extra_trees": 30.82272226944595,
+      "svr": 31.322779108522052
+    }
+  },
+  {
+    "scheme": "within_session_blocks",
+    "features": "early_camera_watch",
+    "fold": 4,
+    "selected": "extra_trees",
+    "inner_mae": {
+      "mean": 37.55985586441752,
+      "ridge10": 32.542342509739335,
+      "extra_trees": 32.30341988339529,
+      "svr": 32.570065537695505
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera",
+    "fold": 0,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "ridge10": 62.54152237003961,
+      "extra_trees": 38.98012637571993,
+      "svr": 34.60834483014417
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera",
+    "fold": 1,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "ridge10": 125.00149152995962,
+      "extra_trees": 49.081209752719786,
+      "svr": 45.774489031339826
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera",
+    "fold": 2,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "ridge10": 64.29337647150541,
+      "extra_trees": 43.46557866549247,
+      "svr": 41.13244354239714
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera",
+    "fold": 3,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "ridge10": 54.08821442237967,
+      "extra_trees": 40.54006634932665,
+      "svr": 42.06514961053716
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera",
+    "fold": 4,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "ridge10": 52.33250521451908,
+      "extra_trees": 45.03848359664629,
+      "svr": 44.94903854793659
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_watch",
+    "fold": 0,
+    "selected": "extra_trees",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "ridge10": 29.3107201516183,
+      "extra_trees": 27.390523196840757,
+      "svr": 28.61352717980766
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_watch",
+    "fold": 1,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "ridge10": 43.392935614756965,
+      "extra_trees": 42.47398670469803,
+      "svr": 38.04624167332104
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_watch",
+    "fold": 2,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "ridge10": 47.18735764175269,
+      "extra_trees": 50.32442024054308,
+      "svr": 53.98759630111173
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_watch",
+    "fold": 3,
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "ridge10": 29.56252625719234,
+      "extra_trees": 35.56796584793194,
+      "svr": 32.48806663088639
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_watch",
+    "fold": 4,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "ridge10": 40.55693523446765,
+      "extra_trees": 41.486921352633914,
+      "svr": 42.15901465749666
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera_watch",
+    "fold": 0,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "ridge10": 58.75423945253591,
+      "extra_trees": 31.41528875989661,
+      "svr": 29.518088016328623
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera_watch",
+    "fold": 1,
+    "selected": "svr",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "ridge10": 75.04505074246,
+      "extra_trees": 44.02555375109221,
+      "svr": 41.29622645792121
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera_watch",
+    "fold": 2,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "ridge10": 65.68440680257069,
+      "extra_trees": 52.34238579126937,
+      "svr": 48.00635004095309
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera_watch",
+    "fold": 3,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "ridge10": 51.255119787668484,
+      "extra_trees": 40.185408385086355,
+      "svr": 38.60384340842857
+    }
+  },
+  {
+    "scheme": "leave_golfer_out",
+    "features": "early_camera_watch",
+    "fold": 4,
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "ridge10": 41.15217042972948,
+      "extra_trees": 47.61356658944623,
+      "svr": 44.3547256243782
+    }
+  }
+]

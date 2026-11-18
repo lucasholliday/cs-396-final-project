@@ -2,7 +2,7 @@
 
 Executed research codebase for the specification in `prompt.md`. Resume with `AGENTS.md` and `PROJECT_STATUS.md`.
 
-Current results: 76 reviewed swing identities, 72 labeled shots, 65 labeled club-covered shots; 76 pose clips; native ball/shaft diagnostics; 400 fixed-model and 20 nested carry comparisons; 360 learning-curve fits. See `reports/model_results.md`. This is an exploratory research system, not a validated launch monitor or polished app.
+Current results: 76 reviewed swing identities, 72 labeled shots, 65 labeled club-covered shots; 76 pose clips; native ball/shaft diagnostics; 400 fixed-model and 26 nested carry comparisons; 360 learning-curve fits. See `reports/model_results.md`. This is an exploratory research system, not a validated launch monitor or polished app.
 
 ## Setup
 Tested on Apple Silicon, Python 3.10.7, FFmpeg/ffprobe 4.3.2. Use an isolated venv; system Python packages on the original machine contain incompatible binaries.
@@ -78,3 +78,18 @@ Within-session and leave-golfer-out folds are separate; all shot modalities stay
 
 ## Git and sharing
 A project-local repository on `main` is initialized. Always verify `git rev-parse --show-toplevel`: the original machine also has an unrelated home-directory repository. Raw recordings, original workbook, generated media, models, environment and secrets are ignored. No remote upload or push is authorized. Share derived research outputs deliberately; regenerate excluded artifacts after obtaining the private sources.
+
+## Latest research extensions and viewer
+```
+python scripts/review_ball_frames.py
+python scripts/validate_ball_proposals.py
+python scripts/early_swing.py
+python scripts/phase_candidates.py
+python scripts/track_balls.py --representatives --config configs/ball_tracking_v5.json
+python scripts/build_research_viewer.py
+python scripts/render_pose_3d.py --shot sid_1_01
+python scripts/verify_research_delivery.py
+```
+Open `outputs/research_viewer/index.html` locally. The builder converts all overlays to browser-compatible H.264 and embeds estimated pose coordinates. Includes 76 shots, frame stepping, out-of-fold predictions, rotatable estimated skeletons and source-bound phase annotation export. Export marks before reload; they are not automatically saved. Browser UI verification could not complete because browser automation timed out; media/data checks passed. No service, upload or network library is used by the viewer.
+
+Read `reports/research_summary.md` for delivery status. Early-window results are not validated pre-impact/practice-swing predictions. Point references were approximated from unmarked native frames by AI visual review with explicit uncertainty, and still need a second reviewer. V5 tracking failed to recover Andrew/Eduardo representative flights. Phase candidates are not accepted annotations.

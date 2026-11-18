@@ -1,0 +1,49 @@
+{
+  "seed": 396,
+  "feature_sets": {
+    "early_camera": [
+      "early_head_range_0",
+      "early_head_range_1",
+      "early_head_speed_p95",
+      "early_shoulders_range_0",
+      "early_shoulders_range_1",
+      "early_shoulders_speed_p95",
+      "early_hips_range_0",
+      "early_hips_range_1",
+      "early_hips_speed_p95"
+    ],
+    "early_watch": [
+      "early_watch_gyro_p95",
+      "early_watch_gyro_rms",
+      "early_watch_accel_p95",
+      "early_watch_accel_rms"
+    ],
+    "early_camera_watch": [
+      "early_head_range_0",
+      "early_head_range_1",
+      "early_head_speed_p95",
+      "early_shoulders_range_0",
+      "early_shoulders_range_1",
+      "early_shoulders_speed_p95",
+      "early_hips_range_0",
+      "early_hips_range_1",
+      "early_hips_speed_p95",
+      "early_watch_gyro_p95",
+      "early_watch_gyro_rms",
+      "early_watch_accel_p95",
+      "early_watch_accel_rms"
+    ]
+  },
+  "window_relative_to_watch_peak_s": [
+    -2,
+    -0.8
+  ],
+  "families": [
+    "mean",
+    "ridge10",
+    "extra_trees",
+    "svr"
+  ],
+  "inner_folds": 3,
+  "limitations": "Offline watch-assisted early window; impact exclusion not individually validated. No actual practice swings. No outcome-based window selection."
+}

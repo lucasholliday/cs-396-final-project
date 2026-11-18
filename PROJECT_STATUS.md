@@ -1,19 +1,19 @@
 # Project status — 2026-11-17 checkpoint
 
 ## Current phase
-Initial audit, synchronization, whole-swing pose/features and baseline/nested ML research are executed. Native ball/shaft tracking remains experimental. A camera-only event detector was evaluated on Sid's full session. No polished app, calibrated metric speed, reliable nine-phase detector, human mesh, gaze or practice-swing validation.
+Initial audit, synchronization, whole-swing pose/features and baseline/nested ML research are executed. Native ball/shaft tracking remains experimental. A camera-only event detector was evaluated on Sid's full session. Local research viewer and illustrative 3D skeleton export added. No polished product, calibrated metric speed, reliable nine-phase detector, human mesh, gaze or practice-swing validation.
 
 ## Completed and tested
 - 79 originals / 11,976,204,529 bytes hashed and independently rehashed unchanged. All workbook sheets/CSV schemas/timing and media metadata audited.
 - 76 reviewed swing identities, 72 labeled outcomes, five golfers/six sessions. User confirms ordinal matching including unregistered strikes; no practice swings.
 - 68 club-covered events (65 with labels); eight missing tails consistent with SD-card failures. Affine gyro alignment residuals <36 ms. Exact impacts remain unverified.
 - 76 pose clips / 7,980 frames, contact sheets visually checked. Pose availability 100%, mean both-wrists confidence validity only 18.9%. Excluded wrist pose predictors.
-- 400 fixed-model evaluations and 20 nested carry comparisons with persisted shot/golfer splits and all OOF predictions; 360 learning-curve fits; paired uncertainty and error analysis; plots inspected.
+- 400 fixed-model evaluations and 26 nested carry comparisons with persisted shot/golfer splits and all OOF predictions; 360 learning-curve fits; paired uncertainty and error analysis; plots inspected.
 - Primary nested n=72 carry MAE: video 25.45 yd known-session / 31.93 held-out golfer; video+watch 26.60 / 29.87. Matched n=65 all-sensor held-out-golfer MAE 28.58. Small-sample uncertainty remains large.
 - Twelve fixed-ridge full-data reference fits saved under models/reference_ridge, excluded from Git. These are not independently validated deployment models.
 - Native ball demonstration: manually initialized sid_1_01, 31 candidate points over 0.179 s. Automatic v4 batch ran on all 76: 36 internally gated proposals, all awaiting independent point review before ML use. Version failures preserved.
 - Motion-gated Hough: nine plausible partial shaft segments on sid_1_01; unmasked baseline rejected for background false detections. Saved head-centroid trace, without gaze/metric-height interpretation.
-- Seven tests pass; isolated .venv imports and pip dependency check pass. Python 3.10.7, FFmpeg 4.3.2, pinned dependencies in requirements/lock.
+- Eleven tests pass; isolated .venv imports and pip dependency check pass. Python 3.10.7, FFmpeg 4.3.2, pinned dependencies in requirements/lock.
 
 ## Latest camera-only experiment
 Sid full-session 20-fps mat-ball presence scan completed: 29 disappearance candidates; 18 within 1.5 s of the 18 distinct watch-reference swing neighborhoods. Eleven extra candidates and one noticeably early event prevent calling it an exact impact detector. Watch is used only for audit comparison, not detection.
@@ -37,9 +37,19 @@ Latest checks:
 The final command rehashes ~12 GB; last run passed. No need to repeat without source changes.
 
 ## Next three priorities
-1. Improve ball/foreground discrimination using the recorded camera-only false positives and misses; freeze parameters before evaluating another golfer.
-2. Independently annotate representative native ball/shaft/impact frames across golfers, reject stationary-background tails and club confusions, then evaluate a separate post-impact feature benchmark. Do not train on the 36 unreviewed proposals.
-3. Improve autonomous camera segmentation and phase detection; collect calibrated/securely logged new sessions per reports/data_collection_recommendations.md (100 strikes in two 50-shot checkpoints, plus 20 tagged practice swings).
+1. Independently review native impact/ball/club points across golfers. Use the eight approximate point annotations and recorded failure examples as a starting point; retain uncertainty and missing observations.
+2. Validate local viewer playback and interaction when browser testing is available. The current 76 media files/data contracts pass checks; actual UI behavior remains unverified.
+3. Collect calibrated, securely logged new sessions per reports/data_collection_recommendations.md. Freeze candidate methods before assessing new golfers/days; do not train on unreviewed ball tracks or claim verified pre-impact features.
 
 ## Git
 A project-local repository on main was initialized with approval. Verified research checkpoint prepared for local commit; use `git log -1 --oneline` to identify the saved revision. No remote, no push. An unrelated home repository also exists: always verify repository root. Raw data, original workbook, generated media/cache, model binaries and environment are ignored. Stage only intended code/docs/annotations/derived research tables.
+
+## Latest continuation — research delivery
+- Six nested early-window evaluations completed on 72 shots: held-out-golfer MAE video 40.05 yd, watch 47.33, combined 43.26. Offline watch-assisted window; impact exclusion is not verified, especially given cross-session timing offsets.
+- Reviewed 18 unmarked native panels, recorded eight approximate airborne-ball centers: six matched Sid/Lucas proposals within annotation uncertainty, two Andrew misses. Second reviewer and broad validation remain outstanding.
+- Stationary-tail rejection removes two of three Sid camera false positives; remaining leg confusion survives. Frozen all-shot filter retains 35/36 proposals. V5 wider search still succeeds on only four of six representatives; no ML use of ball proposals.
+- Phase proposals: 52 top candidates, 24 abstentions, no accepted impact annotations.
+- Built outputs/research_viewer/index.html for all 76 shots, H.264 overlays, frame stepping, estimated rotatable skeletons, OOF carry and phase annotation export. Generated and visually checked outputs/pose_3d/sid_1_01_contact.jpg and exported estimated_3d.mp4. Browser automation timed out; browser playback/UI not verified. Do not retry Chrome without explaining the need in context.
+- Eleven tests pass; 76 H.264 media files, viewer record/pose counts, source-bound review hashes and unique early-window OOF rows verified. reports/research_summary.md distinguishes delivered research from unsupported product claims.
+
+The reproducible available-data study is delivered; the long-term product remains incomplete. Next work should independently annotate native impact/ball/club points and evaluate on new calibrated sessions, rather than claim accuracy from internally gated tracks. Local viewer UI verification remains outstanding. Use git log for the latest local checkpoint; no remote or publication.

@@ -17,14 +17,14 @@ def components(mask):
     return [(c,s) for c,s in zip(centers[1:],stats[1:]) if 5<=s[4]<=1200 and 2<=s[2]<=45 and 2<=s[3]<=180 and max(s[2],s[3])/min(s[2],s[3])<12]
 
 
-def follow(initial_i,initial,stat,proposals,pts,seed,crop_xy):
+def follow(initial_i,initial,stat,proposals,pts,seed,crop_xy,max_lateral=130):
     position=initial.copy();velocity=np.array([0.,-8000.]);last_t=pts[initial_i];misses=0
     x,y=crop_xy
     observations=[dict(frame=initial_i,playback_s=float(last_t),x=float(position[0]+x),y=float(position[1]+y),area=int(stat[4]),residual_px=0.)]
     for i in range(initial_i+1,len(pts)):
         dt=pts[i]-last_t;predicted=position+velocity*dt
         choices=[(np.linalg.norm(c-predicted),c,s) for c,s in proposals.get(i,[])
-                 if abs(c[0]-seed[0])<130 and c[1]<position[1]+4 and np.linalg.norm(c-predicted)<max(150 if len(observations)<4 else 35,abs(velocity[1])*dt*.8)]
+                 if abs(c[0]-seed[0])<max_lateral and c[1]<position[1]+4 and np.linalg.norm(c-predicted)<max(150 if len(observations)<4 else 35,abs(velocity[1])*dt*.8)]
         if not choices:
             misses+=1
             if misses>=3:break
@@ -69,8 +69,11 @@ def track(row,cfg):
             for i in range(max(20,departure-2),min(departure+16,len(frames))):
                 seeds_i=[(abs(c[0]-seed[0]),c,s) for c,s in proposals[i] if abs(c[0]-seed[0])<45 and 20<seed[1]-c[1]<250 and s[4]>=15]
                 for _,initial,stat in sorted(seeds_i,key=lambda a:a[0])[:4]:
-                    candidate=follow(i,initial,stat,proposals,pts,seed,(x,y))
-                    if len(candidate)>=cfg['minimum_track_points'] and candidate[0]['y']-candidate[-1]['y']>150 and candidate[-1]['playback_s']-candidate[0]['playback_s']>=.1:
+                    candidate=follow(i,initial,stat,proposals,pts,seed,(x,y),cfg.get("max_lateral_displacement",130))
+                    if cfg.get("trim_stationary_tail",False):
+                        from validate_ball_proposals import moving_prefix
+                        candidate=moving_prefix(candidate)
+                    if len(candidate)>=cfg['minimum_track_points'] and candidate[0]['y']-candidate[-1]['y']>150 and candidate[-1]['playback_s']-candidate[0]['playback_s']>=cfg.get('minimum_span_s',.1):
                         tracks.append(candidate)
             if tracks:
                 observations=max(tracks,key=lambda a:(a[-1]['playback_s']-a[0]['playback_s'],-np.median([p['residual_px'] for p in a])))
@@ -104,11 +107,11 @@ def track(row,cfg):
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--representatives',action='store_true');args=parser.parse_args()
-    cfg=json.loads((ROOT/'configs/ball_tracking.json').read_text());df=pd.read_csv(ROOT/'data/manifests/shot_manifest.csv')
+    parser=argparse.ArgumentParser();parser.add_argument('--representatives',action='store_true');parser.add_argument('--config',default='configs/ball_tracking.json');args=parser.parse_args()
+    cfg=json.loads((ROOT/args.config).read_text());df=pd.read_csv(ROOT/'data/manifests/shot_manifest.csv')
     if args.representatives:df=df.groupby('session',sort=False).head(1)
     results=[]
     for row in df.itertuples():
         r=track(row,cfg);results.append(r);print(row.shot_id,r['ball_track_available'],r['ball_track_points'],flush=True)
     name='ball_features_representatives.csv' if args.representatives else 'ball_features.csv'
-    pd.DataFrame(results).to_csv(ROOT/'data/processed'/name,index=False)
+    pd.DataFrame(results).to_csv(ROOT/'data/processed'/cfg.get('feature_prefix','')/name,index=False)
