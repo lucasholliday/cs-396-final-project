@@ -8,6 +8,7 @@ import joblib,pandas as pd
 from process_pose import process
 from pose_observations import observations
 from avatar_motion import complete
+from viewer_payload import encode_display_data
 ROOT=Path(__file__).resolve().parents[1]
 
 def sha256(path):
@@ -47,7 +48,7 @@ def analyze(video,start,name):
  carry=next((r['predicted'] for r in predictions if r['target']=='Carry flat (yd)'),None)
  item=dict(avatar_motion=complete(p),reference_predictions={r['target']:r['predicted'] for r in predictions},prediction_status='experimental_reference_fit' if enough_pose else 'abstained_insufficient_pose',id=name,golfer='New recording',session=name,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],observations=observations(p),carry=None,prediction=carry,assisted_prediction=None,gate_probability=None,gate_error=False,ball_speed=None,launch=None,club_available=False,alignment_residual=None,workbook_row=None,top=None,top_status='unreviewed',source=str(video),sha256=source_hash,departure_interval=None,mode='new',overlay_url=target.name,input_url=f'{name}_input.mp4')
  template=(ROOT/'scripts/viewer_template.html').read_text().replace('__THREE__','/* '+(ROOT/'vendor/three/LICENSE').read_text()+' */\n'+(ROOT/'vendor/three/three.min.js').read_text()).replace('__SCENE__',(ROOT/'scripts/range_scene.js').read_text());template=template.replace('All 76 swings','New recording').replace('76 strikes · five golfers · six sessions','One new recording · video-only prototype').replace('This demo explores recorded sessions; new-recording inference is not yet integrated.','This recording is kept separate from the research evaluation.').replace('<option value="errors">Six classification errors</option>','').replace('<option value="assisted">Reviewed ball pilot</option>','')
- template=template.replace('../../reports/','../../../reports/');(out/'index.html').write_text(template.replace('__DATA__',json.dumps([item]).replace('NaN','null').replace('</','<\\/')))
+ template=template.replace('../../reports/','../../../reports/');(out/'index.html').write_text(template.replace('__DATA__',encode_display_data([item])))
  (out/'predictions.json').write_text(json.dumps(predictions,indent=2));provenance.write_text(json.dumps(dict(source=str(video),source_sha256=source_hash,clip_start_s=start,duration_s=3.5,selection='manual',configuration=cfg,availability_rule=availability,pose_detection_fraction=f['pose_detection_fraction'],model_status='reference fits; new-video accuracy unvalidated' if enough_pose else 'abstained_insufficient_pose'),indent=2))
  print(out/'index.html');return out
 

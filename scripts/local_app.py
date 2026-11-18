@@ -47,7 +47,9 @@ class Handler(BaseHTTPRequestHandler):
             if not match:return self.json(416,{'error':'Unsupported range'})
             start=int(match[1]);end=min(size-1,int(match[2])) if match[2] else size-1;code=206
             if start>end:return self.json(416,{'error':'Range outside file'})
-        self.send_response(code);self.send_header('Content-Type',mimetypes.guess_type(path.name)[0] or 'application/octet-stream');self.send_header('Content-Length',str(end-start+1));self.send_header('Accept-Ranges','bytes');self.send_header('X-Content-Type-Options','nosniff')
+        self.send_response(code);self.send_header('Content-Type',mimetypes.guess_type(path.name)[0] or 'application/octet-stream');self.send_header('Content-Length',str(end-start+1));self.send_header('Accept-Ranges','bytes');
+        if path.suffix=='.html':self.send_header('Cache-Control','no-store')
+        self.send_header('X-Content-Type-Options','nosniff')
         if code==206:self.send_header('Content-Range',f'bytes {start}-{end}/{size}')
         self.end_headers()
         with path.open('rb') as f:

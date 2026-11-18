@@ -17,6 +17,7 @@ def run(process=False):
   status,body,_=request('/?token='+token);assert status==200 and b'Analyze your video' in body;checks.append('upload page delivered')
   assert request('/data/manifests/shot_manifest.csv')[0]==404;assert request('/outputs/../data/manifests/shot_manifest.csv')[0]==404;checks.append('static serving restricted to outputs/reports')
   path='/outputs/pose/sid_1_01_input.mp4';status,body,headers=request(path,headers={'Range':'bytes=0-99'});assert status==206 and len(body)==100 and headers['Content-Range'].startswith('bytes 0-99/');checks.append('video byte-range seeking')
+  status,body,headers=request('/outputs/research_viewer/index.html',headers={'Range':'bytes=0-99'});assert status==206 and headers['Cache-Control']=='no-store';checks.append('HTML responses prevent stale-page caching')
   assert request('/api/analyze?token=wrong&start=0&extension=.mp4',b'x')[0]==403;assert request('/api/analyze?token='+token+'&start=0&extension=.mp4',b'x',{'Origin':'https://example.invalid'})[0]==403;checks.append('invalid session and cross-origin processing rejected')
   assert request('/api/analyze?token='+token+'&start=-1&extension=.mp4',b'x')[0]==400;checks.append('invalid clip request rejected')
   result=None
@@ -28,7 +29,7 @@ def run(process=False):
     time.sleep(1)
    assert job['status']=='complete',job;status,html,_=request(job['url']);assert status==200 and b'Experimental video-only carry estimate' in html;checks.append('real clip upload, pose processing, reference prediction and result delivery');result=job['url']
   report=dict(checks=checks,result=result,browser_ui_test='not performed; browser host unavailable',accuracy_validation='none; smoke input is a reused training-session clip')
-  (ROOT/'reports/local_app_verification.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+  (ROOT/('reports/local_app_verification.json' if process else 'reports/local_app_http_verification.json')).write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
  finally:server.shutdown();server.server_close()
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('--process',action='store_true');args=parser.parse_args();run(args.process)

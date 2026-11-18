@@ -3,6 +3,7 @@ import json
 import subprocess
 from pathlib import Path
 import pandas as pd
+from viewer_payload import encode_display_data
 ROOT=Path(__file__).resolve().parents[1]
 out=ROOT/'outputs/research_viewer';out.mkdir(parents=True,exist_ok=True)
 m=pd.read_csv(ROOT/'data/manifests/shot_manifest.csv')
@@ -38,7 +39,7 @@ for r in m.itertuples():
   gate_error=bool((gate.loc[r.shot_id,'low_probability']>=.5)!=(gate.loc[r.shot_id,'actual']<100)) if r.shot_id in gate.index else False,
   prediction=float(pred.loc[r.shot_id,'predicted']) if r.shot_id in pred.index else None,
   top=phase.loc[r.shot_id,'top_candidate_s'],top_status=phase.loc[r.shot_id,'top_status'],source=r.video_candidate,sha256=inventory.loc[r.video_candidate,'sha256']))
-payload=json.dumps(rows,allow_nan=True).replace('NaN','null').replace('</','<\\/')
+payload=encode_display_data(rows)
 template=(ROOT/'scripts/viewer_template.html').read_text().replace('__THREE__','/* '+(ROOT/'vendor/three/LICENSE').read_text()+' */\n'+(ROOT/'vendor/three/three.min.js').read_text()).replace('__SCENE__',(ROOT/'scripts/range_scene.js').read_text())
 (out/'index.html').write_text(template.replace('__DATA__',payload))
 print('Built local viewer for',len(rows),'shots:',out/'index.html')

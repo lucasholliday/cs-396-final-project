@@ -3,6 +3,6 @@
   "frames_checked": 7980,
   "limbs_always_visible": true,
   "finite_transforms": true,
-  "maximum_grip_hand_gap": 0.024000000000000077,
+  "maximum_grip_hand_gap": 0.02400000000000005,
   "browser_or_webgl_test": false
 }
