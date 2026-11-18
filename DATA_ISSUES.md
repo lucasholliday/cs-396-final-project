@@ -57,3 +57,7 @@ Acceleration clipping descriptors are newly evaluated as censoring patterns in a
 
 - Version 3 supersedes the phase-illustrative club animation. The first assisted club pilot covers only Sid 1 / shot 1, with 23 approximate AI readings (second review pending). 30-fps review frames and display interpolation must not be treated as native high-speed motion measurements. Monocular depth sign, orthographic scale and 0.85-unit display length remain assumptions; the UI exposes both depth signs. Automatic line proposals still confuse scene/body edges and are excluded from production club motion and models.
 - The live yard badge is model-scaled animation progress, not measured instantaneous travel. All club recordings clipping prevents estimating the isolated causal cost of clipping from an unclipped control cohort. No new model-accuracy claim accompanies this rendering revision.
+
+- Direct raw watch review reconfirms rotation extrema clustered near 35 recorded units per axis (six sessions), but exporter units/range and saturation flags remain unverified. Descriptive carry correlations cannot establish that this limiting, rather than contact/timing/measurement differences, explains weak peak-feature performance.
+
+- Latest >70/>100 comparison uses strict actual-carry thresholds, 50/39 of the same 65 club-covered shots. Four golfers remain >100 because Andrew has no qualifying outcomes. Restricted-training results assume known eligibility and must not be presented as deployable all-shot accuracy or verified well-struck contact labels.

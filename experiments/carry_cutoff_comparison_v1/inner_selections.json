@@ -1,0 +1,623 @@
+[
+  {
+    "cutoff": 70,
+    "features": "mean",
+    "fold": 0,
+    "model": "mean",
+    "scores": {
+      "mean": 22.394291587602783
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "mean",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 13.758547008547009
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "mean",
+    "fold": 2,
+    "model": "mean",
+    "scores": {
+      "mean": 23.037183165949305
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "mean",
+    "fold": 3,
+    "model": "mean",
+    "scores": {
+      "mean": 23.183006535947708
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "mean",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 28.75019425019425
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "watch",
+    "fold": 0,
+    "model": "svr",
+    "scores": {
+      "mean": 22.394291587602783,
+      "ridge10": 36.04167152977272,
+      "extra_trees": 26.97905035020357,
+      "svr": 21.676327069715754
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "watch",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 13.758547008547009,
+      "ridge10": 15.520091015346877,
+      "extra_trees": 14.23801055622266,
+      "svr": 13.793988038704429
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "watch",
+    "fold": 2,
+    "model": "mean",
+    "scores": {
+      "mean": 23.037183165949305,
+      "ridge10": 38.5999672824196,
+      "extra_trees": 25.6811842349159,
+      "svr": 23.39153284269998
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "watch",
+    "fold": 3,
+    "model": "extra_trees",
+    "scores": {
+      "mean": 23.183006535947708,
+      "ridge10": 27.778560240388494,
+      "extra_trees": 20.954341233002875,
+      "svr": 23.62096727358489
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "watch",
+    "fold": 4,
+    "model": "ridge10",
+    "scores": {
+      "mean": 28.75019425019425,
+      "ridge10": 27.356398342856235,
+      "extra_trees": 27.94090656201263,
+      "svr": 27.939887536363024
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera",
+    "fold": 0,
+    "model": "svr",
+    "scores": {
+      "mean": 22.394291587602783,
+      "ridge10": 29.940496263122085,
+      "extra_trees": 23.183600315446423,
+      "svr": 21.81204454891923
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 13.758547008547009,
+      "ridge10": 25.59504916977031,
+      "extra_trees": 17.78576653156202,
+      "svr": 18.523752244347765
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera",
+    "fold": 2,
+    "model": "svr",
+    "scores": {
+      "mean": 23.037183165949305,
+      "ridge10": 31.48471314248615,
+      "extra_trees": 22.777168171390958,
+      "svr": 19.12957164193331
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera",
+    "fold": 3,
+    "model": "ridge10",
+    "scores": {
+      "mean": 23.183006535947708,
+      "ridge10": 12.677132105073389,
+      "extra_trees": 16.77740959526849,
+      "svr": 21.13494590335227
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera",
+    "fold": 4,
+    "model": "svr",
+    "scores": {
+      "mean": 28.75019425019425,
+      "ridge10": 44.89655229713603,
+      "extra_trees": 30.724774907600302,
+      "svr": 27.181028396016856
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch",
+    "fold": 0,
+    "model": "svr",
+    "scores": {
+      "mean": 22.394291587602783,
+      "ridge10": 31.477114080871292,
+      "extra_trees": 24.99583288239539,
+      "svr": 20.401069452092138
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 13.758547008547009,
+      "ridge10": 14.859579394851592,
+      "extra_trees": 16.426455806258858,
+      "svr": 14.261009485711497
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "svr",
+    "scores": {
+      "mean": 23.037183165949305,
+      "ridge10": 34.72917059102016,
+      "extra_trees": 22.307578092187892,
+      "svr": 19.54834583224553
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "ridge10",
+    "scores": {
+      "mean": 23.183006535947708,
+      "ridge10": 11.341548874975775,
+      "extra_trees": 16.341707503607516,
+      "svr": 21.851851525241575
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "svr",
+    "scores": {
+      "mean": 28.75019425019425,
+      "ridge10": 37.98556505544818,
+      "extra_trees": 30.41773372979436,
+      "svr": 27.078688318133985
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "all",
+    "fold": 0,
+    "model": "mean",
+    "scores": {
+      "mean": 22.394291587602783,
+      "ridge10": 35.455514011992086,
+      "extra_trees": 25.612821818998885,
+      "svr": 22.522989005828663
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "all",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 13.758547008547009,
+      "ridge10": 23.95173619237532,
+      "extra_trees": 18.31080436398617,
+      "svr": 15.806060067805257
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "all",
+    "fold": 2,
+    "model": "svr",
+    "scores": {
+      "mean": 23.037183165949305,
+      "ridge10": 36.52900731120905,
+      "extra_trees": 21.236014230575268,
+      "svr": 20.32093505111913
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "all",
+    "fold": 3,
+    "model": "ridge10",
+    "scores": {
+      "mean": 23.183006535947708,
+      "ridge10": 17.118751246579297,
+      "extra_trees": 17.72371547752659,
+      "svr": 23.529341161570983
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "all",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 28.75019425019425,
+      "ridge10": 50.12257036999081,
+      "extra_trees": 32.23175777253049,
+      "svr": 28.979518464594882
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch_club_contact",
+    "fold": 0,
+    "model": "extra_trees",
+    "scores": {
+      "mean": 22.394291587602783,
+      "ridge10": 29.32277335357379,
+      "extra_trees": 22.082742509419578,
+      "svr": 23.087025643024734
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 13.758547008547009,
+      "ridge10": 24.624391340949977,
+      "extra_trees": 14.845354096520747,
+      "svr": 14.670911354113205
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "mean",
+    "scores": {
+      "mean": 23.037183165949305,
+      "ridge10": 26.117348410091566,
+      "extra_trees": 23.446697896502823,
+      "svr": 23.783593343217166
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "ridge10",
+    "scores": {
+      "mean": 23.183006535947708,
+      "ridge10": 17.288538136488032,
+      "extra_trees": 20.25500111699003,
+      "svr": 24.204323511288496
+    }
+  },
+  {
+    "cutoff": 70,
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 28.75019425019425,
+      "ridge10": 33.117595143545124,
+      "extra_trees": 30.277936267436232,
+      "svr": 30.63338401531467
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "mean",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 11.441523809523808
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "mean",
+    "fold": 2,
+    "model": "mean",
+    "scores": {
+      "mean": 11.630857142857147
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "mean",
+    "fold": 3,
+    "model": "mean",
+    "scores": {
+      "mean": 12.760915032679733
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "mean",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 19.61973775017253
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "watch",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 11.441523809523808,
+      "ridge10": 25.25100635980161,
+      "extra_trees": 13.165294205177542,
+      "svr": 13.951440965032381
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "watch",
+    "fold": 2,
+    "model": "svr",
+    "scores": {
+      "mean": 11.630857142857147,
+      "ridge10": 20.756252447727828,
+      "extra_trees": 15.34942313612311,
+      "svr": 11.371095516499626
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "watch",
+    "fold": 3,
+    "model": "mean",
+    "scores": {
+      "mean": 12.760915032679733,
+      "ridge10": 15.477059577005786,
+      "extra_trees": 13.400006247020915,
+      "svr": 13.585585395477874
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "watch",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 19.61973775017253,
+      "ridge10": 25.84430900994417,
+      "extra_trees": 21.038417016960512,
+      "svr": 21.141992501320754
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 11.441523809523808,
+      "ridge10": 13.59619467041166,
+      "extra_trees": 13.411444991428223,
+      "svr": 15.582493622566123
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera",
+    "fold": 2,
+    "model": "mean",
+    "scores": {
+      "mean": 11.630857142857147,
+      "ridge10": 29.11855281736875,
+      "extra_trees": 15.672002740469418,
+      "svr": 12.114509638361906
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera",
+    "fold": 3,
+    "model": "mean",
+    "scores": {
+      "mean": 12.760915032679733,
+      "ridge10": 15.426847250477014,
+      "extra_trees": 12.939827297706476,
+      "svr": 13.81785262953905
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 19.61973775017253,
+      "ridge10": 43.34715765528447,
+      "extra_trees": 24.10885127674252,
+      "svr": 23.9389438358893
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 11.441523809523808,
+      "ridge10": 28.092947515663045,
+      "extra_trees": 14.077670538720504,
+      "svr": 13.773007974742963
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch",
+    "fold": 2,
+    "model": "svr",
+    "scores": {
+      "mean": 11.630857142857147,
+      "ridge10": 26.120991082738183,
+      "extra_trees": 16.475819167869158,
+      "svr": 10.484661383497135
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch",
+    "fold": 3,
+    "model": "mean",
+    "scores": {
+      "mean": 12.760915032679733,
+      "ridge10": 12.993656150017046,
+      "extra_trees": 13.678515950824746,
+      "svr": 12.881384059663043
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 19.61973775017253,
+      "ridge10": 42.107337524732436,
+      "extra_trees": 23.99511571198525,
+      "svr": 21.01320026678854
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "all",
+    "fold": 1,
+    "model": "mean",
+    "scores": {
+      "mean": 11.441523809523808,
+      "ridge10": 31.997663464391756,
+      "extra_trees": 13.296271516754851,
+      "svr": 13.695037751841948
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "all",
+    "fold": 2,
+    "model": "svr",
+    "scores": {
+      "mean": 11.630857142857147,
+      "ridge10": 18.612311963298602,
+      "extra_trees": 13.565346616963316,
+      "svr": 10.488180464093091
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "all",
+    "fold": 3,
+    "model": "mean",
+    "scores": {
+      "mean": 12.760915032679733,
+      "ridge10": 17.271976762932603,
+      "extra_trees": 14.522373489799937,
+      "svr": 13.306164764884516
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "all",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 19.61973775017253,
+      "ridge10": 49.05726264131266,
+      "extra_trees": 23.82711962272833,
+      "svr": 21.36244618118446
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch_club_contact",
+    "fold": 1,
+    "model": "extra_trees",
+    "scores": {
+      "mean": 11.441523809523808,
+      "ridge10": 29.621415847222565,
+      "extra_trees": 11.370819223985894,
+      "svr": 13.822723465822879
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch_club_contact",
+    "fold": 2,
+    "model": "svr",
+    "scores": {
+      "mean": 11.630857142857147,
+      "ridge10": 25.12797797461582,
+      "extra_trees": 13.51685740740747,
+      "svr": 10.835511017614033
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch_club_contact",
+    "fold": 3,
+    "model": "mean",
+    "scores": {
+      "mean": 12.760915032679733,
+      "ridge10": 19.749010298573165,
+      "extra_trees": 15.068362278244612,
+      "svr": 13.163640949298747
+    }
+  },
+  {
+    "cutoff": 100,
+    "features": "camera_watch_club_contact",
+    "fold": 4,
+    "model": "mean",
+    "scores": {
+      "mean": 19.61973775017253,
+      "ridge10": 39.20295790986206,
+      "extra_trees": 22.691549344375442,
+      "svr": 21.253363227944437
+    }
+  }
+]

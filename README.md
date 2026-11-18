@@ -172,3 +172,7 @@ node scripts/verify_range_scene.js
 .venv/bin/python -m unittest discover -s tests -q
 ```
 The shaft-detector command defaults to six representative shots. Unreviewed detections are separate from the assisted display and all scientific model features. Generated media and caches remain local and ignored by Git.
+
+Direct watch/carry feature inspection: `.venv/bin/python scripts/watch_carry_relationships.py`; see `reports/watch_carry_relationships.md`. This is descriptive correlation analysis, separate from held-out model evaluation.
+
+Exact matched-cohort cutoff comparison: `.venv/bin/python scripts/carry_cutoff_comparison.py`; see `reports/carry_cutoff_comparison.md`. Includes existing-model subgroup scores and separately trained conditional models at strictly >70 and >100 yd. Actual outcome filtering is for research analysis only.
