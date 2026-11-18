@@ -1,0 +1,9 @@
+{
+  "original_files_verified": 79,
+  "source_bytes_verified": 11976204529,
+  "reviewed_shots": 76,
+  "pose_shots": 76,
+  "eligible_outcomes": 72,
+  "status": "passed",
+  "checks": "SHA256 originals; unique IDs; review/pose coverage; no unlabeled predictions; OOF uniqueness"
+}

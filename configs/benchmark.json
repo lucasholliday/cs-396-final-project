@@ -1,0 +1,10 @@
+{
+  "seed": 396,
+  "targets": ["Carry flat (yd)", "Ball speed (mph)", "Launch angle (deg)", "Launch direction (deg; R+)"],
+  "models": ["mean", "median", "ridge10", "extra_trees", "svr"],
+  "schemes": ["within_session_blocks", "leave_golfer_out"],
+  "sensor_window_before_peak_s": 1.25,
+  "sensor_window_after_peak_s": 0.75,
+  "camera_features": ["head_range_0", "head_range_1", "shoulders_range_0", "shoulders_range_1", "hips_range_0", "hips_range_1", "flow_mean", "flow_p95", "flow_max"],
+  "description": "Initial exploratory full-swing models; includes post-impact movement. Video features use watch-assisted clip selection, not an autonomous camera-only system. Hyperparameters fixed before scoring. No practice-swing claim."
+}

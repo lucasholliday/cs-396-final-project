@@ -1,0 +1,8 @@
+{
+  "session": "Sid 1",
+  "method": "20fps compact bright components on mat; sustained presence-to-absence transition",
+  "camera_candidates": 29,
+  "reference_swings": 18,
+  "near_reference_candidates": 18,
+  "limitation": "Not exact impact ground truth; manual scene ROI/threshold, possible ball handling and occlusion false events"
+}

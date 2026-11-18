@@ -1,0 +1,16 @@
+{
+  "seed": 396,
+  "order_confirmed_by_user": true,
+  "order_confirmation_date": "2026-11-17",
+  "raw_directories": ["Club Data", "Watch Data", "Video Data"],
+  "workbook": "trackman_shot_labels.xlsx",
+  "gap_multiple": 1.5,
+  "sessions": {
+    "Sid 1": ["Video Data/sid_session_1.MOV", "Club Data/session_00011_sid", "Watch Data/sid_session_1-2026-11-15_22-03-22"],
+    "Rohan 1": ["Video Data/rohan_session_1.MOV", "Club Data/session_00012_rohan_1", "Watch Data/rohan_1-2026-11-15_22-19-24"],
+    "Rohan 2": ["Video Data/rohan_session_2.MOV", "Club Data/session_00013_rohan_2", "Watch Data/rohan_2-2026-11-15_22-23-24"],
+    "Lucas 1": ["Video Data/lucas_session.MOV", "Club Data/session_00014_lucas", "Watch Data/lucas_session_1-2026-11-15_22-35-36"],
+    "Andrew 1": ["Video Data/andrew_session_1.MOV", "Club Data/session_00015_andrew", "Watch Data/andrew-2026-11-15_22-45-37"],
+    "Eduardo 1": ["Video Data/eduardo_session_1.MOV", "Club Data/session_00016_eduardo", "Watch Data/eduardo-2026-11-15_22-52-40"]
+  }
+}

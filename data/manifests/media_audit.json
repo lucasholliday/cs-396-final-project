@@ -1,0 +1,1463 @@
+[
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/WatchMicrophone.mp4",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/16000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "16000",
+          "channels": 1,
+          "channel_layout": "mono",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/16000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 5469184,
+          "duration": "341.824000",
+          "bit_rate": "32480",
+          "max_bit_rate": "32000",
+          "nb_frames": "5341",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-15T22:51:19.000000Z",
+            "language": "eng"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Watch Data/andrew-2026-11-15_22-45-37/WatchMicrophone.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "341.824000",
+        "size": "1437106",
+        "bit_rate": "33633",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "mp42",
+          "minor_version": "0",
+          "compatible_brands": "mp42isom",
+          "creation_time": "2026-11-15T22:51:19.000000Z"
+        }
+      }
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/WatchMicrophone.mp4",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/16000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "16000",
+          "channels": 1,
+          "channel_layout": "mono",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/16000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 8320000,
+          "duration": "520.000000",
+          "bit_rate": "32513",
+          "max_bit_rate": "32000",
+          "nb_frames": "8125",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-15T23:01:21.000000Z",
+            "language": "eng"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Watch Data/eduardo-2026-11-15_22-52-40/WatchMicrophone.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "520.000000",
+        "size": "2175141",
+        "bit_rate": "33463",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "mp42",
+          "minor_version": "0",
+          "compatible_brands": "mp42isom",
+          "creation_time": "2026-11-15T23:01:21.000000Z"
+        }
+      }
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WatchMicrophone.mp4",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/16000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "16000",
+          "channels": 1,
+          "channel_layout": "mono",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/16000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 4429824,
+          "duration": "276.864000",
+          "bit_rate": "32493",
+          "max_bit_rate": "32000",
+          "nb_frames": "4326",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-15T22:40:14.000000Z",
+            "language": "eng"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WatchMicrophone.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "276.864000",
+        "size": "1149110",
+        "bit_rate": "33203",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "mp42",
+          "minor_version": "0",
+          "compatible_brands": "mp42isom",
+          "creation_time": "2026-11-15T22:40:14.000000Z"
+        }
+      }
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/WatchMicrophone.mp4",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/16000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "16000",
+          "channels": 1,
+          "channel_layout": "mono",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/16000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 2633728,
+          "duration": "164.608000",
+          "bit_rate": "32577",
+          "max_bit_rate": "32000",
+          "nb_frames": "2572",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-15T22:22:10.000000Z",
+            "language": "eng"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Watch Data/rohan_1-2026-11-15_22-19-24/WatchMicrophone.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "164.608000",
+        "size": "694897",
+        "bit_rate": "33772",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "mp42",
+          "minor_version": "0",
+          "compatible_brands": "mp42isom",
+          "creation_time": "2026-11-15T22:22:10.000000Z"
+        }
+      }
+    }
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/WatchMicrophone.mp4",
+    "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x13000ec00] moov atom not found\nWatch Data/rohan_2-2026-11-15_22-23-24/WatchMicrophone.mp4: Invalid data found when processing input",
+    "returncode": 1
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/WatchMicrophone.mp4",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/16000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "16000",
+          "channels": 1,
+          "channel_layout": "mono",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/16000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 7764992,
+          "duration": "485.312000",
+          "bit_rate": "32489",
+          "max_bit_rate": "32000",
+          "nb_frames": "7583",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-15T22:11:28.000000Z",
+            "language": "eng"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Watch Data/sid_session_1-2026-11-15_22-03-22/WatchMicrophone.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "485.312000",
+        "size": "2030286",
+        "bit_rate": "33467",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "mp42",
+          "minor_version": "0",
+          "compatible_brands": "mp42isom",
+          "creation_time": "2026-11-15T22:11:28.000000Z"
+        }
+      }
+    }
+  },
+  {
+    "path": "Video Data/andrew_session_1.MOV",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "616907/98304000",
+          "codec_tag_string": "hvc1",
+          "codec_tag": "0x31637668",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 153,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "refs": 1,
+          "r_frame_rate": "240/1",
+          "avg_frame_rate": "98304000/616907",
+          "time_base": "1/2400",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 616904,
+          "duration": "257.043333",
+          "bit_rate": "63136875",
+          "nb_frames": "40960",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "rotate": "90",
+            "creation_time": "2026-11-16T01:32:46.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Video",
+            "encoder": "HEVC"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     70778880           0  1073741824\n",
+              "rotation": -90
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/48000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 12338080,
+          "duration": "257.043333",
+          "bit_rate": "189106",
+          "max_bit_rate": "192000",
+          "nb_frames": "12051",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T01:32:46.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "audio",
+          "codec_tag_string": "apac",
+          "codec_tag": "0x63617061",
+          "sample_rate": "48000",
+          "channels": 4,
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 12338080,
+          "duration": "257.043333",
+          "bit_rate": "395471",
+          "nb_frames": "12049",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T01:32:46.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Video Data/andrew_session_1.MOV",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "257.043333",
+        "size": "2048294332",
+        "bit_rate": "63749386",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "qt  ",
+          "minor_version": "0",
+          "compatible_brands": "qt  ",
+          "creation_time": "2026-11-16T01:32:46.000000Z",
+          "com.apple.quicktime.full-frame-rate-playback-intent": "0",
+          "com.apple.quicktime.make": "Apple",
+          "com.apple.quicktime.model": "iPhone 16 Pro",
+          "com.apple.quicktime.software": "27.0.1",
+          "com.apple.quicktime.creationdate": "2026-11-15T16:45:45-0600"
+        }
+      }
+    },
+    "packet_count": 40960,
+    "presentation_timing": {
+      "first_s": 0.0,
+      "last_s": 257.040417,
+      "duration_s": 257.040417,
+      "median_dt_s": 0.008332999999993262,
+      "median_hz": 120.00480019210471,
+      "mean_hz": 159.34848098227292,
+      "max_gap_s": 0.016667000000012422,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 32
+    },
+    "packet_duration_counts": {
+      "0.004167": 40960
+    }
+  },
+  {
+    "path": "Video Data/eduardo_session_1.MOV",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "245099/39109800",
+          "codec_tag_string": "hvc1",
+          "codec_tag": "0x31637668",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 153,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "refs": 1,
+          "r_frame_rate": "240/1",
+          "avg_frame_rate": "39109800/245099",
+          "time_base": "1/2400",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 980376,
+          "duration": "408.490000",
+          "bit_rate": "57425024",
+          "nb_frames": "65183",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "rotate": "90",
+            "creation_time": "2026-11-16T03:45:01.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Video",
+            "encoder": "HEVC"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     70778880           0  1073741824\n",
+              "rotation": -90
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/48000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 19607520,
+          "duration": "408.490000",
+          "bit_rate": "191101",
+          "max_bit_rate": "192000",
+          "nb_frames": "19151",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T03:45:01.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "audio",
+          "codec_tag_string": "apac",
+          "codec_tag": "0x63617061",
+          "sample_rate": "48000",
+          "channels": 4,
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 19607520,
+          "duration": "408.490000",
+          "bit_rate": "395412",
+          "nb_frames": "19148",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T03:45:01.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Video Data/eduardo_session_1.MOV",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "408.490000",
+        "size": "2963607646",
+        "bit_rate": "58040248",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "qt  ",
+          "minor_version": "0",
+          "compatible_brands": "qt  ",
+          "creation_time": "2026-11-16T03:45:01.000000Z",
+          "com.apple.quicktime.full-frame-rate-playback-intent": "0",
+          "com.apple.quicktime.make": "Apple",
+          "com.apple.quicktime.model": "iPhone 16 Pro",
+          "com.apple.quicktime.software": "27.0.1",
+          "com.apple.quicktime.creationdate": "2026-11-15T16:52:31-0600"
+        }
+      }
+    },
+    "packet_count": 65183,
+    "presentation_timing": {
+      "first_s": 0.0,
+      "last_s": 408.495417,
+      "duration_s": 408.495417,
+      "median_dt_s": 0.008332999999993262,
+      "median_hz": 120.00480019210471,
+      "mean_hz": 159.56604967247407,
+      "max_gap_s": 0.01666699999999821,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 43
+    },
+    "packet_duration_counts": {
+      "0.004167": 65183
+    }
+  },
+  {
+    "path": "Video Data/lucas_session.MOV",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "209087/33323200",
+          "codec_tag_string": "hvc1",
+          "codec_tag": "0x31637668",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 153,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "refs": 1,
+          "r_frame_rate": "240/1",
+          "avg_frame_rate": "33323200/209087",
+          "time_base": "1/2400",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 627248,
+          "duration": "261.353333",
+          "bit_rate": "50123813",
+          "nb_frames": "41654",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "rotate": "90",
+            "creation_time": "2026-11-16T01:33:41.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Video",
+            "encoder": "HEVC"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     70778880           0  1073741824\n",
+              "rotation": -90
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/48000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 12544960,
+          "duration": "261.353333",
+          "bit_rate": "179548",
+          "max_bit_rate": "192000",
+          "nb_frames": "12253",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T01:33:41.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "audio",
+          "codec_tag_string": "apac",
+          "codec_tag": "0x63617061",
+          "sample_rate": "48000",
+          "channels": 4,
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 12544960,
+          "duration": "261.353333",
+          "bit_rate": "397743",
+          "nb_frames": "12251",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T01:33:41.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Video Data/lucas_session.MOV",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "261.353333",
+        "size": "1657296122",
+        "bit_rate": "50729672",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "qt  ",
+          "minor_version": "0",
+          "compatible_brands": "qt  ",
+          "creation_time": "2026-11-16T01:33:41.000000Z",
+          "com.apple.quicktime.full-frame-rate-playback-intent": "0",
+          "com.apple.quicktime.make": "Apple",
+          "com.apple.quicktime.model": "iPhone 16 Pro",
+          "com.apple.quicktime.software": "27.0.1",
+          "com.apple.quicktime.creationdate": "2026-11-15T16:35:07-0600"
+        }
+      }
+    },
+    "packet_count": 41654,
+    "presentation_timing": {
+      "first_s": 0.0,
+      "last_s": 261.350417,
+      "duration_s": 261.350417,
+      "median_dt_s": 0.008332999999993262,
+      "median_hz": 120.00480019210471,
+      "mean_hz": 159.3760609917068,
+      "max_gap_s": 0.016667000000012422,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 30
+    },
+    "packet_duration_counts": {
+      "0.004167": 41654
+    }
+  },
+  {
+    "path": "Video Data/rohan_session_1.MOV",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "769/122400",
+          "codec_tag_string": "hvc1",
+          "codec_tag": "0x31637668",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 153,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "refs": 1,
+          "r_frame_rate": "240/1",
+          "avg_frame_rate": "122400/769",
+          "time_base": "1/2400",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 302972,
+          "duration": "126.238333",
+          "bit_rate": "49934602",
+          "nb_frames": "20094",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "rotate": "90",
+            "creation_time": "2026-11-16T01:32:01.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Video",
+            "encoder": "HEVC"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     70778880           0  1073741824\n",
+              "rotation": -90
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/48000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 6059440,
+          "duration": "126.238333",
+          "bit_rate": "188307",
+          "max_bit_rate": "192000",
+          "nb_frames": "5920",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T01:32:01.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "audio",
+          "codec_tag_string": "apac",
+          "codec_tag": "0x63617061",
+          "sample_rate": "48000",
+          "channels": 4,
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 6059440,
+          "duration": "126.238333",
+          "bit_rate": "397759",
+          "nb_frames": "5918",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T01:32:01.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Video Data/rohan_session_1.MOV",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "126.238333",
+        "size": "797678253",
+        "bit_rate": "50550620",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "qt  ",
+          "minor_version": "0",
+          "compatible_brands": "qt  ",
+          "creation_time": "2026-11-16T01:32:01.000000Z",
+          "com.apple.quicktime.full-frame-rate-playback-intent": "0",
+          "com.apple.quicktime.make": "Apple",
+          "com.apple.quicktime.model": "iPhone 16 Pro",
+          "com.apple.quicktime.software": "27.0.1",
+          "com.apple.quicktime.creationdate": "2026-11-15T16:19:27-0600"
+        }
+      }
+    },
+    "packet_count": 20094,
+    "presentation_timing": {
+      "first_s": 0.0,
+      "last_s": 126.235833,
+      "duration_s": 126.235833,
+      "median_dt_s": 0.008332999999993262,
+      "median_hz": 120.00480019210471,
+      "mean_hz": 159.17033636558648,
+      "max_gap_s": 0.01666699999999821,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 16
+    },
+    "packet_duration_counts": {
+      "0.004167": 20094
+    }
+  },
+  {
+    "path": "Video Data/rohan_session_2.MOV",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "213519/33956800",
+          "codec_tag_string": "hvc1",
+          "codec_tag": "0x31637668",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 153,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "refs": 1,
+          "r_frame_rate": "240/1",
+          "avg_frame_rate": "33956800/213519",
+          "time_base": "1/2400",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 640544,
+          "duration": "266.893333",
+          "bit_rate": "50004820",
+          "nb_frames": "42446",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "rotate": "90",
+            "creation_time": "2026-11-16T03:28:53.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Video",
+            "encoder": "HEVC"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     70778880           0  1073741824\n",
+              "rotation": -90
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/48000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 12810880,
+          "duration": "266.893333",
+          "bit_rate": "185310",
+          "max_bit_rate": "192000",
+          "nb_frames": "12513",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T03:28:53.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "audio",
+          "codec_tag_string": "apac",
+          "codec_tag": "0x63617061",
+          "sample_rate": "48000",
+          "channels": 4,
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 12810880,
+          "duration": "266.893333",
+          "bit_rate": "397747",
+          "nb_frames": "12511",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T03:28:53.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Video Data/rohan_session_2.MOV",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "266.893333",
+        "size": "1688646507",
+        "bit_rate": "50616371",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "qt  ",
+          "minor_version": "0",
+          "compatible_brands": "qt  ",
+          "creation_time": "2026-11-16T03:28:53.000000Z",
+          "com.apple.quicktime.full-frame-rate-playback-intent": "0",
+          "com.apple.quicktime.make": "Apple",
+          "com.apple.quicktime.model": "iPhone 16 Pro",
+          "com.apple.quicktime.software": "27.0.1",
+          "com.apple.quicktime.creationdate": "2026-11-15T16:23:04-0600"
+        }
+      }
+    },
+    "packet_count": 42446,
+    "presentation_timing": {
+      "first_s": 0.0,
+      "last_s": 266.890417,
+      "duration_s": 266.890417,
+      "median_dt_s": 0.008332999999993262,
+      "median_hz": 120.00480019210471,
+      "mean_hz": 159.03530923704915,
+      "max_gap_s": 0.016666999999999987,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 39
+    },
+    "packet_duration_counts": {
+      "0.004167": 42446
+    }
+  },
+  {
+    "path": "Video Data/sid_session_1.MOV",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "14137/2251600",
+          "codec_tag_string": "hvc1",
+          "codec_tag": "0x31637668",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 153,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "refs": 1,
+          "r_frame_rate": "240/1",
+          "avg_frame_rate": "2251600/14137",
+          "time_base": "1/2400",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1017864,
+          "duration": "424.110000",
+          "bit_rate": "50027545",
+          "nb_frames": "67548",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "rotate": "90",
+            "creation_time": "2026-11-16T02:59:46.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Video",
+            "encoder": "HEVC"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     70778880           0  1073741824\n",
+              "rotation": -90
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_time_base": "1/48000",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 20357280,
+          "duration": "424.110000",
+          "bit_rate": "177761",
+          "max_bit_rate": "192000",
+          "nb_frames": "19883",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T02:59:46.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "audio",
+          "codec_tag_string": "apac",
+          "codec_tag": "0x63617061",
+          "sample_rate": "48000",
+          "channels": 4,
+          "bits_per_sample": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 20357280,
+          "duration": "424.110000",
+          "bit_rate": "397828",
+          "nb_frames": "19881",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          },
+          "tags": {
+            "creation_time": "2026-11-16T02:59:46.000000Z",
+            "language": "und",
+            "handler_name": "Core Media Audio"
+          }
+        }
+      ],
+      "format": {
+        "filename": "Video Data/sid_session_1.MOV",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "424.110000",
+        "size": "2684118149",
+        "bit_rate": "50630603",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "qt  ",
+          "minor_version": "0",
+          "compatible_brands": "qt  ",
+          "creation_time": "2026-11-16T02:59:46.000000Z",
+          "com.apple.quicktime.full-frame-rate-playback-intent": "0",
+          "com.apple.quicktime.make": "Apple",
+          "com.apple.quicktime.model": "iPhone 16 Pro",
+          "com.apple.quicktime.software": "27.0.1",
+          "com.apple.quicktime.creationdate": "2026-11-15T16:03:06-0600"
+        }
+      }
+    },
+    "packet_count": 67548,
+    "presentation_timing": {
+      "first_s": 0.0,
+      "last_s": 424.105833,
+      "duration_s": 424.105833,
+      "median_dt_s": 0.008332999999993262,
+      "median_hz": 120.00480019210471,
+      "mean_hz": 159.2692076932599,
+      "max_gap_s": 0.016667000000040844,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 50
+    },
+    "packet_duration_counts": {
+      "0.004167": 67548
+    }
+  }
+]

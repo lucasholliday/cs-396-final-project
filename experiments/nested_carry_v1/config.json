@@ -1,0 +1,13 @@
+{
+  "seed": 396,
+  "families": [
+    "mean",
+    "ridge10",
+    "extra_trees",
+    "svr"
+  ],
+  "inner_folds": 3,
+  "selection": "pooled inner MAE",
+  "outer_split_source": "experiments/baseline_v1/splits.csv",
+  "target": "Carry flat (yd)"
+}

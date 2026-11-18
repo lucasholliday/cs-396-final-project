@@ -1,0 +1,9 @@
+{
+  "session": "Sid 1",
+  "camera_candidates": 29,
+  "trajectory_passed": 18,
+  "near_reference_candidates": 15,
+  "unique_reference_swings_matched": 15,
+  "reference_swings": 18,
+  "interpretation": "Event localization proposals, compared with reference windows at +/-1.5s; not exact impact accuracy or validated point tracking. No watch used in detection/filtering."
+}

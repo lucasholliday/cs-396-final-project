@@ -1,0 +1,9 @@
+{
+  "pose_model": "models/pretrained/pose_landmarker_full.task",
+  "pose_fps": 30,
+  "clip_before_candidate_s": 2.5,
+  "clip_after_candidate_s": 1.0,
+  "width": 540,
+  "min_visibility": 0.6,
+  "description": "Exploratory full-swing pose, includes follow-through; sensor-assisted clip selection, not autonomous camera-only event detection. No physical speed or practice-swing claim."
+}

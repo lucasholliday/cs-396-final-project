@@ -1,0 +1,33 @@
+# Data issues
+
+## User clarifications — 2026-11-17
+- Nth actual strike within each named session maps to nth Excel row, including unregistered strikes. No practice swings. Devices started before strikes, not necessarily simultaneously.
+- All golfers right handed, all seven iron, watch always left/lead wrist.
+- User later specifies Wilson Staff CB 7 iron, sensor on shaft immediately below rubber grip. Nominal current Wilson reference length 37.25 inches (0.94615 m), loft 34°, lie 62°; actual year/custom length and chip offset unknown. `configs/equipment.json` preserves distinction. Overall club length alone does not establish exact sensor-to-head or sensor-to-body location.
+- Follow-up resolves custom length: standard length confirmed. Sensor sits approximately one inch below lower/distal grip end. User cannot measure exact chip position now and can later. Model year/grip length/chip offset remain unknown; do not re-ask until precise metric calibration is needed.
+- Five club sessions ended when SD card came loose; recorded prefix remains valid. Eduardo alone has completion summary. Missing tail must remain absent; retain video/watch-only shots.
+- Acceleration saturation is expected from sensor range. Do not treat clipped peaks as true peaks.
+- Videos transferred through Google Drive; user recalls mixed 120/240 fps capture. Exact per-file capture rate unknown. Use measured timestamps; validate real-time relationship using sensor events before reporting physical speed.
+
+## Open audit issues
+- Six MOVs nominal 240 fps but average playback ~159 fps and median PTS interval ~1/120 s. Capture clock still requires technical verification; no additional user question currently pending.
+- Actual strike counts/timestamps remain unverified. Must reconcile 18/5/10/12/11/20 without shifting labels after missed detections.
+- Missing labels: rohan_1_03 (Excel row 22), rohan_2_09 (33), andrew_1_05 (51, stale screen), andrew_1_06 (52). Preserve strike candidates; exclude missing targets.
+- Source photos referenced by all 76 rows are absent. User-supplied labels retained; cannot independently check transcription. Preserve supplemental corrections for sid_1_08, rohan_2_05, lucas_1_09.
+- Rohan 2 WatchMicrophone.mp4 fails ffprobe with `moov atom not found`; motion CSV is readable. Other watch audio durations differ from wrist timelines; audio alignment unverified.
+- Watch folder times appear UTC despite America/Chicago metadata. Use epoch timestamps and verify events. Club time is monotonic nanoseconds since start, not UTC.
+- Watch signal units/axis conventions need technical verification. Club units/ranges declared in metadata.
+- No clubhead speed, spin or spin-axis ground truth. No real practice swings.
+- Git resolves to unrelated home repository (master, no commits). Do not stage there.
+- System Pillow binary incompatible architecture. Audit uses FFmpeg instead.
+
+## Subsequent resolutions and limitations
+- All 76 identity/order associations accepted for whole-swing analysis after contact-sheet review. Exact impact not annotated. 72 labeled shots benchmarked, 65 on matched club cohort.
+- Club tails missing: sid_1_18; rohan_1_04–05; rohan_2_08–10; lucas_1_12; andrew_1_11. Valid preceding data retained. All 68 club windows contain near-acceleration-limit samples; club acceleration excluded from predictors.
+- Portrait rotation metadata must be honored. Initial sparse audit thumbnails were squashed for contact-sheet display; actual pose inputs preserve aspect ratio and later review sheets are portrait-correct.
+- Pose wrist confidence is poor (mean 18.9% of clip frames pass the both-wrists threshold), even though body/head detection is available. Do not claim precise hand/club biomechanics from these landmarks.
+- Ball batch produced 36/76 gated proposals, not 36 validated tracks. Motion blur, club confusion and stationary-background tails remain. `annotations/ball_review_queue.csv` requires point review before ball features enter models.
+- Watch axis extrema cluster near ~35 recorded rotation-rate units; possible sensor range limiting is not established. No watch saturation flags or independently verified export units. Initial regression uses recorded units and does not interpret peaks as physical angular speed.
+- Local Git repository on main now initialized with approval; system-package problems resolved by isolated .venv. Earlier home-repository/system-binary findings are historical. No remote or push.
+
+- Camera-only Sid filtering retained 18 proposals, of which 15 match reference neighborhoods and three are extras. Event 27 visibly tracks a leg/background; event 12 misses visible flight. No exact impact or point-tracking accuracy established.

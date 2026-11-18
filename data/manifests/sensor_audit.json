@@ -1,0 +1,2631 @@
+[
+  {
+    "path": "Club Data/session_00011_sid/imu.csv",
+    "rows": 69550,
+    "columns": [
+      "sample",
+      "t_ns",
+      "read_us",
+      "ax_m_s2",
+      "ay_m_s2",
+      "az_m_s2",
+      "gx_rad_s",
+      "gy_rad_s",
+      "gz_rad_s",
+      "near_accel_limit",
+      "near_gyro_limit"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.001480102,
+      "last_s": 368.82942199400003,
+      "duration_s": 368.827941892,
+      "median_dt_s": 0.005004883999987442,
+      "median_hz": 199.8048306419308,
+      "mean_hz": 188.56760050019557,
+      "max_gap_s": 0.030227660999997852,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 4369
+    },
+    "ranges": {
+      "sample": [
+        0.0,
+        69549.0
+      ],
+      "t_ns": [
+        1480102.0,
+        368829421994.0
+      ],
+      "read_us": [
+        671.0,
+        885.0
+      ],
+      "ax_m_s2": [
+        -156.7968,
+        140.5782
+      ],
+      "ay_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "az_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "gx_rad_s": [
+        -55.40795,
+        17.40478
+      ],
+      "gy_rad_s": [
+        -20.378476,
+        26.90496
+      ],
+      "gz_rad_s": [
+        -7.413464,
+        34.1987
+      ],
+      "near_accel_limit": [
+        0.0,
+        1.0
+      ],
+      "near_gyro_limit": [
+        0.0,
+        0.0
+      ]
+    },
+    "near_accel_limit_rows": 452,
+    "near_accel_limit_first_s": 7.620559691,
+    "near_gyro_limit_rows": 0,
+    "near_gyro_limit_first_s": null
+  },
+  {
+    "path": "Club Data/session_00012_rohan_1/imu.csv",
+    "rows": 17206,
+    "columns": [
+      "sample",
+      "t_ns",
+      "read_us",
+      "ax_m_s2",
+      "ay_m_s2",
+      "az_m_s2",
+      "gx_rad_s",
+      "gy_rad_s",
+      "gz_rad_s",
+      "near_accel_limit",
+      "near_gyro_limit"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.0015258790000000002,
+      "last_s": 91.159835817,
+      "duration_s": 91.158309938,
+      "median_dt_s": 0.005004878000001156,
+      "median_hz": 199.80507017349254,
+      "mean_hz": 188.73759300388227,
+      "max_gap_s": 0.03521728599999818,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 1079
+    },
+    "ranges": {
+      "sample": [
+        0.0,
+        17205.0
+      ],
+      "t_ns": [
+        1525879.0,
+        91159835817.0
+      ],
+      "read_us": [
+        671.0,
+        854.0
+      ],
+      "ax_m_s2": [
+        -156.7968,
+        8.848654
+      ],
+      "ay_m_s2": [
+        -151.8388,
+        136.64444
+      ],
+      "az_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "gx_rad_s": [
+        -38.82662,
+        20.52753
+      ],
+      "gy_rad_s": [
+        -31.86763,
+        26.86831
+      ],
+      "gz_rad_s": [
+        -12.544736,
+        41.4289
+      ],
+      "near_accel_limit": [
+        0.0,
+        1.0
+      ],
+      "near_gyro_limit": [
+        0.0,
+        0.0
+      ]
+    },
+    "near_accel_limit_rows": 83,
+    "near_accel_limit_first_s": 35.634811402000004,
+    "near_gyro_limit_rows": 0,
+    "near_gyro_limit_first_s": null
+  },
+  {
+    "path": "Club Data/session_00013_rohan_2/imu.csv",
+    "rows": 38975,
+    "columns": [
+      "sample",
+      "t_ns",
+      "read_us",
+      "ax_m_s2",
+      "ay_m_s2",
+      "az_m_s2",
+      "gx_rad_s",
+      "gy_rad_s",
+      "gz_rad_s",
+      "near_accel_limit",
+      "near_gyro_limit"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.0015258790000000002,
+      "last_s": 206.6195221,
+      "duration_s": 206.617996221,
+      "median_dt_s": 0.005004883999987442,
+      "median_hz": 199.8048306419308,
+      "mean_hz": 188.62829333759072,
+      "max_gap_s": 0.030685422999994216,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 2447
+    },
+    "ranges": {
+      "sample": [
+        0.0,
+        38974.0
+      ],
+      "t_ns": [
+        1525879.0,
+        206619522100.0
+      ],
+      "read_us": [
+        671.0,
+        854.0
+      ],
+      "ax_m_s2": [
+        -156.7968,
+        41.45802
+      ],
+      "ay_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "az_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "gx_rad_s": [
+        -49.98102,
+        13.202028
+      ],
+      "gy_rad_s": [
+        -27.22017,
+        24.50793
+      ],
+      "gz_rad_s": [
+        -14.82693,
+        39.81133
+      ],
+      "near_accel_limit": [
+        0.0,
+        1.0
+      ],
+      "near_gyro_limit": [
+        0.0,
+        0.0
+      ]
+    },
+    "near_accel_limit_rows": 170,
+    "near_accel_limit_first_s": 30.672500612,
+    "near_gyro_limit_rows": 0,
+    "near_gyro_limit_first_s": null
+  },
+  {
+    "path": "Club Data/session_00014_lucas/imu.csv",
+    "rows": 45672,
+    "columns": [
+      "sample",
+      "t_ns",
+      "read_us",
+      "ax_m_s2",
+      "ay_m_s2",
+      "az_m_s2",
+      "gx_rad_s",
+      "gy_rad_s",
+      "gz_rad_s",
+      "near_accel_limit",
+      "near_gyro_limit"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.0015106210000000002,
+      "last_s": 242.19258118000002,
+      "duration_s": 242.19107055900002,
+      "median_dt_s": 0.005004883999987442,
+      "median_hz": 199.8048306419308,
+      "mean_hz": 188.5742521166738,
+      "max_gap_s": 0.028747565000003306,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 2870
+    },
+    "ranges": {
+      "sample": [
+        0.0,
+        45671.0
+      ],
+      "t_ns": [
+        1510621.0,
+        242192581180.0
+      ],
+      "read_us": [
+        671.0,
+        885.0
+      ],
+      "ax_m_s2": [
+        -156.7968,
+        53.69012
+      ],
+      "ay_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "az_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "gx_rad_s": [
+        -56.6981,
+        49.16979
+      ],
+      "gy_rad_s": [
+        -53.61934,
+        40.93044
+      ],
+      "gz_rad_s": [
+        -15.093268,
+        44.55166
+      ],
+      "near_accel_limit": [
+        0.0,
+        1.0
+      ],
+      "near_gyro_limit": [
+        0.0,
+        0.0
+      ]
+    },
+    "near_accel_limit_rows": 319,
+    "near_accel_limit_first_s": 36.382644658000004,
+    "near_gyro_limit_rows": 0,
+    "near_gyro_limit_first_s": null
+  },
+  {
+    "path": "Club Data/session_00015_andrew/imu.csv",
+    "rows": 46418,
+    "columns": [
+      "sample",
+      "t_ns",
+      "read_us",
+      "ax_m_s2",
+      "ay_m_s2",
+      "az_m_s2",
+      "gx_rad_s",
+      "gy_rad_s",
+      "gz_rad_s",
+      "near_accel_limit",
+      "near_gyro_limit"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.0014953610000000002,
+      "last_s": 246.11524964,
+      "duration_s": 246.113754279,
+      "median_dt_s": 0.005004883999987442,
+      "median_hz": 199.8048306419308,
+      "mean_hz": 188.59978035758482,
+      "max_gap_s": 0.029617306999995208,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 2915
+    },
+    "ranges": {
+      "sample": [
+        0.0,
+        46417.0
+      ],
+      "t_ns": [
+        1495361.0,
+        246115249640.0
+      ],
+      "read_us": [
+        671.0,
+        2868.0
+      ],
+      "ax_m_s2": [
+        -156.7968,
+        113.3958
+      ],
+      "ay_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "az_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "gx_rad_s": [
+        -66.65276,
+        25.988668
+      ],
+      "gy_rad_s": [
+        -26.68016,
+        7.648038
+      ],
+      "gz_rad_s": [
+        -14.741408,
+        33.21888
+      ],
+      "near_accel_limit": [
+        0.0,
+        1.0
+      ],
+      "near_gyro_limit": [
+        0.0,
+        0.0
+      ]
+    },
+    "near_accel_limit_rows": 296,
+    "near_accel_limit_first_s": 24.345687872000003,
+    "near_gyro_limit_rows": 0,
+    "near_gyro_limit_first_s": null
+  },
+  {
+    "path": "Club Data/session_00016_eduardo/imu.csv",
+    "rows": 81308,
+    "columns": [
+      "sample",
+      "t_ns",
+      "read_us",
+      "ax_m_s2",
+      "ay_m_s2",
+      "az_m_s2",
+      "gx_rad_s",
+      "gy_rad_s",
+      "gz_rad_s",
+      "near_accel_limit",
+      "near_gyro_limit"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.001647945,
+      "last_s": 431.15180969100004,
+      "duration_s": 431.15016174600004,
+      "median_dt_s": 0.00500488399995902,
+      "median_hz": 199.80483064306546,
+      "mean_hz": 188.58162935793985,
+      "max_gap_s": 0.039764400000024125,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 5107
+    },
+    "ranges": {
+      "sample": [
+        0.0,
+        81307.0
+      ],
+      "t_ns": [
+        1647945.0,
+        431151809691.0
+      ],
+      "read_us": [
+        671.0,
+        854.0
+      ],
+      "ax_m_s2": [
+        -156.7968,
+        51.04366
+      ],
+      "ay_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "az_m_s2": [
+        -156.7968,
+        156.7968
+      ],
+      "gx_rad_s": [
+        -43.94323,
+        23.117592
+      ],
+      "gy_rad_s": [
+        -21.35586,
+        8.45438
+      ],
+      "gz_rad_s": [
+        -12.13668,
+        29.521916
+      ],
+      "near_accel_limit": [
+        0.0,
+        1.0
+      ],
+      "near_gyro_limit": [
+        0.0,
+        0.0
+      ]
+    },
+    "near_accel_limit_rows": 732,
+    "near_accel_limit_first_s": 1.40594482,
+    "near_gyro_limit_rows": 0,
+    "near_gyro_limit_first_s": null
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/Manifest.csv",
+    "rows": 7,
+    "columns": [
+      "Metadata"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 1,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/Metadata.csv",
+    "rows": 1,
+    "columns": [
+      "version",
+      "device name",
+      "recording epoch time",
+      "recording time",
+      "recording timezone",
+      "platform",
+      "appVersion",
+      "device id",
+      "sensors",
+      "sampleRateMs",
+      "standardisation"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {
+      "version": [
+        4.0,
+        4.0
+      ],
+      "recording epoch time": [
+        1794782737223.0,
+        1794782737223.0
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/Tags.csv",
+    "rows": 1,
+    "columns": [
+      "tag"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/WatchAccelerometerUncalibrated.csv",
+    "rows": 27728,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.0643758773803711,
+      "last_s": 279.48442339897156,
+      "duration_s": 279.4200475215912,
+      "median_dt_s": 0.010077953338615941,
+      "median_hz": 99.22649633316672,
+      "mean_hz": 99.23053211798447,
+      "max_gap_s": 0.010087966918945312,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.79478273728769e+18,
+        1.7947830167077373e+18
+      ],
+      "seconds_elapsed": [
+        0.0643758773803711,
+        279.48442339897156
+      ],
+      "x": [
+        -2.8648529052734375,
+        22.37359619140625
+      ],
+      "y": [
+        -22.390350341796875,
+        17.15936279296875
+      ],
+      "z": [
+        -13.608367919921877,
+        30.62298583984375
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/WatchBarometer.csv",
+    "rows": 132,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "relativeAltitude",
+      "pressure"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 4.6518471240997314,
+      "last_s": 340.97988295555115,
+      "duration_s": 336.3280358314514,
+      "median_dt_s": 2.5594658851623535,
+      "median_hz": 0.3907065164639096,
+      "mean_hz": 0.3895006839859458,
+      "max_gap_s": 6.066161870956421,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 2
+    },
+    "ranges": {
+      "time": [
+        1.794782741875161e+18,
+        1.794783078203197e+18
+      ],
+      "seconds_elapsed": [
+        4.6518471240997314,
+        340.97988295555115
+      ],
+      "relativeAltitude": [
+        -2.090000152587891,
+        0.5900000333786011
+      ],
+      "pressure": [
+        100.75084686279295,
+        100.76226806640624
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/WatchCompass.csv",
+    "rows": 27682,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "magneticBearing"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5228979587554932,
+      "last_s": 279.47938442230225,
+      "duration_s": 278.95648646354675,
+      "median_dt_s": 0.010077953338615941,
+      "median_hz": 99.22649633316672,
+      "mean_hz": 99.2305300046044,
+      "max_gap_s": 0.010087966918945312,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.794782737746212e+18,
+        1.7947830167026985e+18
+      ],
+      "seconds_elapsed": [
+        0.5228979587554932,
+        279.47938442230225
+      ],
+      "magneticBearing": [
+        0.0052418708801269,
+        359.99224853515625
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/WatchMagnetometer.csv",
+    "rows": 27682,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5228979587554932,
+      "last_s": 279.47938442230225,
+      "duration_s": 278.95648646354675,
+      "median_dt_s": 0.010077953338615941,
+      "median_hz": 99.22649633316672,
+      "mean_hz": 99.2305300046044,
+      "max_gap_s": 0.010087966918945312,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.794782737746212e+18,
+        1.7947830167026985e+18
+      ],
+      "seconds_elapsed": [
+        0.5228979587554932,
+        279.47938442230225
+      ],
+      "x": [
+        -47.764312744140625,
+        55.49574279785156
+      ],
+      "y": [
+        -44.0321044921875,
+        51.39569091796875
+      ],
+      "z": [
+        -51.0301513671875,
+        45.662353515625
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/WatchMicrophone.csv",
+    "rows": 2782,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "dBFS"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.6183300018310547,
+      "last_s": 279.41698598861694,
+      "duration_s": 278.7986559867859,
+      "median_dt_s": 0.1000020503998087,
+      "median_hz": 9.999794964223184,
+      "mean_hz": 9.974940482251858,
+      "max_gap_s": 0.6768937110900879,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 2
+    },
+    "ranges": {
+      "time": [
+        1.794782737841644e+18,
+        1.7947830166403e+18
+      ],
+      "seconds_elapsed": [
+        0.6183300018310547,
+        279.41698598861694
+      ],
+      "dBFS": [
+        -44.0946044921875,
+        -4.525354385375977
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/andrew-2026-11-15_22-45-37/WristMotion.csv",
+    "rows": 27682,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "rotationRateX",
+      "rotationRateY",
+      "rotationRateZ",
+      "gravityX",
+      "gravityY",
+      "gravityZ",
+      "accelerationX",
+      "accelerationY",
+      "accelerationZ",
+      "quaternionW",
+      "quaternionX",
+      "quaternionY",
+      "quaternionZ",
+      "pitch",
+      "roll",
+      "yaw"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5228979587554932,
+      "last_s": 279.47938442230225,
+      "duration_s": 278.95648646354675,
+      "median_dt_s": 0.010077953338615941,
+      "median_hz": 99.22649633316672,
+      "mean_hz": 99.2305300046044,
+      "max_gap_s": 0.010087966918945312,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.794782737746212e+18,
+        1.7947830167026985e+18
+      ],
+      "seconds_elapsed": [
+        0.5228979587554932,
+        279.47938442230225
+      ],
+      "rotationRateX": [
+        -35.15611267089844,
+        19.572750091552734
+      ],
+      "rotationRateY": [
+        -34.95379638671875,
+        35.26836395263672
+      ],
+      "rotationRateZ": [
+        -35.07154846191406,
+        35.29684829711914
+      ],
+      "gravityX": [
+        -0.9729873538017272,
+        0.9999932646751404
+      ],
+      "gravityY": [
+        -0.8163189888000488,
+        0.9986637234687804
+      ],
+      "gravityZ": [
+        -0.9999960660934448,
+        0.9952179193496704
+      ],
+      "accelerationX": [
+        -3.738559246063232,
+        21.404699325561523
+      ],
+      "accelerationY": [
+        -22.16044044494629,
+        16.60906410217285
+      ],
+      "accelerationZ": [
+        -13.505263328552246,
+        30.68872833251953
+      ],
+      "quaternionW": [
+        -0.7673748126057882,
+        0.9955182274041684
+      ],
+      "quaternionX": [
+        -0.9933439712250176,
+        0.6402261668805521
+      ],
+      "quaternionY": [
+        -0.9317380262639476,
+        0.423713499113335
+      ],
+      "quaternionZ": [
+        -0.7101334874086129,
+        0.8939756652451851
+      ],
+      "pitch": [
+        -1.519093487228072,
+        0.9550090580580252
+      ],
+      "roll": [
+        -3.1398010436885406,
+        3.1385332270371555
+      ],
+      "yaw": [
+        -3.141519870418201,
+        3.1415298551350688
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/Manifest.csv",
+    "rows": 7,
+    "columns": [
+      "Metadata"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 1,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/Metadata.csv",
+    "rows": 1,
+    "columns": [
+      "version",
+      "device name",
+      "recording epoch time",
+      "recording time",
+      "recording timezone",
+      "platform",
+      "appVersion",
+      "device id",
+      "sensors",
+      "sampleRateMs",
+      "standardisation"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {
+      "version": [
+        4.0,
+        4.0
+      ],
+      "recording epoch time": [
+        1794783160681.0,
+        1794783160681.0
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/Tags.csv",
+    "rows": 1,
+    "columns": [
+      "tag"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/WatchAccelerometerUncalibrated.csv",
+    "rows": 42368,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.0405123233795166,
+      "last_s": 427.0097820758819,
+      "duration_s": 426.9692697525024,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.2272816836643,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947831607217405e+18,
+        1.7947835876910103e+18
+      ],
+      "seconds_elapsed": [
+        0.0405123233795166,
+        427.0097820758819
+      ],
+      "x": [
+        -7.1502227783203125,
+        23.749008178710938
+      ],
+      "y": [
+        -13.691436767578123,
+        9.808975219726562
+      ],
+      "z": [
+        -5.810791015625,
+        24.426803588867188
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/WatchBarometer.csv",
+    "rows": 201,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "relativeAltitude",
+      "pressure"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 6.151166915893555,
+      "last_s": 518.6385087966919,
+      "duration_s": 512.4873418807983,
+      "median_dt_s": 2.57276713848114,
+      "median_hz": 0.3886865566039375,
+      "mean_hz": 0.39025354122115835,
+      "max_gap_s": 5.449399948120117,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 1
+    },
+    "ranges": {
+      "time": [
+        1.794783166832395e+18,
+        1.7947836793197368e+18
+      ],
+      "seconds_elapsed": [
+        6.151166915893555,
+        518.6385087966919
+      ],
+      "relativeAltitude": [
+        -3.160000085830688,
+        0.5099999308586121
+      ],
+      "pressure": [
+        100.75045013427734,
+        100.76618957519533
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/WatchCompass.csv",
+    "rows": 42317,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "magneticBearing"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5393204689025879,
+      "last_s": 426.9946641921997,
+      "duration_s": 426.4553437232971,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22727109138178,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947831612205486e+18,
+        1.7947835876758925e+18
+      ],
+      "seconds_elapsed": [
+        0.5393204689025879,
+        426.9946641921997
+      ],
+      "magneticBearing": [
+        0.2071375846862793,
+        359.9578552246094
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/WatchMagnetometer.csv",
+    "rows": 42317,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5393204689025879,
+      "last_s": 426.9946641921997,
+      "duration_s": 426.4553437232971,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22727109138178,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947831612205486e+18,
+        1.7947835876758925e+18
+      ],
+      "seconds_elapsed": [
+        0.5393204689025879,
+        426.9946641921997
+      ],
+      "x": [
+        -50.0228271484375,
+        56.44154357910156
+      ],
+      "y": [
+        -42.60136413574219,
+        51.311920166015625
+      ],
+      "z": [
+        -51.40625,
+        43.2330322265625
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/WatchMicrophone.csv",
+    "rows": 4263,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "dBFS"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.6394228935241699,
+      "last_s": 426.9379529953003,
+      "duration_s": 426.2985301017761,
+      "median_dt_s": 0.10000491142271528,
+      "median_hz": 9.99950888184936,
+      "mean_hz": 9.997688706509201,
+      "max_gap_s": 0.2663960456847576,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 1
+    },
+    "ranges": {
+      "time": [
+        1.794783161320651e+18,
+        1.794783587619181e+18
+      ],
+      "seconds_elapsed": [
+        0.6394228935241699,
+        426.9379529953003
+      ],
+      "dBFS": [
+        -44.452449798583984,
+        -2.0123982429504395
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/eduardo-2026-11-15_22-52-40/WristMotion.csv",
+    "rows": 42317,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "rotationRateX",
+      "rotationRateY",
+      "rotationRateZ",
+      "gravityX",
+      "gravityY",
+      "gravityZ",
+      "accelerationX",
+      "accelerationY",
+      "accelerationZ",
+      "quaternionW",
+      "quaternionX",
+      "quaternionY",
+      "quaternionZ",
+      "pitch",
+      "roll",
+      "yaw"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5393204689025879,
+      "last_s": 426.9946641921997,
+      "duration_s": 426.4553437232971,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22727109138178,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947831612205486e+18,
+        1.7947835876758925e+18
+      ],
+      "seconds_elapsed": [
+        0.5393204689025879,
+        426.9946641921997
+      ],
+      "rotationRateX": [
+        -35.26736068725586,
+        34.90935134887695
+      ],
+      "rotationRateY": [
+        -35.33853530883789,
+        35.313194274902344
+      ],
+      "rotationRateZ": [
+        -32.44138717651367,
+        15.764755249023438
+      ],
+      "gravityX": [
+        -0.9999285936355592,
+        0.9934422373771667
+      ],
+      "gravityY": [
+        -0.9056718349456788,
+        0.9999735355377196
+      ],
+      "gravityZ": [
+        -0.999987006187439,
+        0.7339337468147278
+      ],
+      "accelerationX": [
+        -7.216218948364258,
+        22.77893829345703
+      ],
+      "accelerationY": [
+        -14.46482276916504,
+        9.305288314819336
+      ],
+      "accelerationZ": [
+        -5.502063274383545,
+        24.090652465820312
+      ],
+      "quaternionW": [
+        -0.1885641147586295,
+        0.99995676654874
+      ],
+      "quaternionX": [
+        -0.9052301831797964,
+        0.8387930647794637
+      ],
+      "quaternionY": [
+        -0.7461969146479565,
+        0.5641098185812081
+      ],
+      "quaternionZ": [
+        -0.8276163844174343,
+        0.868877215529965
+      ],
+      "pitch": [
+        -1.5635206115127058,
+        1.132961700647121
+      ],
+      "roll": [
+        -3.1377765877347255,
+        3.138758382052162
+      ],
+      "yaw": [
+        -3.1413668464618016,
+        3.1415274584637656
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/Manifest.csv",
+    "rows": 7,
+    "columns": [
+      "Metadata"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 1,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/Metadata.csv",
+    "rows": 1,
+    "columns": [
+      "version",
+      "device name",
+      "recording epoch time",
+      "recording time",
+      "recording timezone",
+      "platform",
+      "appVersion",
+      "device id",
+      "sensors",
+      "sampleRateMs",
+      "standardisation"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {
+      "version": [
+        4.0,
+        4.0
+      ],
+      "recording epoch time": [
+        1794782136824.0,
+        1794782136824.0
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/Tags.csv",
+    "rows": 1,
+    "columns": [
+      "tag"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WatchAccelerometerUncalibrated.csv",
+    "rows": 22934,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.124246597290039,
+      "last_s": 231.22799706459045,
+      "duration_s": 231.10375046730042,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.23248737257019,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947821369484396e+18,
+        1.79478236805219e+18
+      ],
+      "seconds_elapsed": [
+        0.124246597290039,
+        231.22799706459045
+      ],
+      "x": [
+        -10.414794921875,
+        24.6961669921875
+      ],
+      "y": [
+        -7.524658203125,
+        20.23960876464844
+      ],
+      "z": [
+        -18.505081176757812,
+        21.624847412109375
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WatchBarometer.csv",
+    "rows": 107,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "relativeAltitude",
+      "pressure"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 6.062513828277588,
+      "last_s": 275.77445888519287,
+      "duration_s": 269.7119450569153,
+      "median_dt_s": 2.5741645097732544,
+      "median_hz": 0.3884755602073331,
+      "mean_hz": 0.3930118852453184,
+      "max_gap_s": 2.7301788330077983,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.794782142886707e+18,
+        1.794782412598652e+18
+      ],
+      "seconds_elapsed": [
+        6.062513828277588,
+        275.77445888519287
+      ],
+      "relativeAltitude": [
+        -2.929999828338623,
+        0.3300000429153442
+      ],
+      "pressure": [
+        100.75086212158205,
+        100.76305389404295
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WatchCompass.csv",
+    "rows": 22889,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "magneticBearing"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5777387619018555,
+      "last_s": 231.22799706459045,
+      "duration_s": 230.6502583026886,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.23249238231269,
+      "max_gap_s": 0.010079860687284281,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947821374019318e+18,
+        1.79478236805219e+18
+      ],
+      "seconds_elapsed": [
+        0.5777387619018555,
+        231.22799706459045
+      ],
+      "magneticBearing": [
+        11.349754333496094,
+        356.0384521484375
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WatchMagnetometer.csv",
+    "rows": 22889,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5777387619018555,
+      "last_s": 231.22799706459045,
+      "duration_s": 230.6502583026886,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.23249238231269,
+      "max_gap_s": 0.010079860687284281,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947821374019318e+18,
+        1.79478236805219e+18
+      ],
+      "seconds_elapsed": [
+        0.5777387619018555,
+        231.22799706459045
+      ],
+      "x": [
+        -49.371307373046875,
+        51.76300048828125
+      ],
+      "y": [
+        -44.51222229003906,
+        49.27606201171875
+      ],
+      "z": [
+        -55.82415771484375,
+        36.5640869140625
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WatchMicrophone.csv",
+    "rows": 2302,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "dBFS"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.6853280067443848,
+      "last_s": 231.17497205734253,
+      "duration_s": 230.48964405059814,
+      "median_dt_s": 0.10000300407409668,
+      "median_hz": 9.999699601614521,
+      "mean_hz": 9.983094943280289,
+      "max_gap_s": 0.5673990249633789,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 1
+    },
+    "ranges": {
+      "time": [
+        1.794782137509521e+18,
+        1.7947823679991652e+18
+      ],
+      "seconds_elapsed": [
+        0.6853280067443848,
+        231.17497205734253
+      ],
+      "dBFS": [
+        -47.68988800048828,
+        -1.964030146598816
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/lucas_session_1-2026-11-15_22-35-36/WristMotion.csv",
+    "rows": 22889,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "rotationRateX",
+      "rotationRateY",
+      "rotationRateZ",
+      "gravityX",
+      "gravityY",
+      "gravityZ",
+      "accelerationX",
+      "accelerationY",
+      "accelerationZ",
+      "quaternionW",
+      "quaternionX",
+      "quaternionY",
+      "quaternionZ",
+      "pitch",
+      "roll",
+      "yaw"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5777387619018555,
+      "last_s": 231.22799706459045,
+      "duration_s": 230.6502583026886,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.23249238231269,
+      "max_gap_s": 0.010079860687284281,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947821374019318e+18,
+        1.79478236805219e+18
+      ],
+      "seconds_elapsed": [
+        0.5777387619018555,
+        231.22799706459045
+      ],
+      "rotationRateX": [
+        -35.224708557128906,
+        20.456514358520508
+      ],
+      "rotationRateY": [
+        -35.022586822509766,
+        35.04792022705078
+      ],
+      "rotationRateZ": [
+        -35.05807876586914,
+        21.605222702026367
+      ],
+      "gravityX": [
+        -0.947109878063202,
+        0.9981793165206908
+      ],
+      "gravityY": [
+        -0.8452832102775574,
+        0.9999091625213624
+      ],
+      "gravityZ": [
+        -0.9998555779457092,
+        0.9133976101875304
+      ],
+      "accelerationX": [
+        -11.581214904785156,
+        21.900325775146484
+      ],
+      "accelerationY": [
+        -9.161423683166504,
+        21.97698402404785
+      ],
+      "accelerationZ": [
+        -20.365087509155273,
+        21.849424362182617
+      ],
+      "quaternionW": [
+        -0.0772472287951112,
+        0.9970415494394014
+      ],
+      "quaternionX": [
+        -0.8857618584335474,
+        0.7427660681316798
+      ],
+      "quaternionY": [
+        -0.8211861661238408,
+        0.57481722877337
+      ],
+      "quaternionZ": [
+        -0.6511663131018558,
+        0.9243738689499308
+      ],
+      "pitch": [
+        -1.5573162839341392,
+        1.0070949861733385
+      ],
+      "roll": [
+        -3.14119924875583,
+        3.1409007211392397
+      ],
+      "yaw": [
+        -3.1415159532647965,
+        3.141151500148434
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/Manifest.csv",
+    "rows": 7,
+    "columns": [
+      "Metadata"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 1,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/Metadata.csv",
+    "rows": 1,
+    "columns": [
+      "version",
+      "device name",
+      "recording epoch time",
+      "recording time",
+      "recording timezone",
+      "platform",
+      "appVersion",
+      "device id",
+      "sensors",
+      "sampleRateMs",
+      "standardisation"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {
+      "version": [
+        4.0,
+        4.0
+      ],
+      "recording epoch time": [
+        1794781164924.0,
+        1794781164924.0
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/Tags.csv",
+    "rows": 1,
+    "columns": [
+      "tag"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/WatchAccelerometerUncalibrated.csv",
+    "rows": 13589,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.0706584453582763,
+      "last_s": 136.9986596107483,
+      "duration_s": 136.92800116539001,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.23463341575828,
+      "max_gap_s": 0.010097026824951172,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947811649947226e+18,
+        1.7947813019227238e+18
+      ],
+      "seconds_elapsed": [
+        0.0706584453582763,
+        136.9986596107483
+      ],
+      "x": [
+        -5.0069732666015625,
+        13.905029296875
+      ],
+      "y": [
+        -4.82452392578125,
+        30.644317626953125
+      ],
+      "z": [
+        -5.6324615478515625,
+        31.112319946289062
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/WatchBarometer.csv",
+    "rows": 63,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "relativeAltitude",
+      "pressure"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 4.7116858959198,
+      "last_s": 164.11417484283447,
+      "duration_s": 159.40248894691467,
+      "median_dt_s": 2.558932662010193,
+      "median_hz": 0.3907879307830011,
+      "mean_hz": 0.388952521441793,
+      "max_gap_s": 3.059306144714327,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947811696357501e+18,
+        1.794781329038239e+18
+      ],
+      "seconds_elapsed": [
+        4.7116858959198,
+        164.11417484283447
+      ],
+      "relativeAltitude": [
+        -1.129999995231628,
+        0.5899999737739563
+      ],
+      "pressure": [
+        100.7457504272461,
+        100.75628662109376
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/WatchCompass.csv",
+    "rows": 13538,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "magneticBearing"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5795376300811768,
+      "last_s": 136.99362063407898,
+      "duration_s": 136.4140830039978,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.2346222757901,
+      "max_gap_s": 0.010079383850097656,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947811655036017e+18,
+        1.7947813019176847e+18
+      ],
+      "seconds_elapsed": [
+        0.5795376300811768,
+        136.99362063407898
+      ],
+      "magneticBearing": [
+        0.4297237396240234,
+        359.8226318359375
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/WatchMagnetometer.csv",
+    "rows": 13538,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5795376300811768,
+      "last_s": 136.99362063407898,
+      "duration_s": 136.4140830039978,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.2346222757901,
+      "max_gap_s": 0.010079383850097656,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947811655036017e+18,
+        1.7947813019176847e+18
+      ],
+      "seconds_elapsed": [
+        0.5795376300811768,
+        136.99362063407898
+      ],
+      "x": [
+        -48.81988525390625,
+        54.13780212402344
+      ],
+      "y": [
+        -36.85748291015625,
+        51.8739013671875
+      ],
+      "z": [
+        -50.648193359375,
+        49.28717041015625
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/WatchMicrophone.csv",
+    "rows": 1362,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "dBFS"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.672271728515625,
+      "last_s": 136.96684789657593,
+      "duration_s": 136.2945761680603,
+      "median_dt_s": 0.09999990463256836,
+      "median_hz": 10.000009536752259,
+      "mean_hz": 9.985723850975525,
+      "max_gap_s": 0.3036649227142334,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 1
+    },
+    "ranges": {
+      "time": [
+        1.7947811655963359e+18,
+        1.794781301890912e+18
+      ],
+      "seconds_elapsed": [
+        0.672271728515625,
+        136.96684789657593
+      ],
+      "dBFS": [
+        -45.95998764038086,
+        -3.690948247909546
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_1-2026-11-15_22-19-24/WristMotion.csv",
+    "rows": 13538,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "rotationRateX",
+      "rotationRateY",
+      "rotationRateZ",
+      "gravityX",
+      "gravityY",
+      "gravityZ",
+      "accelerationX",
+      "accelerationY",
+      "accelerationZ",
+      "quaternionW",
+      "quaternionX",
+      "quaternionY",
+      "quaternionZ",
+      "pitch",
+      "roll",
+      "yaw"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.5795376300811768,
+      "last_s": 136.99362063407898,
+      "duration_s": 136.4140830039978,
+      "median_dt_s": 0.01007699966430664,
+      "median_hz": 99.23588700137226,
+      "mean_hz": 99.2346222757901,
+      "max_gap_s": 0.010079383850097656,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947811655036017e+18,
+        1.7947813019176847e+18
+      ],
+      "seconds_elapsed": [
+        0.5795376300811768,
+        136.99362063407898
+      ],
+      "rotationRateX": [
+        -35.34428405761719,
+        14.76991844177246
+      ],
+      "rotationRateY": [
+        -34.73695373535156,
+        35.02604293823242
+      ],
+      "rotationRateZ": [
+        -34.5435676574707,
+        18.2333927154541
+      ],
+      "gravityX": [
+        -0.9854829907417296,
+        0.9999866485595704
+      ],
+      "gravityY": [
+        -0.6160926222801208,
+        0.9997373223304749
+      ],
+      "gravityZ": [
+        -0.998058557510376,
+        0.9638935327529908
+      ],
+      "accelerationX": [
+        -4.5822062492370605,
+        13.728970527648926
+      ],
+      "accelerationY": [
+        -4.882680892944336,
+        27.649349212646484
+      ],
+      "accelerationZ": [
+        -17.43777847290039,
+        29.03453063964844
+      ],
+      "quaternionW": [
+        -0.2376745442862616,
+        0.9982369410237092
+      ],
+      "quaternionX": [
+        -0.9131208224914578,
+        0.7524769310445826
+      ],
+      "quaternionY": [
+        -0.9600899844300458,
+        0.6590747736212426
+      ],
+      "quaternionZ": [
+        -0.6978618405982989,
+        0.8410041995211931
+      ],
+      "pitch": [
+        -1.5478756707468366,
+        0.6637723333132317
+      ],
+      "roll": [
+        -3.140992331001655,
+        3.139113340571312
+      ],
+      "yaw": [
+        -3.1412291861873376,
+        3.1414252848403708
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/Manifest.csv",
+    "rows": 5,
+    "columns": [
+      "Metadata"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/Metadata.csv",
+    "rows": 1,
+    "columns": [
+      "version",
+      "device name",
+      "recording epoch time",
+      "recording time",
+      "recording timezone",
+      "platform",
+      "appVersion",
+      "device id",
+      "sensors",
+      "sampleRateMs",
+      "standardisation"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {
+      "version": [
+        4.0,
+        4.0
+      ],
+      "recording epoch time": [
+        1794781404175.0,
+        1794781404175.0
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/Tags.csv",
+    "rows": 1,
+    "columns": [
+      "tag"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/WatchAccelerometerUncalibrated.csv",
+    "rows": 23329,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.1142959594726562,
+      "last_s": 235.20917201042175,
+      "duration_s": 235.0948760509491,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22802398698141,
+      "max_gap_s": 0.010098934173583984,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.79478140428926e+18,
+        1.794781639384136e+18
+      ],
+      "seconds_elapsed": [
+        0.1142959594726562,
+        235.20917201042175
+      ],
+      "x": [
+        -8.768096923828125,
+        13.787353515625
+      ],
+      "y": [
+        -10.714096069335938,
+        20.857376098632812
+      ],
+      "z": [
+        -10.923751831054688,
+        31.666091918945312
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/WatchCompass.csv",
+    "rows": 23076,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "magneticBearing"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.7945387363433838,
+      "last_s": 233.33970737457275,
+      "duration_s": 232.54516863822937,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22803442929313,
+      "max_gap_s": 0.010080099105834961,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947814049695027e+18,
+        1.7947816375146714e+18
+      ],
+      "seconds_elapsed": [
+        0.7945387363433838,
+        233.33970737457275
+      ],
+      "magneticBearing": [
+        0.0149097442626953,
+        359.9450378417969
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/WatchMagnetometer.csv",
+    "rows": 23060,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.7945387363433838,
+      "last_s": 233.17845940589905,
+      "duration_s": 232.38392066955566,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22803580196644,
+      "max_gap_s": 0.010080099105834961,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947814049695027e+18,
+        1.7947816373534234e+18
+      ],
+      "seconds_elapsed": [
+        0.7945387363433838,
+        233.17845940589905
+      ],
+      "x": [
+        -49.47857666015625,
+        52.68931579589844
+      ],
+      "y": [
+        -44.66319274902344,
+        54.801239013671875
+      ],
+      "z": [
+        -54.0953369140625,
+        41.22210693359375
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/WatchMicrophone.csv",
+    "rows": 2216,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "dBFS"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.6978030204772949,
+      "last_s": 222.1952528953552,
+      "duration_s": 221.4974498748779,
+      "median_dt_s": 0.10000205039978027,
+      "median_hz": 9.999794964226025,
+      "mean_hz": 10.000115131127854,
+      "max_gap_s": 0.14304304122924805,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.794781404872767e+18,
+        1.794781626370217e+18
+      ],
+      "seconds_elapsed": [
+        0.6978030204772949,
+        222.1952528953552
+      ],
+      "dBFS": [
+        -47.36724090576172,
+        -4.507052421569824
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/rohan_2-2026-11-15_22-23-24/WristMotion.csv",
+    "rows": 23208,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "rotationRateX",
+      "rotationRateY",
+      "rotationRateZ",
+      "gravityX",
+      "gravityY",
+      "gravityZ",
+      "accelerationX",
+      "accelerationY",
+      "accelerationZ",
+      "quaternionW",
+      "quaternionX",
+      "quaternionY",
+      "quaternionZ",
+      "pitch",
+      "roll",
+      "yaw"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.7945387363433838,
+      "last_s": 234.67000102996823,
+      "duration_s": 233.87546229362485,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22802406207192,
+      "max_gap_s": 0.010080099105834961,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947814049695027e+18,
+        1.7947816388449649e+18
+      ],
+      "seconds_elapsed": [
+        0.7945387363433838,
+        234.67000102996823
+      ],
+      "rotationRateX": [
+        -35.34638595581055,
+        16.56594467163086
+      ],
+      "rotationRateY": [
+        -34.73112487792969,
+        35.21043395996094
+      ],
+      "rotationRateZ": [
+        -34.631614685058594,
+        17.897235870361328
+      ],
+      "gravityX": [
+        -0.9457888603210448,
+        0.9998835921287536
+      ],
+      "gravityY": [
+        -0.84861820936203,
+        0.9999772310256958
+      ],
+      "gravityZ": [
+        -0.9998990297317504,
+        0.8983083963394165
+      ],
+      "accelerationX": [
+        -9.68478298187256,
+        13.533899307250977
+      ],
+      "accelerationY": [
+        -11.232386589050291,
+        20.361312866210938
+      ],
+      "accelerationZ": [
+        -11.31840991973877,
+        31.33978843688965
+      ],
+      "quaternionW": [
+        -0.2898538992055341,
+        0.9995613990955904
+      ],
+      "quaternionX": [
+        -0.9394679686934246,
+        0.6476711086171196
+      ],
+      "quaternionY": [
+        -0.9387264207129166,
+        0.7340736722081606
+      ],
+      "quaternionZ": [
+        -0.7556586984152003,
+        0.8430304929558222
+      ],
+      "pitch": [
+        -1.5640499040023432,
+        1.0133677430461268
+      ],
+      "roll": [
+        -3.1401403312167835,
+        3.1410089332480005
+      ],
+      "yaw": [
+        -3.141458874915145,
+        3.141525771382411
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/Manifest.csv",
+    "rows": 7,
+    "columns": [
+      "Metadata"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 1,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/Metadata.csv",
+    "rows": 1,
+    "columns": [
+      "version",
+      "device name",
+      "recording epoch time",
+      "recording time",
+      "recording timezone",
+      "platform",
+      "appVersion",
+      "device id",
+      "sensors",
+      "sampleRateMs",
+      "standardisation"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {
+      "version": [
+        4.0,
+        4.0
+      ],
+      "recording epoch time": [
+        1794780202271.0,
+        1794780202271.0
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/Tags.csv",
+    "rows": 1,
+    "columns": [
+      "tag"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "ranges": {}
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/WatchAccelerometerUncalibrated.csv",
+    "rows": 40487,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.1056966781616211,
+      "last_s": 408.10759139060974,
+      "duration_s": 408.0018947124481,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.22993134268103,
+      "max_gap_s": 0.010099172592163086,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947802023770179e+18,
+        1.7947806103789125e+18
+      ],
+      "seconds_elapsed": [
+        0.1056966781616211,
+        408.10759139060974
+      ],
+      "x": [
+        -6.8473052978515625,
+        12.431137084960938
+      ],
+      "y": [
+        -13.8961181640625,
+        14.622879028320312
+      ],
+      "z": [
+        -7.05926513671875,
+        22.474319458007812
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/WatchBarometer.csv",
+    "rows": 188,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "relativeAltitude",
+      "pressure"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 4.812262773513794,
+      "last_s": 484.4439029693603,
+      "duration_s": 479.6316401958465,
+      "median_dt_s": 2.570641040802002,
+      "median_hz": 0.3890080272304432,
+      "mean_hz": 0.389882535530064,
+      "max_gap_s": 3.001024007797241,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947802070835837e+18,
+        1.794780686715224e+18
+      ],
+      "seconds_elapsed": [
+        4.812262773513794,
+        484.4439029693603
+      ],
+      "relativeAltitude": [
+        -1.799999952316284,
+        0.550000011920929
+      ],
+      "pressure": [
+        100.74925994873048,
+        100.75911712646484
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/WatchCompass.csv",
+    "rows": 40436,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "magneticBearing"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.6145355701446533,
+      "last_s": 408.1025524139404,
+      "duration_s": 407.4880168437957,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.2299118712493,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947802028858565e+18,
+        1.7947806103738734e+18
+      ],
+      "seconds_elapsed": [
+        0.6145355701446533,
+        408.1025524139404
+      ],
+      "magneticBearing": [
+        0.0061798095703125,
+        359.9928894042969
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/WatchMagnetometer.csv",
+    "rows": 40436,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "x",
+      "y",
+      "z"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.6145355701446533,
+      "last_s": 408.1025524139404,
+      "duration_s": 407.4880168437957,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.2299118712493,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947802028858565e+18,
+        1.7947806103738734e+18
+      ],
+      "seconds_elapsed": [
+        0.6145355701446533,
+        408.1025524139404
+      ],
+      "x": [
+        -1549.4437255859375,
+        97.03913879394533
+      ],
+      "y": [
+        -1003.5686645507812,
+        505.9019775390625
+      ],
+      "z": [
+        -217.45050048828125,
+        1453.6781005859375
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/WatchMicrophone.csv",
+    "rows": 4069,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "dBFS"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.705733060836792,
+      "last_s": 408.004980802536,
+      "duration_s": 407.2992477416992,
+      "median_dt_s": 0.10000550746917725,
+      "median_hz": 9.999449283412822,
+      "mean_hz": 9.987742483089097,
+      "max_gap_s": 0.5994808673858643,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 1
+    },
+    "ranges": {
+      "time": [
+        1.7947802029770542e+18,
+        1.7947806102763018e+18
+      ],
+      "seconds_elapsed": [
+        0.705733060836792,
+        408.004980802536
+      ],
+      "dBFS": [
+        -45.43211364746094,
+        -2.3366661071777344
+      ]
+    }
+  },
+  {
+    "path": "Watch Data/sid_session_1-2026-11-15_22-03-22/WristMotion.csv",
+    "rows": 40436,
+    "columns": [
+      "time",
+      "seconds_elapsed",
+      "rotationRateX",
+      "rotationRateY",
+      "rotationRateZ",
+      "gravityX",
+      "gravityY",
+      "gravityZ",
+      "accelerationX",
+      "accelerationY",
+      "accelerationZ",
+      "quaternionW",
+      "quaternionX",
+      "quaternionY",
+      "quaternionZ",
+      "pitch",
+      "roll",
+      "yaw"
+    ],
+    "missing": {},
+    "exact_duplicate_rows": 0,
+    "timing": {
+      "first_s": 0.6145355701446533,
+      "last_s": 408.1025524139404,
+      "duration_s": 407.4880168437957,
+      "median_dt_s": 0.010077953338623047,
+      "median_hz": 99.22649633309676,
+      "mean_hz": 99.2299118712493,
+      "max_gap_s": 0.010097980499267578,
+      "nonpositive_steps": 0,
+      "gaps_over_threshold": 0
+    },
+    "ranges": {
+      "time": [
+        1.7947802028858565e+18,
+        1.7947806103738734e+18
+      ],
+      "seconds_elapsed": [
+        0.6145355701446533,
+        408.1025524139404
+      ],
+      "rotationRateX": [
+        -35.34654235839844,
+        29.498876571655273
+      ],
+      "rotationRateY": [
+        -35.16935348510742,
+        35.079750061035156
+      ],
+      "rotationRateZ": [
+        -34.99048614501953,
+        23.539867401123047
+      ],
+      "gravityX": [
+        -0.9999402761459352,
+        0.9836174845695496
+      ],
+      "gravityY": [
+        -0.8080939054489136,
+        0.999830424785614
+      ],
+      "gravityZ": [
+        -0.9997880458831788,
+        0.920259416103363
+      ],
+      "accelerationX": [
+        -6.525641918182373,
+        11.643258094787598
+      ],
+      "accelerationY": [
+        -14.129515647888184,
+        14.037960052490234
+      ],
+      "accelerationZ": [
+        -7.326294422149658,
+        22.43569564819336
+      ],
+      "quaternionW": [
+        -0.740875716745315,
+        0.9989423747601288
+      ],
+      "quaternionX": [
+        -0.9259750965246528,
+        0.8644868940000144
+      ],
+      "quaternionY": [
+        -0.9598960381476358,
+        0.7916532472125921
+      ],
+      "quaternionZ": [
+        -0.9663815384361316,
+        0.9956116432156662
+      ],
+      "pitch": [
+        -1.5523787452431097,
+        0.9409090419947628
+      ],
+      "roll": [
+        -3.141281406558748,
+        3.1414677621675704
+      ],
+      "yaw": [
+        -3.1413515259757383,
+        3.1414631304067195
+      ]
+    }
+  }
+]

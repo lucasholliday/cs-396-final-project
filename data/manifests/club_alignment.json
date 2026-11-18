@@ -1,0 +1,105 @@
+[
+  {
+    "session": "Sid 1",
+    "watch_equals_scale_times_club_plus_offset": {
+      "scale": 1.0000002968247559,
+      "offset_s": 10.062597530798323
+    },
+    "matches": 17,
+    "watch_events": 18,
+    "club_candidates": 18,
+    "residual_median_s": 0.017590403345252525,
+    "residual_max_s": 0.028224872607268026,
+    "unmatched_shots": [
+      "sid_1_18"
+    ],
+    "status": "provisional_gyro_alignment_not_verified_impact",
+    "club_end_watch_s": 378.89212900250146
+  },
+  {
+    "session": "Rohan 1",
+    "watch_equals_scale_times_club_plus_offset": {
+      "scale": 0.9983507913007835,
+      "offset_s": -1.6154433649330857
+    },
+    "matches": 3,
+    "watch_events": 5,
+    "club_candidates": 4,
+    "residual_median_s": 0.01147674593502046,
+    "residual_max_s": 0.020518892992541282,
+    "unmatched_shots": [
+      "rohan_1_04",
+      "rohan_1_05"
+    ],
+    "status": "provisional_gyro_alignment_not_verified_impact",
+    "club_end_watch_s": 89.39405085781837
+  },
+  {
+    "session": "Rohan 2",
+    "watch_equals_scale_times_club_plus_offset": {
+      "scale": 1.0000650464104164,
+      "offset_s": -16.515538267110642
+    },
+    "matches": 7,
+    "watch_events": 10,
+    "club_candidates": 7,
+    "residual_median_s": 0.021233266585440447,
+    "residual_max_s": 0.028390560356172045,
+    "unmatched_shots": [
+      "rohan_2_08",
+      "rohan_2_09",
+      "rohan_2_10"
+    ],
+    "status": "provisional_gyro_alignment_not_verified_impact",
+    "club_end_watch_s": 190.11742369112392
+  },
+  {
+    "session": "Lucas 1",
+    "watch_equals_scale_times_club_plus_offset": {
+      "scale": 0.9999871441088689,
+      "offset_s": -22.52611546228321
+    },
+    "matches": 11,
+    "watch_events": 12,
+    "club_candidates": 11,
+    "residual_median_s": 0.0033471454417224322,
+    "residual_max_s": 0.0071661466853356615,
+    "unmatched_shots": [
+      "lucas_1_12"
+    ],
+    "status": "provisional_gyro_alignment_not_verified_impact",
+    "club_end_watch_s": 219.6633521162604
+  },
+  {
+    "session": "Andrew 1",
+    "watch_equals_scale_times_club_plus_offset": {
+      "scale": 1.0001414311318193,
+      "offset_s": 3.7276128594478983
+    },
+    "matches": 10,
+    "watch_events": 11,
+    "club_candidates": 19,
+    "residual_median_s": 0.008773323927364629,
+    "residual_max_s": 0.03343290058485593,
+    "unmatched_shots": [
+      "andrew_1_11"
+    ],
+    "status": "provisional_gyro_alignment_not_verified_impact",
+    "club_end_watch_s": 249.87767085776247
+  },
+  {
+    "session": "Eduardo 1",
+    "watch_equals_scale_times_club_plus_offset": {
+      "scale": 1.000016765072323,
+      "offset_s": -6.009950846641382
+    },
+    "matches": 20,
+    "watch_events": 20,
+    "club_candidates": 20,
+    "residual_median_s": 0.02196398024737789,
+    "residual_max_s": 0.035080293904456994,
+    "unmatched_shots": [],
+    "status": "provisional_gyro_alignment_not_verified_impact",
+    "club_end_watch_s": 425.14908713563034
+  }
+]

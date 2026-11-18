@@ -1,0 +1,11 @@
+{
+  "version": 4,
+  "before_peak_s": 1.25,
+  "duration_s": 1.65,
+  "native_crop": [500, 700, 440, 1040],
+  "seed_region": [80, 700, 300, 1000],
+  "seed_expected_xy": [200, 865],
+  "difference_threshold": 30,
+  "minimum_track_points": 20,
+  "notes": "Dataset-specific mat ROI in rotated 1080x1920 display coordinates. Watch-assisted search windows. Automatic proposals require review; no 3D or metric-speed interpretation."
+}

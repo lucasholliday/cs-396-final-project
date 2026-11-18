@@ -1,0 +1,13 @@
+Club Data/
+Watch Data/
+Video Data/
+trackman_shot_labels.xlsx
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+outputs/
+models/
+data/processed/
+.env
+*.log

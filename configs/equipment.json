@@ -1,0 +1,26 @@
+{
+  "user_confirmed": {
+    "club": "Wilson Staff CB 7 iron",
+    "golfer_handedness": "right",
+    "watch_wrist": "left, lead wrist",
+    "club_sensor_location": "on shaft approximately one inch below the lower/distal end of rubber grip",
+    "approximate_distance_below_grip_end_m": 0.0254,
+    "sensor_model": "ISM330DHCX",
+    "mount_consistency": "not yet measured",
+    "club_model_year": null,
+    "custom_length_adjustment_inches": 0,
+    "length_confirmation": "user confirms standard length; exact chip offset can be measured later"
+  },
+  "manufacturer_reference": {
+    "source": "https://www.wilson.com/en-us/products/staff-model-cb-irons-wg1p0386",
+    "retrieved": "2026-11-17",
+    "reference_model": "Staff Model CB current 2026 product page",
+    "seven_iron_standard_length_inches": 37.25,
+    "seven_iron_standard_length_m": 0.94615,
+    "loft_deg": 34,
+    "lie_deg": 62,
+    "status": "reference nominal geometry; not confirmed measurement of recorded club"
+  },
+  "sensor_to_clubhead_vector_m": null,
+  "calibration_note": "Nominal overall club length does not determine chip-to-head lever arm, shaft-axis orientation, golfer joint positions, translation velocity, or perspective. Measure assembly geometry and camera scale before metric kinematics."
+}
