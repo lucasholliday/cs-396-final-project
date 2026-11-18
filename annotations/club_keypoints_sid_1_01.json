@@ -1,0 +1,343 @@
+{
+  "shot_id": "sid_1_01",
+  "input_sha256": "d77207b7e8489c435546797a48f9515e1e280fa3f7c78b2e9348df1c15d81b58",
+  "image_size": [
+    540,
+    960
+  ],
+  "fps": 30,
+  "maximum_interpolation_gap_frames": 5,
+  "stationary_setup_interval": [
+    0,
+    30
+  ],
+  "occluded_frames": [
+    40,
+    62
+  ],
+  "semantics": "Approximate AI readings of visible grip/clubhead in unmarked review frames, not independent ground truth. No native-frame or metric speed interpretation. Interpolation is display only.",
+  "points": [
+    {
+      "frame": 0,
+      "playback_s": 42.04795813560486,
+      "grip": [
+        210,
+        600
+      ],
+      "head": [
+        344,
+        786
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 30,
+      "playback_s": 43.04795813560486,
+      "grip": [
+        210,
+        600
+      ],
+      "head": [
+        344,
+        786
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 35,
+      "playback_s": 43.21462480227152,
+      "grip": [
+        222,
+        608
+      ],
+      "head": [
+        348,
+        802
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 43,
+      "playback_s": 43.48129146893819,
+      "grip": [
+        180,
+        450
+      ],
+      "head": [
+        40,
+        180
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 46,
+      "playback_s": 43.58129146893819,
+      "grip": [
+        165,
+        360
+      ],
+      "head": [
+        50,
+        130
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 49,
+      "playback_s": 43.68129146893819,
+      "grip": [
+        164,
+        324
+      ],
+      "head": [
+        120,
+        224
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 50,
+      "playback_s": 43.71462480227152,
+      "grip": [
+        160,
+        308
+      ],
+      "head": [
+        144,
+        256
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 52,
+      "playback_s": 43.78129146893819,
+      "grip": [
+        156,
+        316
+      ],
+      "head": [
+        170,
+        288
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 54,
+      "playback_s": 43.847958135604856,
+      "grip": [
+        158,
+        352
+      ],
+      "head": [
+        162,
+        254
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 56,
+      "playback_s": 43.914624802271526,
+      "grip": [
+        200,
+        446
+      ],
+      "head": [
+        116,
+        182
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 58,
+      "playback_s": 43.98129146893819,
+      "grip": [
+        246,
+        554
+      ],
+      "head": [
+        258,
+        632
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 59,
+      "playback_s": 44.01462480227153,
+      "grip": [
+        236,
+        584
+      ],
+      "head": [
+        346,
+        786
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 60,
+      "playback_s": 44.04795813560486,
+      "grip": [
+        230,
+        562
+      ],
+      "head": [
+        290,
+        666
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 64,
+      "playback_s": 44.18129146893819,
+      "grip": [
+        145,
+        385
+      ],
+      "head": [
+        66,
+        198
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 66,
+      "playback_s": 44.24795813560486,
+      "grip": [
+        135,
+        348
+      ],
+      "head": [
+        66,
+        172
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 70,
+      "playback_s": 44.381291468938194,
+      "grip": [
+        130,
+        334
+      ],
+      "head": [
+        268,
+        478
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 75,
+      "playback_s": 44.54795813560486,
+      "grip": [
+        128,
+        342
+      ],
+      "head": [
+        334,
+        468
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 80,
+      "playback_s": 44.71462480227152,
+      "grip": [
+        130,
+        342
+      ],
+      "head": [
+        356,
+        398
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 85,
+      "playback_s": 44.881291468938194,
+      "grip": [
+        130,
+        340
+      ],
+      "head": [
+        360,
+        360
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 90,
+      "playback_s": 45.04795813560486,
+      "grip": [
+        132,
+        340
+      ],
+      "head": [
+        366,
+        368
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 95,
+      "playback_s": 45.21462480227152,
+      "grip": [
+        138,
+        340
+      ],
+      "head": [
+        366,
+        370
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 100,
+      "playback_s": 45.381291468938194,
+      "grip": [
+        142,
+        340
+      ],
+      "head": [
+        354,
+        338
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    },
+    {
+      "frame": 104,
+      "playback_s": 45.51462480227153,
+      "grip": [
+        145,
+        352
+      ],
+      "head": [
+        306,
+        267
+      ],
+      "uncertainty_px": 10,
+      "status": "approximate_ai_visual_review_second_review_pending"
+    }
+  ]
+}

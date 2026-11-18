@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "minimum_segment_px": 45,
+  "maximum_hand_line_distance_px": 26,
+  "maximum_near_endpoint_px": 95,
+  "minimum_motion_fraction": 0.25,
+  "minimum_score": 0.7,
+  "notes": "Exploratory visible-shaft detector at 540x960 review resolution. Pose-assisted hand anchor, temporal background rejection and optional stationary-ball address cue. No exact clubhead or metric 3D interpretation."
+}

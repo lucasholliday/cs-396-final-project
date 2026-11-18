@@ -29,7 +29,9 @@ for r in m.itertuples():
  native=json.loads((ROOT/f'outputs/native_review/{r.shot_id}.json').read_text())
  tracked=json.loads((ROOT/f'data/processed/ball_v8_tracks/{r.shot_id}.json').read_text())
  avatar=json.loads((ROOT/f'data/processed/avatar_motion/{r.shot_id}.json').read_text())
- rows.append(dict(avatar_motion=avatar,native=native,ball_track=tracked['observations'],reviewed_points=reviewed_points[reviewed_points.shot_id==r.shot_id][['playback_s','x','y']].to_dict('records'),departure_interval=intervals.loc[r.shot_id,['lower_s','upper_s','width_ms']].to_dict() if r.shot_id in intervals.index else None,observations=observations,id=r.shot_id,golfer=r.golfer,session=r.session,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],
+ club_path=ROOT/f'data/processed/club_display/{r.shot_id}.json'
+ club_display=json.loads(club_path.read_text()) if club_path.exists() else None
+ rows.append(dict(club_display=club_display,avatar_motion=avatar,native=native,ball_track=tracked['observations'],reviewed_points=reviewed_points[reviewed_points.shot_id==r.shot_id][['playback_s','x','y']].to_dict('records'),departure_interval=intervals.loc[r.shot_id,['lower_s','upper_s','width_ms']].to_dict() if r.shot_id in intervals.index else None,observations=observations,id=r.shot_id,golfer=r.golfer,session=r.session,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],
   carry=labels.loc[r.shot_id,'Carry flat (yd)'],
   ball_speed=labels.loc[r.shot_id,'Ball speed (mph)'],launch=labels.loc[r.shot_id,'Launch angle (deg)'],
   club_available=bool(pd.notna(r.club_peak_candidate_s)),alignment_residual=r.club_watch_residual_s,

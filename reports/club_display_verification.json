@@ -1,0 +1,16 @@
+{
+  "pilot_shot": "sid_1_01",
+  "visual_anchor_count": 23,
+  "display_frames": 97,
+  "missing_frames": 8,
+  "max_internal_projection_residual_px": 1.139086659085919e-13,
+  "meaning": "Internal mathematical consistency only, not tracking accuracy or calibrated 3D validation.",
+  "automatic_candidate_counts": {
+    "lucas_1_01": 64,
+    "rohan_2_01": 76,
+    "eduardo_1_01": 86,
+    "sid_1_01": 44,
+    "rohan_1_01": 49,
+    "andrew_1_01": 78
+  }
+}

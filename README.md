@@ -157,3 +157,18 @@ Three.js is bundled locally under `vendor/three/` with its MIT license; no CDN o
 Rebuild the display rig first with `.venv/bin/python scripts/avatar_motion.py`, then rebuild the viewer as usual. `node scripts/verify_range_scene.js` checks scene geometry across all frames; it does **not** replace browser/WebGL QA. `scripts/render_range_geometry_preview.py` creates explicitly labeled software geometry previews for inspection.
 
 If you still see “Estimated 3D avatar” or “Estimated 3D skeleton,” reopen **Open Swing Lab.html**; its updated launcher bypasses stale page caches. The current page is labeled **3D RANGE · VERSION 2** and the panel says **Your swing at the range**. If that panel reports a WebGL error, the problem is rendering rather than the old page; the video controls remain available. Display JSON is compacted independently of the full-precision scientific data.
+
+### Version 3 avatar and club pilot
+Reopen `Open Swing Lab.html` to see **3D RANGE · VERSION 3**, including a live estimated-yard counter. Select `sid_1_01` for the assisted video-anchored club pilot; cyan source-video lines are approximate AI anchors, gold dashed lines are display interpolation. The depth switch shows the unresolved monocular ambiguity. Other shots hide unsupported clubs. This is not complete automatic club tracking. See `reports/avatar_club_revision.md`.
+
+Reproduce this revision with:
+```sh
+.venv/bin/python scripts/track_shafts.py
+.venv/bin/python scripts/club_display.py
+.venv/bin/python scripts/render_club_review.py
+.venv/bin/python scripts/build_research_viewer.py
+node scripts/verify_range_scene.js
+.venv/bin/python scripts/render_range_geometry_preview.py
+.venv/bin/python -m unittest discover -s tests -q
+```
+The shaft-detector command defaults to six representative shots. Unreviewed detections are separate from the assisted display and all scientific model features. Generated media and caches remain local and ignored by Git.
