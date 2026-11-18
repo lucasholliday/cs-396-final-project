@@ -1,0 +1,15 @@
+{
+  "version": 6,
+  "before_peak_s": 1.25,
+  "duration_s": 1.65,
+  "native_crop": [300, 650, 780, 1100],
+  "seed_bounds_native": [570, 1400, 880, 1710],
+  "background_frames": 30,
+  "positive_difference": 22,
+  "brightness_minimum": 110,
+  "minimum_component_area": 3,
+  "maximum_component_area": 850,
+  "maximum_component_width": 65,
+  "maximum_component_height": 140,
+  "notes": "Frozen exploratory candidate-detection configuration before evaluating 78 existing approximate reviewed points. Watch-assisted windows; no reviewed flight coordinates or outcome labels are inference inputs. Current camera-specific crop is not a general camera calibration."
+}

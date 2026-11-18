@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "landing page requires session token",
+    "upload page delivered",
+    "static serving restricted to outputs/reports",
+    "video byte-range seeking",
+    "invalid session and cross-origin processing rejected",
+    "invalid clip request rejected",
+    "real clip upload, pose processing, reference prediction and result delivery"
+  ],
+  "result": "/outputs/new_swings/swing_a9482c19f497/index.html",
+  "browser_ui_test": "not performed; browser host unavailable",
+  "accuracy_validation": "none; smoke input is a reused training-session clip"
+}

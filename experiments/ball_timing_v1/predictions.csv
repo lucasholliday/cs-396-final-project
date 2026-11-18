@@ -1,0 +1,235 @@
+task,features,shot_id,golfer,fold,actual,predicted,model
+Carry flat (yd),first_point_departure,andrew_1_01,Andrew,0,29.0,83.78352036003024,ridge10
+Carry flat (yd),first_point_departure,andrew_1_04,Andrew,0,21.0,74.30050729393395,ridge10
+Carry flat (yd),first_point_departure,eduardo_1_01,Eduardo,1,125.0,119.94497716794532,ridge10
+Carry flat (yd),first_point_departure,eduardo_1_04,Eduardo,1,112.0,115.00988375671096,ridge10
+Carry flat (yd),first_point_departure,eduardo_1_07,Eduardo,1,112.0,108.79113813964517,ridge10
+Carry flat (yd),first_point_departure,eduardo_1_10,Eduardo,1,105.0,101.72269295188968,ridge10
+Carry flat (yd),first_point_departure,eduardo_1_16,Eduardo,1,80.0,78.26236405114273,ridge10
+Carry flat (yd),first_point_departure,eduardo_1_19,Eduardo,1,83.0,118.33459775359296,ridge10
+Carry flat (yd),first_point_departure,eduardo_1_20,Eduardo,1,6.0,80.68718012554139,ridge10
+Carry flat (yd),first_point_departure,lucas_1_01,Lucas,2,155.0,107.23432425535232,ridge10
+Carry flat (yd),first_point_departure,lucas_1_07,Lucas,2,146.0,107.23833490874796,ridge10
+Carry flat (yd),first_point_departure,lucas_1_12,Lucas,2,128.0,97.8511774200843,ridge10
+Carry flat (yd),first_point_departure,rohan_1_01,Rohan,3,20.0,93.84506749948915,svr
+Carry flat (yd),first_point_departure,rohan_1_04,Rohan,3,105.0,99.36766935907741,svr
+Carry flat (yd),first_point_departure,rohan_1_05,Rohan,3,38.0,50.52738691688872,svr
+Carry flat (yd),first_point_departure,rohan_2_01,Rohan,3,132.0,89.73389531844724,svr
+Carry flat (yd),first_point_departure,rohan_2_04,Rohan,3,32.0,85.84600375940703,svr
+Carry flat (yd),first_point_departure,rohan_2_07,Rohan,3,125.0,79.10763653496548,svr
+Carry flat (yd),first_point_departure,rohan_2_10,Rohan,3,106.0,51.25144936353533,svr
+Carry flat (yd),first_point_departure,sid_1_01,Sid,4,126.0,110.85444856424947,ridge10
+Carry flat (yd),first_point_departure,sid_1_04,Sid,4,122.0,114.13296742441878,ridge10
+Carry flat (yd),first_point_departure,sid_1_07,Sid,4,129.0,114.0658366224879,ridge10
+Carry flat (yd),first_point_departure,sid_1_10,Sid,4,132.0,118.41780409717433,ridge10
+Carry flat (yd),first_point_departure,sid_1_13,Sid,4,134.0,119.30062848174805,ridge10
+Carry flat (yd),first_point_departure,sid_1_16,Sid,4,81.0,93.57328041693364,ridge10
+Carry flat (yd),first_point_departure,sid_1_18,Sid,4,121.0,77.40422794512234,ridge10
+Carry flat (yd),interframe_slope,andrew_1_01,Andrew,0,29.0,83.19209274218233,svr
+Carry flat (yd),interframe_slope,andrew_1_04,Andrew,0,21.0,97.18084997462877,svr
+Carry flat (yd),interframe_slope,eduardo_1_01,Eduardo,1,125.0,126.79042067715753,svr
+Carry flat (yd),interframe_slope,eduardo_1_04,Eduardo,1,112.0,122.92484528990653,svr
+Carry flat (yd),interframe_slope,eduardo_1_07,Eduardo,1,112.0,98.12027288120325,svr
+Carry flat (yd),interframe_slope,eduardo_1_10,Eduardo,1,105.0,117.56810645462792,svr
+Carry flat (yd),interframe_slope,eduardo_1_16,Eduardo,1,80.0,90.23488268218621,svr
+Carry flat (yd),interframe_slope,eduardo_1_19,Eduardo,1,83.0,103.24443838154903,svr
+Carry flat (yd),interframe_slope,eduardo_1_20,Eduardo,1,6.0,99.30668444122435,svr
+Carry flat (yd),interframe_slope,lucas_1_01,Lucas,2,155.0,103.67001878134481,svr
+Carry flat (yd),interframe_slope,lucas_1_07,Lucas,2,146.0,104.9758855943958,svr
+Carry flat (yd),interframe_slope,lucas_1_12,Lucas,2,128.0,76.777847910585,svr
+Carry flat (yd),interframe_slope,rohan_1_01,Rohan,3,20.0,129.04920684422618,svr
+Carry flat (yd),interframe_slope,rohan_1_04,Rohan,3,105.0,115.61109210290245,svr
+Carry flat (yd),interframe_slope,rohan_1_05,Rohan,3,38.0,65.89131583762577,svr
+Carry flat (yd),interframe_slope,rohan_2_01,Rohan,3,132.0,87.46562828181847,svr
+Carry flat (yd),interframe_slope,rohan_2_04,Rohan,3,32.0,96.20335934155989,svr
+Carry flat (yd),interframe_slope,rohan_2_07,Rohan,3,125.0,103.82906348799496,svr
+Carry flat (yd),interframe_slope,rohan_2_10,Rohan,3,106.0,50.943548808170085,svr
+Carry flat (yd),interframe_slope,sid_1_01,Sid,4,126.0,88.95856281437855,extra_trees
+Carry flat (yd),interframe_slope,sid_1_04,Sid,4,122.0,88.30639109720683,extra_trees
+Carry flat (yd),interframe_slope,sid_1_07,Sid,4,129.0,88.30639109720683,extra_trees
+Carry flat (yd),interframe_slope,sid_1_10,Sid,4,132.0,88.8866183699341,extra_trees
+Carry flat (yd),interframe_slope,sid_1_13,Sid,4,134.0,88.8866183699341,extra_trees
+Carry flat (yd),interframe_slope,sid_1_16,Sid,4,81.0,88.8866183699341,extra_trees
+Carry flat (yd),interframe_slope,sid_1_18,Sid,4,121.0,95.68421133252716,extra_trees
+Carry flat (yd),combined,andrew_1_01,Andrew,0,29.0,88.22694652890874,svr
+Carry flat (yd),combined,andrew_1_04,Andrew,0,21.0,84.82261656234836,svr
+Carry flat (yd),combined,eduardo_1_01,Eduardo,1,125.0,119.4135761410239,ridge10
+Carry flat (yd),combined,eduardo_1_04,Eduardo,1,112.0,114.01383235954557,ridge10
+Carry flat (yd),combined,eduardo_1_07,Eduardo,1,112.0,110.82254656904345,ridge10
+Carry flat (yd),combined,eduardo_1_10,Eduardo,1,105.0,107.2892591428145,ridge10
+Carry flat (yd),combined,eduardo_1_16,Eduardo,1,80.0,77.62447222786327,ridge10
+Carry flat (yd),combined,eduardo_1_19,Eduardo,1,83.0,121.3612856773528,ridge10
+Carry flat (yd),combined,eduardo_1_20,Eduardo,1,6.0,97.36584138883818,ridge10
+Carry flat (yd),combined,lucas_1_01,Lucas,2,155.0,114.9722869357484,svr
+Carry flat (yd),combined,lucas_1_07,Lucas,2,146.0,116.86907837681508,svr
+Carry flat (yd),combined,lucas_1_12,Lucas,2,128.0,94.89220236058412,svr
+Carry flat (yd),combined,rohan_1_01,Rohan,3,20.0,89.49532574306842,svr
+Carry flat (yd),combined,rohan_1_04,Rohan,3,105.0,112.04862126795494,svr
+Carry flat (yd),combined,rohan_1_05,Rohan,3,38.0,54.29826693591845,svr
+Carry flat (yd),combined,rohan_2_01,Rohan,3,132.0,72.29579287196432,svr
+Carry flat (yd),combined,rohan_2_04,Rohan,3,32.0,89.67632245459927,svr
+Carry flat (yd),combined,rohan_2_07,Rohan,3,125.0,94.47320792339407,svr
+Carry flat (yd),combined,rohan_2_10,Rohan,3,106.0,33.84990117814219,svr
+Carry flat (yd),combined,sid_1_01,Sid,4,126.0,103.5422601162364,ridge10
+Carry flat (yd),combined,sid_1_04,Sid,4,122.0,98.32608369306,ridge10
+Carry flat (yd),combined,sid_1_07,Sid,4,129.0,96.9572108039625,ridge10
+Carry flat (yd),combined,sid_1_10,Sid,4,132.0,106.35588134140957,ridge10
+Carry flat (yd),combined,sid_1_13,Sid,4,134.0,109.99930091906754,ridge10
+Carry flat (yd),combined,sid_1_16,Sid,4,81.0,84.68462228754852,ridge10
+Carry flat (yd),combined,sid_1_18,Sid,4,121.0,85.04209423012317,ridge10
+Launch angle (deg),first_point_departure,andrew_1_01,Andrew,0,13.3,16.17140270195147,ridge10
+Launch angle (deg),first_point_departure,andrew_1_04,Andrew,0,7.9,14.18674613424182,ridge10
+Launch angle (deg),first_point_departure,eduardo_1_01,Eduardo,1,21.0,21.527400107108768,svr
+Launch angle (deg),first_point_departure,eduardo_1_04,Eduardo,1,21.2,17.984056943481118,svr
+Launch angle (deg),first_point_departure,eduardo_1_07,Eduardo,1,18.6,18.195716415282803,svr
+Launch angle (deg),first_point_departure,eduardo_1_10,Eduardo,1,18.3,19.705479249675182,svr
+Launch angle (deg),first_point_departure,eduardo_1_16,Eduardo,1,15.6,11.71547172063643,svr
+Launch angle (deg),first_point_departure,eduardo_1_19,Eduardo,1,22.1,18.34564593745244,svr
+Launch angle (deg),first_point_departure,eduardo_1_20,Eduardo,1,0.7,14.94319456727489,svr
+Launch angle (deg),first_point_departure,lucas_1_01,Lucas,2,17.0,19.514923415203967,ridge10
+Launch angle (deg),first_point_departure,lucas_1_07,Lucas,2,16.5,19.164408274441836,ridge10
+Launch angle (deg),first_point_departure,lucas_1_12,Lucas,2,18.6,18.361836943122167,ridge10
+Launch angle (deg),first_point_departure,rohan_1_01,Rohan,3,6.0,15.625716390529538,extra_trees
+Launch angle (deg),first_point_departure,rohan_1_04,Rohan,3,16.3,18.07585287441602,extra_trees
+Launch angle (deg),first_point_departure,rohan_1_05,Rohan,3,23.1,15.494050878264025,extra_trees
+Launch angle (deg),first_point_departure,rohan_2_01,Rohan,3,24.1,16.455120070183217,extra_trees
+Launch angle (deg),first_point_departure,rohan_2_04,Rohan,3,22.3,15.494050878264025,extra_trees
+Launch angle (deg),first_point_departure,rohan_2_07,Rohan,3,11.0,17.348349290962442,extra_trees
+Launch angle (deg),first_point_departure,rohan_2_10,Rohan,3,4.3,15.494050878264025,extra_trees
+Launch angle (deg),first_point_departure,sid_1_01,Sid,4,21.5,17.927761734864188,ridge10
+Launch angle (deg),first_point_departure,sid_1_04,Sid,4,25.1,17.27598234847767,ridge10
+Launch angle (deg),first_point_departure,sid_1_07,Sid,4,24.3,17.221202293258976,ridge10
+Launch angle (deg),first_point_departure,sid_1_10,Sid,4,23.3,18.048650561977897,ridge10
+Launch angle (deg),first_point_departure,sid_1_13,Sid,4,22.8,18.242403189292965,ridge10
+Launch angle (deg),first_point_departure,sid_1_16,Sid,4,20.7,15.635017502495431,ridge10
+Launch angle (deg),first_point_departure,sid_1_18,Sid,4,11.7,14.083499508857715,ridge10
+Launch angle (deg),interframe_slope,andrew_1_01,Andrew,0,13.3,19.68008887674518,svr
+Launch angle (deg),interframe_slope,andrew_1_04,Andrew,0,7.9,19.002977708650953,svr
+Launch angle (deg),interframe_slope,eduardo_1_01,Eduardo,1,21.0,21.078776705879587,svr
+Launch angle (deg),interframe_slope,eduardo_1_04,Eduardo,1,21.2,13.565266083543168,svr
+Launch angle (deg),interframe_slope,eduardo_1_07,Eduardo,1,18.6,15.007878430970614,svr
+Launch angle (deg),interframe_slope,eduardo_1_10,Eduardo,1,18.3,11.413120480805958,svr
+Launch angle (deg),interframe_slope,eduardo_1_16,Eduardo,1,15.6,15.473676624317761,svr
+Launch angle (deg),interframe_slope,eduardo_1_19,Eduardo,1,22.1,15.217161508145919,svr
+Launch angle (deg),interframe_slope,eduardo_1_20,Eduardo,1,0.7,17.99312068510107,svr
+Launch angle (deg),interframe_slope,lucas_1_01,Lucas,2,17.0,18.373033684289965,svr
+Launch angle (deg),interframe_slope,lucas_1_07,Lucas,2,16.5,18.467620788385332,svr
+Launch angle (deg),interframe_slope,lucas_1_12,Lucas,2,18.6,16.462091739176508,svr
+Launch angle (deg),interframe_slope,rohan_1_01,Rohan,3,6.0,17.905263157894737,mean
+Launch angle (deg),interframe_slope,rohan_1_04,Rohan,3,16.3,17.905263157894737,mean
+Launch angle (deg),interframe_slope,rohan_1_05,Rohan,3,23.1,17.905263157894737,mean
+Launch angle (deg),interframe_slope,rohan_2_01,Rohan,3,24.1,17.905263157894737,mean
+Launch angle (deg),interframe_slope,rohan_2_04,Rohan,3,22.3,17.905263157894737,mean
+Launch angle (deg),interframe_slope,rohan_2_07,Rohan,3,11.0,17.905263157894737,mean
+Launch angle (deg),interframe_slope,rohan_2_10,Rohan,3,4.3,17.905263157894737,mean
+Launch angle (deg),interframe_slope,sid_1_01,Sid,4,21.5,15.678947368421055,mean
+Launch angle (deg),interframe_slope,sid_1_04,Sid,4,25.1,15.678947368421055,mean
+Launch angle (deg),interframe_slope,sid_1_07,Sid,4,24.3,15.678947368421055,mean
+Launch angle (deg),interframe_slope,sid_1_10,Sid,4,23.3,15.678947368421055,mean
+Launch angle (deg),interframe_slope,sid_1_13,Sid,4,22.8,15.678947368421055,mean
+Launch angle (deg),interframe_slope,sid_1_16,Sid,4,20.7,15.678947368421055,mean
+Launch angle (deg),interframe_slope,sid_1_18,Sid,4,11.7,15.678947368421055,mean
+Launch angle (deg),combined,andrew_1_01,Andrew,0,13.3,18.707936615435436,ridge10
+Launch angle (deg),combined,andrew_1_04,Andrew,0,7.9,13.854906066481671,ridge10
+Launch angle (deg),combined,eduardo_1_01,Eduardo,1,21.0,21.38070766223234,svr
+Launch angle (deg),combined,eduardo_1_04,Eduardo,1,21.2,16.840802707035362,svr
+Launch angle (deg),combined,eduardo_1_07,Eduardo,1,18.6,14.509438859304744,svr
+Launch angle (deg),combined,eduardo_1_10,Eduardo,1,18.3,13.78212259872284,svr
+Launch angle (deg),combined,eduardo_1_16,Eduardo,1,15.6,13.771968210612139,svr
+Launch angle (deg),combined,eduardo_1_19,Eduardo,1,22.1,17.690223588946413,svr
+Launch angle (deg),combined,eduardo_1_20,Eduardo,1,0.7,16.18667899185255,svr
+Launch angle (deg),combined,lucas_1_01,Lucas,2,17.0,18.669448564871907,ridge10
+Launch angle (deg),combined,lucas_1_07,Lucas,2,16.5,18.502406077658947,ridge10
+Launch angle (deg),combined,lucas_1_12,Lucas,2,18.6,15.938818196721847,ridge10
+Launch angle (deg),combined,rohan_1_01,Rohan,3,6.0,14.84120305016619,extra_trees
+Launch angle (deg),combined,rohan_1_04,Rohan,3,16.3,17.809805936169084,extra_trees
+Launch angle (deg),combined,rohan_1_05,Rohan,3,23.1,15.656971803634947,extra_trees
+Launch angle (deg),combined,rohan_2_01,Rohan,3,24.1,15.862915526578675,extra_trees
+Launch angle (deg),combined,rohan_2_04,Rohan,3,22.3,15.065993929657074,extra_trees
+Launch angle (deg),combined,rohan_2_07,Rohan,3,11.0,17.032649202162354,extra_trees
+Launch angle (deg),combined,rohan_2_10,Rohan,3,4.3,15.00424597390912,extra_trees
+Launch angle (deg),combined,sid_1_01,Sid,4,21.5,17.6153303031205,ridge10
+Launch angle (deg),combined,sid_1_04,Sid,4,25.1,17.321448706585343,ridge10
+Launch angle (deg),combined,sid_1_07,Sid,4,24.3,17.259040621005337,ridge10
+Launch angle (deg),combined,sid_1_10,Sid,4,23.3,17.921910784540664,ridge10
+Launch angle (deg),combined,sid_1_13,Sid,4,22.8,18.11019352082662,ridge10
+Launch angle (deg),combined,sid_1_16,Sid,4,20.7,15.54513682644611,ridge10
+Launch angle (deg),combined,sid_1_18,Sid,4,11.7,15.103612156121274,ridge10
+short100,first_point_departure,andrew_1_01,Andrew,0,1.0,0.6981785142595244,logistic
+short100,first_point_departure,andrew_1_04,Andrew,0,1.0,0.7282152015514421,logistic
+short100,first_point_departure,eduardo_1_01,Eduardo,1,0.0,0.25906431336572616,logistic
+short100,first_point_departure,eduardo_1_04,Eduardo,1,0.0,0.27776462768431565,logistic
+short100,first_point_departure,eduardo_1_07,Eduardo,1,0.0,0.3629659147192315,logistic
+short100,first_point_departure,eduardo_1_10,Eduardo,1,0.0,0.407889175962644,logistic
+short100,first_point_departure,eduardo_1_16,Eduardo,1,1.0,0.6425819998749013,logistic
+short100,first_point_departure,eduardo_1_19,Eduardo,1,1.0,0.29724060012801307,logistic
+short100,first_point_departure,eduardo_1_20,Eduardo,1,1.0,0.5203608715010286,logistic
+short100,first_point_departure,lucas_1_01,Lucas,2,0.0,0.3321326606789148,logistic
+short100,first_point_departure,lucas_1_07,Lucas,2,0.0,0.3079126824658005,logistic
+short100,first_point_departure,lucas_1_12,Lucas,2,0.0,0.23463887519972138,logistic
+short100,first_point_departure,rohan_1_01,Rohan,3,1.0,0.7135101415728194,logistic
+short100,first_point_departure,rohan_1_04,Rohan,3,0.0,0.315069115542479,logistic
+short100,first_point_departure,rohan_1_05,Rohan,3,1.0,0.8287858161980195,logistic
+short100,first_point_departure,rohan_2_01,Rohan,3,0.0,0.4667165266290276,logistic
+short100,first_point_departure,rohan_2_04,Rohan,3,1.0,0.7016652928259864,logistic
+short100,first_point_departure,rohan_2_07,Rohan,3,0.0,0.6638824114258435,logistic
+short100,first_point_departure,rohan_2_10,Rohan,3,0.0,0.7982993586137639,logistic
+short100,first_point_departure,sid_1_01,Sid,4,0.0,0.35330546287988757,logistic
+short100,first_point_departure,sid_1_04,Sid,4,0.0,0.30310668719802525,logistic
+short100,first_point_departure,sid_1_07,Sid,4,0.0,0.3020527842224505,logistic
+short100,first_point_departure,sid_1_10,Sid,4,0.0,0.2890255090769782,logistic
+short100,first_point_departure,sid_1_13,Sid,4,0.0,0.2871752793074774,logistic
+short100,first_point_departure,sid_1_16,Sid,4,1.0,0.4464057431489258,logistic
+short100,first_point_departure,sid_1_18,Sid,4,0.0,0.5580580391792845,logistic
+short100,interframe_slope,andrew_1_01,Andrew,0,1.0,0.2916666666666667,prior
+short100,interframe_slope,andrew_1_04,Andrew,0,1.0,0.2916666666666667,prior
+short100,interframe_slope,eduardo_1_01,Eduardo,1,0.0,0.43533112669991203,logistic
+short100,interframe_slope,eduardo_1_04,Eduardo,1,0.0,0.3771110362264453,logistic
+short100,interframe_slope,eduardo_1_07,Eduardo,1,0.0,0.49441900036336006,logistic
+short100,interframe_slope,eduardo_1_10,Eduardo,1,0.0,0.4142647561407267,logistic
+short100,interframe_slope,eduardo_1_16,Eduardo,1,1.0,0.5767642914579971,logistic
+short100,interframe_slope,eduardo_1_19,Eduardo,1,1.0,0.525933331918884,logistic
+short100,interframe_slope,eduardo_1_20,Eduardo,1,1.0,0.08771359389240106,logistic
+short100,interframe_slope,lucas_1_01,Lucas,2,0.0,0.391304347826087,prior
+short100,interframe_slope,lucas_1_07,Lucas,2,0.0,0.391304347826087,prior
+short100,interframe_slope,lucas_1_12,Lucas,2,0.0,0.391304347826087,prior
+short100,interframe_slope,rohan_1_01,Rohan,3,1.0,0.3157894736842105,prior
+short100,interframe_slope,rohan_1_04,Rohan,3,0.0,0.3157894736842105,prior
+short100,interframe_slope,rohan_1_05,Rohan,3,1.0,0.3157894736842105,prior
+short100,interframe_slope,rohan_2_01,Rohan,3,0.0,0.3157894736842105,prior
+short100,interframe_slope,rohan_2_04,Rohan,3,1.0,0.3157894736842105,prior
+short100,interframe_slope,rohan_2_07,Rohan,3,0.0,0.3157894736842105,prior
+short100,interframe_slope,rohan_2_10,Rohan,3,0.0,0.3157894736842105,prior
+short100,interframe_slope,sid_1_01,Sid,4,0.0,0.42105263157894735,prior
+short100,interframe_slope,sid_1_04,Sid,4,0.0,0.42105263157894735,prior
+short100,interframe_slope,sid_1_07,Sid,4,0.0,0.42105263157894735,prior
+short100,interframe_slope,sid_1_10,Sid,4,0.0,0.42105263157894735,prior
+short100,interframe_slope,sid_1_13,Sid,4,0.0,0.42105263157894735,prior
+short100,interframe_slope,sid_1_16,Sid,4,1.0,0.42105263157894735,prior
+short100,interframe_slope,sid_1_18,Sid,4,0.0,0.42105263157894735,prior
+short100,combined,andrew_1_01,Andrew,0,1.0,0.7921441004853093,logistic
+short100,combined,andrew_1_04,Andrew,0,1.0,0.7313460899072581,logistic
+short100,combined,eduardo_1_01,Eduardo,1,0.0,0.26719459620485625,logistic
+short100,combined,eduardo_1_04,Eduardo,1,0.0,0.22265619122812405,logistic
+short100,combined,eduardo_1_07,Eduardo,1,0.0,0.3190437883506109,logistic
+short100,combined,eduardo_1_10,Eduardo,1,0.0,0.32048856326538916,logistic
+short100,combined,eduardo_1_16,Eduardo,1,1.0,0.6255208340114089,logistic
+short100,combined,eduardo_1_19,Eduardo,1,1.0,0.27776594438435326,logistic
+short100,combined,eduardo_1_20,Eduardo,1,1.0,0.33627620829570054,logistic
+short100,combined,lucas_1_01,Lucas,2,0.0,0.34436600984274,logistic
+short100,combined,lucas_1_07,Lucas,2,0.0,0.31584831968950666,logistic
+short100,combined,lucas_1_12,Lucas,2,0.0,0.2418350703388797,logistic
+short100,combined,rohan_1_01,Rohan,3,1.0,0.720770337886422,logistic
+short100,combined,rohan_1_04,Rohan,3,0.0,0.15722050780030847,logistic
+short100,combined,rohan_1_05,Rohan,3,1.0,0.8754443348531575,logistic
+short100,combined,rohan_2_01,Rohan,3,0.0,0.6179139049554937,logistic
+short100,combined,rohan_2_04,Rohan,3,1.0,0.5702815690291326,logistic
+short100,combined,rohan_2_07,Rohan,3,0.0,0.4955406980754368,logistic
+short100,combined,rohan_2_10,Rohan,3,0.0,0.8957577189371261,logistic
+short100,combined,sid_1_01,Sid,4,0.0,0.43882770776942465,logistic
+short100,combined,sid_1_04,Sid,4,0.0,0.47605660834782104,logistic
+short100,combined,sid_1_07,Sid,4,0.0,0.4879558607784049,logistic
+short100,combined,sid_1_10,Sid,4,0.0,0.41756713083274705,logistic
+short100,combined,sid_1_13,Sid,4,0.0,0.3889959305881179,logistic
+short100,combined,sid_1_16,Sid,4,1.0,0.5493644520727085,logistic
+short100,combined,sid_1_18,Sid,4,0.0,0.44925307609311255,logistic

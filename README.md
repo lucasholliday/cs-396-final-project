@@ -114,3 +114,37 @@ Double-click **Open Swing Lab.html** in this project, or open `outputs/research_
 The demo includes all 76 clips, slow motion and frame stepping, a rotatable solid avatar from estimated world pose, approximate phase navigation, confidence-aware review prompts, held-out carry estimates, a six-error filter and local phase annotation storage/export. This is a recorded-session prototype: new uploads, calibrated flight reconstruction, validated phase detection and personalized coaching are not implemented. Browser automation is unavailable, so actual playback/interaction QA remains pending despite passing data/media and JavaScript syntax checks.
 
 Rebuild with `.venv/bin/python scripts/build_research_viewer.py`; verify with `.venv/bin/python scripts/verify_research_delivery.py`. See `reports/misclassified_shot_audit.md` for the six errors and alignment limitations. Local browser storage may be unavailable under file URLs; export markers to preserve them.
+
+## Local video analysis and native-frame review
+
+Double-click **Start Swing Lab.command**, then open the loopback URL printed in Terminal. Keep that Terminal running. The page links the research demo and accepts a local MOV/MP4 (up to 2 GiB). Select the beginning of a 3.5-second window containing one complete swing. Processing and uploaded copies remain on this computer, under `outputs/new_swings/`; no cloud upload occurs. Stop the service with Ctrl+C. The original source is unchanged.
+
+Alternatively:
+```sh
+.venv/bin/python scripts/local_app.py --port 8765
+.venv/bin/python scripts/analyze_swing.py --video '/path/to/swing.mov' --start 3.0 --name my_swing
+```
+The new-video pipeline uses a fixed video-only ridge reference fit trained on the 72 labeled research shots. It does not use held-out predictions for new input, and its accuracy on new days/camera positions is unvalidated. Existing-recording smoke tests verify execution, not generalization. No calibrated speed or diagnosis of chunk/thin contact is produced. Keep the trained reference model files locally; reproduce them with `scripts/train_reference.py` if absent.
+
+Research demo additions: synchronized image-plane head traces on all 76 swings; source-bound provisional departure review on 12 swings; native-cadence cropped ball/impact clips with timestamp-based frame stepping; experimental automatic trajectory plots. Automatic tracks remain excluded from prediction inputs. Source cadence is preserved in the native view; the separate pose replay stays at 30 fps. Browser visual/interaction QA remains pending, while local HTTP upload, processing, result delivery and media-range tests have passed.
+
+Reproduction for this continuation (cached decoding is reused):
+```sh
+.venv/bin/python scripts/pose_observations.py
+.venv/bin/python scripts/render_head_observations.py
+.venv/bin/python scripts/ball_tracking_v6.py --version 6
+.venv/bin/python scripts/link_ball_v6.py --version 6
+.venv/bin/python scripts/ball_tracking_v6.py --version 7 --all
+.venv/bin/python scripts/link_ball_v6.py --version 7 --reviewed-only
+.venv/bin/python scripts/link_ball_v6.py --version 7 --link-version 8
+.venv/bin/python scripts/impact_review_sheets.py
+.venv/bin/python scripts/compile_impact_review.py
+.venv/bin/python scripts/ball_timing_study.py
+.venv/bin/python scripts/render_tracking_comparison.py --version 8
+.venv/bin/python scripts/build_native_review.py
+.venv/bin/python scripts/summarize_tracking_progress.py
+.venv/bin/python scripts/build_research_viewer.py
+.venv/bin/python scripts/verify_research_delivery.py
+.venv/bin/python scripts/verify_local_app.py --process
+```
+The final command starts a temporary loopback server and runs an actual clip through the upload pipeline. It requires local socket permission; it sends nothing externally. Results and limitations are in `reports/tracking_timing_product_progress.md` and `reports/local_app_verification.json`.

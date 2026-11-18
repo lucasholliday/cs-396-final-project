@@ -17,8 +17,8 @@ EDGES = [(11,12),(11,13),(13,15),(12,14),(14,16),(11,23),(12,24),(23,24),(23,25)
 
 
 def process(row, cfg):
-    out=ROOT/'outputs/pose'
-    cache=ROOT/'data/processed/pose'
+    out=ROOT/cfg.get('pose_output_dir','outputs/pose')
+    cache=ROOT/cfg.get('pose_cache_dir','data/processed/pose')
     out.mkdir(parents=True,exist_ok=True)
     cache.mkdir(parents=True,exist_ok=True)
     sid=row.shot_id

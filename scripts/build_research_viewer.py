@@ -14,6 +14,8 @@ inventory=pd.read_csv(ROOT/'data/manifests/file_inventory.csv').set_index('path'
 gate=pd.read_csv(ROOT/'experiments/carry_thresholds_v1/predictions.csv')
 gate=gate[(gate.features=='reviewed_ball_assisted') & (gate.threshold_yd==100)].set_index('shot_id')
 assert len(gate)==31
+intervals=pd.read_csv(ROOT/'annotations/impact_intervals.csv').set_index('shot_id')
+reviewed_points=pd.read_csv(ROOT/'annotations/contact_ball_points.csv')
 rows=[]
 (out/'videos').mkdir(exist_ok=True)
 for r in m.itertuples():
@@ -22,7 +24,10 @@ for r in m.itertuples():
  if not target.exists() or target.stat().st_mtime_ns<source.stat().st_mtime_ns:
   subprocess.run(['ffmpeg','-v','error','-i',str(source),'-an','-c:v','libx264','-threads','2','-pix_fmt','yuv420p','-movflags','+faststart','-y',str(target)],check=True,capture_output=True)
  p=json.loads((ROOT/f'data/processed/pose/{r.shot_id}.json').read_text())
- rows.append(dict(id=r.shot_id,golfer=r.golfer,session=r.session,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],
+ observations=json.loads((ROOT/f'data/processed/pose_observations/{r.shot_id}.json').read_text())
+ native=json.loads((ROOT/f'outputs/native_review/{r.shot_id}.json').read_text())
+ tracked=json.loads((ROOT/f'data/processed/ball_v8_tracks/{r.shot_id}.json').read_text())
+ rows.append(dict(native=native,ball_track=tracked['observations'],reviewed_points=reviewed_points[reviewed_points.shot_id==r.shot_id][['playback_s','x','y']].to_dict('records'),departure_interval=intervals.loc[r.shot_id,['lower_s','upper_s','width_ms']].to_dict() if r.shot_id in intervals.index else None,observations=observations,id=r.shot_id,golfer=r.golfer,session=r.session,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],
   carry=labels.loc[r.shot_id,'Carry flat (yd)'],
   ball_speed=labels.loc[r.shot_id,'Ball speed (mph)'],launch=labels.loc[r.shot_id,'Launch angle (deg)'],
   club_available=bool(pd.notna(r.club_peak_candidate_s)),alignment_residual=r.club_watch_residual_s,

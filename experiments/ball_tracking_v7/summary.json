@@ -1,0 +1,9 @@
+{
+  "reference_points": 78,
+  "shots": 31,
+  "v7_candidate_recall_16px": 0.9615384615384616,
+  "v7_candidate_recall_32px": 0.9743589743589743,
+  "v4_final_track_recall_32px": 0.5256410256410257,
+  "v7_median_candidate_count": 143.5,
+  "warning": "Candidate recall is an upper bound, not tracker accuracy. References are approximate AI review; second reviewer pending."
+}

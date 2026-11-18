@@ -1,0 +1,39 @@
+{
+  "seed": 396,
+  "n": 26,
+  "golfers": {
+    "Andrew": 2,
+    "Eduardo": 7,
+    "Lucas": 3,
+    "Rohan": 7,
+    "Sid": 7
+  },
+  "features": {
+    "first_point_departure": [
+      "reviewed_ball_vertical_rate",
+      "reviewed_ball_lateral_rate",
+      "reviewed_ball_first_elapsed_s"
+    ],
+    "interframe_slope": [
+      "flight_vx",
+      "flight_vy",
+      "flight_span_s"
+    ],
+    "combined": [
+      "reviewed_ball_vertical_rate",
+      "reviewed_ball_lateral_rate",
+      "reviewed_ball_first_elapsed_s",
+      "flight_vx",
+      "flight_vy",
+      "flight_span_s"
+    ]
+  },
+  "tasks": [
+    "Carry flat (yd)",
+    "Launch angle (deg)",
+    "short100"
+  ],
+  "scheme": "leave_golfer_out",
+  "inner": "3 group folds; select pooled MAE or log loss",
+  "limitations": "AI-reviewed sparse point development cohort, at least two points; not a blind or autonomous evaluation. All three feature sets evaluated on identical shots. No metric speed interpretation."
+}

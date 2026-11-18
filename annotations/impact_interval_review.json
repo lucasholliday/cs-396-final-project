@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "reviewer": "AI visual inspection of unmarked native-cadence ball/club crops",
+    "status": "provisional visual ball-departure intervals; independent second review pending",
+    "semantics": "Lower frame shows ball still at its original position; upper frame shows flight or clear departure. Interval includes exposure and occlusion uncertainty. Not a precisely measured club-ball contact time or ground-contact label.",
+    "selection": "First shot of each session plus the six reviewed-ball 100-yard gate errors; diagnostic selection, not a representative accuracy test."
+  },
+  "intervals": {
+    "sid_1_01": {"lower_panel": 5, "upper_panel": 6, "note": "Ball at original position then visibly airborne."},
+    "sid_1_16": {"lower_panel": 5, "upper_panel": 6, "note": "Ball at original position then visibly airborne."},
+    "sid_1_18": {"lower_panel": 5, "upper_panel": 7, "note": "Conservative upper bound after partial club/ball overlap."},
+    "rohan_1_01": {"lower_panel": 8, "upper_panel": 11, "note": "Intermediate frames partly occluded by clubhead; clear flight at upper bound."},
+    "rohan_2_01": {"lower_panel": 5, "upper_panel": 7, "note": "Clear airborne streak at upper bound."},
+    "rohan_2_07": {"lower_panel": 8, "upper_panel": 11, "note": "Club/ball overlap between bounds; flight clear at upper bound."},
+    "rohan_2_10": {"lower_panel": 5, "upper_panel": 7, "note": "Low departure with ball/club blur; conservative interval."},
+    "lucas_1_01": {"lower_panel": 5, "upper_panel": 7, "note": "Ball disappears from its original location after club passes; fast flight leaves local crop. Upper bound uses clear departure, not a localized airborne center."},
+    "andrew_1_01": {"lower_panel": 7, "upper_panel": 9, "note": "Ball appears at original location through panel 7; departure streak by panel 9."},
+    "andrew_1_11": {"lower_panel": 4, "upper_panel": 6, "note": "Strong rightward ball streak clearly visible at upper bound."},
+    "eduardo_1_01": {"lower_panel": 3, "upper_panel": 5, "note": "Ball at original location then airborne vertical streak."},
+    "eduardo_1_19": {"lower_panel": 3, "upper_panel": 5, "note": "Ball at original location then airborne streak. Earlier coarse 381.95 s departure was late relative to these native frames."}
+  }
+}

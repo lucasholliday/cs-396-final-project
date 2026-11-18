@@ -1,0 +1,4 @@
+{
+  "minimum_pose_detection_fraction": 0.5,
+  "description": "New-video product guard: abstain from reference-model prediction when pose is missing in more than half the review frames. This is a conservative availability rule, not a validated accuracy threshold."
+}

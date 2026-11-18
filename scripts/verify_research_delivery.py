@@ -23,6 +23,11 @@ if __name__=='__main__':
   assert (ROOT/'outputs/pose'/f"{d['id']}_input.mp4").exists()
   assert len(d['world'])==len(d['landmarks'])==105
   assert len(d['sha256'])==64
+  assert len(d['observations']['frames'])==105
+  assert len(d['native']['source_pts'])==len(d['native']['review_pts'])
+  assert d['native']['cadence_error_max_s']<.0001
+  assert (ROOT/'outputs/native_review'/f"{d['id']}.mp4").exists()
+ assert sum(d['departure_interval'] is not None for d in data)==12
  assert sum(d['gate_error'] for d in data)==6
  assert sum(d['gate_probability'] is not None for d in data)==31
  assert sum(d['club_available'] for d in data)==68
@@ -32,5 +37,5 @@ if __name__=='__main__':
  inventory=pd.read_csv(ROOT/'data/manifests/file_inventory.csv').set_index('path').sha256
  refs=pd.read_csv(ROOT/'annotations/ball_reference_points.csv')
  assert (refs.source.map(inventory)==refs.source_sha256).all()
- result=dict(viewer_records=76,h264_media_checked=76,pose_frames_per_clip=105,early_oof_evaluations=6,source_bound_point_review_panels=len(refs),browser_ui_check='not_completed_browser_access_timeout')
+ result=dict(viewer_records=76,h264_media_checked=76,pose_frames_per_clip=105,early_oof_evaluations=6,source_bound_point_review_panels=len(refs),native_review_clips=76,native_review_frames=sum(len(d['native']['source_pts']) for d in data),provisional_departure_intervals=12,browser_ui_check='not_completed_browser_host_unavailable_and_native_app_timeout')
  (ROOT/'reports/viewer_verification.json').write_text(json.dumps(result,indent=2));print(result)

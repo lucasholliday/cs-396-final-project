@@ -1,0 +1,11 @@
+{
+  "candidate_version": 7,
+  "link_version": 8,
+  "changes_from_v7": "Initialization only: elapsed 0.004\u20130.060 seconds after seed disappearance, positive contrast at mat, component area at least 12 pixels. Following is unchanged and allows either polarity.",
+  "rationale": "V7 failure inspection found tracks initialized on tiny dark distractors or the shaft before the ball moved. Current mat ball is bright at departure even when later silhouetted against sky.",
+  "evaluation": "Existing 32-shot reviewed development cohort; no independent generalization claim. No further selection tuning in this checkpoint.",
+  "initial_elapsed_min_s": 0.004,
+  "initial_elapsed_max_s": 0.06,
+  "initial_min_area": 12,
+  "initial_polarity": 1
+}

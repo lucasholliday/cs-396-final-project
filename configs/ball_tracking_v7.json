@@ -1,0 +1,26 @@
+{
+  "version": 7,
+  "before_peak_s": 1.25,
+  "duration_s": 1.65,
+  "native_crop": [
+    300,
+    650,
+    780,
+    1100
+  ],
+  "seed_bounds_native": [
+    570,
+    1400,
+    880,
+    1710
+  ],
+  "background_frames": 30,
+  "positive_difference": 22,
+  "brightness_minimum": 110,
+  "minimum_component_area": 3,
+  "maximum_component_area": 850,
+  "maximum_component_width": 65,
+  "maximum_component_height": 140,
+  "notes": "Development follow-up to v6 dark-ball failures: separate positive and negative contrast components, frozen before v7 evaluation. Same reviewed development points; not an independent test.",
+  "dual_polarity": true
+}

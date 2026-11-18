@@ -1,0 +1,527 @@
+[
+  {
+    "task": "Carry flat (yd)",
+    "features": "first_point_departure",
+    "fold": 0,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 37.94467787114846,
+      "ridge10": 29.67918298531176,
+      "extra_trees": 35.46082980245969,
+      "svr": 31.032075445700894
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "first_point_departure",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 42.98433583959899,
+      "ridge10": 29.95353314285366,
+      "extra_trees": 37.09709217488168,
+      "svr": 37.787994737630754
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "first_point_departure",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 37.27135093167702,
+      "ridge10": 28.46966749802982,
+      "extra_trees": 34.47326210343601,
+      "svr": 30.128487998819168
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "first_point_departure",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 35.96365914786968,
+      "ridge10": 30.880672306145023,
+      "extra_trees": 31.552877192982386,
+      "svr": 24.202541829403845
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "first_point_departure",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 41.02067669172932,
+      "ridge10": 31.822137534545643,
+      "extra_trees": 37.66500849345585,
+      "svr": 35.203698513071856
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "interframe_slope",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.94467787114846,
+      "ridge10": 46.65429638274571,
+      "extra_trees": 39.22564611273796,
+      "svr": 36.723187552696196
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "interframe_slope",
+    "fold": 1,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 42.98433583959899,
+      "ridge10": 42.36579407173835,
+      "extra_trees": 42.084589807853035,
+      "svr": 35.738547874337655
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "interframe_slope",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.27135093167702,
+      "ridge10": 43.70639598039816,
+      "extra_trees": 37.831540592257966,
+      "svr": 32.25600198533176
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "interframe_slope",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 35.96365914786968,
+      "ridge10": 43.1441735389739,
+      "extra_trees": 35.73381927039818,
+      "svr": 26.040056059354807
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "interframe_slope",
+    "fold": 4,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 41.02067669172932,
+      "ridge10": 41.253146976763155,
+      "extra_trees": 40.90758563074352,
+      "svr": 41.089373569851865
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "combined",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.94467787114846,
+      "ridge10": 34.342527986484974,
+      "extra_trees": 36.1603778305935,
+      "svr": 31.82443610001697
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "combined",
+    "fold": 1,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 42.98433583959899,
+      "ridge10": 32.334881055373685,
+      "extra_trees": 36.49550389863551,
+      "svr": 33.34418049819722
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "combined",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 37.27135093167702,
+      "ridge10": 33.498170604216966,
+      "extra_trees": 34.642386405462496,
+      "svr": 30.868759273340224
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "combined",
+    "fold": 3,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 35.96365914786968,
+      "ridge10": 34.06967034398737,
+      "extra_trees": 31.34153285992754,
+      "svr": 22.59059171362585
+    }
+  },
+  {
+    "task": "Carry flat (yd)",
+    "features": "combined",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 41.02067669172932,
+      "ridge10": 33.58420674826576,
+      "extra_trees": 37.4213551935394,
+      "svr": 37.86618500266037
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "first_point_departure",
+    "fold": 0,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 5.452626050420169,
+      "ridge10": 4.172208153534933,
+      "extra_trees": 5.28258666013544,
+      "svr": 4.284357850835327
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "first_point_departure",
+    "fold": 1,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.323997493734336,
+      "ridge10": 5.983230046185201,
+      "extra_trees": 6.179785213032583,
+      "svr": 5.760058595446012
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "first_point_departure",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 6.061257763975156,
+      "ridge10": 4.702710046444915,
+      "extra_trees": 5.802379988811512,
+      "svr": 4.939029772408051
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "first_point_departure",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 5.171741854636592,
+      "ridge10": 4.710664516224827,
+      "extra_trees": 4.617153174603168,
+      "svr": 4.96718845719814
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "first_point_departure",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 5.4942355889724315,
+      "ridge10": 4.526793696294732,
+      "extra_trees": 5.41874189640769,
+      "svr": 5.2605729348560475
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "interframe_slope",
+    "fold": 0,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 5.452626050420169,
+      "ridge10": 6.192422750222096,
+      "extra_trees": 5.602656916857658,
+      "svr": 4.8980330327617505
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "interframe_slope",
+    "fold": 1,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.323997493734336,
+      "ridge10": 6.846416054175327,
+      "extra_trees": 6.215972528543585,
+      "svr": 5.261348537740228
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "interframe_slope",
+    "fold": 2,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.061257763975156,
+      "ridge10": 6.425831569165405,
+      "extra_trees": 6.137540828575612,
+      "svr": 5.8560571832221
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "interframe_slope",
+    "fold": 3,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 5.171741854636592,
+      "ridge10": 7.580453175795475,
+      "extra_trees": 5.25775488721803,
+      "svr": 5.686564168769487
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "interframe_slope",
+    "fold": 4,
+    "model": "mean",
+    "inner_scores": {
+      "mean": 5.4942355889724315,
+      "ridge10": 5.5142896057382735,
+      "extra_trees": 5.515001684767477,
+      "svr": 6.278767024096815
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "combined",
+    "fold": 0,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 5.452626050420169,
+      "ridge10": 4.148402251478012,
+      "extra_trees": 5.372693124109921,
+      "svr": 4.4670653821388955
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "combined",
+    "fold": 1,
+    "model": "svr",
+    "inner_scores": {
+      "mean": 6.323997493734336,
+      "ridge10": 5.734551465348447,
+      "extra_trees": 6.0343476747424125,
+      "svr": 5.430608727930046
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "combined",
+    "fold": 2,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 6.061257763975156,
+      "ridge10": 4.4200318836365735,
+      "extra_trees": 5.941799265951444,
+      "svr": 4.881980279430463
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "combined",
+    "fold": 3,
+    "model": "extra_trees",
+    "inner_scores": {
+      "mean": 5.171741854636592,
+      "ridge10": 6.410029784874307,
+      "extra_trees": 4.739949164578108,
+      "svr": 5.132028319579418
+    }
+  },
+  {
+    "task": "Launch angle (deg)",
+    "features": "combined",
+    "fold": 4,
+    "model": "ridge10",
+    "inner_scores": {
+      "mean": 5.4942355889724315,
+      "ridge10": 4.276872422791068,
+      "extra_trees": 5.431867599554446,
+      "svr": 5.5593919819961295
+    }
+  },
+  {
+    "task": "short100",
+    "features": "first_point_departure",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6963110725908915,
+      "logistic": 0.5774103676154805,
+      "extra_trees": 0.6824512958732835
+    }
+  },
+  {
+    "task": "short100",
+    "features": "first_point_departure",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6807369348300627,
+      "logistic": 0.5080152959774026,
+      "extra_trees": 0.6431178791844744
+    }
+  },
+  {
+    "task": "short100",
+    "features": "first_point_departure",
+    "fold": 2,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.675851863513495,
+      "logistic": 0.5685348564224699,
+      "extra_trees": 0.6781026704421247
+    }
+  },
+  {
+    "task": "short100",
+    "features": "first_point_departure",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6807369348300627,
+      "logistic": 0.586306520066201,
+      "extra_trees": 0.6667288515439646
+    }
+  },
+  {
+    "task": "short100",
+    "features": "first_point_departure",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6809593428718723,
+      "logistic": 0.5767797167807792,
+      "extra_trees": 0.6723738067950332
+    }
+  },
+  {
+    "task": "short100",
+    "features": "interframe_slope",
+    "fold": 0,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6963110725908915,
+      "logistic": 0.8334284238157571,
+      "extra_trees": 0.7044202465604363
+    }
+  },
+  {
+    "task": "short100",
+    "features": "interframe_slope",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6807369348300627,
+      "logistic": 0.6776597856362332,
+      "extra_trees": 0.6855139745515598
+    }
+  },
+  {
+    "task": "short100",
+    "features": "interframe_slope",
+    "fold": 2,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.675851863513495,
+      "logistic": 0.819910572256031,
+      "extra_trees": 0.6865288673952797
+    }
+  },
+  {
+    "task": "short100",
+    "features": "interframe_slope",
+    "fold": 3,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6807369348300627,
+      "logistic": 0.7852192446107047,
+      "extra_trees": 0.696811395285872
+    }
+  },
+  {
+    "task": "short100",
+    "features": "interframe_slope",
+    "fold": 4,
+    "model": "prior",
+    "inner_scores": {
+      "prior": 0.6809593428718723,
+      "logistic": 0.6871026815074515,
+      "extra_trees": 0.6850387978769531
+    }
+  },
+  {
+    "task": "short100",
+    "features": "combined",
+    "fold": 0,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6963110725908915,
+      "logistic": 0.662765837467502,
+      "extra_trees": 0.6926706344381873
+    }
+  },
+  {
+    "task": "short100",
+    "features": "combined",
+    "fold": 1,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6807369348300627,
+      "logistic": 0.5253915104930544,
+      "extra_trees": 0.6351489570629556
+    }
+  },
+  {
+    "task": "short100",
+    "features": "combined",
+    "fold": 2,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.675851863513495,
+      "logistic": 0.6457983049204189,
+      "extra_trees": 0.6816492734264346
+    }
+  },
+  {
+    "task": "short100",
+    "features": "combined",
+    "fold": 3,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6807369348300627,
+      "logistic": 0.6026959236174125,
+      "extra_trees": 0.6663553476652426
+    }
+  },
+  {
+    "task": "short100",
+    "features": "combined",
+    "fold": 4,
+    "model": "logistic",
+    "inner_scores": {
+      "prior": 0.6809593428718723,
+      "logistic": 0.5861977378849949,
+      "extra_trees": 0.6708001307781404
+    }
+  }
+]

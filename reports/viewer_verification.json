@@ -4,5 +4,8 @@
   "pose_frames_per_clip": 105,
   "early_oof_evaluations": 6,
   "source_bound_point_review_panels": 18,
-  "browser_ui_check": "not_completed_browser_access_timeout"
+  "native_review_clips": 76,
+  "native_review_frames": 19938,
+  "provisional_departure_intervals": 12,
+  "browser_ui_check": "not_completed_browser_host_unavailable_and_native_app_timeout"
 }
