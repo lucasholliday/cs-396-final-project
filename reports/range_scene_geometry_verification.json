@@ -1,0 +1,8 @@
+{
+  "shots": 76,
+  "frames_checked": 7980,
+  "limbs_always_visible": true,
+  "finite_transforms": true,
+  "maximum_grip_hand_gap": 0.024000000000000077,
+  "browser_or_webgl_test": false
+}

@@ -27,7 +27,8 @@ for r in m.itertuples():
  observations=json.loads((ROOT/f'data/processed/pose_observations/{r.shot_id}.json').read_text())
  native=json.loads((ROOT/f'outputs/native_review/{r.shot_id}.json').read_text())
  tracked=json.loads((ROOT/f'data/processed/ball_v8_tracks/{r.shot_id}.json').read_text())
- rows.append(dict(native=native,ball_track=tracked['observations'],reviewed_points=reviewed_points[reviewed_points.shot_id==r.shot_id][['playback_s','x','y']].to_dict('records'),departure_interval=intervals.loc[r.shot_id,['lower_s','upper_s','width_ms']].to_dict() if r.shot_id in intervals.index else None,observations=observations,id=r.shot_id,golfer=r.golfer,session=r.session,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],
+ avatar=json.loads((ROOT/f'data/processed/avatar_motion/{r.shot_id}.json').read_text())
+ rows.append(dict(avatar_motion=avatar,native=native,ball_track=tracked['observations'],reviewed_points=reviewed_points[reviewed_points.shot_id==r.shot_id][['playback_s','x','y']].to_dict('records'),departure_interval=intervals.loc[r.shot_id,['lower_s','upper_s','width_ms']].to_dict() if r.shot_id in intervals.index else None,observations=observations,id=r.shot_id,golfer=r.golfer,session=r.session,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],
   carry=labels.loc[r.shot_id,'Carry flat (yd)'],
   ball_speed=labels.loc[r.shot_id,'Ball speed (mph)'],launch=labels.loc[r.shot_id,'Launch angle (deg)'],
   club_available=bool(pd.notna(r.club_peak_candidate_s)),alignment_residual=r.club_watch_residual_s,
@@ -38,6 +39,6 @@ for r in m.itertuples():
   prediction=float(pred.loc[r.shot_id,'predicted']) if r.shot_id in pred.index else None,
   top=phase.loc[r.shot_id,'top_candidate_s'],top_status=phase.loc[r.shot_id,'top_status'],source=r.video_candidate,sha256=inventory.loc[r.video_candidate,'sha256']))
 payload=json.dumps(rows,allow_nan=True).replace('NaN','null').replace('</','<\\/')
-template=(ROOT/'scripts/viewer_template.html').read_text()
+template=(ROOT/'scripts/viewer_template.html').read_text().replace('__THREE__','/* '+(ROOT/'vendor/three/LICENSE').read_text()+' */\n'+(ROOT/'vendor/three/three.min.js').read_text()).replace('__SCENE__',(ROOT/'scripts/range_scene.js').read_text())
 (out/'index.html').write_text(template.replace('__DATA__',payload))
 print('Built local viewer for',len(rows),'shots:',out/'index.html')

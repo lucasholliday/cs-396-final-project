@@ -75,3 +75,8 @@ Browser/native automation inventory failed (host unavailable), so no browser was
 - Summary: reports/tracking_timing_product_progress.md. Reproduction and launcher instructions in README. Raw sources, labels and evaluation membership unchanged; no external uploads.
 
 Next: independently review full automatic trajectories/departure bounds; improve or compare body-pose tracking, especially wrists; verify the local app in a working browser and test genuinely new recordings. Preserve the difference between a functioning execution path and validated new-data accuracy.
+
+## Latest user steering — stable 3D range scene
+User requested a real 3D avatar-style golfer, held club, airborne ball with tracer, driving-range setting, and plausible completion of an uncertain leg instead of flicker. Implemented an articulated Three.js scene with local vendored assets, display-only temporally completed pose, stable opaque limbs, common grip, phase-illustrative club and schematic carry-scaled flight. Native video also has an experimental 2D tracer overlay. This supersedes the earlier flat canvas avatar; exact club/3D ball reconstruction remains unvalidated.
+24 tests pass; scene geometry checked on all 7,980 frames; software geometry previews inspected. Browser host still unavailable after user reset, so no actual WebGL/UI test. User offered help restoring access; an asynchronous optional request is pending. Do not retry native Safari/Chrome getApp calls, which previously timed out. Local page HTTP 200 confirmed. See reports/avatar_range_update.md.
+The planned heavier-pose-model comparison was deferred when this user steering arrived; no heavy-model results exist and no claim should be made that it ran.

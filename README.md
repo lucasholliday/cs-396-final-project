@@ -148,3 +148,10 @@ Reproduction for this continuation (cached decoding is reused):
 .venv/bin/python scripts/verify_local_app.py --process
 ```
 The final command starts a temporary loopback server and runs an actual clip through the upload pipeline. It requires local socket permission; it sends nothing externally. Results and limitations are in `reports/tracking_timing_product_progress.md` and `reports/local_app_verification.json`.
+
+## 3D range scene and stable avatar
+The updated demo includes a solid 3D golfer holding a club, a stylized driving range, an illustrative ball-flight tracer, camera orbit and automatic flight framing. **Refresh the open page** to load the new scene. Use **Golfer view**, **Flight view**, or **Replay swing + flight**. Uncertain limbs are completed and remain opaque; this affects the display only, not research measurements. The native video has a separate experimental tracker overlay.
+
+Three.js is bundled locally under `vendor/three/` with its MIT license; no CDN or external assets are requested. The 3D scene requires WebGL. Without WebGL, the page reports that limitation and keeps video/data controls available. See `reports/avatar_range_update.md` for the distinction between completed pose, illustrative club/flight, and actual image-plane proposals.
+
+Rebuild the display rig first with `.venv/bin/python scripts/avatar_motion.py`, then rebuild the viewer as usual. `node scripts/verify_range_scene.js` checks scene geometry across all frames; it does **not** replace browser/WebGL QA. `scripts/render_range_geometry_preview.py` creates explicitly labeled software geometry previews for inspection.
