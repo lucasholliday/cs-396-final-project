@@ -1,0 +1,7 @@
+shot_id,workbook_row,actual,Ball speed (mph),Launch angle (deg),low_probability,club_peak_candidate_s,club_watch_residual_s,association_status
+andrew_1_11,57,83.0,82.0,23.4,0.4051499897778267,,,accepted_user_order_plus_visible_swing
+eduardo_1_19,76,83.0,73.0,22.1,0.1926523683929497,378.599411008,0.0146785721875062,accepted_user_order_plus_visible_swing
+rohan_2_07,31,125.0,102.0,11.0,0.5590781648119378,190.612899781,0.028390560356172,accepted_user_order_plus_visible_swing
+rohan_2_10,34,106.0,107.0,4.3,0.7088115307552386,,,accepted_user_order_plus_visible_swing
+sid_1_16,17,81.0,75.0,20.7,0.4766286106120839,334.360214224,0.028224872607268,accepted_user_order_plus_visible_swing
+sid_1_18,19,121.0,100.0,11.7,0.5950507717650562,,,accepted_user_order_plus_visible_swing

@@ -11,6 +11,9 @@ pred=pd.read_csv(ROOT/'experiments/nested_carry_v1/predictions.csv')
 pred=pred[(pred.cohort=='all_labeled')&(pred.scheme=='leave_golfer_out')&(pred.features=='camera_watch')].set_index('shot_id')
 phase=pd.read_csv(ROOT/'annotations/phase_candidates.csv').set_index('shot_id')
 inventory=pd.read_csv(ROOT/'data/manifests/file_inventory.csv').set_index('path')
+gate=pd.read_csv(ROOT/'experiments/carry_thresholds_v1/predictions.csv')
+gate=gate[(gate.features=='reviewed_ball_assisted') & (gate.threshold_yd==100)].set_index('shot_id')
+assert len(gate)==31
 rows=[]
 (out/'videos').mkdir(exist_ok=True)
 for r in m.itertuples():
@@ -20,7 +23,14 @@ for r in m.itertuples():
   subprocess.run(['ffmpeg','-v','error','-i',str(source),'-an','-c:v','libx264','-threads','2','-pix_fmt','yuv420p','-movflags','+faststart','-y',str(target)],check=True,capture_output=True)
  p=json.loads((ROOT/f'data/processed/pose/{r.shot_id}.json').read_text())
  rows.append(dict(id=r.shot_id,golfer=r.golfer,session=r.session,start=p['clip_start_playback_s'],fps=p['fps'],world=p['estimated_world_landmarks'],landmarks=p['landmarks'],
-  carry=labels.loc[r.shot_id,'Carry flat (yd)'],prediction=float(pred.loc[r.shot_id,'predicted']) if r.shot_id in pred.index else None,
+  carry=labels.loc[r.shot_id,'Carry flat (yd)'],
+  ball_speed=labels.loc[r.shot_id,'Ball speed (mph)'],launch=labels.loc[r.shot_id,'Launch angle (deg)'],
+  club_available=bool(pd.notna(r.club_peak_candidate_s)),alignment_residual=r.club_watch_residual_s,
+  workbook_row=int(r.workbook_row),
+  gate_probability=float(gate.loc[r.shot_id,'low_probability']) if r.shot_id in gate.index else None,
+  assisted_prediction=float(gate.loc[r.shot_id,'allshot_prediction']) if r.shot_id in gate.index else None,
+  gate_error=bool((gate.loc[r.shot_id,'low_probability']>=.5)!=(gate.loc[r.shot_id,'actual']<100)) if r.shot_id in gate.index else False,
+  prediction=float(pred.loc[r.shot_id,'predicted']) if r.shot_id in pred.index else None,
   top=phase.loc[r.shot_id,'top_candidate_s'],top_status=phase.loc[r.shot_id,'top_status'],source=r.video_candidate,sha256=inventory.loc[r.video_candidate,'sha256']))
 payload=json.dumps(rows,allow_nan=True).replace('NaN','null').replace('</','<\\/')
 template=(ROOT/'scripts/viewer_template.html').read_text()

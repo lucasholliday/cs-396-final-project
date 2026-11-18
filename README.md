@@ -107,3 +107,10 @@ python scripts/carry_threshold_experiment.py
 python scripts/summarize_contact_studies.py
 ```
 The reviewed-ball pilot is explicitly assisted, uses approximate source-bound AI annotations and still needs a second reviewer. Automatic ball proposals remain excluded. Conditional 100+ yd error must never be reported as end-to-end error: read the predicted acceptance, false accepts/rejects and conditional constant baseline alongside it. Contact flags predict short/low/directional outcomes, not validated chunk/thin/hosel mechanisms.
+
+## Swing Lab product demo (2026-11-18)
+Double-click **Open Swing Lab.html** in this project, or open `outputs/research_viewer/index.html` in your browser. All assets stay local; no server or internet is required. Keep the project folders together.
+
+The demo includes all 76 clips, slow motion and frame stepping, a rotatable solid avatar from estimated world pose, approximate phase navigation, confidence-aware review prompts, held-out carry estimates, a six-error filter and local phase annotation storage/export. This is a recorded-session prototype: new uploads, calibrated flight reconstruction, validated phase detection and personalized coaching are not implemented. Browser automation is unavailable, so actual playback/interaction QA remains pending despite passing data/media and JavaScript syntax checks.
+
+Rebuild with `.venv/bin/python scripts/build_research_viewer.py`; verify with `.venv/bin/python scripts/verify_research_delivery.py`. See `reports/misclassified_shot_audit.md` for the six errors and alignment limitations. Local browser storage may be unavailable under file URLs; export markers to preserve them.

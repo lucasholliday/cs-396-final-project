@@ -23,6 +23,9 @@ if __name__=='__main__':
   assert (ROOT/'outputs/pose'/f"{d['id']}_input.mp4").exists()
   assert len(d['world'])==len(d['landmarks'])==105
   assert len(d['sha256'])==64
+ assert sum(d['gate_error'] for d in data)==6
+ assert sum(d['gate_probability'] is not None for d in data)==31
+ assert sum(d['club_available'] for d in data)==68
  p=pd.read_csv(ROOT/'experiments/early_swing_v1/predictions.csv')
  assert not p.duplicated(['scheme','features','shot_id']).any()
  assert p.groupby(['scheme','features']).size().eq(72).all()
