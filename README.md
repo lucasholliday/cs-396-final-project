@@ -1,8 +1,52 @@
 # Golf Shot Modeling
 
-Executed research codebase for the specification in `prompt.md`. Resume with `AGENTS.md` and `PROJECT_STATUS.md`.
+Executed research codebase for multi-modal golf swing sensing, ball launch tracking, and 3D trajectory prediction. Resume with `AGENTS.md` and `PROJECT_STATUS.md`.
 
-Current results: 76 reviewed swing identities, 72 labeled shots, 65 labeled club-covered shots; 76 pose clips; native ball/shaft diagnostics; 400 fixed-model and 26 nested carry comparisons; 360 learning-curve fits. See `reports/model_results.md`. This is an exploratory research system, not a validated launch monitor or polished app.
+Current results: 76 reviewed swing identities, 72 labeled shots, 65 labeled club-covered shots; 76 pose clips; native ball/shaft diagnostics; Leave-One-Golfer-Out (LOGO) cross-validation benchmarks across vision, clubhead IMU, and Apple Watch kinematics. Interactive 3D review lab with authentic PoseFormerV2 17-joint 3D kinematic skeleton and visual-inertial clubhead arc fusion in [Open Swing Lab.html](Open%20Swing%20Lab.html).
+
+---
+
+## Repository & Data Folder Structure
+
+Because raw 240 fps video recordings (~12 GB), raw IMU sensor logs, and TrackMan ground-truth spreadsheets contain high-volume private recordings, they are excluded from Git via `.gitignore`. 
+
+To run or reproduce the full pipeline locally, place the raw data folders at the project root as shown below:
+
+```text
+cs-396-final-project/
+├── Video Data/                      # [Private / Not in Git] 240 fps portrait down-the-line swing videos (.MOV)
+│   ├── lucas_1/
+│   ├── lucas_2/
+│   ├── sid_1/
+│   ├── sid_2/
+│   ├── edward_1/
+│   └── edward_2/
+├── Watch Data/                      # [Private / Not in Git] Apple Watch wrist kinematics CSVs
+│   ├── lucas_1/
+│   ├── sid_1/
+│   └── ...
+├── Club Data/                       # [Private / Not in Git] Hosel-mounted 188.6 Hz IMU gyro/accel CSVs
+│   ├── lucas_1/
+│   ├── sid_1/
+│   └── ...
+├── trackman_shot_labels.xlsx        # [Private / Not in Git] TrackMan 4 radar benchmark labels (Flat Carry, etc.)
+│
+├── Open Swing Lab.html              # [In Git] Main entrypoint to launch the interactive 3D Range & Pose Studio
+│
+├── annotations/                     # [In Git] Reviewed shot alignments and validated ball departure bounds
+├── configs/                         # [In Git] Hyperparameters, feature sets, and tracking configurations
+├── data/
+│   ├── manifests/                   # [In Git] Shot metadata, synchronization intervals, and label mappings
+│   └── processed/                   # [Generated] Fused 3D club arcs, ball tracks, and PoseFormerV2 skeletons
+├── experiments/                     # [In Git] Cross-validation predictions, fold metrics, and model comparisons
+├── reports/                         # [In Git] Detailed research findings, ablation studies, and validation summaries
+├── scripts/                         # [In Git] Python pipeline (ball tracking, club fusion, 3D range engine)
+├── tests/                           # [In Git] 45 unit tests covering research contracts, IK, fusion, and tracking
+├── vendor/                          # [In Git] Three.js 3D engine, anatomical meshes (PoseFormerV2 weights excluded)
+└── outputs/                         # [Generated] Built viewer bundle (`index.html`) and synced 30 fps swing clips
+```
+
+---
 
 ## Setup
 Tested on Apple Silicon, Python 3.10.7, FFmpeg/ffprobe 4.3.2. Use an isolated venv; system Python packages on the original machine contain incompatible binaries.
