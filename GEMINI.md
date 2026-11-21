@@ -21,7 +21,7 @@ TrackMan radar labels (`trackman_shot_labels.xlsx`) serve strictly as ground-tru
 1. **High-Speed Camera Video (`Video Data/`)**:
    - 240 fps, $1080\times1920$ portrait, down-the-line / oblique angle.
    - Captures pre-impact clubhead delivery and post-impact early ball launch (first ~15–30 ms).
-   - Raw folders: `lucas_1`, `lucas_2`, `sid_1`, `sid_2`, `edward_1`, `edward_2`.
+   - Raw folders: `lucas`, `sid`, `rohan_1`, `rohan_2`, `andrew`, `eduardo`.
 2. **Apple Watch IMU (`Watch Data/`)**:
    - High-rate accelerometer and gyroscope data capturing wrist kinematics and swing phase transitions.
 3. **Clubhead IMU (`Club Data/`)**:
@@ -199,7 +199,7 @@ TrackMan radar labels (`trackman_shot_labels.xlsx`) serve strictly as ground-tru
 1. **Multi-Modal Tri-Fusion Tuning (Push Carry MAE Below 14–15 yd)**:
    - Test whether fusing Apple Watch peak downswing angular acceleration and swing tempo (backswing-to-downswing duration ratio) with clubhead gyro delivery velocity and camera launch features can break below 15.0 yd MAE across unseen golfers under LOGO cross-validation.
 2. **Joint Multi-Target Aerodynamic Consistency (Carry, Total, Apex Height, Landing Angle)**:
-   - TrackMan recorded Flat Carry, Total Distance, Apex Height (ft), and Landing Angle (deg). Use joint multi-target modeling or physical flight envelope constraints (e.g., Total must be $\ge$ Carry, carry distance cannot exceed ballistic limits given ball speed and launch elevation) to reduce prediction variance on harder golfers like Lucas and Edward.
+   - TrackMan recorded Flat Carry, Total Distance, Apex Height (ft), and Landing Angle (deg). Use joint multi-target modeling or physical flight envelope constraints (e.g., Total must be $\ge$ Carry, carry distance cannot exceed ballistic limits given ball speed and launch elevation) to reduce prediction variance on harder golfers like Lucas and Eduardo.
 3. **Research Paper & Final Presentation Prep**:
    - Extract visual comparison figures and benchmark tables comparing Vision-Only vs. Club Gyro vs. Visual-Inertial Fusion vs. TrackMan Ground Truth for final project writeup and presentation slides.
    - Use the screenshots or headless snapshots from `outputs/range_scene_preview/` illustrating the 3D range, avatar IK, and dual trajectory comparison.

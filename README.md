@@ -15,20 +15,26 @@ To run or reproduce the full pipeline locally, place the raw data folders at the
 ```text
 cs-396-final-project/
 ├── Video Data/                      # [Private / Not in Git] 240 fps portrait down-the-line swing videos (.MOV)
-│   ├── lucas_1/
-│   ├── lucas_2/
-│   ├── sid_1/
-│   ├── sid_2/
-│   ├── edward_1/
-│   └── edward_2/
-├── Watch Data/                      # [Private / Not in Git] Apple Watch wrist kinematics CSVs
-│   ├── lucas_1/
-│   ├── sid_1/
-│   └── ...
-├── Club Data/                       # [Private / Not in Git] Hosel-mounted 188.6 Hz IMU gyro/accel CSVs
-│   ├── lucas_1/
-│   ├── sid_1/
-│   └── ...
+│   ├── andrew_session_1.MOV
+│   ├── eduardo_session_1.MOV
+│   ├── lucas_session.MOV
+│   ├── rohan_session_1.MOV
+│   ├── rohan_session_2.MOV
+│   └── sid_session_1.MOV
+├── Watch Data/                      # [Private / Not in Git] Apple Watch wrist kinematics CSV folders
+│   ├── andrew-2026-11-15_22-45-37/
+│   ├── eduardo-2026-11-15_22-52-40/
+│   ├── lucas_session_1-2026-11-15_22-35-36/
+│   ├── rohan_1-2026-11-15_22-19-24/
+│   ├── rohan_2-2026-11-15_22-23-24/
+│   └── sid_session_1-2026-11-15_22-03-22/
+├── Club Data/                       # [Private / Not in Git] Hosel-mounted 188.6 Hz IMU gyro/accel CSV folders
+│   ├── session_00011_sid/
+│   ├── session_00012_rohan_1/
+│   ├── session_00013_rohan_2/
+│   ├── session_00014_lucas/
+│   ├── session_00015_andrew/
+│   └── session_00016_eduardo/
 ├── trackman_shot_labels.xlsx        # [Private / Not in Git] TrackMan 4 radar benchmark labels (Flat Carry, etc.)
 │
 ├── Open Swing Lab.html              # [In Git] Main entrypoint to launch the interactive 3D Range & Pose Studio
