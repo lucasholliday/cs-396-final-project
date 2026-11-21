@@ -1,0 +1,31 @@
+model,golfer,n,mae
+Audited joint selector,Andrew,9,23.2636349198026
+Audited joint selector,Eduardo,20,14.612539070150797
+Audited joint selector,Lucas,12,15.61471105195038
+Audited joint selector,Rohan,13,31.769916976733985
+Audited joint selector,Sid,18,8.889076016931828
+Audited video recipe,Andrew,9,31.612575623372006
+Audited video recipe,Eduardo,20,14.612539070150797
+Audited video recipe,Lucas,12,15.61471105195038
+Audited video recipe,Rohan,13,18.999647712100302
+Audited video recipe,Sid,18,8.889076016931828
+Earlier body video,Andrew,9,39.49932049432049
+Earlier body video,Eduardo,20,17.59256437136295
+Earlier body video,Lucas,12,51.74048128706439
+Earlier body video,Rohan,13,56.86297001066566
+Earlier body video,Sid,18,12.841973318695516
+Earlier body video + watch,Andrew,9,40.0939148896371
+Earlier body video + watch,Eduardo,20,17.132835257335255
+Earlier body video + watch,Lucas,12,35.945485046548264
+Earlier body video + watch,Rohan,13,54.016164613164605
+Earlier body video + watch,Sid,18,17.41780295438577
+Gemini fixed ridge (retrospective),Andrew,9,40.250940699384024
+Gemini fixed ridge (retrospective),Eduardo,20,20.96307666460405
+Gemini fixed ridge (retrospective),Lucas,12,36.76170713172578
+Gemini fixed ridge (retrospective),Rohan,13,31.739809084503847
+Gemini fixed ridge (retrospective),Sid,18,13.298485014337349
+Training mean,Andrew,9,62.15873015873016
+Training mean,Eduardo,20,23.45384615384615
+Training mean,Lucas,12,49.05555555555554
+Training mean,Rohan,13,44.891786179921766
+Training mean,Sid,18,37.93415637860082

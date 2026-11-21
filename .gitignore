@@ -11,3 +11,4 @@ models/
 data/processed/
 .env
 *.log
+vendor/PoseFormerV2/

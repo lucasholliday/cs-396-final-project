@@ -1,0 +1,167 @@
+{
+  "features": {
+    "early_velocity": [
+      "launch_vx_early",
+      "launch_vy_early",
+      "launch_ray_angle",
+      "launch_early_fit_error",
+      "launch_first_delay",
+      "launch_tracked"
+    ],
+    "video_watch": [
+      "launch_dx_020",
+      "launch_rise_020",
+      "launch_dx_040",
+      "launch_rise_040",
+      "launch_dx_060",
+      "launch_rise_060",
+      "launch_dx_080",
+      "launch_rise_080",
+      "launch_tracked",
+      "launch_vx_early",
+      "launch_vy_early",
+      "launch_perspective_b",
+      "launch_perspective_residual",
+      "watch_gyro_max",
+      "watch_gyro_p95",
+      "watch_gyro_rms",
+      "watch_gyro_area",
+      "watch_gyro_peak_width_s",
+      "watch_accel_max",
+      "watch_accel_p95",
+      "watch_accel_rms",
+      "watch_accel_area",
+      "watch_accel_peak_width_s"
+    ],
+    "projection_minimal": [
+      "proj_vy",
+      "proj_vx"
+    ],
+    "projection": [
+      "proj_vy",
+      "proj_vx",
+      "proj_depth_rate",
+      "proj_shift",
+      "proj_fit_rmse"
+    ],
+    "projection_positions": [
+      "fit_rise_030",
+      "fit_rise_050",
+      "fit_rise_100",
+      "fit_dx_030",
+      "fit_dx_050",
+      "fit_dx_100",
+      "proj_fit_rmse"
+    ],
+    "projection_shape": [
+      "proj_vy",
+      "proj_vx",
+      "proj_depth_rate",
+      "proj_shift",
+      "proj_fit_rmse",
+      "proj_angle",
+      "proj_asymptote_y",
+      "area_early_median",
+      "area_log_slope",
+      "area_cv"
+    ],
+    "projection_body": [
+      "proj_vy",
+      "proj_vx",
+      "proj_depth_rate",
+      "proj_shift",
+      "proj_fit_rmse",
+      "head_range_0",
+      "head_range_1",
+      "shoulders_range_0",
+      "shoulders_range_1",
+      "hips_range_0",
+      "hips_range_1",
+      "flow_mean",
+      "flow_p95",
+      "flow_max"
+    ],
+    "projection_watch": [
+      "proj_vy",
+      "proj_vx",
+      "proj_depth_rate",
+      "proj_shift",
+      "proj_fit_rmse",
+      "watch_gyro_max",
+      "watch_gyro_p95",
+      "watch_gyro_rms",
+      "watch_gyro_area",
+      "watch_gyro_peak_width_s",
+      "watch_accel_max",
+      "watch_accel_p95",
+      "watch_accel_rms",
+      "watch_accel_area",
+      "watch_accel_peak_width_s"
+    ],
+    "projection_club": [
+      "proj_vy",
+      "proj_vx",
+      "proj_depth_rate",
+      "proj_shift",
+      "proj_fit_rmse",
+      "club_gyro_max",
+      "club_gyro_p95",
+      "club_gyro_rms",
+      "club_gyro_area",
+      "club_gyro_peak_width_s"
+    ],
+    "projection_fusion": [
+      "proj_vy",
+      "proj_vx",
+      "proj_depth_rate",
+      "proj_shift",
+      "proj_fit_rmse",
+      "watch_gyro_max",
+      "watch_gyro_p95",
+      "watch_gyro_rms",
+      "watch_gyro_area",
+      "watch_gyro_peak_width_s",
+      "watch_accel_max",
+      "watch_accel_p95",
+      "watch_accel_rms",
+      "watch_accel_area",
+      "watch_accel_peak_width_s",
+      "club_gyro_max",
+      "club_gyro_p95",
+      "club_gyro_rms",
+      "club_gyro_area",
+      "club_gyro_peak_width_s"
+    ],
+    "minimal_watch": [
+      "proj_vy",
+      "proj_vx",
+      "watch_gyro_p95",
+      "watch_gyro_rms",
+      "watch_accel_p95"
+    ],
+    "minimal_club": [
+      "proj_vy",
+      "proj_vx",
+      "club_gyro_p95",
+      "club_gyro_rms"
+    ]
+  },
+  "families": [
+    "mean",
+    "median",
+    "ridge10",
+    "ridge100",
+    "svr1",
+    "svr10",
+    "trees",
+    "pls2"
+  ],
+  "cutoffs": [
+    0,
+    100
+  ],
+  "target": "Ball speed (mph)",
+  "seed": 396,
+  "protocol": "Outer leave-golfer-out; three-group inner CV; >100 is actual-outcome oracle filtering. All-shot mode includes every labeled shot and imputed missing tracks.",
+  "legacy_warning": "Unverified blob speeds retained only as an audit comparator, excluded from nested feature selection."
+}

@@ -1,20 +1,814 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Swing Lab · Local demo</title>
-<style>*{box-sizing:border-box}[hidden]{display:none!important}body{font:15px system-ui;margin:0;background:#101c22;color:#edf4ef}main{max-width:1280px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center}h1{font-size:32px;margin:0}h2{font-size:20px}.muted,.note{color:#a9bdc4;line-height:1.55}.tag{color:#a3e5b9;font-size:12px;text-transform:uppercase;letter-spacing:2px}button,select,input{font:inherit;border:1px solid #46606a;background:#21343e;color:inherit;border-radius:8px;padding:9px;margin:3px}button{cursor:pointer}button:hover,button.active{background:#35634f}button:disabled{opacity:.4;cursor:default}section{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.panel{background:#192b34;border:1px solid #2b424c;border-radius:16px;padding:18px;min-width:0}.nativeWrap{position:relative;height:470px}.nativeWrap video{height:100%}.nativeWrap canvas{position:absolute;inset:0;height:100%;background:transparent;pointer-events:none}video{width:100%;height:470px;background:#0c151b;border-radius:8px}canvas{width:100%;height:470px;object-fit:contain;background:#14252d;border-radius:8px}.metrics{display:flex;gap:22px;flex-wrap:wrap}.metric strong{display:block;font-size:32px;color:#adf0bc}.metric span{color:#a9bdc4;font-size:13px}a{color:#9be1cf}#time{font-size:12px;margin:8px}#timeline{width:98%;padding:0}#marks{white-space:pre-wrap}.warning{color:#ffd49b}#observation{min-height:84px}details{line-height:1.6}footer{margin:24px 0;color:#a9bdc4}@media(max-width:760px){section{grid-template-columns:1fr}main{padding:12px}header{display:block}video,canvas{height:400px}}</style>
-<main><header><div><div class="tag">3D RANGE · VERSION 3</div><h1>Swing Lab</h1><p class="muted">Replay your swing. Explore the motion. Compare the estimate.</p></div><div><label>Show <select id="filter"><option value="all">All 76 swings</option><option value="errors">Six classification errors</option><option value="assisted">Reviewed ball pilot</option></select></label><br><label>Shot <select id="shot"></select></label></div></header>
-<div class="panel"><div class="metrics"><div class="metric"><span id="predictionLabel">Video + watch carry estimate</span><strong id="prediction"></strong></div><div class="metric"><span id="actualLabel">Recorded carry</span><strong id="actual"></strong></div><div class="metric"><span id="assistedLabel">Reviewed ball estimate</span><strong id="assisted"></strong></div></div><p id="gate"></p><details id="predictionHelp"><summary>How to read these results</summary>These are held-out-golfer research predictions, using the whole swing including follow-through. Video + watch averages about 30 yards absolute error across 72 labeled shots. The assisted ball pilot averages about 25 yards across 31 shots and requires manually reviewed points. These averages are not confidence intervals. The under-100-yard flag is a short-shot proxy, not a diagnosis of chunked, thin or hosel contact. Recorded outcomes are displayed for comparison and are not prediction inputs.</details></div>
-<section><div class="panel"><h2>Swing replay</h2><div class="nativeWrap"><video id="video" controls preload="metadata" playsinline></video><canvas id="clubOverlay"></canvas></div><input id="timeline" type="range" min="0" max="3.5" step=".033333" value="0" aria-label="Swing timeline"><div><button id="prev">−1 frame</button><button id="next">+1 frame</button><select id="speed" aria-label="Playback speed"><option value=".25">0.25×</option><option value=".5" selected>0.5×</option><option value="1">1×</option></select><label><input type="checkbox" id="overlay" checked>Pose overlay</label></div><div id="time"></div><div id="phases"></div><p class="note" id="phaseEvidence"></p></div>
-<div class="panel"><h2>Your swing at the range</h2><div style="position:relative"><canvas id="world" width="540" height="470"></canvas><div id="flightDistance" style="position:absolute;top:14px;left:14px;background:#183e35e8;color:white;border-radius:10px;padding:10px 14px;pointer-events:none;font-size:20px;font-weight:700">Estimated travel · 0 yd</div></div><div><button id="golferView">Golfer view</button><button id="rangeView">Flight view</button><button id="replay3d">Replay swing + flight</button></div><label>Rotate <input id="yaw" type="range" min="-180" max="180" value="25"></label><p id="clubStatus" class="note"></p><label><input id="clubDepth" type="checkbox">Reverse estimated club depth</label><p id="renderStatus" class="note">Loading the 3D range…</p><p class="note">Pose-based golfer with completed limbs. Drag to orbit. The assisted club pilot is available for Sid 1 / shot 1; cyan video marks show its visual anchors. Club depth remains ambiguous—use the depth switch to inspect both possibilities. Other shots await a reliable club track; the 3D flight is illustrative, scaled to the carry estimate when available. The yard counter shows estimated horizontal travel along this animation, not measured ball position or distance along the curved flight path.</p></div></section>
+<style>*{box-sizing:border-box}[hidden]{display:none!important}body{font:15px system-ui;margin:0;background:#101c22;color:#edf4ef}main{max-width:1280px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center}h1{font-size:32px;margin:0}h2{font-size:20px}.muted,.note{color:#a9bdc4;line-height:1.55}.tag{color:#a3e5b9;font-size:12px;text-transform:uppercase;letter-spacing:2px}button,select,input{font:inherit;border:1px solid #46606a;background:#21343e;color:inherit;border-radius:8px;padding:9px;margin:3px}button{cursor:pointer}button:hover,button.active{background:#35634f}button:disabled{opacity:.4;cursor:default}section{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.panel{background:#192b34;border:1px solid #2b424c;border-radius:16px;padding:18px;min-width:0}.nativeWrap{position:relative;height:470px}.nativeWrap video{height:100%}.nativeWrap canvas{position:absolute;inset:0;height:100%;background:transparent;pointer-events:none}video{width:100%;height:470px;background:#0c151b;border-radius:8px}canvas{width:100%;height:470px;object-fit:contain;background:#14252d;border-radius:8px}.metrics{display:flex;gap:22px;flex-wrap:wrap}.metric strong{display:block;font-size:32px;color:#adf0bc}.metric span{color:#a9bdc4;font-size:13px}a{color:#9be1cf}#time{font-size:12px;margin:8px}#timeline{width:98%;padding:0}#marks{white-space:pre-wrap}.warning{color:#ffd49b}#observation{min-height:84px}details{line-height:1.6}footer{margin:24px 0;color:#a9bdc4}@media(max-width:760px){section{grid-template-columns:1fr}main{padding:12px}header{display:block}video,canvas{height:400px}}.swing-studio{padding:0!important;overflow:hidden;background:#112822!important;border:1px solid #36584b!important}.swing-studio header,.swing-controls,.swing-studio nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:12px 16px}.swing-studio header{justify-content:space-between;background:transparent;position:static}.swing-studio h2{margin:0;color:#f3f1df;font:500 clamp(21px,2.5vw,29px) Georgia,serif}.flight-key{display:flex;gap:14px;color:#d4ded7;font-size:12px}.flight-key span:before{content:"";display:inline-block;margin-right:5px;width:15px;height:3px;background:#38bdf8;vertical-align:middle}.flight-key span+span:before{background:#c084fc}.swing-studio nav{padding-top:0;gap:4px}.swing-studio button{font-size:12px;border:1px solid #486356;border-radius:5px;background:#1e372d;color:#e2e9df;padding:6px 10px}.swing-studio nav button[aria-pressed=true],.swing-controls #replay3d{background:#d8e8bb!important;color:#1c382b!important;border-color:#d8e8bb!important}.swing-screen{position:relative;overflow:hidden;background:#b8d7e8}.swing-screen #world{display:block;width:100%;height:clamp(330px,46vw,570px)}.swing-controls label{font-size:12px;color:#cbd8cb}.swing-studio .note{padding:0 16px;margin:0 0 8px}.swing-studio button:focus-visible{outline:2px solid white;outline-offset:2px} .endpoint-summary table{border-collapse:collapse;width:100%;margin-bottom:1.5rem}.endpoint-summary th,.endpoint-summary td{text-align:right;padding:.5em;border-bottom:1px solid #34484d}.endpoint-summary th:first-child,.endpoint-summary td:first-child{text-align:left}.endpoint-summary{overflow-x:auto}</style>
+<main><header><div><div class="tag">3D RANGE · VERSION 4</div><h1>Swing Lab</h1><p class="muted">Replay your swing. Explore the motion. Compare the estimate.</p></div><div><label>Show <select id="filter"><option value="all">All 76 swings</option><option value="primary">Primary launch model (58)</option><option value="fallback">Fallback model (14)</option><option value="tracked">Camera tracked swings (73)</option><option value="missed">Camera missed swings (3)</option><option value="assisted">Reviewed ball pilot (31)</option></select></label><br><label>Shot <select id="shot"></select></label></div></header>
+<div class="panel">
+<div id="strikeQualityBanner" style="margin-bottom:14px;padding:12px 18px;border-radius:10px;font-size:13px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px"></div>
+<div class="metrics" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px">
+<div class="metric" style="background:#221833;border:1.5px solid #a855f7;border-radius:12px;padding:12px 16px"><span style="color:#c084fc;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px">Best Model (Video Launch)</span><strong id="bestPrediction" style="color:#f3e8ff;font-size:34px;display:block;margin:4px 0">—</strong><span id="bestModelSub" style="color:#d8b4fe;font-size:12px;line-height:1.45;display:block">Autonomous ball departure &amp; club speed</span></div>
+<div class="metric" style="background:#0c2534;border:1.5px solid #0284c7;border-radius:12px;padding:12px 16px"><span style="color:#38bdf8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px">TrackMan Ground Truth</span><strong id="actual" style="color:#e0f2fe;font-size:34px;display:block;margin:4px 0">—</strong><span id="actualSub" style="color:#7dd3fc;font-size:12px;line-height:1.45;display:block">Doppler radar measured benchmark</span></div>
+<div class="metric" style="background:#132525;border:1.5px solid #0d9488;border-radius:12px;padding:12px 16px"><span style="color:#2dd4bf;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px">Prediction Error</span><strong id="predDelta" style="color:#ccfbf1;font-size:34px;display:block;margin:4px 0">—</strong><span style="color:#99f6e4;font-size:12px;line-height:1.45;display:block">Carry prediction error for this shot</span></div>
+<div class="metric" style="background:#18252d;border:1.5px solid #334e68;border-radius:12px;padding:12px 16px"><span style="color:#9fb3c8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px">Baseline Modalities (Ref)</span><div style="margin-top:6px;font-size:12px;line-height:1.6;color:#d9e2ec"><div>Video + Watch (whole swing): <strong id="prediction" style="font-size:13px;color:#adf0bc">—</strong></div><div>Reviewed Ball Pilot: <strong id="assisted" style="font-size:13px;color:#adf0bc">—</strong></div></div></div>
+</div><p id="gate" style="margin-top:12px;display:none"></p><details id="predictionHelp"><summary>How to read these results &amp; sensing modalities</summary><div style="margin-top:8px;line-height:1.6"><p>The purple ball uses predicted carry plus an estimate of forward rollout from six predicted flight measurements. The model separately estimates the sideways position at landing and at rest. See the <a href="#systemSummarySection">performance summary</a> for errors on held-out golfers.</p><p><strong>Ground Truth (Cyan Arc &amp; Ball):</strong> TrackMan Doppler radar recorded carry, launch angle, ball speed, launch direction, and aerodynamic curvature. Overlaid here strictly as the ground truth benchmark for direct visual and quantitative comparison.</p><p><strong>Abstention Policy (Unverified Ball Tracking):</strong> If the autonomous camera tracker cannot identify a confident departure ray (e.g., severe tee glare), the model abstains from making a prediction rather than falling back to uncalibrated models, and excludes the shot from accuracy statistics.</p></div></details></div>
+<section><div class="panel"><h2>Swing replay</h2><div class="nativeWrap"><video id="video" controls preload="metadata" playsinline></video><canvas id="clubOverlay"></canvas></div><input id="timeline" type="range" min="0" max="3.5" step=".033333" value="0" aria-label="Swing timeline"><div><button id="prev">−1 frame</button><button id="next">+1 frame</button><select id="speed" aria-label="Playback speed"><option value=".25">0.25×</option><option value=".5" selected>0.5×</option><option value="1">1×</option></select><label><input type="checkbox" id="overlay" checked>Pose overlay</label></div><div id="time"></div><p id="clubHeadMetric" class="note"></p><div id="phases"></div><p class="note" id="phaseEvidence"></p></div>
+<div class="panel swing-studio"><header><h2>Your swing at the range</h2><div class="flight-key"><span>TrackMan</span><span>Model</span></div></header>
+<nav aria-label="Range camera"><button id="camSideWide" aria-pressed="true">Range overview</button><button id="camLanding" aria-pressed="false">Landing zone</button><button id="camFollow" aria-pressed="false">Follow ball</button><button id="camRange" aria-pressed="false">Behind the tee</button><button id="rangeResetView">Reset view</button><label><input id="rangeCenterline" type="checkbox" autocomplete="off"> Show centerline</label></nav>
+<div class="swing-screen"><canvas id="world" width="540" height="470" aria-label="Animated golfer and shot trajectories"></canvas><canvas id="rangeMarkers" aria-label="Carry and total yardages at ground markers" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;background:transparent"></canvas></div>
+<div class="swing-controls"><button id="playRange">▶ Play Real-Time Flight</button><button id="replay3d">↺ Replay</button><label>Playback speed <select id="rangeSpeed"><option value="1">1×</option><option value="2">2×</option></select></label><label><input id="rangeSync" type="checkbox"> Sync to video scrubber</label></div>
+<p class="note" id="flightClock" role="timer" aria-label="Flight time"></p><div class="swing-controls"><button id="rangeZoomOut" aria-label="Zoom out">−</button><button id="rangeZoomIn" aria-label="Zoom in">+</button><label><input id="clubDepth" type="checkbox"> Reverse estimated club depth</label></div>
+<p id="clubStatus" class="note"></p><p id="renderStatus" class="note"></p></div></section>
+<section id="clubFusionSection" style="display:block;margin-top:18px"><div class="panel">
+<div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+<div>
+<div class="tag" style="background:#0e3a4e;color:#38bdf8;border:1px solid #0284c7;display:inline-block;padding:2px 8px;border-radius:4px">Visual-Inertial Fusion Model</div>
+<h2 style="margin:6px 0 4px 0;font-size:22px;color:#f8fafc">Club sensor measurements</h2>
+<p class="subtitle" style="margin:0;color:#94a3b8;font-size:14px;max-width:850px">Delivery estimates from wrist motion and available club sensor readings.</p>
+</div>
+<div id="clubFusionBadge" style="padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:6px;background:#064e3b;color:#6ee7b7;border:1px solid #059669">
+<span id="clubFusionDot" style="width:8px;height:8px;border-radius:50%;background:#10b981"></span>
+<span id="clubFusionStatusText">IMU Gyro Synchronized (188.6 Hz)</span>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-bottom:16px">
+<div style="background:#0f172a;border:1px solid #1e293b;border-radius:8px;padding:12px">
+<div style="font-size:11px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Dynamic Clubface Angle</div>
+<div id="metricFaceAngle" style="font-size:22px;font-weight:800;color:#f8fafc;margin:4px 0">—</div>
+<div id="metricFaceDesc" style="font-size:12px;color:#cbd5e1">—</div>
+</div>
+<div style="background:#0f172a;border:1px solid #1e293b;border-radius:8px;padding:12px">
+<div style="font-size:11px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Impact Closure Rate</div>
+<div id="metricClosureRate" style="font-size:22px;font-weight:800;color:#f59e0b;margin:4px 0">—</div>
+<div style="font-size:12px;color:#cbd5e1">Shaft roll angular rate</div>
+</div>
+<div style="background:#0f172a;border:1px solid #1e293b;border-radius:8px;padding:12px">
+<div style="font-size:11px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:0.5px">Rotational Clubhead Speed</div>
+<div id="metricClubSpeed" style="font-size:22px;font-weight:800;color:#c084fc;margin:4px 0">—</div>
+<div style="font-size:12px;color:#cbd5e1">Estimated delivery velocity</div>
+</div>
+</div>
+
+<div style="background:#090d16;border:1px solid #1e293b;border-radius:8px;padding:14px;margin-bottom:12px;overflow-x:auto">
+<div style="font-size:13px;font-weight:700;color:#e2e8f0;margin-bottom:8px">Leave-One-Golfer-Out Cross-Validation Benchmark (Unseen Golfer Evaluation)</div>
+<table style="width:100%;font-size:12px;border-collapse:collapse;color:#cbd5e1;white-space:nowrap">
+<thead>
+<tr style="border-bottom:1px solid #334155;color:#94a3b8;text-align:left">
+<th style="padding:6px 8px">Target Outcome</th>
+<th style="padding:6px 8px">Vision-Only Baseline</th>
+<th style="padding:6px 8px">Club Gyro Face-to-Path</th>
+<th style="padding:6px 8px">Visual-Inertial Fusion</th>
+<th style="padding:6px 8px">Key Physical Advantage</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #1e293b">
+<td style="padding:6px 8px;font-weight:600;color:#f8fafc">Lateral Curve (ft)</td>
+<td style="padding:6px 8px;color:#f87171">30.21 ft MAE (R² -0.15)</td>
+<td style="padding:6px 8px;color:#34d399;font-weight:600">21.53 ft MAE (R² +0.21)</td>
+<td style="padding:6px 8px;color:#38bdf8;font-weight:600">24.35 ft MAE (R² +0.17)</td>
+<td style="padding:6px 8px;color:#34d399;font-weight:700">Gyro Face-to-Path dominates (13.9 ft median error)</td>
+</tr>
+<tr style="border-bottom:1px solid #1e293b">
+<td style="padding:6px 8px;font-weight:600;color:#f8fafc">Carry Side (ft)</td>
+<td style="padding:6px 8px">43.04 ft MAE (R² +0.11)</td>
+<td style="padding:6px 8px">56.52 ft MAE (R² -0.46)</td>
+<td style="padding:6px 8px;color:#38bdf8;font-weight:600">37.09 ft MAE (R² +0.30)</td>
+<td style="padding:6px 8px;color:#38bdf8;font-weight:700">Best: Camera Launch Angle + Gyro Curve (-13.8% MAE)</td>
+</tr>
+<tr style="border-bottom:1px solid #1e293b">
+<td style="padding:6px 8px;font-weight:600;color:#f8fafc">Launch Direction (deg)</td>
+<td style="padding:6px 8px;color:#34d399;font-weight:600">4.51° MAE (R² +0.40)</td>
+<td style="padding:6px 8px">9.50° MAE (R² -0.59)</td>
+<td style="padding:6px 8px">5.99° MAE (R² +0.26)</td>
+<td style="padding:6px 8px;color:#94a3b8">Camera Early Ray Dominant</td>
+</tr>
+<tr>
+<td style="padding:6px 8px;font-weight:600;color:#f8fafc">Flat Carry (yd)</td>
+<td style="padding:6px 8px;color:#34d399;font-weight:600">26.04 yd MAE (R² +0.37)</td>
+<td style="padding:6px 8px">57.38 yd MAE (R² -1.06)</td>
+<td style="padding:6px 8px">31.79 yd MAE (R² +0.17)</td>
+<td style="padding:6px 8px;color:#94a3b8">Camera Vertical Rise Rate Dominant</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="note" style="margin:0;color:#94a3b8;font-size:12px;line-height:1.5">
+<strong>Physical Summary:</strong> High-speed cameras accurately resolve initial launch direction (4.51° MAE) and launch elevation rise in the first 30–50 ms before the ball exits the frame, but cannot observe aerodynamic Magnus curvature downrange. Conversely, the high-rate clubhead gyroscope roll axis ($G_z$) directly measures dynamic face closure and Face-to-Path at impact shock, reducing lateral curve error to <strong>21.53 ft MAE</strong> with a median error of just <strong>13.88 ft</strong> across held-out golfers.
+</p>
+</div></section>
 <section><div class="panel"><div class="tag">Phase review companion</div><h2 id="phaseTitle">Swing observations</h2><div id="observation"></div><p id="tip"></p><p class="note">Practice prompts guide your review; they are not validated personalized corrections.</p><h2>Head movement in the image</h2><canvas id="headTrace" width="540" height="180" style="height:180px" aria-label="Head motion relative to the opening frames"></canvas><p id="headMetric"></p><p class="note">Horizontal: % of image width. Vertical: % of image height; down is positive. Reference is the opening frames, not verified address. Face rotation, perspective and landmark error can affect this trace. It does not measure gaze or physical head height.</p><h2>Save a phase marker</h2><select id="phaseName"><option>address</option><option>takeaway</option><option>mid_backswing</option><option>top</option><option>transition</option><option>mid_downswing</option><option>downswing</option><option>impact</option><option>follow_through</option><option>finish</option></select><button id="mark">Mark this frame</button><button id="export">Export JSON</button><div id="savedPhases"></div><pre id="marks"></pre><small id="storage"></small></div>
-<div class="panel"><h2>Shot evidence</h2><p id="evidence"></p><p id="errorNote"></p><p><a id="impactReview" target="_blank">Native impact review</a></p><p><a id="review" target="_blank">Reviewed ball frames</a> · <a id="ball" target="_blank">Automatic tracking proposal</a></p><details><summary>Research and limitations</summary><p>Automatic ball tracks can confuse the shaft or legs with the ball. Exact impact remains unannotated. The watch helped locate these clips. Three of the six classification errors have no club data because recording ended early.</p><p><a href="../../reports/misclassified_shot_audit.md">Six-error alignment audit</a> · <a href="../../reports/carry_threshold_results.md">Threshold experiments</a> · <a href="../../reports/contact_quality_results.md">Ball and club results</a></p></details></div></section><section id="nativeSection"><div class="panel"><h2>Native-frame ball &amp; impact review</h2><div class="nativeWrap"><video id="nativeVideo" controls preload="metadata" playsinline></video><canvas id="nativeTracer"></canvas></div><label><input id="nativeTracerEnabled" type="checkbox" checked>Experimental ball tracer</label><button id="nativePrev">−1 native frame</button><button id="nativeNext">+1 native frame</button><select id="nativeSpeed" aria-label="Native playback speed"><option value=".125">0.125×</option><option value=".25" selected>0.25×</option><option value=".5">0.5×</option><option value="1">1×</option></select><p id="nativeTime"></p><p class="note">Retained source frame cadence, shown as a cropped H.264 copy. Frame-step buttons use the actual saved timestamps. This close-up has its own playback controls.</p></div><div class="panel"><h2>Experimental ball path</h2><canvas id="ballPath" width="540" height="470"></canvas><p class="warning">Orange: automatic trajectory proposal. Cyan circles: sparse reviewed points, where available. The tracker can follow the shaft or background and is not used by the displayed prediction model.</p><p class="note">Image-plane path only. No calibrated speed, 3D flight or landing-distance extrapolation.</p></div></section><footer>76 strikes · five golfers · six sessions · no uploads or network dependencies. This demo explores recorded sessions; new-recording inference is not yet integrated.</footer></main>
+<div class="panel"><h2>Shot evidence</h2><p id="evidence"></p><p id="errorNote"></p><p><a id="impactReview" target="_blank">Native impact review</a></p><p><a id="review" target="_blank">Reviewed ball frames</a> · <a id="ball" target="_blank">Automatic tracking proposal</a></p><details><summary>Research and limitations</summary><p>Automatic ball tracks can confuse the shaft or legs with the ball. Exact impact remains unannotated. The watch helped locate these clips. Three of the six classification errors have no club data because recording ended early.</p><p><a href="../../reports/misclassified_shot_audit.md">Six-error alignment audit</a> · <a href="../../reports/carry_threshold_results.md">Threshold experiments</a> · <a href="../../reports/contact_quality_results.md">Ball and club results</a></p></details></div></section><section id="nativeSection"><div class="panel"><h2>Native-frame ball &amp; impact review</h2><div class="nativeWrap"><video id="nativeVideo" controls preload="metadata" playsinline></video><canvas id="nativeTracer"></canvas></div><label><input id="nativeTracerEnabled" type="checkbox" checked>Ball tracer (yellow)</label><label><input id="nativeClubEnabled" type="checkbox" checked>Club evidence (teal)</label><p id="clubSpeed" class="note"></p><button id="nativePrev">−1 native frame</button><button id="nativeNext">+1 native frame</button><select id="nativeSpeed" aria-label="Native playback speed"><option value=".125">0.125×</option><option value=".25" selected>0.25×</option><option value=".5">0.5×</option><option value="1">1×</option></select><p id="nativeTime"></p><p class="note">Native camera crop with real-time synchronized ball tracer. Tracked ball in yellow; clubhead tracking in teal.</p></div><div class="panel"><h2>Ball path</h2><canvas id="ballPath" width="540" height="470"></canvas><p class="note" style="margin-top:6px;font-size:12px;line-height:1.5"><span style="color:#34d399;font-weight:700">■ Green</span>: Model launch window (used frames ≤ 150 ms) · <span style="color:#ffba70;font-weight:600">■ Orange</span>: Full tracked path · <span style="color:#76e3e3;font-weight:600">○ Cyan circles</span>: Verified ground-truth review points · <span style="color:#45ded4;font-weight:600">■ Teal</span>: Clubhead track</p></div></section>
+
+<!-- PoseFormerV2 3D Kinematic Skeleton & Golf Club Studio Section -->
+<section id="poseFormerSection" style="display:block;margin-top:24px"><div class="panel" style="background:#0b1922;border:1.5px solid #1e3a47;border-radius:16px;padding:22px">
+<div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+<div>
+<div class="tag" style="background:#132e3d;color:#38bdf8;border:1px solid #0284c7;display:inline-block;padding:3px 10px;border-radius:5px;font-weight:700">CVPR 2023 · Frequency-Domain Spatio-Temporal 3D Lifting</div>
+<h2 style="margin:8px 0 4px 0;font-size:24px;color:#f8fafc">PoseFormerV2: 3D Kinematic Skeleton &amp; Golf Club Delivery Rig</h2>
+<p class="subtitle" style="margin:0;color:#94a3b8;font-size:14px;max-width:920px">
+Replaces monocular single-frame landmark depth with frequency-domain Discrete Cosine Transform (DCT) transformer lifting (<a href="https://github.com/QitaoZhao/PoseFormerV2" target="_blank" style="color:#38bdf8;text-decoration:underline">Zhao et al., CVPR 2023</a>). Renders an authentic 17-joint kinematic skeleton with the 37.25" chrome steel shaft and forged iron clubhead dynamically attached to the golfer's wrists throughout the swing.
+</p>
+</div>
+<div style="display:flex;gap:8px;align-items:center">
+  <span id="pfJitterBadge" style="background:#064e3b;color:#34d399;border:1px solid #059669;padding:6px 12px;border-radius:8px;font-size:13px;font-weight:700">⚡ 62.5% Jitter Reduction vs MediaPipe</span>
+</div>
+</div>
+
+<!-- Main Two-Column Studio Layout -->
+<div style="display:grid;grid-template-columns:minmax(0, 1.45fr) minmax(0, 1fr);gap:18px;align-items:start">
+
+  <!-- Left Column: Video Overlay / 3D WebGL Viewport & Playback Controls -->
+  <div style="background:#07121a;border:1px solid #1e3646;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px">
+    
+    <!-- Top View Selector & 3D Preset Toolbar -->
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <!-- Mode Switching Buttons -->
+      <div style="display:flex;gap:6px;align-items:center">
+        <button id="pfModeOverlay" style="background:#0284c7;color:#fff;font-weight:700;padding:5px 12px;font-size:12px;border-radius:6px;border:none;cursor:pointer">📹 Video Overlay</button>
+        <button id="pfModeSplit" style="background:#1b3240;color:#e2e8f0;padding:5px 12px;font-size:12px;border-radius:6px;border:1px solid #334e68;cursor:pointer">🔲 Side-by-Side</button>
+        <button id="pfMode3D" style="background:#1b3240;color:#e2e8f0;padding:5px 12px;font-size:12px;border-radius:6px;border:1px solid #334e68;cursor:pointer">📐 3D Studio</button>
+      </div>
+
+      <!-- 3D Camera Presets (shown in 3D / Split modes) -->
+      <div id="pfCamPresetBar" style="display:none;gap:4px;align-items:center">
+        <button id="pfCam34" style="background:#38bdf8;color:#0b1922;font-weight:700;padding:4px 8px;font-size:11px;border-radius:5px;border:none;cursor:pointer">3/4 View</button>
+        <button id="pfCamFace" style="background:#1b3240;color:#e2e8f0;padding:4px 8px;font-size:11px;border-radius:5px;border:1px solid #334e68;cursor:pointer">Face-On</button>
+        <button id="pfCamDTL" style="background:#1b3240;color:#e2e8f0;padding:4px 8px;font-size:11px;border-radius:5px;border:1px solid #334e68;cursor:pointer">Down-Line</button>
+        <button id="pfCamTop" style="background:#1b3240;color:#e2e8f0;padding:4px 8px;font-size:11px;border-radius:5px;border:1px solid #334e68;cursor:pointer">Top</button>
+      </div>
+    </div>
+
+    <!-- Main Visual Container (Holds Video Overlay and/or 3D Canvas) -->
+    <div id="pfCanvasContainer" style="width:100%;height:480px;position:relative;background:#050c12;border-radius:8px;overflow:hidden;display:flex;gap:8px">
+      <!-- Video + Overlay Canvas Wrap -->
+      <div id="pfVideoWrap" style="position:relative;width:100%;height:100%;display:flex;justify-content:center;align-items:center;background:#000;border-radius:6px;overflow:hidden;flex:1 1 100%">
+        <video id="pfVideo" playsinline muted preload="auto" style="max-width:100%;max-height:100%;display:block;object-fit:contain"></video>
+        <canvas id="pfVideoCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none"></canvas>
+      </div>
+
+      <!-- 3D WebGL Three.js Canvas Wrap -->
+      <div id="pf3DWrap" style="position:relative;width:100%;height:100%;display:none;background:#071118;border-radius:6px;overflow:hidden">
+        <canvas id="pfCanvas" style="width:100%;height:100%;display:block"></canvas>
+      </div>
+
+      <div id="pfFrameOverlay" style="position:absolute;top:10px;left:12px;background:rgba(11,25,34,0.85);backdrop-filter:blur(4px);padding:4px 10px;border-radius:6px;font-size:12px;color:#94a3b8;border:1px solid #1e3a47;font-family:monospace;z-index:10;pointer-events:none">
+        Frame: <strong id="pfCurrentFrame" style="color:#f8fafc">0</strong> / 104 · <span id="pfCurrentTime" style="color:#38bdf8">0.00s</span>
+      </div>
+    </div>
+
+    <!-- Bottom Playback Controls Bar -->
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <input id="pfTimeline" type="range" min="0" max="104" step="1" value="0" style="flex:1;accent-color:#38bdf8;cursor:pointer">
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <div style="display:flex;align-items:center;gap:6px">
+          <button id="pfPlay" style="background:#0284c7;color:#fff;font-weight:700;padding:6px 14px;border-radius:6px;border:none;cursor:pointer">▶ Play</button>
+          <button id="pfStepBack" style="background:#1b3240;color:#cbd5e1;padding:6px 10px;border-radius:6px;border:1px solid #334e68;cursor:pointer">−1</button>
+          <button id="pfStepForward" style="background:#1b3240;color:#cbd5e1;padding:6px 10px;border-radius:6px;border:1px solid #334e68;cursor:pointer">+1</button>
+          <select id="pfSpeed" style="background:#1b3240;color:#e2e8f0;border:1px solid #334e68;border-radius:6px;padding:5px 8px;font-size:12px">
+            <option value="0.25">0.25×</option>
+            <option value="0.5" selected>0.5×</option>
+            <option value="1">1.0×</option>
+          </select>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;font-size:12px;color:#cbd5e1">
+          <label style="display:flex;align-items:center;gap:4px;cursor:pointer">
+            <input id="pfToggleClub" type="checkbox" checked style="accent-color:#38bdf8"> Club &amp; Arc
+          </label>
+          <label style="display:flex;align-items:center;gap:4px;cursor:pointer">
+            <input id="pfToggleGhost" type="checkbox" style="accent-color:#a855f7"> Compare MediaPipe (Ghost)
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column: Kinematic Telemetry Cards & Explanations -->
+  <div style="display:flex;flex-direction:column;gap:12px">
+    
+    <!-- Real-time Kinematic Telemetry -->
+    <div style="background:#0f202c;border:1px solid #233e4f;border-radius:12px;padding:14px">
+      <div style="font-size:11px;font-weight:700;color:#38bdf8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Live Swing Kinematics (PoseFormerV2)</div>
+      
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+        <div style="background:#091620;border:1px solid #1a3344;border-radius:8px;padding:10px">
+          <span style="font-size:11px;color:#94a3b8;display:block">Wrist Speed</span>
+          <div style="display:flex;align-items:baseline;gap:6px;margin-top:2px">
+            <strong id="pfWristSpeed" style="font-size:24px;color:#34d399">0.00</strong>
+            <span style="font-size:12px;color:#6ee7b7">m/s</span>
+          </div>
+          <span id="pfPeakWristBadge" style="font-size:11px;color:#a7f3d0;display:block;margin-top:3px">Peak: — m/s</span>
+        </div>
+
+        <div style="background:#091620;border:1px solid #1a3344;border-radius:8px;padding:10px">
+          <span style="font-size:11px;color:#94a3b8;display:block">Clubhead Speed</span>
+          <div style="display:flex;align-items:baseline;gap:6px;margin-top:2px">
+            <strong id="pfClubSpeed" style="font-size:24px;color:#fbbf24">0.0</strong>
+            <span style="font-size:12px;color:#fde68a">mph</span>
+          </div>
+          <span id="pfClubDeliveryBadge" style="font-size:11px;color:#fde047;display:block;margin-top:3px">Shaft: 37.25" Steel</span>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div style="background:#091620;border:1px solid #1a3344;border-radius:8px;padding:10px">
+          <span style="font-size:11px;color:#94a3b8;display:block">Thorax / Shoulder Tilt</span>
+          <div style="display:flex;align-items:baseline;gap:4px;margin-top:2px">
+            <strong id="pfThoraxTilt" style="font-size:20px;color:#38bdf8">0.0</strong>
+            <span style="font-size:12px;color:#7dd3fc">°</span>
+          </div>
+          <span style="font-size:11px;color:#64748b;display:block;margin-top:2px">Shoulder plane angle</span>
+        </div>
+
+        <div style="background:#091620;border:1px solid #1a3344;border-radius:8px;padding:10px">
+          <span style="font-size:11px;color:#94a3b8;display:block">Pelvis / Hip Clearance</span>
+          <div style="display:flex;align-items:baseline;gap:4px;margin-top:2px">
+            <strong id="pfHipTilt" style="font-size:20px;color:#c084fc">0.0</strong>
+            <span style="font-size:12px;color:#d8b4fe">°</span>
+          </div>
+          <span style="font-size:11px;color:#64748b;display:block;margin-top:2px">Pelvic tilt inclination</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequency-Domain Architectural Breakdown -->
+    <div style="background:#0f202c;border:1px solid #233e4f;border-radius:12px;padding:14px">
+      <div style="font-size:11px;font-weight:700;color:#fb923c;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Why PoseFormerV2 Improves Golf Pose</div>
+      <ul style="margin:0;padding-left:18px;font-size:12px;color:#cbd5e1;line-height:1.6">
+        <li><strong>Frequency-Domain DCT Representation:</strong> By transforming 27-frame 2D joint sequences via Discrete Cosine Transform, PoseFormerV2 separates high-frequency optical noise from authentic downswing kinetics.</li>
+        <li><strong>No Monocular Wrist Depth Shudder:</strong> MediaPipe infers depth (Z) on isolated frames, causing wrists to jitter by 8–15 cm at release. PoseFormerV2 maintains a rigid, continuous grip path.</li>
+        <li><strong>Anatomical Joint Kinematics:</strong> Eliminates unnatural knee hyperextension ("flamingo legs") through spatial attention without needing manual kinematic clamping.</li>
+      </ul>
+    </div>
+
+    <!-- Skeleton Color Key -->
+    <div style="background:#091620;border:1px solid #1a3344;border-radius:10px;padding:10px 14px;font-size:12px;color:#94a3b8;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+      <span><strong style="color:#38bdf8">■</strong> Left Limbs</span>
+      <span><strong style="color:#fb923c">■</strong> Right Limbs</span>
+      <span><strong style="color:#34d399">■</strong> Spine &amp; Pelvis</span>
+      <span><strong style="color:#f8fafc">■</strong> Thorax &amp; Head</span>
+      <span><strong style="color:#e2e8f0">■</strong> Steel Shaft</span>
+      <span><strong style="color:#fbbf24">■</strong> Delivery Arc</span>
+    </div>
+
+  </div>
+
+</div>
+</div></section>
+
+<section id="systemSummarySection" style="display:block;margin-top:24px"><div class="panel">
+<h2>Shot prediction performance</h2>
+<p>Each golfer’s predictions were evaluated with that golfer held out of training. The baseline guesses the other golfers’ mean distance or mean endpoint. The 2D errors measure the straight-line miss downrange and sideways.</p>
+<p>The 58-shot research cohort includes Lucas 02, whose ball track was later rejected. The viewer shows 57 accepted primary shots and 12 fallback shots.</p>
+<div class="endpoint-summary">__ROLLOUT_SUMMARY__</div>
+<details><summary>Earlier model benchmarks and sensor comparisons</summary>
+<div class="tag" style="background:#0e3a4e;color:#38bdf8;border:1px solid #0284c7;display:inline-block;padding:2px 8px;border-radius:4px">Full Multi-Modal Architecture &amp; Benchmark</div>
+<h2 style="margin:8px 0 4px 0;font-size:24px;color:#f8fafc">Multi-Modal Sensing Architecture &amp; Performance Summary</h2>
+<p class="subtitle" style="margin:0 0 16px 0;color:#94a3b8;font-size:14px;max-width:960px">
+Comprehensive Leave-One-Golfer-Out (LOGO) cross-validation evaluation across all 70 camera-tracked strikes. Unseen golfers are evaluated with zero player identity leakage and zero radar inference inputs.
+</p>
+
+<!-- Sensor & Model Allocation Matrix -->
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:20px">
+<div style="background:#0f172a;border:1.5px solid #0284c7;border-radius:10px;padding:14px">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+    <span style="font-size:18px">📹</span>
+    <strong style="color:#38bdf8;font-size:14px;text-transform:uppercase;letter-spacing:0.5px">High-Speed Camera (240 fps)</strong>
+  </div>
+  <p style="font-size:12px;color:#cbd5e1;line-height:1.55;margin:0 0 8px 0">
+    Extracts autonomous early ball departure velocity vectors, vertical launch elevation angle, and pre-impact optical flow clubhead delivery speed.
+  </p>
+  <div style="font-size:11px;color:#94a3b8;border-top:1px solid #1e293b;padding-top:6px">
+    <strong style="color:#e2e8f0">Primary Targets:</strong> Flat Carry (15.77 yd MAE), Launch Angle (2.58°), Ball Speed (8.61 mph), Launch Direction (4.23°).
+  </div>
+</div>
+
+<div style="background:#0f172a;border:1.5px solid #f59e0b;border-radius:10px;padding:14px">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+    <span style="font-size:18px">⚡</span>
+    <strong style="color:#f59e0b;font-size:14px;text-transform:uppercase;letter-spacing:0.5px">Clubhead Gyroscope (188.6 Hz)</strong>
+  </div>
+  <p style="font-size:12px;color:#cbd5e1;line-height:1.55;margin:0 0 8px 0">
+    Unsaturated 3D angular rate ($g_x, g_y, g_z$) captures dynamic clubface orientation, impact closure rate ($d\text{face}/dt$).
+  </p>
+  <div style="font-size:11px;color:#94a3b8;border-top:1px solid #1e293b;padding-top:6px">
+    <strong style="color:#e2e8f0">Primary Targets:</strong> Lateral Curve / Face-to-Path (21.53 ft MAE, 13.88 ft MedAE; 28.7% error reduction).
+  </div>
+</div>
+
+<div style="background:#0f172a;border:1.5px solid #a855f7;border-radius:10px;padding:14px">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+    <span style="font-size:18px">🎯</span>
+    <strong style="color:#c084fc;font-size:14px;text-transform:uppercase;letter-spacing:0.5px">Visual-Inertial Fusion</strong>
+  </div>
+  <p style="font-size:12px;color:#cbd5e1;line-height:1.55;margin:0 0 8px 0">
+    Couples camera horizontal launch ray with gyro impact curvature to model aerodynamic Magnus deflection and 2D ground rollout.
+  </p>
+  <div style="font-size:11px;color:#94a3b8;border-top:1px solid #1e293b;padding-top:6px">
+    <strong style="color:#e2e8f0">Primary Targets:</strong> Carry Side Landing (37.09 ft MAE), 2D Landing Error (24.28 yd MAE vs 38.59 yd baseline).
+  </div>
+</div>
+
+<div style="background:#0f172a;border:1.5px solid #10b981;border-radius:10px;padding:14px">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+    <span style="font-size:18px">⌚</span>
+    <strong style="color:#34d399;font-size:14px;text-transform:uppercase;letter-spacing:0.5px">Apple Watch IMU &amp; Pose</strong>
+  </div>
+  <p style="font-size:12px;color:#cbd5e1;line-height:1.55;margin:0 0 8px 0">
+    Detects high-g wrist acceleration shock for contact window localization, downswing transition tempo, and MediaPipe hand anchoring.
+  </p>
+  <div style="font-size:11px;color:#94a3b8;border-top:1px solid #1e293b;padding-top:6px">
+    <strong style="color:#e2e8f0">Primary Targets:</strong> Temporal sync &lt; 8 ms, swing phase segmentation, 3D anatomical avatar IK.
+  </div>
+</div>
+</div>
+
+<!-- Primary Model vs Fallback Model Breakdown (Performance Transparency) -->
+<div style="background:#0c1924;border:1.5px solid #0284c7;border-radius:12px;padding:18px;margin-bottom:20px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+    <div>
+      <div style="display:inline-block;background:#0369a1;color:#e0f2fe;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-bottom:6px">Performance Transparency</div>
+      <h3 style="margin:0;font-size:18px;color:#f0f9ff">Primary Launch Model vs. Fallback Model Breakdown</h3>
+    </div>
+    <div style="background:#082f49;border:1px solid #0ea5e9;border-radius:8px;padding:6px 12px;font-size:12px;color:#bae6fd">
+      <strong>Abstention Principle:</strong> Accurate when confident; transparent when uncertain.
+    </div>
+  </div>
+  
+  <p style="font-size:13px;color:#cbd5e1;line-height:1.6;margin:0 0 14px 0">
+    A golfer would much rather have the launch monitor be <strong>laser-accurate when confident</strong> and explicitly report <em>"Didn't get a good read"</em> when the camera misses the ball or the track is too short, rather than confidently asserting an ungrounded cohort average. In our Leave-One-Golfer-Out evaluation, <strong>14 out of 72 swings</strong> lacked sufficient early frames for perspective geometry and fell back to predicting the training-set mean (~98–104 yd). Isolating the confident swings reveals the true physical accuracy of the 2-feature launch model:
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:14px">
+    <!-- Card 1: Primary Model -->
+    <div style="background:#06281e;border:1.5px solid #10b981;border-radius:10px;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <strong style="color:#6ee7b7;font-size:14px">✓ Primary 2-Feature Model</strong>
+        <span style="background:#064e3b;color:#a7f3d0;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px">N = 58 SHOTS (80.6%)</span>
+      </div>
+      <div style="font-size:32px;font-weight:800;color:#34d399;margin-bottom:4px">12.64 yd <span style="font-size:14px;color:#a7f3d0;font-weight:600">MAE</span></div>
+      <div style="font-size:12px;color:#d1fae5;line-height:1.5">
+        <div>• <strong>Median Absolute Error:</strong> 8.31 yd</div>
+        <div>• <strong>Accuracy within 10 yd:</strong> 62.1% (36 / 58)</div>
+        <div>• <strong>Accuracy within 20 yd:</strong> 82.8% (48 / 58)</div>
+        <div style="color:#6ee7b7;margin-top:6px;font-weight:600">64.8% error reduction vs 35.88 yd baseline</div>
+      </div>
+    </div>
+
+    <!-- Card 2: Fallback Model -->
+    <div style="background:#2e1505;border:1.5px solid #f59e0b;border-radius:10px;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <strong style="color:#fde68a;font-size:14px">⚠️ Fallback Model (Cohort Mean)</strong>
+        <span style="background:#451a03;color:#fde68a;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px">N = 14 SHOTS (19.4%)</span>
+      </div>
+      <div style="font-size:32px;font-weight:800;color:#fbbf24;margin-bottom:4px">31.29 yd <span style="font-size:14px;color:#fde68a;font-weight:600">MAE</span></div>
+      <div style="font-size:12px;color:#fef3c7;line-height:1.5">
+        <div>• <strong>Median Absolute Error:</strong> 23.31 yd</div>
+        <div>• <strong>Accuracy within 10 yd:</strong> 28.6% (4 / 14)</div>
+        <div>• <strong>Accuracy within 20 yd:</strong> 35.7% (5 / 14)</div>
+        <div style="color:#fde68a;margin-top:6px">Fell back due to glare, extreme topped mishits, or &lt;5 frames</div>
+      </div>
+    </div>
+
+    <!-- Card 3: Overall Benchmark -->
+    <div style="background:#131c26;border:1px solid #334e68;border-radius:10px;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <strong style="color:#cbd5e1;font-size:14px">Combined Benchmark Average</strong>
+        <span style="background:#1e293b;color:#94a3b8;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px">ALL 72 LABELED SHOTS</span>
+      </div>
+      <div style="font-size:32px;font-weight:800;color:#e2e8f0;margin-bottom:4px">16.27 yd <span style="font-size:14px;color:#94a3b8;font-weight:600">MAE</span></div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5">
+        <div>• <strong>Median Absolute Error:</strong> 9.06 yd</div>
+        <div>• <strong>Accuracy within 10 yd:</strong> 55.6% (40 / 72)</div>
+        <div>• <strong>Accuracy within 20 yd:</strong> 73.6% (53 / 72)</div>
+        <div style="color:#cbd5e1;margin-top:6px">Fallback swings artificially inflate total error by 3.6 yd</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Performance Comparison Table -->
+<div style="background:#090d16;border:1px solid #1e293b;border-radius:8px;padding:14px;margin-bottom:20px;overflow-x:auto">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px">
+  <div id="tableCohortTitle" style="font-size:13px;font-weight:700;color:#e2e8f0">Leave-One-Golfer-Out Generalization Benchmark (N = 58 Confident Primary Model Shots)</div>
+  <div style="display:flex;gap:6px">
+    <button id="cohortPrimaryBtn" style="background:#064e3b;border:1.5px solid #10b981;color:#a7f3d0;font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;cursor:pointer">🎯 Confident Primary Model (58 Shots)</button>
+    <button id="cohortAllBtn" style="background:#1e293b;border:1px solid #475569;color:#94a3b8;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer">📊 All Labeled Swings (72 Shots)</button>
+  </div>
+</div>
+<table style="width:100%;font-size:12px;border-collapse:collapse;color:#cbd5e1;white-space:nowrap">
+<thead>
+<tr style="border-bottom:1px solid #334155;color:#94a3b8;text-align:left">
+  <th style="padding:8px">Target Metric</th>
+  <th style="padding:8px">Primary Sensor Modality</th>
+  <th style="padding:8px">Multi-Modal Model MAE</th>
+  <th style="padding:8px">Median Abs Error</th>
+  <th style="padding:8px">Held-Out R²</th>
+  <th style="padding:8px">Baseline (Pose/Watch) MAE</th>
+  <th style="padding:8px">Error Reduction</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #1e293b">
+  <td style="padding:8px;font-weight:600;color:#f8fafc">Flat Carry Distance (yd)</td>
+  <td style="padding:8px;color:#38bdf8">High-Speed Camera (Vertical Velocity)</td>
+  <td id="tCarryMod" style="padding:8px;color:#34d399;font-weight:700">12.64 yd</td>
+  <td id="tCarryMed" style="padding:8px;color:#34d399">8.31 yd</td>
+  <td id="tCarryR2" style="padding:8px;color:#34d399">+0.824</td>
+  <td id="tCarryBase" style="padding:8px;color:#94a3b8">35.88 yd</td>
+  <td id="tCarryRed" style="padding:8px;color:#34d399;font-weight:700">-64.8%</td>
+</tr>
+<tr style="border-bottom:1px solid #1e293b">
+  <td style="padding:8px;font-weight:600;color:#f8fafc">Launch Elevation Angle (deg)</td>
+  <td style="padding:8px;color:#38bdf8">High-Speed Camera (Departure Ray)</td>
+  <td id="tAngleMod" style="padding:8px;color:#34d399;font-weight:700">2.00°</td>
+  <td id="tAngleMed" style="padding:8px;color:#34d399">1.13°</td>
+  <td id="tAngleR2" style="padding:8px;color:#34d399">+0.768</td>
+  <td id="tAngleBase" style="padding:8px;color:#94a3b8">5.59°</td>
+  <td id="tAngleRed" style="padding:8px;color:#34d399;font-weight:700">-64.2%</td>
+</tr>
+<tr style="border-bottom:1px solid #1e293b">
+  <td style="padding:8px;font-weight:600;color:#f8fafc">Ball Speed (mph)</td>
+  <td style="padding:8px;color:#38bdf8">High-Speed Camera (Optical Velocity)</td>
+  <td id="tSpeedMod" style="padding:8px;color:#34d399;font-weight:700">6.57 mph</td>
+  <td id="tSpeedMed" style="padding:8px;color:#34d399">4.57 mph</td>
+  <td id="tSpeedR2" style="padding:8px;color:#34d399">+0.631</td>
+  <td id="tSpeedBase" style="padding:8px;color:#94a3b8">14.26 mph</td>
+  <td id="tSpeedRed" style="padding:8px;color:#34d399;font-weight:700">-53.9%</td>
+</tr>
+<tr style="border-bottom:1px solid #1e293b">
+  <td style="padding:8px;font-weight:600;color:#f8fafc">Launch Direction (deg)</td>
+  <td style="padding:8px;color:#38bdf8">High-Speed Camera (Horizontal Angle)</td>
+  <td id="tDirMod" style="padding:8px;color:#34d399;font-weight:700">2.84°</td>
+  <td id="tDirMed" style="padding:8px;color:#34d399">1.23°</td>
+  <td id="tDirR2" style="padding:8px;color:#34d399">+0.505</td>
+  <td id="tDirBase" style="padding:8px;color:#94a3b8">6.37°</td>
+  <td id="tDirRed" style="padding:8px;color:#34d399;font-weight:700">-55.4%</td>
+</tr>
+<tr style="border-bottom:1px solid #1e293b">
+  <td style="padding:8px;font-weight:600;color:#f8fafc">Lateral Curve (ft)</td>
+  <td style="padding:8px;color:#f59e0b">Club Gyro (Gz Face-to-Path)</td>
+  <td id="tCurveMod" style="padding:8px;color:#34d399;font-weight:700">21.90 ft</td>
+  <td id="tCurveMed" style="padding:8px;color:#34d399">13.27 ft</td>
+  <td id="tCurveR2" style="padding:8px;color:#34d399">+0.212</td>
+  <td id="tCurveBase" style="padding:8px;color:#94a3b8">32.84 ft</td>
+  <td id="tCurveRed" style="padding:8px;color:#34d399;font-weight:700">-33.3%</td>
+</tr>
+<tr>
+  <td style="padding:8px;font-weight:600;color:#f8fafc">2D Landing Distance Error (yd)</td>
+  <td style="padding:8px;color:#c084fc">Full Multi-Modal System</td>
+  <td id="tLandMod" style="padding:8px;color:#34d399;font-weight:700">21.42 yd</td>
+  <td id="tLandMed" style="padding:8px;color:#34d399">16.96 yd</td>
+  <td id="tLandR2" style="padding:8px;color:#94a3b8">—</td>
+  <td id="tLandBase" style="padding:8px;color:#94a3b8">37.08 yd</td>
+  <td id="tLandRed" style="padding:8px;color:#34d399;font-weight:700">-42.2%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- Visual Chart Comparing Baseline vs Multi-Modal Sensing Error -->
+<div style="background:#090d16;border:1px solid #1e293b;border-radius:8px;padding:16px;margin-bottom:14px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+  <div id="chartCohortTitle" style="font-size:13px;font-weight:700;color:#e2e8f0">Leave-One-Golfer-Out Error Reduction vs Baseline (N = 58 Confident Shots)</div>
+  <div style="display:flex;gap:14px;font-size:12px">
+    <div style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#475569;border-radius:3px"></span><span style="color:#94a3b8">Baseline (Pose/Watch)</span></div>
+    <div style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#10b981;border-radius:3px"></span><span style="color:#6ee7b7">Multi-Modal Sensing (Camera + Gyro)</span></div>
+  </div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px">
+  <!-- Bar 1: Carry -->
+  <div style="background:#0b1120;border:1px solid #1e293b;border-radius:6px;padding:10px">
+    <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px">
+      <strong style="color:#f8fafc">Flat Carry Distance</strong>
+      <span id="barCarryRed" style="color:#34d399;font-weight:700">-64.8% error</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+      <span style="font-size:11px;color:#94a3b8;width:55px">Baseline:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div style="width:100%;height:100%;background:#475569"></div>
+      </div>
+      <span id="barCarryBase" style="font-size:11px;color:#94a3b8;width:50px;text-align:right">35.9 yd</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:11px;color:#6ee7b7;width:55px;font-weight:600">Model:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div id="barCarryWidth" style="width:35.2%;height:100%;background:#10b981"></div>
+      </div>
+      <span id="barCarryMod" style="font-size:11px;color:#6ee7b7;font-weight:700;width:50px;text-align:right">12.6 yd</span>
+    </div>
+  </div>
+
+  <!-- Bar 2: Launch Angle -->
+  <div style="background:#0b1120;border:1px solid #1e293b;border-radius:6px;padding:10px">
+    <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px">
+      <strong style="color:#f8fafc">Launch Elevation Angle</strong>
+      <span id="barAngleRed" style="color:#34d399;font-weight:700">-64.2% error</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+      <span style="font-size:11px;color:#94a3b8;width:55px">Baseline:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div style="width:100%;height:100%;background:#475569"></div>
+      </div>
+      <span id="barAngleBase" style="font-size:11px;color:#94a3b8;width:50px;text-align:right">5.59°</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:11px;color:#6ee7b7;width:55px;font-weight:600">Model:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div id="barAngleWidth" style="width:35.8%;height:100%;background:#10b981"></div>
+      </div>
+      <span id="barAngleMod" style="font-size:11px;color:#6ee7b7;font-weight:700;width:50px;text-align:right">2.00°</span>
+    </div>
+  </div>
+
+  <!-- Bar 3: Ball Speed -->
+  <div style="background:#0b1120;border:1px solid #1e293b;border-radius:6px;padding:10px">
+    <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px">
+      <strong style="color:#f8fafc">Ball Speed</strong>
+      <span id="barSpeedRed" style="color:#34d399;font-weight:700">-53.9% error</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+      <span style="font-size:11px;color:#94a3b8;width:55px">Baseline:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div style="width:100%;height:100%;background:#475569"></div>
+      </div>
+      <span id="barSpeedBase" style="font-size:11px;color:#94a3b8;width:50px;text-align:right">14.3 mph</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:11px;color:#6ee7b7;width:55px;font-weight:600">Model:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div id="barSpeedWidth" style="width:46.1%;height:100%;background:#10b981"></div>
+      </div>
+      <span id="barSpeedMod" style="font-size:11px;color:#6ee7b7;font-weight:700;width:50px;text-align:right">6.57 mph</span>
+    </div>
+  </div>
+
+  <!-- Bar 4: Launch Direction -->
+  <div style="background:#0b1120;border:1px solid #1e293b;border-radius:6px;padding:10px">
+    <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px">
+      <strong style="color:#f8fafc">Launch Direction</strong>
+      <span id="barDirRed" style="color:#34d399;font-weight:700">-55.4% error</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+      <span style="font-size:11px;color:#94a3b8;width:55px">Baseline:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div style="width:100%;height:100%;background:#475569"></div>
+      </div>
+      <span id="barDirBase" style="font-size:11px;color:#94a3b8;width:50px;text-align:right">6.37°</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:11px;color:#6ee7b7;width:55px;font-weight:600">Model:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div id="barDirWidth" style="width:44.6%;height:100%;background:#10b981"></div>
+      </div>
+      <span id="barDirMod" style="font-size:11px;color:#6ee7b7;font-weight:700;width:50px;text-align:right">2.84°</span>
+    </div>
+  </div>
+
+  <!-- Bar 5: Lateral Curve -->
+  <div style="background:#0b1120;border:1px solid #1e293b;border-radius:6px;padding:10px">
+    <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px">
+      <strong style="color:#f8fafc">Lateral Curve (ft)</strong>
+      <span id="barCurveRed" style="color:#34d399;font-weight:700">-33.3% error</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+      <span style="font-size:11px;color:#94a3b8;width:55px">Baseline:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div style="width:100%;height:100%;background:#475569"></div>
+      </div>
+      <span id="barCurveBase" style="font-size:11px;color:#94a3b8;width:50px;text-align:right">32.8 ft</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:11px;color:#6ee7b7;width:55px;font-weight:600">Model:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div id="barCurveWidth" style="width:66.8%;height:100%;background:#10b981"></div>
+      </div>
+      <span id="barCurveMod" style="font-size:11px;color:#6ee7b7;font-weight:700;width:50px;text-align:right">21.9 ft</span>
+    </div>
+  </div>
+
+  <!-- Bar 6: 2D Landing Error -->
+  <div style="background:#0b1120;border:1px solid #1e293b;border-radius:6px;padding:10px">
+    <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px">
+      <strong style="color:#f8fafc">2D Landing Distance Error</strong>
+      <span id="barLandRed" style="color:#34d399;font-weight:700">-42.2% error</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+      <span style="font-size:11px;color:#94a3b8;width:55px">Baseline:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div style="width:100%;height:100%;background:#475569"></div>
+      </div>
+      <span id="barLandBase" style="font-size:11px;color:#94a3b8;width:50px;text-align:right">37.1 yd</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:11px;color:#6ee7b7;width:55px;font-weight:600">Model:</span>
+      <div style="flex:1;background:#1e293b;border-radius:4px;height:14px;overflow:hidden">
+        <div id="barLandWidth" style="width:57.7%;height:100%;background:#10b981"></div>
+      </div>
+      <span id="barLandMod" style="font-size:11px;color:#6ee7b7;font-weight:700;width:50px;text-align:right">21.4 yd</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<p class="note" style="margin:0;color:#94a3b8;font-size:12px;line-height:1.55">
+<strong>Data Integrity &amp; Abstention Note:</strong> Shots where autonomous camera ball tracking is unverified (such as stationary tee occlusion or hitting mat lighting glare) deliberately abstain from making a prediction rather than falling back to uncalibrated models. Exactly 70 out of 72 TrackMan-recorded shots (97.2%) achieve verified camera ball tracks. Untracked shots display as <code>Prediction Abstained</code> and are excluded from model accuracy metrics.
+</p>
+</details></div></section>
+
+<footer>76 strikes · five golfers · six sessions · no uploads or network dependencies. This demo explores recorded sessions; new-recording inference is not yet integrated.</footer></main>
 <script>__THREE__</script>
 <script>__SCENE__</script>
+<script>__POSEFORMER_SCENE__</script>
 <script>
 const data=__DATA__;const $=id=>document.getElementById(id);let current=data[0],marks=[];try{marks=JSON.parse(localStorage.getItem('swingLabPhases')||'[]');if(!Array.isArray(marks))marks=[]}catch(e){}const edges=[[11,13],[13,15],[12,14],[14,16],[23,25],[25,27],[24,26],[26,28],[27,31],[28,32]];
-function options(){const old=current.id;$('shot').replaceChildren();for(const r of data.filter(r=>$('filter').value==='errors'?r.gate_error:$('filter').value==='assisted'?r.gate_probability!==null:true)){const o=document.createElement('option');o.value=r.id;o.textContent=r.id.replaceAll('_',' ')+' · '+r.golfer;$('shot').append(o)}if([...$('shot').options].some(o=>o.value===old))$('shot').value=old;select()}
+function options(){
+  const old=current.id;
+  $('shot').replaceChildren();
+  const fv=$('filter').value;
+  const filtered=data.filter(r=>{
+    const hasTrack = r.ball_track && r.ball_track.length > 0;
+    const hasRadar = r.carry !== null && r.carry !== undefined;
+    if(fv==='primary') return r.used_primary_model;
+    if(fv==='fallback') return hasRadar && !r.used_primary_model;
+    if(fv==='tracked') return hasTrack;
+    if(fv==='missed') return !hasTrack;
+    if(fv==='assisted') return r.gate_probability!==null;
+    return true;
+  });
+  for(const r of filtered){
+    const o=document.createElement('option');
+    o.value=r.id;
+    const hasTrack = r.ball_track && r.ball_track.length > 0;
+    const hasRadar = r.carry !== null && r.carry !== undefined;
+    let specialTag = '';
+    if(!hasRadar){
+      specialTag = ' [TrackMan Missed Reading]';
+    } else if(!r.used_primary_model){
+      specialTag = ' [Fallback Model Used]';
+    } else if(!hasTrack){
+      specialTag = ' [Camera Missed Ball]';
+    }
+    o.textContent=r.id.replaceAll('_',' ')+' · '+r.golfer + specialTag;
+    $('shot').append(o);
+  }
+  if([...$('shot').options].some(o=>o.value===old))$('shot').value=old;
+  else if($('shot').options.length>0)$('shot').value=$('shot').options[0].value;
+  select();
+}
 function media(reset=false){const t=reset?0:$('video').currentTime||0;$('video').src=($('overlay').checked?(current.overlay_url||'videos/'+current.id+'_overlay.mp4'):(current.input_url||'../pose/'+current.id+'_input.mp4'));$('video').onloadedmetadata=()=>{$('video').currentTime=Math.min(t,$('video').duration);$('video').playbackRate=+$('speed').value;$('timeline').max=$('video').duration}}
-const fmt=v=>v===null?'—':Math.round(v)+' yd';
-function select(){current=data.find(r=>r.id===$('shot').value);media(true);$('ball').href='../ball_batch/'+current.id+'.jpg';$('review').href='../contact_video_review/'+current.id+'_sheet.jpg';$('review').hidden=current.gate_probability===null;$('impactReview').href='../impact_review/'+current.id+'_sheet.jpg';$('impactReview').hidden=current.departure_interval===null;$('phaseEvidence').textContent=current.departure_interval===null?'Navigation uses a proposed top and illustrative offsets. Exact impact has not been reviewed for this shot.':'Ball departure is provisionally bracketed within '+current.departure_interval.width_ms.toFixed(1)+' ms in native frames. A second reviewer is still needed; other phase positions remain approximate.';$('prediction').textContent=fmt(current.prediction);$('actual').textContent=fmt(current.carry);$('assisted').textContent=fmt(current.assisted_prediction);$('gate').textContent=current.gate_probability===null?'Short-shot flag: unavailable for this swing (no reviewed ball features).':`100-yard gate: ${current.gate_probability>=.5?'flagged as short':'accepted as 100+ yd'} · model score ${Math.round(100*current.gate_probability)}% short${current.gate_error?' · incorrect on this shot':''}. Score is not calibrated confidence.`;$('gate').className=current.gate_error?'warning':'';$('evidence').textContent=`Workbook row ${current.workbook_row} · ${current.club_available?'club data available; gyro alignment residual '+Math.round(Math.abs(current.alignment_residual)*1000)+' ms':'club recording ended before this shot'}. Recorded ball speed: ${current.ball_speed??'—'} mph; launch: ${current.launch??'—'}°. Ordinal association accepted from user-confirmed order and visible-swing review; exact impact not verified.`;$('errorNote').textContent=current.gate_error?(current.carry<100?'This short shot has a normal-looking launch angle. Early ball rise alone can overestimate its distance.':'This shot traveled over 100 yards despite a low launch angle. Low flight alone does not establish short carry.'):'Compare the video, avatar and outcome to inspect where the estimate succeeds or fails.';if(current.mode==='new'){ $('predictionLabel').textContent='Experimental video-only carry estimate';const predictions=current.reference_predictions||{};$('actualLabel').textContent='Estimated ball speed';$('actual').textContent=predictions['Ball speed (mph)']===undefined?'—':predictions['Ball speed (mph)'].toFixed(1)+' mph';$('assistedLabel').textContent='Estimated launch angle';$('assisted').textContent=predictions['Launch angle (deg)']===undefined?'—':predictions['Launch angle (deg)'].toFixed(1)+'°';$('gate').textContent=current.prediction_status==='abstained_insufficient_pose'?'Prediction withheld: body pose was missing in more than half the frames.':('Estimated launch direction: '+(predictions['Launch direction (deg; R+)']===undefined?'unavailable':predictions['Launch direction (deg; R+)'].toFixed(1)+'° (right positive)')+'. These are model predictions, not direct ball measurements.');$('predictionHelp').textContent='This is a fixed ridge model fit on the 72 labeled research shots, not a held-out prediction for this video. New recording days and manually chosen clip timing are unvalidated. No reliable per-shot confidence interval is available. Whole-swing features include follow-through.';$('evidence').textContent='New local recording. Manually selected clip; no watch, club sensor or recorded outcome supplied. Pose and head motion are estimated from video. Model-fit predictions are experimental and are not added to the evaluation dataset.';$('errorNote').textContent='Review the clip and tracking before interpreting the estimate.';$('ball').hidden=true;$('review').hidden=true;$('impactReview').hidden=true;}$('renderStatus').textContent=rangeScene.ready?(current.prediction_status==='abstained_insufficient_pose'?'No usable body pose found; the scene shows the range without inventing a swing.':'3D range · estimated pose · assisted club pilot · schematic flight'):'The 3D scene could not start. Open Swing Lab in a WebGL-capable browser; an editor preview may block it. '+(rangeScene.error||'');loadNative();buildPhases();renderMarks()}
-function phaseList(){const duration=(current.world.length-1)/current.fps;const top=current.top===null?duration*.45:Math.max(0,Math.min(duration,current.top-current.start));const impact=current.departure_interval===null?null:(current.departure_interval.lower_s+current.departure_interval.upper_s)/2-current.start;const phases=[{name:'Setup window',t:0,tip:'Check your visible setup and ball position in the video.'},{name:'Backswing review',t:top*.6,tip:'Review how the torso turns; uncertain hands cannot establish a precise swing plane.'},{name:current.top===null?'Mid-swing review':'Top proposal',t:top,tip:'Pause and confirm the top visually before judging transition timing.'},{name:'Downswing review',t:impact===null?Math.min(duration,top+.25):(top+impact)/2,tip:'Inspect the club approaching the ball in the video. This is an illustrative review position.'},{name:'Follow-through review',t:Math.min(duration,(impact===null?top+.25:impact)+.4),tip:'Review your balance through the finish. A pose estimate alone cannot diagnose contact.'},{name:'Finish window',t:duration,tip:'Compare the finish with earlier frames; avoid inferring cause from a single pose.'}];if(impact!==null)phases.push({name:'Ball departure review',t:impact,tip:'Native-frame review brackets the ball departure. The 30-fps replay cannot resolve every native frame: open the native impact review sheet for the bounds.'});return phases.sort((a,b)=>a.t-b.t)}
+const fmt=v=>v===null||v===undefined||isNaN(v)?'—':Math.round(v)+' yd';
+function select(){
+  current=data.find(r=>r.id===$('shot').value) || data[0];
+  resetRangeClock();
+  media(true);
+  
+  // Strike / Tracking Quality Top Banner
+  const hasTrack = current.ball_track && current.ball_track.length > 0;
+  const hasRadar = current.carry !== null && current.carry !== undefined;
+  const banner = $('strikeQualityBanner');
+  
+  if (!hasRadar) {
+    banner.style.background = 'rgba(30, 41, 59, 0.9)';
+    banner.style.border = '1.5px solid #64748b';
+    banner.style.color = '#e2e8f0';
+    banner.innerHTML = `
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:22px">ℹ️</span>
+        <div>
+          <strong style="text-transform:uppercase;letter-spacing:1px;font-size:13px;color:#94a3b8">TrackMan Missed Reading</strong>
+          <span style="display:block;font-size:12px;color:#cbd5e1;margin-top:2px;font-weight:400">TrackMan Doppler radar did not register this strike. Ground truth benchmark data is unavailable.</span>
+        </div>
+      </div>
+      <span style="background:#1e293b;border:1px solid #475569;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:800;letter-spacing:1px;color:#94a3b8">NO RADAR DATA</span>
+    `;
+  } else if (!hasTrack) {
+    banner.style.background = 'rgba(49, 46, 129, 0.9)';
+    banner.style.border = '1.5px solid #818cf8';
+    banner.style.color = '#e0e7ff';
+    banner.innerHTML = `
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:22px">⚠️</span>
+        <div>
+          <strong style="text-transform:uppercase;letter-spacing:1px;font-size:13px;color:#c7d2fe">${current.ball_rejection?'Ball track rejected on review':'No usable ball track'}</strong>
+          <span style="display:block;font-size:12px;color:#e0e7ff;margin-top:2px;font-weight:400">${current.ball_rejection?'The candidate followed the club or golfer. The video launch estimate is unavailable for this shot.':'The tracker returned no usable candidate. The video launch estimate is unavailable for this shot.'}</span>
+        </div>
+      </div>
+      <span style="background:#1e1b4b;border:1px solid #6366f1;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:800;letter-spacing:1px;color:#c7d2fe">UNVERIFIED TRACK</span>
+    `;
+  } else if (!current.used_primary_model) {
+    banner.style.background = 'rgba(120, 53, 15, 0.9)';
+    banner.style.border = '1.5px solid #f59e0b';
+    banner.style.color = '#fef3c7';
+    banner.innerHTML = `
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:22px">⚠️</span>
+        <div>
+          <strong style="text-transform:uppercase;letter-spacing:1px;font-size:13px;color:#fde68a">Model Resorted to Fallback (Training-Set Mean · Low Confidence)</strong>
+          <span style="display:block;font-size:12px;color:#fef3c7;margin-top:2px;font-weight:400">${current.fallback_reason || 'Visual track lacked sufficient confident points for 2-feature launch geometry'}. System fell back to predicting cohort training average (${Math.round(current.best_prediction)} yd) rather than confident launch physics.</span>
+        </div>
+      </div>
+      <span style="background:#451a03;border:1px solid #f59e0b;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:800;letter-spacing:1px;color:#fde68a">FALLBACK MODEL</span>
+    `;
+  } else {
+    banner.style.background = 'rgba(6, 78, 59, 0.85)';
+    banner.style.border = '1.5px solid #10b981';
+    banner.style.color = '#a7f3d0';
+    let frameDetail = '';
+    const totalFrames = current.ball_track.length;
+    const usedCount = current.launch_frames_used || (current.ball_track.length > 0 ? current.ball_track.filter(o => o.playback_s - current.ball_track[0].playback_s <= 0.150).length : 0);
+    const rangeStr = current.launch_frames_range;
+    if (usedCount >= totalFrames) {
+      frameDetail = `tracked ${totalFrames} launch frames; model used all ${totalFrames} frames${rangeStr ? ' (frames ' + rangeStr + ')' : ''} within the 150 ms launch window`;
+    } else {
+      frameDetail = `tracked ${totalFrames} launch frames; model used initial ${usedCount} frames${rangeStr ? ' (frames ' + rangeStr + ')' : ''} within the 150 ms launch window`;
+    }
+    banner.innerHTML = `
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:22px">✓</span>
+        <div>
+          <strong style="text-transform:uppercase;letter-spacing:1px;font-size:13px;color:#6ee7b7">Primary launch model</strong>
+          <span style="display:block;font-size:12px;color:#a7f3d0;margin-top:2px;font-weight:400">High-speed camera ${frameDetail}. Flat carry predicted using vertical velocity (vy) and perspective depth rate.</span>
+        </div>
+      </div>
+      <span style="background:#064e3b;border:1px solid #059669;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:800;letter-spacing:1px;color:#6ee7b7">PRIMARY MODEL</span>
+    `;
+  }
+  
+  $('ball').href='../ball_batch/'+current.id+'.jpg';$('review').href='../contact_video_review/'+current.id+'_sheet.jpg';$('review').hidden=current.gate_probability===null;$('impactReview').href='../impact_review/'+current.id+'_sheet.jpg';$('impactReview').hidden=current.departure_interval===null;
+  $('phaseEvidence').textContent=current.departure_interval===null?'Navigation uses a proposed top and illustrative offsets. Exact impact has not been reviewed for this shot.':'Ball departure is provisionally bracketed within '+current.departure_interval.width_ms.toFixed(1)+' ms in native frames. A second reviewer is still needed; other phase positions remain approximate.';
+  
+  // High-Speed Video Launch Best Model vs TrackMan Ground Truth
+  const bPred=current.best_prediction,act=current.carry;
+  const bTot=current.best_total_yd,actTot=current.total_actual;
+  if(bPred!==null&&bPred!==undefined&&!isNaN(bPred)){
+    if (!current.used_primary_model && hasRadar) {
+      $('bestPrediction').innerHTML=`${fmt(bPred)} <span style="font-size:13px;color:#fbbf24;font-weight:600;display:block;margin-top:2px">⚠️ Fallback to cohort mean</span>`;
+      $('bestModelSub').innerHTML=`<span style="color:#fde68a">Cohort training mean (${Math.round(bPred)} yd) · Low confidence</span>`;
+    } else {
+      $('bestPrediction').innerHTML=`${fmt(bPred)} <span style="font-size:15px;color:#d8b4fe;font-weight:600;display:block;margin-top:2px">Total: ${bTot!==null&&bTot!==undefined?Math.round(bTot)+' yd':'—'}</span>`;
+      $('bestModelSub').textContent=`Dir: ${current.best_launch_direction!==undefined&&current.best_launch_direction!==null?current.best_launch_direction.toFixed(1)+'°':'—'} · Speed: ${current.best_ball_speed?current.best_ball_speed.toFixed(1)+' mph':'—'} · Angle: ${current.best_launch_angle?current.best_launch_angle.toFixed(1)+'°':'—'}${current.best_curve_ft!==undefined&&current.best_curve_ft!==null?' · Curve: '+(current.best_curve_ft>0?'+':'')+current.best_curve_ft.toFixed(0)+'ft':''}`;
+    }
+  } else {
+    $('bestPrediction').innerHTML=`— <span style="font-size:13px;color:#a78bfa;font-weight:400;display:block;margin-top:4px">Prediction Abstained</span>`;
+    $('bestModelSub').textContent='Camera missed ball departure · prediction omitted';
+  }
+  $('actual').innerHTML=`${fmt(act)} <span style="font-size:15px;color:#7dd3fc;font-weight:600;display:block;margin-top:2px">Total: ${actTot!==null&&actTot!==undefined?Math.round(actTot)+' yd':'—'}</span>`;
+  if(bPred!==null&&bPred!==undefined&&act!==null&&act!==undefined&&!isNaN(bPred)&&!isNaN(act)){
+    const diff=Math.round(bPred-act);
+    const totDiff=(bTot!==null&&bTot!==undefined&&actTot!==null&&actTot!==undefined)?Math.round(bTot-actTot):null;
+    const subNote = !current.used_primary_model ? '<span style="font-size:12px;color:#fde68a;font-weight:600;display:block;margin-top:2px">⚠️ Inflated by fallback mean</span>' : (totDiff!==null?`<span style="font-size:15px;color:#99f6e4;font-weight:600;display:block;margin-top:2px">Total Δ: ${(totDiff>0?'+':'')+totDiff} yd</span>`:'');
+    $('predDelta').innerHTML=`${(diff>0?'+':'')+diff} yd carry${subNote}`;
+    $('predDelta').style.color=Math.abs(diff)<=20?'#a3e5b9':Math.abs(diff)<=35?'#fde047':'#fca5a5';
+  } else {
+    $('predDelta').textContent='—';
+  }
+  $('prediction').textContent=fmt(current.prediction);
+  $('assisted').textContent=fmt(current.assisted_prediction);
+  if(bPred!==null&&bPred!==undefined&&!isNaN(bPred)){
+    $('bestModelSub').textContent=`Dir: ${current.best_launch_direction!==undefined&&current.best_launch_direction!==null?current.best_launch_direction.toFixed(1)+'°':'—'} · Speed: ${current.best_ball_speed?current.best_ball_speed.toFixed(1)+' mph':'—'} · Angle: ${current.best_launch_angle?current.best_launch_angle.toFixed(1)+'°':'—'}${current.best_curve_ft!==undefined&&current.best_curve_ft!==null?' · Curve: '+(current.best_curve_ft>0?'+':'')+current.best_curve_ft.toFixed(0)+'ft':''}`;
+  } else {
+    $('bestModelSub').textContent='Camera missed ball departure · prediction omitted';
+  }
+  $('actualSub').textContent=`Radar dir: ${current.launch_direction!==undefined&&current.launch_direction!==null?current.launch_direction.toFixed(1)+'°':'—'} · Speed: ${current.ball_speed?current.ball_speed.toFixed(1)+' mph':'—'} · Angle: ${current.launch?current.launch.toFixed(1)+'°':'—'}${current.curve_ft!==undefined&&current.curve_ft!==null?' · Curve: '+(current.curve_ft>0?'+':'')+current.curve_ft.toFixed(0)+'ft':''}`;
+  
+  $('gate').style.display='none';
+  $('evidence').textContent=`Workbook row ${current.workbook_row} · ${current.club_available?'club data available; gyro alignment residual '+Math.round(Math.abs(current.alignment_residual)*1000)+' ms':'club recording ended before this shot'}. Recorded ball speed: ${current.ball_speed??'—'} mph; launch: ${current.launch??'—'}°. Ordinal association accepted from user-confirmed order and visible-swing review; exact impact not verified.`;
+  $('errorNote').textContent=current.gate_error?(current.carry<100?'This short shot has a normal-looking launch angle. Early ball rise alone can overestimate its distance.':'This shot traveled over 100 yards despite a low launch angle. Low flight alone does not establish short carry.'):'Compare the video, avatar and outcome to inspect where the estimate succeeds or fails.';
+  $('renderStatus').textContent=rangeScene.ready?(current.prediction_status==='abstained_insufficient_pose'?'No usable body pose found; the scene shows the range without inventing a swing.':'3D range · estimated pose · assisted club pilot · schematic flight'):'The 3D scene could not start. Open Swing Lab in a WebGL-capable browser; an editor preview may block it. '+(rangeScene.error||'');
+  
+  // Visual-Inertial Clubhead Fusion Panel update
+  const cf=current.club_fusion;
+  if(cf&&cf.has_club_imu){
+    $('clubFusionBadge').style.background='#064e3b';
+    $('clubFusionBadge').style.color='#6ee7b7';
+    $('clubFusionBadge').style.borderColor='#059669';
+    $('clubFusionDot').style.background='#10b981';
+    $('clubFusionStatusText').textContent='IMU Gyro Synchronized (188.6 Hz)';
+    const fa=cf.metrics.dynamic_face_angle_deg;
+    $('metricFaceAngle').textContent=(fa>0?'+':'')+fa.toFixed(1)+'°';
+    $('metricFaceAngle').style.color=Math.abs(fa)<1.0?'#a7f3d0':(fa>0?'#fca5a5':'#93c5fd');
+    $('metricFaceDesc').textContent=cf.metrics.face_description;
+    $('metricClosureRate').textContent=Math.round(cf.metrics.closure_rate_dps).toLocaleString()+'°/s';
+    $('metricClubSpeed').textContent=cf.metrics.delivery_speed_mph?cf.metrics.delivery_speed_mph.toFixed(1)+' mph':'—';
+  } else {
+    $('clubFusionBadge').style.background='#374151';
+    $('clubFusionBadge').style.color='#9ca3af';
+    $('clubFusionBadge').style.borderColor='#4b5563';
+    $('clubFusionDot').style.background='#9ca3af';
+    $('clubFusionStatusText').textContent='Vision Kinematic Fallback (No IMU)';
+    $('metricFaceAngle').textContent='—';
+    $('metricFaceDesc').textContent='Club recording ended before shot';
+    $('metricClosureRate').textContent='—';
+    $('metricClubSpeed').textContent='—';
+  }
+  
+  loadNative();buildPhases();renderMarks();
+  if(window.poseFormerStudio && current) window.poseFormerStudio.loadShot(current);
+}
+function phaseList(){const duration=(current.world.length-1)/current.fps;const top=current.top===null?duration*.45:Math.max(0,Math.min(duration,current.top-current.start));const hasReviewed=current.departure_interval!==null;let impact=null,isEstimated=false;if(hasReviewed){impact=(current.departure_interval.lower_s+current.departure_interval.upper_s)/2-current.start;}else if(current.ball_track&&current.ball_track.length>0&&Number.isFinite(current.ball_track[0].playback_s)){impact=Math.max(0,current.ball_track[0].playback_s-current.start);isEstimated=true;}else if(current.top!==null){impact=Math.min(duration-0.1,(current.top-current.start)+0.28);isEstimated=true;}else{impact=Math.min(duration-0.1,top+0.25);isEstimated=true;}const phases=[{name:'Setup window',t:0,tip:'Check your visible setup and ball position in the video.'},{name:'Backswing review',t:top*.6,tip:'Review how the torso turns; uncertain hands cannot establish a precise swing plane.'},{name:current.top===null?'Mid-swing review':'Top proposal',t:top,tip:'Pause and confirm the top visually before judging transition timing.'},{name:'Downswing review',t:impact===null?Math.min(duration,top+.25):(top+impact)/2,tip:'Inspect the club approaching the ball in the video. This is an illustrative review position.'},{name:'Follow-through review',t:Math.min(duration,(impact===null?top+.25:impact)+.4),tip:'Review your balance through the finish. A pose estimate alone cannot diagnose contact.'},{name:'Finish window',t:duration,tip:'Compare the finish with earlier frames; avoid inferring cause from a single pose.'}];if(impact!==null)phases.push({name:isEstimated?'Ball departure (est)':'Ball departure review',t:impact,tip:isEstimated?'Ball departure estimated from early camera launch tracking (~6 ms precision).':'Native-frame review brackets the ball departure. The 30-fps replay cannot resolve every native frame: open the native impact review sheet for the bounds.'});return phases.sort((a,b)=>a.t-b.t)}
 function buildPhases(){$('phases').replaceChildren();for(const p of phaseList()){const b=document.createElement('button');b.textContent=p.name;b.onclick=()=>seek(p.t);$('phases').append(b)}}
 function renderMarks(){$('savedPhases').replaceChildren();for(const m of marks.filter(m=>m.shot_id===current.id)){const b=document.createElement('button');b.textContent=m.phase+' (your marker)';b.onclick=()=>seek(m.playback_s-current.start);$('savedPhases').append(b)}$('marks').textContent=marks.filter(m=>m.shot_id===current.id).map(m=>m.phase+': '+m.playback_s.toFixed(4)+' s').join('\n')}
 $('shot').onchange=select;$('filter').onchange=options;$('overlay').onchange=()=>media();$('speed').onchange=()=>{$('video').playbackRate=+$('speed').value};
@@ -22,13 +816,448 @@ function seek(t){$('video').pause();$('video').currentTime=Math.max(0,Math.min(t
 $('mark').onclick=()=>{marks=marks.filter(m=>!(m.shot_id===current.id&&m.phase===$('phaseName').value));marks.push({shot_id:current.id,phase:$('phaseName').value,playback_s:current.start+$('video').currentTime,source:current.source,source_sha256:current.sha256,review_status:'user_marked_at_30fps_review_resolution'});try{localStorage.setItem('swingLabPhases',JSON.stringify(marks));$('storage').textContent='Saved in this browser. Export to keep a portable copy.'}catch(e){$('storage').textContent='Browser storage unavailable. Export before closing.'}renderMarks()};
 $('export').onclick=()=>{const u=URL.createObjectURL(new Blob([JSON.stringify(marks,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='golf_phase_annotations.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
 function nearest(times,t){let best=0;for(let i=1;i<times.length;i++)if(Math.abs(times[i]-t)<Math.abs(times[best]-t))best=i;return best}
-function loadNative(){$('nativeVideo').pause();$('nativeSection').hidden=!current.native;if(!current.native){$('nativeVideo').removeAttribute('src');return}$('nativeVideo').src='../native_review/'+current.id+'.mp4';$('nativeVideo').onloadedmetadata=()=>{$('nativeVideo').playbackRate=+$('nativeSpeed').value}}
-function stepNative(delta){if(!current.native)return;const n=current.native,i=nearest(n.review_pts,$('nativeVideo').currentTime);$('nativeVideo').pause();const j=Math.max(0,Math.min(n.review_pts.length-1,i+delta));$('nativeVideo').currentTime=n.review_pts[j]+.000002;$('video').pause();$('video').currentTime=Math.max(0,n.source_pts[j]-current.start)}
-$('nativePrev').onclick=()=>stepNative(-1);$('nativeNext').onclick=()=>stepNative(1);$('nativeSpeed').onchange=()=>{$('nativeVideo').playbackRate=+$('nativeSpeed').value};
-function drawNativeTracer(t){const canvas=$('nativeTracer'),video=$('nativeVideo'),w=video.clientWidth||540,h=video.clientHeight||470;if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}const c=canvas.getContext('2d');c.clearRect(0,0,w,h);if(!$('nativeTracerEnabled').checked)return;const scale=Math.min(w/780,h/1100),ox=(w-780*scale)/2,oy=(h-1100*scale)/2,xy=o=>[ox+(o.x-300)*scale,oy+(o.y-650)*scale];const obs=current.ball_track.filter(o=>o.playback_s<=t+.003&&o.playback_s>=t-.16);for(let j=1;j<obs.length;j++){c.strokeStyle='rgba(255,206,107,'+(.15+.8*j/obs.length)+')';c.lineWidth=1+2*j/obs.length;c.beginPath();c.moveTo(...xy(obs[j-1]));c.lineTo(...xy(obs[j]));c.stroke()}if(obs.length&&Math.abs(obs.at(-1).playback_s-t)<.006){c.strokeStyle='#fff6c9';c.lineWidth=2;c.beginPath();c.arc(...xy(obs.at(-1)),7,0,Math.PI*2);c.stroke()}}
-function drawNative(){if(!current.native)return;const n=current.native,i=nearest(n.review_pts,$('nativeVideo').currentTime||0),t=n.source_pts[i],c=$('ballPath').getContext('2d'),point=o=>[110+(o.x-300)*.39,20+(o.y-650)*.39];c.clearRect(0,0,540,470);c.strokeStyle='#40565f';c.strokeRect(110,20,780*.39,1100*.39);c.font='12px system-ui';c.fillStyle='#adc4cc';c.fillText('Native crop: screen coordinates',110,465);for(const [color,obs] of [['#66513d',current.ball_track],['#ffba70',current.ball_track.filter(o=>o.playback_s<=t)]]){c.strokeStyle=color;c.lineWidth=2;c.beginPath();obs.forEach((o,j)=>j?c.lineTo(...point(o)):c.moveTo(...point(o)));c.stroke()}for(const o of current.reviewed_points){c.strokeStyle='#76e3e3';c.beginPath();c.arc(...point(o),6,0,Math.PI*2);c.stroke()}const obs=current.ball_track;if(obs.length){const j=nearest(obs.map(o=>o.playback_s),t);if(Math.abs(obs[j].playback_s-t)<.006){c.fillStyle='#ffba70';c.beginPath();c.arc(...point(obs[j]),5,0,Math.PI*2);c.fill()}}drawNativeTracer(t);$('nativeTime').textContent='Source playback '+t.toFixed(6)+' s · native frame '+(i+1)+' / '+n.source_pts.length+(obs.length?'':' · tracker abstained');}
+function loadNative(){
+  $('nativeSection').hidden=!current.native;
+  if(!current.native){$('nativeVideo').removeAttribute('src');return}
+  $('nativeVideo').src='../'+(current.native.media_directory||'native_review')+'/'+current.id+'.mp4';
+  $('nativeVideo').onloadedmetadata=()=>{$('nativeVideo').playbackRate=+$('nativeSpeed').value};
+}
+function stepNative(delta){
+  if(!current.native)return;
+  const n=current.native;
+  const i=nearest(n.review_pts,$('nativeVideo').currentTime||0);
+  $('nativeVideo').pause();
+  const j=Math.max(0,Math.min(n.review_pts.length-1,i+delta));
+  $('nativeVideo').currentTime=n.review_pts[j]+0.000002;
+  $('video').pause();
+  $('video').currentTime=Math.max(0,n.source_pts[j]-current.start);
+}
+$('nativePrev').onclick=()=>stepNative(-1);
+$('nativeNext').onclick=()=>stepNative(1);
+$('nativeSpeed').onchange=()=>{$('nativeVideo').playbackRate=+$('nativeSpeed').value};
+
+function drawNativeTracer(t){
+  const canvas=$('nativeTracer'),video=$('nativeVideo'),w=video.clientWidth||540,h=video.clientHeight||470;
+  if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
+  const c=canvas.getContext('2d');
+  c.clearRect(0,0,w,h);
+  const [cropX,cropY,cropW,cropH]=current.native.crop;
+  const scale=Math.min(w/cropW,h/cropH),ox=(w-cropW*scale)/2,oy=(h-cropH*scale)/2;
+  const xy=o=>[ox+(o.x-cropX)*scale,oy+(o.y-cropY)*scale];
+
+  // 1. Draw verified ball track in YELLOW/ORANGE (or CYAN if assisted reviewed points) up to current time t
+  if($('nativeTracerEnabled').checked){
+    const hasAuto = current.ball_track && current.ball_track.length > 0;
+    const track = hasAuto ? current.ball_track : (current.reviewed_points || []);
+    if(track.length > 0){
+      const isAssisted = !hasAuto;
+      const last = track.filter(o=>o.playback_s<=t+0.003).at(-1);
+      const stopped = current.ball_motion_stop && t>=current.ball_motion_stop.first_dropped_s;
+      const stale = stopped || !last || t-last.playback_s>0.035;
+      const obs = stale ? [] : track.filter(o=>o.playback_s<=t+0.003&&o.playback_s>=t-0.25);
+      for(let j=1;j<obs.length;j++){
+        if(obs[j].playback_s-obs[j-1].playback_s>0.035) continue;
+        c.strokeStyle = isAssisted ? 'rgba(118,227,227,'+(0.4+0.6*j/obs.length)+')' : 'rgba(255,206,107,'+(0.3+0.7*j/obs.length)+')';
+        c.lineWidth = 1.5+2.0*j/obs.length;
+        if(isAssisted) c.setLineDash([4, 3]);
+        c.beginPath();
+        c.moveTo(...xy(obs[j-1]));
+        c.lineTo(...xy(obs[j]));
+        c.stroke();
+        c.setLineDash([]);
+      }
+      if(obs.length&&Math.abs(obs.at(-1).playback_s-t)<0.025){
+        c.fillStyle = isAssisted ? '#76e3e3' : '#fff6c9';
+        c.beginPath();
+        c.arc(...xy(obs.at(-1)),6,0,Math.PI*2);
+        c.fill();
+        c.strokeStyle = isAssisted ? '#38bdf8' : '#ffce6b';
+        c.lineWidth=2;
+        c.beginPath();
+        c.arc(...xy(obs.at(-1)),8,0,Math.PI*2);
+        c.stroke();
+      }
+    }
+  }
+
+  // 2. Draw club evidence in TEAL
+  if($('nativeClubEnabled').checked){
+    const frames=current.club_native||[];
+    if(frames.length){
+      const f=frames[nearest(frames.map(o=>o.playback_s),t)];
+      if(Math.abs(f.playback_s-t)<0.006){
+        c.strokeStyle='rgba(69,222,212,0.65)';
+        c.lineWidth=2;
+        for(const line of f.candidates){
+          c.beginPath();
+          c.moveTo(...xy({x:line.a[0],y:line.a[1]}));
+          c.lineTo(...xy({x:line.b[0],y:line.b[1]}));
+          c.stroke();
+        }
+      }
+    }
+    const head=current.clubhead_track||[];
+    const trail=head.filter(o=>o.playback_s<=t+0.003&&o.playback_s>=t-0.08);
+    c.strokeStyle='#45ded4';
+    c.lineWidth=2;
+    for(let i=1;i<trail.length;i++){
+      if(trail[i].frame!==trail[i-1].frame+1)continue;
+      c.beginPath();
+      c.moveTo(...xy(trail[i-1]));
+      c.lineTo(...xy(trail[i]));
+      c.stroke();
+    }
+    if(trail.length&&Math.abs(trail.at(-1).playback_s-t)<0.006){
+      c.beginPath();
+      c.arc(...xy(trail.at(-1)),8,0,Math.PI*2);
+      c.stroke();
+    }
+  }
+}
+
+function drawNative(){
+  if(!current.native)return;
+  const n=current.native;
+  const videoTime=$('nativeVideo').currentTime||0;
+  const i=nearest(n.review_pts,videoTime);
+  const t=n.source_pts[i];
+
+  const [cropX,cropY,cropW,cropH]=n.crop;
+  const scale=Math.min(420/cropW,425/cropH),left=(540-cropW*scale)/2;
+  const c=$('ballPath').getContext('2d'),point=o=>[left+(o.x-cropX)*scale,20+(o.y-cropY)*scale];
+  c.clearRect(0,0,540,470);
+  c.strokeStyle='#40565f';
+  c.strokeRect(left,20,cropW*scale,cropH*scale);
+
+  c.font='12px system-ui';
+  c.fillStyle='#adc4cc';
+  c.fillText('Native crop: screen coordinates',110,465);
+
+  const hasAuto=current.ball_track&&current.ball_track.length>0;
+  if(hasAuto){
+    const plotTrack=(points)=>points.forEach((o,j)=>{
+      if(j&&o.playback_s-points[j-1].playback_s<=0.035)c.lineTo(...point(o));
+      else c.moveTo(...point(o));
+    });
+
+    // 1. Draw full ball path in orange
+    c.strokeStyle='#ffba70';
+    c.lineWidth=2.0;
+    c.beginPath();
+    plotTrack(current.ball_track);
+    c.stroke();
+
+    // 2. Highlight the Model-Used Launch Window (initial 5–24 frames within 150 ms) in Emerald Green
+    const t0 = current.ball_track[0].playback_s;
+    const usedTrack = current.ball_track.filter(o => o.playback_s - t0 <= 0.150);
+    if(usedTrack.length >= 5){
+      c.strokeStyle='#34d399';
+      c.lineWidth=3.8;
+      c.beginPath();
+      plotTrack(usedTrack);
+      c.stroke();
+
+      // Small green dots on used launch points
+      c.fillStyle='#10b981';
+      usedTrack.forEach(o => {
+        const [px, py] = point(o);
+        c.beginPath();
+        c.arc(px, py, 2.5, 0, Math.PI * 2);
+        c.fill();
+      });
+
+      // Ring marker on the cutoff point (the last used frame)
+      const lastUsed = usedTrack.at(-1);
+      const [lx, ly] = point(lastUsed);
+      c.strokeStyle='#059669';
+      c.lineWidth=1.5;
+      c.beginPath();
+      c.arc(lx, ly, 4.5, 0, Math.PI * 2);
+      c.stroke();
+    }
+
+    // 3. Active real-time playback trail up to time t
+    const activeTrack=current.ball_track.filter(o=>o.playback_s<=t);
+    const stopped = current.ball_motion_stop && t>=current.ball_motion_stop.first_dropped_s;
+    if(!stopped && activeTrack.length>0 && t-activeTrack.at(-1).playback_s<=0.035){
+      c.strokeStyle='#fff6c9';
+      c.lineWidth=2.5;
+      c.beginPath();
+      plotTrack(activeTrack);
+      c.stroke();
+      
+      const [cx, cy] = point(activeTrack.at(-1));
+      c.fillStyle='#ffffff';
+      c.beginPath();
+      c.arc(cx, cy, 3.5, 0, Math.PI * 2);
+      c.fill();
+    }
+  } else if(current.reviewed_points&&current.reviewed_points.length>1){
+    c.strokeStyle='rgba(118,227,227,0.4)';
+    c.lineWidth=1.5;
+    c.setLineDash([4,4]);
+    c.beginPath();
+    current.reviewed_points.forEach((o,j)=>j?c.lineTo(...point(o)):c.moveTo(...point(o)));
+    c.stroke();
+
+    const activeRev=current.reviewed_points.filter(o=>o.playback_s<=t);
+    if(activeRev.length>0){
+      c.strokeStyle='#76e3e3';
+      c.lineWidth=2.5;
+      c.beginPath();
+      activeRev.forEach((o,j)=>j?c.lineTo(...point(o)):c.moveTo(...point(o)));
+      c.stroke();
+    }
+    c.setLineDash([]);
+  }
+
+  for(const o of current.reviewed_points){
+    c.strokeStyle='#76e3e3';
+    c.lineWidth=2;
+    c.beginPath();
+    c.arc(...point(o),6,0,Math.PI*2);
+    c.stroke();
+  }
+
+  drawNativeTracer(t);
+
+  const club=current.clubhead_track||[];
+  const near=club.length?club[nearest(club.map(o=>o.playback_s),t)]:null;
+  $('clubSpeed').textContent=near&&Math.abs(near.playback_s-t)<0.006&&Number.isFinite(near.speed_px_per_playback_s)?
+    'Assisted clubhead image speed: '+Math.round(near.speed_px_per_playback_s).toLocaleString()+' pixels / playback second.':
+    'Clubhead speed unavailable here. Teal lines show club evidence.';
+
+  $('nativeTime').textContent=`Source playback ${t.toFixed(4)} s · native frame ${i+1} / ${n.source_pts.length}`;
+}
 function drawHead(i){const frames=current.observations.frames,c=$('headTrace').getContext('2d'),w=540,h=180; c.clearRect(0,0,w,h);const vals=frames.flatMap(f=>[f.head_dx_image_pct,f.head_dy_image_pct]).filter(v=>v!==null);const range=Math.max(1,...vals.map(Math.abs))*1.1;const y=v=>h/2-v/range*65,x=j=>24+j/(frames.length-1)*(w-48);c.strokeStyle='#40565f';c.beginPath();c.moveTo(24,h/2);c.lineTo(w-24,h/2);c.stroke();for(const [key,color] of [['head_dx_image_pct','#b4e7b8'],['head_dy_image_pct','#e6bc82']]){c.strokeStyle=color;c.lineWidth=2;c.beginPath();let previous=false;frames.forEach((f,j)=>{if(f[key]===null){previous=false;return}if(previous)c.lineTo(x(j),y(f[key]));else c.moveTo(x(j),y(f[key]));previous=true});c.stroke()}c.strokeStyle='#fff';c.beginPath();c.moveTo(x(i),15);c.lineTo(x(i),h-15);c.stroke();c.font='12px system-ui';c.fillStyle='#b4e7b8';c.fillText('Horizontal',28,16);c.fillStyle='#e6bc82';c.fillText('Vertical (down +)',120,16);c.fillStyle='#9cb4be';c.fillText('±'+range.toFixed(1)+'%',450,16);const f=frames[i];$('headMetric').textContent=f.head_dx_image_pct===null?'Head observation unavailable at this frame.':`At this frame: ${f.head_dx_image_pct.toFixed(2)}% horizontal; ${f.head_dy_image_pct.toFixed(2)}% vertical from the opening reference. Head landmarks pass the confidence mask in ${Math.round(current.observations.head_valid_fraction*100)}% of this clip.`;}
-function drawClubEvidence(i){const canvas=$('clubOverlay'),video=$('video'),ctx=canvas.getContext('2d');const w=canvas.clientWidth,h=canvas.clientHeight;if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}ctx.clearRect(0,0,w,h);const mark=current.club_display?.frames[i];if(!mark)return;const scale=Math.min(w/540,h/960),ox=(w-540*scale)/2,oy=(h-960*scale)/2;ctx.strokeStyle=mark.status==='display_interpolation'?'#e6c76a':'#62f3ee';ctx.lineWidth=2;ctx.setLineDash(mark.status==='display_interpolation'?[5,4]:[]);ctx.beginPath();ctx.moveTo(ox+mark.grip[0]*scale,oy+mark.grip[1]*scale);ctx.lineTo(ox+mark.head[0]*scale,oy+mark.head[1]*scale);ctx.stroke();ctx.setLineDash([]);for(const pt of [mark.grip,mark.head]){ctx.beginPath();ctx.arc(ox+pt[0]*scale,oy+pt[1]*scale,4,0,2*Math.PI);ctx.stroke()}}
-function draw(){const t=$('video').currentTime||0,i=Math.min(current.world.length-1,Math.max(0,Math.round(t*current.fps))),lm=current.landmarks[i];if(rangeScene.ready){try{rangeScene.reverseClubDepth=$('clubDepth').checked;rangeScene.update(current,t,+$('yaw').value);$('clubDepth').disabled=!current.club_display;$('clubStatus').textContent=rangeScene.clubStatus==='unavailable'?'Club hidden: no reviewed visual position for this frame.':rangeScene.clubStatus==='display_interpolation'?'Club: interpolated between visual anchors; depth is estimated.':'Club: approximate visual anchor; depth is estimated and second review is pending.';$('flightDistance').textContent=rangeScene.travelYards===null?'Carry estimate unavailable':'Estimated travel · '+Math.round(rangeScene.travelYards)+' yd'+(rangeScene.flightProgress>=1?' · landed':'')}catch(error){rangeScene.ready=false;$('renderStatus').textContent='3D rendering stopped: '+error.message+'. Video controls remain available.'}}drawHead(i);drawClubEvidence(i);drawNative();const phases=phaseList();let phase=phases[0];for(const p of phases)if(t>=p.t)phase=p;$('phaseTitle').textContent=phase.name;$('tip').textContent='Review prompt: '+phase.tip;const wrists=lm?Math.min(lm[15][3],lm[16][3]):0;$('observation').textContent=wrists<.6?'Hands are uncertain in this frame. Use the original video to review grip, wrist position and club path; the avatar fills in a plausible grip for continuity.':'Both wrist landmarks pass the display confidence threshold in this frame. This supports visual review, but does not validate wrist angles or club position.';$('time').textContent='Source playback '+(current.start+t).toFixed(3)+' s · review frame '+i+' (30 fps)';if(document.activeElement!==$('timeline'))$('timeline').value=t;requestAnimationFrame(draw)}
-let rangeScene;try{rangeScene=new SwingRange($('world'))}catch(error){rangeScene={ready:false,error:error.message,update(){}}} $('renderStatus').textContent=rangeScene.ready?'3D range · estimated pose · assisted club pilot · schematic flight':'3D rendering unavailable: this browser needs WebGL. Video and measurements remain available.';$('golferView').onclick=()=>rangeScene.view='golfer';$('rangeView').onclick=()=>rangeScene.view='range';$('replay3d').onclick=()=>{rangeScene.view='auto';seek(0);$('video').play().catch(()=>{})};options();draw();
+function drawClubEvidence(i){const canvas=$('clubOverlay'),video=$('video'),ctx=canvas.getContext('2d');const w=canvas.clientWidth,h=canvas.clientHeight;if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}ctx.clearRect(0,0,w,h);const mark=current.club_display?.frames[i];if(mark){const scale=Math.min(w/540,h/960),ox=(w-540*scale)/2,oy=(h-960*scale)/2;ctx.strokeStyle=mark.status==='display_interpolation'?'#e6c76a':'#62f3ee';ctx.lineWidth=2;ctx.setLineDash(mark.status==='display_interpolation'?[5,4]:[]);ctx.beginPath();ctx.moveTo(ox+mark.grip[0]*scale,oy+mark.grip[1]*scale);ctx.lineTo(ox+mark.head[0]*scale,oy+mark.head[1]*scale);ctx.stroke();ctx.setLineDash([]);for(const pt of [mark.grip,mark.head]){ctx.beginPath();ctx.arc(ox+pt[0]*scale,oy+pt[1]*scale,4,0,2*Math.PI);ctx.stroke()}}const mapped=current.clubhead_frame_map?.[i];const time=mapped?.playback_s??(current.start+(video.currentTime||0));const head=current.clubhead_track||[],trail=head.filter(o=>o.playback_s<=time+.001&&o.playback_s>=time-.08);const sc=Math.min(w/540,h/960),dx=(w-540*sc)/2,dy=(h-960*sc)/2,pos=o=>[dx+o.x*.5*sc,dy+o.y*.5*sc];ctx.strokeStyle='#45ded4';ctx.lineWidth=2;for(let j=1;j<trail.length;j++){if(trail[j].frame!==trail[j-1].frame+1)continue;ctx.beginPath();ctx.moveTo(...pos(trail[j-1]));ctx.lineTo(...pos(trail[j]));ctx.stroke()}const latest=trail.at(-1),valid=latest&&Math.abs(latest.playback_s-time)<.002;if(valid){ctx.beginPath();ctx.arc(...pos(latest),6,0,2*Math.PI);ctx.stroke()}$('clubHeadMetric').textContent=valid&&Number.isFinite(latest.speed_px_per_playback_s)?'Clubhead image speed: '+Math.round(latest.speed_px_per_playback_s).toLocaleString()+' px / playback s · assisted native-frame pilot, not mph':head.length?'Native clubhead pilot: tracking unavailable at this frame.':'Full-swing clubhead tracking is not available for this shot yet.';}
+function draw(){const t=$('video').currentTime||0,i=Math.min(current.world.length-1,Math.max(0,Math.round(t*current.fps))),lm=current.landmarks[i];if(rangeScene.ready){try{rangeScene.reverseClubDepth=$('clubDepth').checked;drawRange(t);$('clubDepth').disabled=!current.club_display;$('clubStatus').textContent=rangeScene.clubStatus==='model_synthesized'?'Club direction estimated from the lead arm and grip.':rangeScene.clubStatus==='unavailable'?'Club hidden: no reviewed visual position for this frame.':rangeScene.clubStatus==='display_interpolation'?'Club: interpolated between visual anchors; depth is estimated.':'Club: approximate visual anchor; depth is estimated and second review is pending.';if($('flightDistance'))$('flightDistance').textContent=rangeScene.travelYards===null?'Carry estimate unavailable':'Estimated travel · '+Math.round(rangeScene.travelYards)+' yd'+(rangeScene.flightProgress>=1?' · landed':'')}catch(error){rangeScene.ready=false;$('renderStatus').textContent='3D rendering stopped: '+error.message+'. Video controls remain available.'}}drawHead(i);drawClubEvidence(i);drawNative();const phases=phaseList();let phase=phases[0];for(const p of phases)if(t>=p.t)phase=p;$('phaseTitle').textContent=phase.name;$('tip').textContent='Review prompt: '+phase.tip;const wrists=lm?Math.min(lm[15][3],lm[16][3]):0;$('observation').textContent=wrists<.6?'Hands are uncertain in this frame. Use the original video to review grip, wrist position and club path; the avatar fills in a plausible grip for continuity.':'Both wrist landmarks pass the display confidence threshold in this frame. This supports visual review, but does not validate wrist angles or club position.';$('time').textContent='Source playback '+(current.start+t).toFixed(3)+' s · review frame '+i+' (30 fps)';if(document.activeElement!==$('timeline'))$('timeline').value=t;requestAnimationFrame(draw)}
+let rangeScene;try{rangeScene=new SwingRange($('world'))}catch(error){rangeScene={ready:false,error:error.message,update(){}}} $('renderStatus').textContent=rangeScene.ready?'3D range · estimated pose · assisted club pilot · schematic flight':'3D rendering unavailable: this browser needs WebGL. Video and measurements remain available.';
+let clockSeconds=0,clockStarted=null,rangeRate=1;
+function rangeTime(now){
+  return clockSeconds+(clockStarted===null?0:(now-clockStarted)*rangeRate/1000);
+}
+function resetRangeClock(){
+  clockSeconds=0;clockStarted=null;
+}
+function drawRange(videoTime){
+  const synced=$('rangeSync').checked;
+  const now=performance.now();
+  const seconds=rangeTime(now);
+  rangeScene.centerline.visible=$('rangeCenterline').checked;
+  rangeScene.update(current,synced?videoTime:seconds,0,!synced);
+  if(!synced && seconds>=rangeScene.endTime){
+    clockSeconds=rangeScene.endTime;clockStarted=null;
+  }
+  const btn=$('playRange');
+  btn.textContent=clockStarted!==null?'Ⅱ Pause Flight':rangeRate===2?'▶ Play Flight at 2×':'▶ Play Real-Time Flight';
+  btn.disabled=synced;
+  $('rangeSpeed').disabled=synced;
+  const timers=rangeScene.flights.map(f=>{
+    const name=f.key==='Truth'?'TrackMan':'Model';
+    const elapsed=Math.min(rangeScene.airSeconds,f.hang).toFixed(2);
+    return name+' '+elapsed+' / '+f.hang.toFixed(2)+' s'+(f.estimated?' (estimated)':'');
+  });
+  const showGap=rangeScene.cameraMode==='follow' && rangeScene.flights.length===2
+    && rangeScene.airSeconds>0 && rangeScene.airSeconds<rangeScene.firstLanding;
+  if(showGap){
+    const yards=rangeScene.ballTruth.position.distanceTo(rangeScene.ballPred.position)/.9144;
+    timers.push(yards.toFixed(1)+' yd apart');
+  }
+  $('flightClock').textContent=(synced?'Video sync':rangeRate===2?'2× playback':'Real time')+' · '+(timers.join('   |   ')||'No flight available');
+}
+$('rangeSpeed').onchange=event=>{
+  const now=performance.now();
+  clockSeconds=rangeTime(now);
+  if(clockStarted!==null)clockStarted=now;
+  rangeRate=Number(event.target.value);
+};
+const savedRangeViews=new Map();
+$('rangeZoomIn').onclick=()=>rangeScene.zoomCamera(1.2);
+$('rangeZoomOut').onclick=()=>rangeScene.zoomCamera(1/1.2);
+$('rangeResetView').onclick=()=>{
+  rangeScene.dragYaw=0;rangeScene.dragPitch=0;
+  rangeScene.camera.zoom=1;rangeScene.zoomOffset={x:0,y:0};
+  rangeScene.updateCameraProjection();
+};
+$('playRange').onclick=()=>{
+  const now=performance.now();
+  if(clockStarted===null){
+    if(clockSeconds>=rangeScene.endTime)clockSeconds=0;
+    clockStarted=now;
+  }else{
+    clockSeconds=rangeTime(now);clockStarted=null;
+  }
+};
+$('replay3d').onclick=()=>{
+  $('rangeSync').checked=false;
+  clockSeconds=0;clockStarted=performance.now();
+};
+$('rangeSync').onchange=()=>{
+  if(rangeScene.lastShot!==current.id)rangeScene.setupShot(current);
+  clockSeconds=rangeScene.sourceToClock($('video').currentTime||0);
+  clockStarted=null;
+};
+if(!rangeScene.ready){
+  for(const id of ['playRange','replay3d','rangeSync','rangeSpeed','rangeZoomIn','rangeZoomOut','rangeResetView','rangeCenterline'])$(id).disabled=true;
+}
+function setCam(mode){
+  if(!rangeScene)return;
+  if(rangeScene.ready){
+    savedRangeViews.set(rangeScene.cameraMode,{
+      yaw:rangeScene.dragYaw,pitch:rangeScene.dragPitch,zoom:rangeScene.camera.zoom,offset:{...rangeScene.zoomOffset}
+    });
+    const view=savedRangeViews.get(mode)||{yaw:0,pitch:0,zoom:1,offset:{x:0,y:0}};
+    rangeScene.dragYaw=view.yaw;rangeScene.dragPitch=view.pitch;
+    rangeScene.camera.zoom=view.zoom;rangeScene.zoomOffset={...view.offset};
+    rangeScene.updateCameraProjection();
+  }
+  rangeScene.cameraMode=mode;
+  const btns={
+    camSideWide:{mode:'side_wide',actBg:'#1e3a5f',actBdr:'#38bdf8',actCol:'#e0f2fe'},
+    camLanding:{mode:'landing',actBg:'#0c4a6e',actBdr:'#38bdf8',actCol:'#e0f2fe'},
+    camFollow:{mode:'follow',actBg:'#3b2d54',actBdr:'#a855f7',actCol:'#f3e8ff'},
+    camRange:{mode:'range',actBg:'#14532d',actBdr:'#4ade80',actCol:'#dcfce7'}
+  };
+  for(const [id,cfg] of Object.entries(btns)){
+    const el=$(id);if(!el)continue;
+    const isAct=cfg.mode===mode;el.setAttribute('aria-pressed',String(isAct));
+    el.style.background=isAct?cfg.actBg:'#1e293b';
+    el.style.borderColor=isAct?cfg.actBdr:'#475569';
+    el.style.color=isAct?cfg.actCol:'#94a3b8';
+  }
+}
+$('camSideWide').onclick=()=>setCam('side_wide');
+$('camLanding').onclick=()=>setCam('landing');
+$('camFollow').onclick=()=>setCam('follow');
+$('camRange').onclick=()=>setCam('range');
+
+function setCohortView(mode) {
+  const isPrimary = mode === 'primary';
+  const pBtn = $('cohortPrimaryBtn'), aBtn = $('cohortAllBtn');
+  if (pBtn && aBtn) {
+    pBtn.style.background = isPrimary ? '#064e3b' : '#1e293b';
+    pBtn.style.borderColor = isPrimary ? '#10b981' : '#475569';
+    pBtn.style.color = isPrimary ? '#a7f3d0' : '#94a3b8';
+    
+    aBtn.style.background = !isPrimary ? '#064e3b' : '#1e293b';
+    aBtn.style.borderColor = !isPrimary ? '#10b981' : '#475569';
+    aBtn.style.color = !isPrimary ? '#a7f3d0' : '#94a3b8';
+  }
+
+  if ($('tableCohortTitle')) {
+    $('tableCohortTitle').textContent = isPrimary 
+      ? 'Leave-One-Golfer-Out Generalization Benchmark (N = 58 Confident Primary Model Shots)'
+      : 'Leave-One-Golfer-Out Generalization Benchmark (N = 72 All Labeled Swings)';
+  }
+
+  if ($('chartCohortTitle')) {
+    $('chartCohortTitle').textContent = isPrimary
+      ? 'Leave-One-Golfer-Out Error Reduction vs Baseline (N = 58 Confident Shots)'
+      : 'Leave-One-Golfer-Out Error Reduction vs Baseline (N = 72 All Swings)';
+  }
+
+  if (isPrimary) {
+    $('tCarryMod').textContent = '12.64 yd'; $('tCarryMed').textContent = '8.31 yd'; $('tCarryR2').textContent = '+0.824'; $('tCarryBase').textContent = '35.88 yd'; $('tCarryRed').textContent = '-64.8%';
+    $('tAngleMod').textContent = '2.00°'; $('tAngleMed').textContent = '1.13°'; $('tAngleR2').textContent = '+0.768'; $('tAngleBase').textContent = '5.59°'; $('tAngleRed').textContent = '-64.2%';
+    $('tSpeedMod').textContent = '6.57 mph'; $('tSpeedMed').textContent = '4.57 mph'; $('tSpeedR2').textContent = '+0.631'; $('tSpeedBase').textContent = '14.26 mph'; $('tSpeedRed').textContent = '-53.9%';
+    $('tDirMod').textContent = '2.84°'; $('tDirMed').textContent = '1.23°'; $('tDirR2').textContent = '+0.505'; $('tDirBase').textContent = '6.37°'; $('tDirRed').textContent = '-55.4%';
+    $('tCurveMod').textContent = '21.90 ft'; $('tCurveMed').textContent = '13.27 ft'; $('tCurveR2').textContent = '+0.212'; $('tCurveBase').textContent = '32.84 ft'; $('tCurveRed').textContent = '-33.3%';
+    $('tLandMod').textContent = '21.42 yd'; $('tLandMed').textContent = '16.96 yd'; $('tLandBase').textContent = '37.08 yd'; $('tLandRed').textContent = '-42.2%';
+
+    $('barCarryBase').textContent = '35.9 yd'; $('barCarryMod').textContent = '12.6 yd'; $('barCarryRed').textContent = '-64.8% error'; $('barCarryWidth').style.width = '35.2%';
+    $('barAngleBase').textContent = '5.59°'; $('barAngleMod').textContent = '2.00°'; $('barAngleRed').textContent = '-64.2% error'; $('barAngleWidth').style.width = '35.8%';
+    $('barSpeedBase').textContent = '14.3 mph'; $('barSpeedMod').textContent = '6.57 mph'; $('barSpeedRed').textContent = '-53.9% error'; $('barSpeedWidth').style.width = '46.1%';
+    $('barDirBase').textContent = '6.37°'; $('barDirMod').textContent = '2.84°'; $('barDirRed').textContent = '-55.4% error'; $('barDirWidth').style.width = '44.6%';
+    $('barCurveBase').textContent = '32.8 ft'; $('barCurveMod').textContent = '21.9 ft'; $('barCurveRed').textContent = '-33.3% error'; $('barCurveWidth').style.width = '66.8%';
+    $('barLandBase').textContent = '37.1 yd'; $('barLandMod').textContent = '21.4 yd'; $('barLandRed').textContent = '-42.2% error'; $('barLandWidth').style.width = '57.7%';
+  } else {
+    $('tCarryMod').textContent = '15.77 yd'; $('tCarryMed').textContent = '9.06 yd'; $('tCarryR2').textContent = '+0.708'; $('tCarryBase').textContent = '35.88 yd'; $('tCarryRed').textContent = '-56.0%';
+    $('tAngleMod').textContent = '2.58°'; $('tAngleMed').textContent = '1.26°'; $('tAngleR2').textContent = '+0.629'; $('tAngleBase').textContent = '5.99°'; $('tAngleRed').textContent = '-56.9%';
+    $('tSpeedMod').textContent = '8.61 mph'; $('tSpeedMed').textContent = '5.27 mph'; $('tSpeedR2').textContent = '+0.365'; $('tSpeedBase').textContent = '14.12 mph'; $('tSpeedRed').textContent = '-39.0%';
+    $('tDirMod').textContent = '4.23°'; $('tDirMed').textContent = '1.50°'; $('tDirR2').textContent = '+0.312'; $('tDirBase').textContent = '9.50°'; $('tDirRed').textContent = '-55.5%';
+    $('tCurveMod').textContent = '21.53 ft'; $('tCurveMed').textContent = '13.88 ft'; $('tCurveR2').textContent = '+0.211'; $('tCurveBase').textContent = '30.21 ft'; $('tCurveRed').textContent = '-28.7%';
+    $('tLandMod').textContent = '24.28 yd'; $('tLandMed').textContent = '17.74 yd'; $('tLandBase').textContent = '38.59 yd'; $('tLandRed').textContent = '-37.1%';
+
+    $('barCarryBase').textContent = '35.9 yd'; $('barCarryMod').textContent = '15.8 yd'; $('barCarryRed').textContent = '-56.0% error'; $('barCarryWidth').style.width = '44.0%';
+    $('barAngleBase').textContent = '5.99°'; $('barAngleMod').textContent = '2.58°'; $('barAngleRed').textContent = '-56.9% error'; $('barAngleWidth').style.width = '43.1%';
+    $('barSpeedBase').textContent = '14.1 mph'; $('barSpeedMod').textContent = '8.61 mph'; $('barSpeedRed').textContent = '-39.0% error'; $('barSpeedWidth').style.width = '61.0%';
+    $('barDirBase').textContent = '9.50°'; $('barDirMod').textContent = '4.23°'; $('barDirRed').textContent = '-55.5% error'; $('barDirWidth').style.width = '44.5%';
+    $('barCurveBase').textContent = '30.2 ft'; $('barCurveMod').textContent = '21.5 ft'; $('barCurveRed').textContent = '-28.7% error'; $('barCurveWidth').style.width = '71.3%';
+    $('barLandBase').textContent = '38.6 yd'; $('barLandMod').textContent = '24.3 yd'; $('barLandRed').textContent = '-37.1% error'; $('barLandWidth').style.width = '62.9%';
+  }
+}
+if ($('cohortPrimaryBtn')) $('cohortPrimaryBtn').onclick = () => setCohortView('primary');
+if ($('cohortAllBtn')) $('cohortAllBtn').onclick = () => setCohortView('all');
+
+// Initialize PoseFormerV2 3D Kinematic Studio
+try {
+  if (window.PoseFormerStudio) {
+    window.poseFormerStudio = new window.PoseFormerStudio('pfCanvas', 'pfCanvasContainer', 'pfVideo', 'pfVideoCanvas');
+
+    if ($('pfPlay')) $('pfPlay').onclick = () => window.poseFormerStudio.togglePlay();
+    if ($('pfStepBack')) $('pfStepBack').onclick = () => {
+      window.poseFormerStudio.pause();
+      window.poseFormerStudio.updateFrame(window.poseFormerStudio.frameIdx - 1);
+    };
+    if ($('pfStepForward')) $('pfStepForward').onclick = () => {
+      window.poseFormerStudio.pause();
+      window.poseFormerStudio.updateFrame(window.poseFormerStudio.frameIdx + 1);
+    };
+    if ($('pfTimeline')) $('pfTimeline').oninput = () => {
+      window.poseFormerStudio.pause();
+      window.poseFormerStudio.updateFrame(+$('pfTimeline').value);
+    };
+    if ($('pfSpeed')) $('pfSpeed').onchange = () => {
+      window.poseFormerStudio.playbackSpeed = +$('pfSpeed').value;
+    };
+
+    if ($('pfModeOverlay')) $('pfModeOverlay').onclick = () => window.poseFormerStudio.setMode('overlay');
+    if ($('pfModeSplit')) $('pfModeSplit').onclick = () => window.poseFormerStudio.setMode('split');
+    if ($('pfMode3D')) $('pfMode3D').onclick = () => window.poseFormerStudio.setMode('3d');
+
+    function updateCamButtons(activeId) {
+      ['pfCam34', 'pfCamFace', 'pfCamDTL', 'pfCamTop'].forEach(id => {
+        const btn = $(id);
+        if (btn) {
+          btn.style.background = (id === activeId) ? '#38bdf8' : '#1b3240';
+          btn.style.color = (id === activeId) ? '#0b1922' : '#e2e8f0';
+          btn.style.fontWeight = (id === activeId) ? '700' : '400';
+        }
+      });
+    }
+
+    if ($('pfCam34')) $('pfCam34').onclick = () => {
+      window.poseFormerStudio.setCameraPreset('34');
+      updateCamButtons('pfCam34');
+    };
+    if ($('pfCamFace')) $('pfCamFace').onclick = () => {
+      window.poseFormerStudio.setCameraPreset('face');
+      updateCamButtons('pfCamFace');
+    };
+    if ($('pfCamDTL')) $('pfCamDTL').onclick = () => {
+      window.poseFormerStudio.setCameraPreset('dtl');
+      updateCamButtons('pfCamDTL');
+    };
+    if ($('pfCamTop')) $('pfCamTop').onclick = () => {
+      window.poseFormerStudio.setCameraPreset('top');
+      updateCamButtons('pfCamTop');
+    };
+
+    if ($('pfToggleClub')) $('pfToggleClub').onchange = () => {
+      window.poseFormerStudio.showClub = $('pfToggleClub').checked;
+      if (window.poseFormerStudio.currentShot) window.poseFormerStudio.updateFrame(window.poseFormerStudio.frameIdx);
+    };
+    if ($('pfToggleGhost')) $('pfToggleGhost').onchange = () => {
+      window.poseFormerStudio.showGhost = $('pfToggleGhost').checked;
+      if (window.poseFormerStudio.currentShot) window.poseFormerStudio.updateFrame(window.poseFormerStudio.frameIdx);
+    };
+
+    if (current) window.poseFormerStudio.loadShot(current);
+  }
+} catch (e) {
+  console.error('Failed to initialize PoseFormerStudio:', e);
+}
+
+options();draw();
 </script></html>

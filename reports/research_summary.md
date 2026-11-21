@@ -1,5 +1,20 @@
 # Research summary and delivery status
 
+## Current viewer endpoint model
+
+The range uses golfer-held-out predictions for carry, carry side, total and total side. Forward rollout uses predicted carry, speed, launch angle, apex height, landing angle and hang time. These are errors in yards against a baseline that predicts the other golfers’ mean distances and coordinates.
+
+| Metric | Primary geometry, 58 | Mean baseline, 58 | Displayed, 69 | Mean baseline, 69 |
+|---|---:|---:|---:|---:|
+| Carry MAE | 12.64 | 42.17 | 15.59 | 39.92 |
+| Total MAE | 10.77 | 31.00 | 13.44 | 30.04 |
+| Mean 2D landing miss | 18.70 | 47.21 | 23.22 | 46.14 |
+| Mean 2D final miss | 18.10 | 38.39 | 23.11 | 38.72 |
+
+Lucas 02 contributes to the historical 58-shot geometry cohort. The displayed cohort excludes its rejected club track and includes 57 accepted primary predictions and 12 fallback shots. The prior viewer’s mean 2D final miss on these 69 was 29.27 yards. The reduction is 6.16 yards. An independent-model control with updated lateral predictions scored 23.68 yards, so 0.57 yards of the improvement is attributable to sharing launch estimates. [Per-cohort results](../experiments/label_stack_v1/deployed_cohorts.csv)
+
+
+
 The available-data research system is implemented and has been run. It preserves the original recordings, matches 76 strikes, evaluates 72 labeled outcomes, and exposes failures as well as successful examples. It is not yet a validated replacement for a launch monitor. The production application remains gated by tracking and external validation, as requested in the project brief.
 
 ## Findings

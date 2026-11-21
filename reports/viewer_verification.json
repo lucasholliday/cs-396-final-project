@@ -5,7 +5,7 @@
   "early_oof_evaluations": 6,
   "source_bound_point_review_panels": 18,
   "native_review_clips": 76,
-  "native_review_frames": 19938,
+  "native_review_frames": 34981,
   "provisional_departure_intervals": 12,
   "browser_ui_check": "not_completed_browser_host_unavailable_and_native_app_timeout"
 }

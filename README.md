@@ -176,3 +176,11 @@ The shaft-detector command defaults to six representative shots. Unreviewed dete
 Direct watch/carry feature inspection: `.venv/bin/python scripts/watch_carry_relationships.py`; see `reports/watch_carry_relationships.md`. This is descriptive correlation analysis, separate from held-out model evaluation.
 
 Exact matched-cohort cutoff comparison: `.venv/bin/python scripts/carry_cutoff_comparison.py`; see `reports/carry_cutoff_comparison.md`. Includes existing-model subgroup scores and separately trained conditional models at strictly >70 and >100 yd. Actual outcome filtering is for research analysis only.
+
+## Wide native ball review and joint landing models
+
+The November 19 checkpoint compares two tracking crops and 35/70 ms gap recovery, with native-frame samples enabling wider playback on ten shots. It also evaluates separate and joint landing/rollout models on identical golfer-held-out rows. See [results and reproduction commands](reports/ball_extension_and_joint_landing.md).
+
+The [ball motion cutoff report](reports/ball_motion_gate_results.md) compares 60/80/150 ms launch windows and gives paired carry, landing and resting results. The wider review stays active, with a separate display check for sustained stationary detections.
+
+The [native-frame shaft review](reports/native_swing_shaft_review.md) includes commands for both all-shot searches, a higher-resolution comparison and a clubhead tracking pilot.

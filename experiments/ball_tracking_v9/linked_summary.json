@@ -1,0 +1,9 @@
+{
+  "reference_points": 78,
+  "shots": 31,
+  "candidate_tracks": 72,
+  "evaluated_windows": 76,
+  "reference_recall_16px": 0.6538461538461539,
+  "reference_recall_32px": 0.6666666666666666,
+  "warning": "Sparse reference recall is not full-track precision. Additional tracked points remain unreviewed."
+}

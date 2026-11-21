@@ -1,0 +1,4322 @@
+[
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "legacy_unverified",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 23.50067095786015,
+      "ridge100": 26.821548726413667,
+      "svr1": 23.55872482642161,
+      "svr10": 26.816051600916158,
+      "trees": 24.47723229340082,
+      "pls2": 22.239231380421547
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "clean_launch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 22.41986079689191,
+      "ridge100": 27.445602308319728,
+      "svr1": 22.380985773151345,
+      "svr10": 26.12500991092978,
+      "trees": 23.407863169354762,
+      "pls2": 21.963673872575274
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 23.654010242392594,
+      "ridge100": 24.84151952425867,
+      "svr1": 21.322401357043894,
+      "svr10": 22.87682102920991,
+      "trees": 20.487694865389994,
+      "pls2": 22.42459308872534
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "fixed_time",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 22.210969722071816,
+      "ridge100": 24.298883288715505,
+      "svr1": 22.354896879644556,
+      "svr10": 24.908749122077886,
+      "trees": 23.62711217618359,
+      "pls2": 23.464633463422423
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "body_normalized",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 24.03316594243349,
+      "ridge100": 25.653280189428177,
+      "svr1": 23.7724997760697,
+      "svr10": 26.30699911092034,
+      "trees": 25.096554516764826,
+      "pls2": 25.219116813110947
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "perspective",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 24.38466955489372,
+      "ridge100": 28.93439967081278,
+      "svr1": 25.67209789864323,
+      "svr10": 23.886704760970336,
+      "trees": 22.896480716677814,
+      "pls2": 25.021537104528957
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_combined",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 21.666331962867158,
+      "ridge100": 23.119989950158892,
+      "svr1": 21.838300075503376,
+      "svr10": 23.312863199928547,
+      "trees": 22.304641098639223,
+      "pls2": 21.33688076415293
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_body",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 29.069904261016667,
+      "ridge100": 23.3217240430899,
+      "svr1": 25.954060970954718,
+      "svr10": 27.51013134785247,
+      "trees": 22.864636222390185,
+      "pls2": 23.18237705494044
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_watch",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 20.266805010789344,
+      "ridge100": 21.847227139332613,
+      "svr1": 27.059378211023397,
+      "svr10": 28.47534612195913,
+      "trees": 23.989395607625777,
+      "pls2": 22.103439118340987
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 32.53093458245542,
+      "ridge100": 26.243228598591262,
+      "svr1": 26.745755516314617,
+      "svr10": 27.816871302715747,
+      "trees": 23.47039468379945,
+      "pls2": 28.039212795871986
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_watch_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 30.788703155265193,
+      "ridge100": 25.118640056975455,
+      "svr1": 28.443666861929774,
+      "svr10": 28.641949678477662,
+      "trees": 24.748495338876292,
+      "pls2": 25.874580217080723
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_all_contact",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 28.744082172175613,
+      "ridge100": 24.858016701470177,
+      "svr1": 29.185740379276584,
+      "svr10": 27.051240876572667,
+      "trees": 23.345579491055677,
+      "pls2": 22.371354640224364
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "early_velocity",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 23.654010242392594,
+      "ridge100": 24.84151952425867,
+      "svr1": 21.322401357043894,
+      "svr10": 22.87682102920991,
+      "trees": 20.487694865389994,
+      "pls2": 22.42459308872534
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "nested_fusion",
+    "selected": "ridge10",
+    "selected_features": "video_watch",
+    "inner_mae": {
+      "mean": 33.89176515794223,
+      "median": 34.58730158730159,
+      "ridge10": 20.266805010789344,
+      "ridge100": 21.847227139332613,
+      "svr1": 27.059378211023397,
+      "svr10": 28.47534612195913,
+      "trees": 23.989395607625777,
+      "pls2": 22.103439118340987
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "legacy_unverified",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 37.117866609770196,
+      "ridge100": 37.87203289776946,
+      "svr1": 36.39985827197843,
+      "svr10": 38.560715577175046,
+      "trees": 29.446950205588788,
+      "pls2": 37.84006406323483
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "clean_launch",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 34.10061168170276,
+      "ridge100": 37.12027937358724,
+      "svr1": 36.76363062417195,
+      "svr10": 40.13071560229036,
+      "trees": 28.82930695386616,
+      "pls2": 38.48184485268025
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 35.246569289407745,
+      "ridge100": 38.785773314081,
+      "svr1": 32.48267720406947,
+      "svr10": 35.29619717169623,
+      "trees": 29.655612905728262,
+      "pls2": 33.01385832942646
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "fixed_time",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 32.55247275142663,
+      "ridge100": 32.581556639180185,
+      "svr1": 34.97013082713961,
+      "svr10": 31.92253845023084,
+      "trees": 31.228801708263248,
+      "pls2": 29.302123266180907
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "body_normalized",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 32.76054466960704,
+      "ridge100": 33.41843974866019,
+      "svr1": 36.131439137295104,
+      "svr10": 36.14993154663347,
+      "trees": 32.32724503612485,
+      "pls2": 30.17998954016054
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "perspective",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 35.4529934410248,
+      "ridge100": 40.320402122597066,
+      "svr1": 35.612919313898246,
+      "svr10": 32.48871979397417,
+      "trees": 26.87627429483105,
+      "pls2": 35.934623797052375
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_combined",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 32.43349837863009,
+      "ridge100": 32.44025464681804,
+      "svr1": 35.55099745552004,
+      "svr10": 32.673065887283485,
+      "trees": 30.962721725923664,
+      "pls2": 30.223524750071178
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_body",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 37.59458528752213,
+      "ridge100": 33.464609094440796,
+      "svr1": 35.32353445700778,
+      "svr10": 32.48421539733778,
+      "trees": 34.49605448717951,
+      "pls2": 37.67747033987625
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_watch",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 29.21173808510023,
+      "ridge100": 30.56169970404898,
+      "svr1": 35.41615390176913,
+      "svr10": 31.972335579422612,
+      "trees": 29.223154609279614,
+      "pls2": 29.769485266364224
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_club",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 27.62135710595644,
+      "ridge100": 32.98427754818637,
+      "svr1": 37.36155511393223,
+      "svr10": 36.74479344530495,
+      "trees": 31.743067307692307,
+      "pls2": 30.330858031938043
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_watch_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 28.69733414362294,
+      "ridge100": 30.481485973571083,
+      "svr1": 36.85889736633737,
+      "svr10": 35.32567384722058,
+      "trees": 29.971565679690677,
+      "pls2": 28.418459494237325
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_all_contact",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 33.25033906660485,
+      "ridge100": 30.958499578037618,
+      "svr1": 37.31959452835996,
+      "svr10": 36.31519470284761,
+      "trees": 30.655875305250298,
+      "pls2": 28.92307285089548
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 35.4529934410248,
+      "ridge100": 40.320402122597066,
+      "svr1": 35.612919313898246,
+      "svr10": 32.48871979397417,
+      "trees": 26.87627429483105,
+      "pls2": 35.934623797052375
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "nested_fusion",
+    "selected": "trees",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 44.761354322221365,
+      "median": 40.92307692307692,
+      "ridge10": 35.4529934410248,
+      "ridge100": 40.320402122597066,
+      "svr1": 35.612919313898246,
+      "svr10": 32.48871979397417,
+      "trees": 26.87627429483105,
+      "pls2": 35.934623797052375
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "legacy_unverified",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 33.3003654958342,
+      "ridge100": 35.35614421499215,
+      "svr1": 31.023857304632642,
+      "svr10": 36.728746366653745,
+      "trees": 35.91824335356003,
+      "pls2": 33.015030837836704
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "clean_launch",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 33.0725251225092,
+      "ridge100": 35.69543415644956,
+      "svr1": 31.141585458596023,
+      "svr10": 38.75294505515491,
+      "trees": 34.734190120841475,
+      "pls2": 32.362214167857516
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "early_velocity",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 29.70156477535686,
+      "ridge100": 33.78302142875165,
+      "svr1": 26.10105831855209,
+      "svr10": 26.38763243894978,
+      "trees": 28.760268753850987,
+      "pls2": 28.900722326284228
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "fixed_time",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 24.114250581016886,
+      "ridge100": 29.013671439993917,
+      "svr1": 25.25543558578163,
+      "svr10": 27.065069820332535,
+      "trees": 26.598573141401083,
+      "pls2": 23.591356246981494
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "body_normalized",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 26.163422262337427,
+      "ridge100": 29.999561620635568,
+      "svr1": 24.996595327397106,
+      "svr10": 27.58645253287126,
+      "trees": 27.614389934194357,
+      "pls2": 24.42067479911156
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "perspective",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 28.90777487490208,
+      "ridge100": 35.62371921434286,
+      "svr1": 29.94395962528508,
+      "svr10": 28.777922298768818,
+      "trees": 31.300526379096762,
+      "pls2": 30.5826311019023
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_combined",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 22.674330051439558,
+      "ridge100": 28.117855449259952,
+      "svr1": 24.54178829992258,
+      "svr10": 27.175045727900375,
+      "trees": 27.73625846067512,
+      "pls2": 22.980610844070966
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_body",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 29.045548288063273,
+      "ridge100": 25.79936641004844,
+      "svr1": 29.136935166636594,
+      "svr10": 29.160937262093896,
+      "trees": 26.497378262786594,
+      "pls2": 22.314401296985242
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_watch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 20.113213910702612,
+      "ridge100": 25.035021762576186,
+      "svr1": 30.508616634750584,
+      "svr10": 32.67809056058869,
+      "trees": 29.88880468173802,
+      "pls2": 18.979815719478548
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_club",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 31.938604121229393,
+      "ridge100": 34.84591838438418,
+      "svr1": 32.57169536908072,
+      "svr10": 31.360401379582235,
+      "trees": 31.50904942680776,
+      "pls2": 39.55796363594196
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_watch_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 31.62722293736467,
+      "ridge100": 29.585875798365127,
+      "svr1": 34.90670997750594,
+      "svr10": 35.87752321454698,
+      "trees": 31.64762945326279,
+      "pls2": 28.837805917265932
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_all_contact",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 29.380796704237532,
+      "ridge100": 32.55109842772582,
+      "svr1": 36.35059029100299,
+      "svr10": 35.53858983157568,
+      "trees": 32.48475661375662,
+      "pls2": 34.73605681823945
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "nested_video",
+    "selected": "pls2",
+    "selected_features": "video_body",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 29.045548288063273,
+      "ridge100": 25.79936641004844,
+      "svr1": 29.136935166636594,
+      "svr10": 29.160937262093896,
+      "trees": 26.497378262786594,
+      "pls2": 22.314401296985242
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "nested_fusion",
+    "selected": "pls2",
+    "selected_features": "video_watch",
+    "inner_mae": {
+      "mean": 40.522819548872185,
+      "median": 43.18333333333333,
+      "ridge10": 20.113213910702612,
+      "ridge100": 25.035021762576186,
+      "svr1": 30.508616634750584,
+      "svr10": 32.67809056058869,
+      "trees": 29.88880468173802,
+      "pls2": 18.979815719478548
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "legacy_unverified",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 26.423145315714482,
+      "ridge100": 30.221788338462744,
+      "svr1": 27.294315602693562,
+      "svr10": 34.80973444789689,
+      "trees": 28.037494781666776,
+      "pls2": 27.33978819715614
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "clean_launch",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 25.964749113513253,
+      "ridge100": 31.24078338681161,
+      "svr1": 25.889550070508463,
+      "svr10": 32.93268024282327,
+      "trees": 27.072242508000546,
+      "pls2": 26.851683126330695
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 24.71552602343964,
+      "ridge100": 28.939537208505417,
+      "svr1": 24.48034712129211,
+      "svr10": 28.58223539121131,
+      "trees": 22.721032139625134,
+      "pls2": 24.782445200366222
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "fixed_time",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 28.090369482258236,
+      "ridge100": 26.80601416275444,
+      "svr1": 27.576386283118556,
+      "svr10": 31.528538293378826,
+      "trees": 27.429593118432088,
+      "pls2": 26.090162018512782
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "body_normalized",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 29.519580818570162,
+      "ridge100": 27.330482447182565,
+      "svr1": 28.87076243208226,
+      "svr10": 32.484434012266306,
+      "trees": 28.107314912331855,
+      "pls2": 26.85941477995632
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "perspective",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 26.10036366213504,
+      "ridge100": 32.57072227303883,
+      "svr1": 26.448471729029098,
+      "svr10": 24.672290830158946,
+      "trees": 26.513709680152754,
+      "pls2": 29.34989117466761
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_combined",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 26.12257304735894,
+      "ridge100": 25.52301077890537,
+      "svr1": 27.141720980528515,
+      "svr10": 28.90116439012533,
+      "trees": 27.997971506835906,
+      "pls2": 24.255124167249033
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_body",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 24.088700979242503,
+      "ridge100": 20.655024586767304,
+      "svr1": 28.11423774955106,
+      "svr10": 28.539026250824552,
+      "trees": 19.31688807143892,
+      "pls2": 22.61813736741917
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_watch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 23.271032200368634,
+      "ridge100": 24.71263334560253,
+      "svr1": 31.84354803544491,
+      "svr10": 32.15691466253259,
+      "trees": 26.140927764326065,
+      "pls2": 23.210838351220342
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_club",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 29.18598901774399,
+      "ridge100": 28.002757142876604,
+      "svr1": 26.273702278463947,
+      "svr10": 25.806776744407884,
+      "trees": 30.09378226168058,
+      "pls2": 27.017029159483183
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_watch_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 27.766911213849028,
+      "ridge100": 26.42126374599069,
+      "svr1": 30.985973426457722,
+      "svr10": 31.274942485930783,
+      "trees": 29.89505259617971,
+      "pls2": 25.197878807606788
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_all_contact",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 26.979550480632124,
+      "ridge100": 26.46872600473192,
+      "svr1": 30.420788592922644,
+      "svr10": 29.40582524931371,
+      "trees": 29.553254775356464,
+      "pls2": 25.737975690727023
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "video_body",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 24.088700979242503,
+      "ridge100": 20.655024586767304,
+      "svr1": 28.11423774955106,
+      "svr10": 28.539026250824552,
+      "trees": 19.31688807143892,
+      "pls2": 22.61813736741917
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "nested_fusion",
+    "selected": "trees",
+    "selected_features": "video_body",
+    "inner_mae": {
+      "mean": 37.64721427698734,
+      "median": 40.25423728813559,
+      "ridge10": 24.088700979242503,
+      "ridge100": 20.655024586767304,
+      "svr1": 28.11423774955106,
+      "svr10": 28.539026250824552,
+      "trees": 19.31688807143892,
+      "pls2": 22.61813736741917
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "legacy_unverified",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 34.442007634064666,
+      "ridge100": 36.60164226772653,
+      "svr1": 32.0039597741721,
+      "svr10": 37.2540683630085,
+      "trees": 34.152030270483976,
+      "pls2": 36.7124079723971
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "clean_launch",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 33.32795193840859,
+      "ridge100": 36.24851255926716,
+      "svr1": 30.814479788518618,
+      "svr10": 35.37719307029746,
+      "trees": 33.364074091312816,
+      "pls2": 34.90235966098079
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 34.16724795492269,
+      "ridge100": 34.69328212272135,
+      "svr1": 29.46643365203908,
+      "svr10": 29.343374110303817,
+      "trees": 28.82250951030356,
+      "pls2": 32.31781083587494
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "fixed_time",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 27.765141880479344,
+      "ridge100": 29.76510352744854,
+      "svr1": 26.354614461457246,
+      "svr10": 27.041163185007765,
+      "trees": 27.32465188480931,
+      "pls2": 26.612834152741062
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "body_normalized",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 29.90784272905699,
+      "ridge100": 30.607522635091193,
+      "svr1": 28.149679519189267,
+      "svr10": 31.525544359153447,
+      "trees": 28.463885423903957,
+      "pls2": 28.448910778846372
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "perspective",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 33.38195830272921,
+      "ridge100": 36.58226583086375,
+      "svr1": 31.612186016699383,
+      "svr10": 31.320578826861418,
+      "trees": 33.31523046803058,
+      "pls2": 35.12816792239426
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_combined",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 27.56285487118082,
+      "ridge100": 29.96672371929956,
+      "svr1": 26.913079877683586,
+      "svr10": 26.90987354318238,
+      "trees": 29.188338330393897,
+      "pls2": 28.753054579985626
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_body",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 35.62415876167633,
+      "ridge100": 33.256538768162414,
+      "svr1": 32.94186674674394,
+      "svr10": 33.063724905832,
+      "trees": 31.683764550264552,
+      "pls2": 33.22078909309513
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_watch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 26.053841324302606,
+      "ridge100": 28.039180649445186,
+      "svr1": 29.79107686855792,
+      "svr10": 29.27028162678673,
+      "trees": 26.46506824417009,
+      "pls2": 24.5846087614377
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 32.628142681897025,
+      "ridge100": 29.042462188213875,
+      "svr1": 29.751238747362844,
+      "svr10": 29.63663823731024,
+      "trees": 28.743996129727613,
+      "pls2": 31.470297453619068
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_watch_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 27.647510441778287,
+      "ridge100": 27.94303278102813,
+      "svr1": 31.77472120382945,
+      "svr10": 31.329954530715288,
+      "trees": 27.28007735645699,
+      "pls2": 26.98268374543053
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_all_contact",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 24.680017840021055,
+      "ridge100": 27.605836194028367,
+      "svr1": 29.97524430991388,
+      "svr10": 28.25705414252546,
+      "trees": 24.239576425631984,
+      "pls2": 27.313469281062773
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "nested_video",
+    "selected": "svr1",
+    "selected_features": "fixed_time",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 27.765141880479344,
+      "ridge100": 29.76510352744854,
+      "svr1": 26.354614461457246,
+      "svr10": 27.041163185007765,
+      "trees": 27.32465188480931,
+      "pls2": 26.612834152741062
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "nested_fusion",
+    "selected": "trees",
+    "selected_features": "video_all_contact",
+    "inner_mae": {
+      "mean": 39.865806156576134,
+      "median": 39.425925925925924,
+      "ridge10": 24.680017840021055,
+      "ridge100": 27.605836194028367,
+      "svr1": 29.97524430991388,
+      "svr10": 28.25705414252546,
+      "trees": 24.239576425631984,
+      "pls2": 27.313469281062773
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "legacy_unverified",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 13.921590213148887,
+      "ridge100": 11.589445063754345,
+      "svr1": 14.031786321061936,
+      "svr10": 17.387579639636627,
+      "trees": 12.350389514189507,
+      "pls2": 14.4854604399397
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "clean_launch",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 14.170444045344464,
+      "ridge100": 11.451519520838966,
+      "svr1": 14.795185487038479,
+      "svr10": 16.691274612965387,
+      "trees": 12.62900329154194,
+      "pls2": 14.8111427773273
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "early_velocity",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 11.923289333390725,
+      "ridge100": 11.005158092633662,
+      "svr1": 13.3254308761106,
+      "svr10": 15.843249841103612,
+      "trees": 11.683879652975303,
+      "pls2": 12.374221423290312
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "fixed_time",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 13.372121829851213,
+      "ridge100": 11.589444450355538,
+      "svr1": 13.118263559391844,
+      "svr10": 17.0462481074364,
+      "trees": 12.958941856250142,
+      "pls2": 13.962062753728816
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "body_normalized",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 13.099748996303333,
+      "ridge100": 11.555738528515775,
+      "svr1": 13.034862594679868,
+      "svr10": 18.12299789469127,
+      "trees": 12.998758223786819,
+      "pls2": 13.451583650150376
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "perspective",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 15.75122468910993,
+      "ridge100": 11.724625628098355,
+      "svr1": 14.349880749466985,
+      "svr10": 16.07449925368017,
+      "trees": 11.99360692796425,
+      "pls2": 17.524422132054177
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_combined",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 16.38804284139897,
+      "ridge100": 12.234770618098182,
+      "svr1": 12.85374059633355,
+      "svr10": 15.952287963895165,
+      "trees": 12.732999622071059,
+      "pls2": 15.891572869688275
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_body",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 20.09749305691106,
+      "ridge100": 12.673866556601784,
+      "svr1": 12.982257955323782,
+      "svr10": 14.12083373104882,
+      "trees": 14.014358788301648,
+      "pls2": 15.705001023160444
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_watch",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 24.462568092469432,
+      "ridge100": 15.4582789213464,
+      "svr1": 11.099097230253808,
+      "svr10": 13.066142076399558,
+      "trees": 13.821025850340135,
+      "pls2": 23.785400235502465
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_club",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 19.411844119369505,
+      "ridge100": 12.70839496049687,
+      "svr1": 12.600158326108613,
+      "svr10": 13.547431976475982,
+      "trees": 11.566263567649285,
+      "pls2": 16.215458175232442
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_watch_club",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 23.820061777592038,
+      "ridge100": 15.155498519787098,
+      "svr1": 11.184057483889083,
+      "svr10": 11.696918176826697,
+      "trees": 13.358348148148139,
+      "pls2": 20.19054908861936
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_all_contact",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 19.703224464439,
+      "ridge100": 13.74452076208931,
+      "svr1": 11.339258864815262,
+      "svr10": 11.264194892937013,
+      "trees": 11.442841269841258,
+      "pls2": 16.050008410144965
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "nested_video",
+    "selected": "median",
+    "selected_features": "clean_launch",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 14.170444045344464,
+      "ridge100": 11.451519520838966,
+      "svr1": 14.795185487038479,
+      "svr10": 16.691274612965387,
+      "trees": 12.62900329154194,
+      "pls2": 14.8111427773273
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "nested_fusion",
+    "selected": "median",
+    "selected_features": "clean_launch",
+    "inner_mae": {
+      "mean": 10.513523809523813,
+      "median": 10.2,
+      "ridge10": 14.170444045344464,
+      "ridge100": 11.451519520838966,
+      "svr1": 14.795185487038479,
+      "svr10": 16.691274612965387,
+      "trees": 12.62900329154194,
+      "pls2": 14.8111427773273
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "legacy_unverified",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 10.460356630460925,
+      "ridge100": 11.467807739449787,
+      "svr1": 12.953403921827606,
+      "svr10": 13.070925109700308,
+      "trees": 10.886784715284746,
+      "pls2": 10.008598951538701
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "clean_launch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 10.272826287063165,
+      "ridge100": 11.335110012912185,
+      "svr1": 11.343503795656789,
+      "svr10": 13.657069050639326,
+      "trees": 10.864009000131006,
+      "pls2": 9.668117331097003
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 11.46367635625946,
+      "ridge100": 11.46190069540025,
+      "svr1": 11.383435045042386,
+      "svr10": 11.28449574717654,
+      "trees": 10.931018132226628,
+      "pls2": 11.628575886219501
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "fixed_time",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 10.002000073180437,
+      "ridge100": 10.963383355136788,
+      "svr1": 11.116494181800865,
+      "svr10": 10.911436508963222,
+      "trees": 9.87269253516229,
+      "pls2": 9.955484903154096
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "body_normalized",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 10.284864876570172,
+      "ridge100": 11.071221467290812,
+      "svr1": 11.281770693487298,
+      "svr10": 10.272869934553874,
+      "trees": 9.915589830104494,
+      "pls2": 9.754758933768679
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "perspective",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 11.257588167301638,
+      "ridge100": 11.753802932890137,
+      "svr1": 11.703033426349682,
+      "svr10": 13.959711495688248,
+      "trees": 12.17954604333611,
+      "pls2": 11.603488143980623
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_combined",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 9.95686007400285,
+      "ridge100": 10.9251468193074,
+      "svr1": 11.259151757760858,
+      "svr10": 10.372329539815729,
+      "trees": 10.326069638966649,
+      "pls2": 10.463035244319272
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_body",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 18.24862236387317,
+      "ridge100": 16.21219916714373,
+      "svr1": 11.944433787973844,
+      "svr10": 11.17764536656016,
+      "trees": 13.844535014005604,
+      "pls2": 19.827119056266255
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_watch",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 12.648093229515256,
+      "ridge100": 11.949818323761717,
+      "svr1": 12.526570913806479,
+      "svr10": 13.092382245598147,
+      "trees": 14.074052054154981,
+      "pls2": 11.942458917190613
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_club",
+    "selected": "ridge100",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 9.884790863557877,
+      "ridge100": 8.775847251636678,
+      "svr1": 10.644085360607107,
+      "svr10": 9.980458080811266,
+      "trees": 9.471557111733533,
+      "pls2": 9.803362892856194
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_watch_club",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 9.293165068536275,
+      "ridge100": 9.367238437964005,
+      "svr1": 11.03443865263696,
+      "svr10": 10.514284450331429,
+      "trees": 10.375863834422644,
+      "pls2": 9.802885717640336
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_all_contact",
+    "selected": "ridge100",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 10.233063925711352,
+      "ridge100": 9.969907000664826,
+      "svr1": 11.128805931021384,
+      "svr10": 10.676978633404174,
+      "trees": 10.417804388422057,
+      "pls2": 10.048488818823751
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "nested_video",
+    "selected": "pls2",
+    "selected_features": "clean_launch",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 10.272826287063165,
+      "ridge100": 11.335110012912185,
+      "svr1": 11.343503795656789,
+      "svr10": 13.657069050639326,
+      "trees": 10.864009000131006,
+      "pls2": 9.668117331097003
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "nested_fusion",
+    "selected": "ridge100",
+    "selected_features": "video_club",
+    "inner_mae": {
+      "mean": 11.547309023156776,
+      "median": 12.5,
+      "ridge10": 9.884790863557877,
+      "ridge100": 8.775847251636678,
+      "svr1": 10.644085360607107,
+      "svr10": 9.980458080811266,
+      "trees": 9.471557111733533,
+      "pls2": 9.803362892856194
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "legacy_unverified",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 15.524709556583694,
+      "ridge100": 12.7615258091273,
+      "svr1": 15.66906450215243,
+      "svr10": 20.541137322486364,
+      "trees": 13.415297357210626,
+      "pls2": 17.822685057268384
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "clean_launch",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 14.039664902585496,
+      "ridge100": 12.51965977487911,
+      "svr1": 14.395207113757964,
+      "svr10": 19.940447906826744,
+      "trees": 13.16409092205431,
+      "pls2": 14.484445146435823
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "early_velocity",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 15.694518947994803,
+      "ridge100": 11.680915104951438,
+      "svr1": 14.260432837855006,
+      "svr10": 16.09945337716401,
+      "trees": 12.577872616014712,
+      "pls2": 17.71855195755584
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "fixed_time",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 16.564953240612454,
+      "ridge100": 12.970425543747808,
+      "svr1": 13.763423775019039,
+      "svr10": 17.675472062234242,
+      "trees": 15.571083770139309,
+      "pls2": 19.154051472821717
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "body_normalized",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 16.04478465821931,
+      "ridge100": 12.854938292524317,
+      "svr1": 13.732138287347457,
+      "svr10": 18.701282340960304,
+      "trees": 15.530415114206797,
+      "pls2": 17.805936952005897
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "perspective",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 15.618291169332524,
+      "ridge100": 12.147673199579941,
+      "svr1": 11.18017807760166,
+      "svr10": 13.865572073922326,
+      "trees": 12.14814403560989,
+      "pls2": 18.580966300319915
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_combined",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 18.11068559454997,
+      "ridge100": 13.306870293629522,
+      "svr1": 13.346361508144385,
+      "svr10": 16.186799260309925,
+      "trees": 15.279118753674318,
+      "pls2": 21.075701203134535
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_body",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 19.931177195151985,
+      "ridge100": 12.864555150410391,
+      "svr1": 13.322306277245142,
+      "svr10": 14.760642831831468,
+      "trees": 13.015598002306321,
+      "pls2": 17.088433395647453
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_watch",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 19.44163922077844,
+      "ridge100": 14.138620320891581,
+      "svr1": 13.012964972388314,
+      "svr10": 13.657457051449281,
+      "trees": 13.990435405643721,
+      "pls2": 18.894131413853263
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_club",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 25.72893922337405,
+      "ridge100": 15.716342254704204,
+      "svr1": 13.847417014223327,
+      "svr10": 15.92478440216665,
+      "trees": 15.967012786596115,
+      "pls2": 26.142943469918944
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_watch_club",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 24.267281017897158,
+      "ridge100": 16.0686770404559,
+      "svr1": 13.958199782516031,
+      "svr10": 14.476460903947112,
+      "trees": 15.202823853615504,
+      "pls2": 23.23596827897684
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_all_contact",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 23.451021930645705,
+      "ridge100": 16.06150930126813,
+      "svr1": 13.619533332078362,
+      "svr10": 14.723068653837394,
+      "trees": 15.53354034391534,
+      "pls2": 21.15614958292376
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "nested_video",
+    "selected": "svr1",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 15.618291169332524,
+      "ridge100": 12.147673199579941,
+      "svr1": 11.18017807760166,
+      "svr10": 13.865572073922326,
+      "trees": 12.14814403560989,
+      "pls2": 18.580966300319915
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "nested_fusion",
+    "selected": "svr1",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 12.188933873144396,
+      "median": 11.333333333333334,
+      "ridge10": 15.618291169332524,
+      "ridge100": 12.147673199579941,
+      "svr1": 11.18017807760166,
+      "svr10": 13.865572073922326,
+      "trees": 12.14814403560989,
+      "pls2": 18.580966300319915
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "legacy_unverified",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 19.749203505968303,
+      "ridge100": 18.496544940553378,
+      "svr1": 20.16096073586537,
+      "svr10": 24.097116468852388,
+      "trees": 18.61764808673386,
+      "pls2": 19.683508932601516
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "clean_launch",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 19.229624289904116,
+      "ridge100": 18.316804730973303,
+      "svr1": 20.03991932365543,
+      "svr10": 24.44267219872857,
+      "trees": 18.580997594997594,
+      "pls2": 19.170210554260493
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "early_velocity",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 21.86461085439195,
+      "ridge100": 18.928837110991147,
+      "svr1": 19.449507498307426,
+      "svr10": 17.857285100325395,
+      "trees": 18.95672350517865,
+      "pls2": 23.19082697658211
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "fixed_time",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 21.584800556396093,
+      "ridge100": 18.857520497657767,
+      "svr1": 20.558020007384933,
+      "svr10": 21.122283041379667,
+      "trees": 19.064220948461713,
+      "pls2": 23.15402490312722
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "body_normalized",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 21.438619668925185,
+      "ridge100": 18.88333639011954,
+      "svr1": 21.23211341702008,
+      "svr10": 22.36595189861367,
+      "trees": 20.120937683715468,
+      "pls2": 22.790748738171867
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "perspective",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 19.372851108538303,
+      "ridge100": 17.945641038558378,
+      "svr1": 18.25114896467162,
+      "svr10": 22.63003758927941,
+      "trees": 17.534212536903574,
+      "pls2": 20.99527416795614
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_combined",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 23.286651615026177,
+      "ridge100": 18.84681369937508,
+      "svr1": 19.930819216525972,
+      "svr10": 20.310552358825287,
+      "trees": 18.496877425044087,
+      "pls2": 23.277415304662966
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_body",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 43.13665380757175,
+      "ridge100": 26.717260465986485,
+      "svr1": 19.933020785653238,
+      "svr10": 19.710975251421317,
+      "trees": 21.70309729570841,
+      "pls2": 39.83994593870893
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_watch",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 24.26486700132346,
+      "ridge100": 19.985881675319256,
+      "svr1": 19.32171870904944,
+      "svr10": 19.45945073657906,
+      "trees": 20.572406819517933,
+      "pls2": 23.588906541511538
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_club",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 26.609530520170924,
+      "ridge100": 20.34711798270375,
+      "svr1": 18.914535805981384,
+      "svr10": 18.550203461285154,
+      "trees": 19.301621693121714,
+      "pls2": 24.44395007385122
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_watch_club",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 25.607360246269213,
+      "ridge100": 20.96365842132888,
+      "svr1": 18.576188905634123,
+      "svr10": 18.186509638449515,
+      "trees": 20.07494297472077,
+      "pls2": 24.617743344198928
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_all_contact",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 21.421548606503045,
+      "ridge100": 20.55474325574224,
+      "svr1": 18.707853671109977,
+      "svr10": 17.687028134961476,
+      "trees": 19.628487948265743,
+      "pls2": 23.025696462468296
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 19.372851108538303,
+      "ridge100": 17.945641038558378,
+      "svr1": 18.25114896467162,
+      "svr10": 22.63003758927941,
+      "trees": 17.534212536903574,
+      "pls2": 20.99527416795614
+    }
+  },
+  {
+    "cohort": "all_labeled",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "nested_fusion",
+    "selected": "trees",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 17.89542483660131,
+      "median": 18.185185185185187,
+      "ridge10": 19.372851108538303,
+      "ridge100": 17.945641038558378,
+      "svr1": 18.25114896467162,
+      "svr10": 22.63003758927941,
+      "trees": 17.534212536903574,
+      "pls2": 20.99527416795614
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "legacy_unverified",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 23.369529405988715,
+      "ridge100": 27.114332647180404,
+      "svr1": 23.606980766207432,
+      "svr10": 28.007327189099318,
+      "trees": 24.07054688459971,
+      "pls2": 23.606667871380644
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "clean_launch",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 22.032464673217962,
+      "ridge100": 27.840323310321388,
+      "svr1": 22.146518539450913,
+      "svr10": 27.332508992034974,
+      "trees": 22.638885597075326,
+      "pls2": 22.448702986293572
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 22.791027813478866,
+      "ridge100": 24.73616565233451,
+      "svr1": 21.071554466257396,
+      "svr10": 24.211083652553214,
+      "trees": 20.395895842896024,
+      "pls2": 20.91221885545504
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "fixed_time",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 21.514037840355876,
+      "ridge100": 25.06059711980808,
+      "svr1": 19.92236604296181,
+      "svr10": 21.953907097407473,
+      "trees": 23.536093155980495,
+      "pls2": 24.816783186130422
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "body_normalized",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 23.41406264966602,
+      "ridge100": 26.50021205206342,
+      "svr1": 21.685415964363372,
+      "svr10": 23.193441433621246,
+      "trees": 25.727083873566315,
+      "pls2": 26.67816679878205
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "perspective",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 23.68491944362638,
+      "ridge100": 29.198134337530284,
+      "svr1": 25.787191654586344,
+      "svr10": 24.27944801950818,
+      "trees": 22.80349459051513,
+      "pls2": 25.74120678284913
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_combined",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 20.347867881971005,
+      "ridge100": 22.977568870379866,
+      "svr1": 20.341645055082637,
+      "svr10": 20.48746015938096,
+      "trees": 22.27893972304499,
+      "pls2": 20.66419672682918
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_body",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 26.531560015216122,
+      "ridge100": 22.756633793747692,
+      "svr1": 24.720676217649,
+      "svr10": 25.90969573587976,
+      "trees": 22.58053425229742,
+      "pls2": 23.947664503048447
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_watch",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 18.81612299573365,
+      "ridge100": 21.789729012925942,
+      "svr1": 26.76014631951628,
+      "svr10": 29.12277625117088,
+      "trees": 23.70380729601783,
+      "pls2": 21.899010783755756
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 23.71323024095888,
+      "ridge100": 25.123079195285467,
+      "svr1": 27.403133175935704,
+      "svr10": 27.93147728417865,
+      "trees": 22.006669312169308,
+      "pls2": 23.981491448415266
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_watch_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 23.392254149749068,
+      "ridge100": 24.917663497154177,
+      "svr1": 29.718134787264088,
+      "svr10": 29.796076909502798,
+      "trees": 23.011088415483144,
+      "pls2": 24.766465535586796
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "video_all_contact",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 23.0412416849656,
+      "ridge100": 24.77734313570745,
+      "svr1": 31.352726771621835,
+      "svr10": 29.327974657921136,
+      "trees": 23.25116276803119,
+      "pls2": 24.20308074588534
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "nested_video",
+    "selected": "svr1",
+    "selected_features": "fixed_time",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 21.514037840355876,
+      "ridge100": 25.06059711980808,
+      "svr1": 19.92236604296181,
+      "svr10": 21.953907097407473,
+      "trees": 23.536093155980495,
+      "pls2": 24.816783186130422
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Andrew",
+    "features": "nested_fusion",
+    "selected": "ridge10",
+    "selected_features": "video_watch",
+    "inner_mae": {
+      "mean": 35.30346135609293,
+      "median": 36.10526315789474,
+      "ridge10": 18.81612299573365,
+      "ridge100": 21.789729012925942,
+      "svr1": 26.76014631951628,
+      "svr10": 29.12277625117088,
+      "trees": 23.70380729601783,
+      "pls2": 21.899010783755756
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "legacy_unverified",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 42.26998039165204,
+      "ridge100": 45.00215882029354,
+      "svr1": 42.349105625349765,
+      "svr10": 45.78033281595038,
+      "trees": 40.23620429171093,
+      "pls2": 42.76116486452391
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "clean_launch",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 37.51938495462246,
+      "ridge100": 44.969837188173315,
+      "svr1": 45.84105038685482,
+      "svr10": 51.264165876895255,
+      "trees": 36.76342167852726,
+      "pls2": 40.64416233587479
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "early_velocity",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 38.03061490952304,
+      "ridge100": 44.56617745901374,
+      "svr1": 35.00404024395452,
+      "svr10": 36.840019704567,
+      "trees": 36.210260880355825,
+      "pls2": 34.92253086987686
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "fixed_time",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 34.655087146696225,
+      "ridge100": 36.75432091511296,
+      "svr1": 36.81802906140602,
+      "svr10": 32.7844808178312,
+      "trees": 32.74834074586882,
+      "pls2": 35.042437784371
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "body_normalized",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 37.088831769741425,
+      "ridge100": 38.689329261675674,
+      "svr1": 37.67147479125444,
+      "svr10": 36.67660103418826,
+      "trees": 34.46565864906159,
+      "pls2": 38.951586524034035
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "perspective",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 38.570676150599155,
+      "ridge100": 46.579536875578924,
+      "svr1": 39.77862052952685,
+      "svr10": 34.544891300991374,
+      "trees": 34.272945586187454,
+      "pls2": 42.17191529022302
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_combined",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 35.587922556390716,
+      "ridge100": 36.158669989273015,
+      "svr1": 37.479973897805316,
+      "svr10": 34.58509794825447,
+      "trees": 32.06457324033989,
+      "pls2": 34.24781593384016
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_body",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 37.890734124630605,
+      "ridge100": 35.63535131709611,
+      "svr1": 38.81652049425665,
+      "svr10": 38.106371635747195,
+      "trees": 33.95253456790124,
+      "pls2": 37.2583189629913
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_watch",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 31.873943281089957,
+      "ridge100": 33.752550170065895,
+      "svr1": 42.420414394659424,
+      "svr10": 40.04599672533897,
+      "trees": 31.980636155202824,
+      "pls2": 32.12288892151498
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_club",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 31.907706937600814,
+      "ridge100": 38.91371074256861,
+      "svr1": 42.42456924365455,
+      "svr10": 40.599928586233204,
+      "trees": 37.17855931804822,
+      "pls2": 34.90573085916104
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_watch_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 33.48495141188597,
+      "ridge100": 36.62076900390638,
+      "svr1": 44.614711373750595,
+      "svr10": 41.13429422363298,
+      "trees": 33.756919753086436,
+      "pls2": 33.121709208785056
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "video_all_contact",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 37.58842407424697,
+      "ridge100": 37.5135199589595,
+      "svr1": 48.15961985199579,
+      "svr10": 45.51795737710226,
+      "trees": 36.50667037037038,
+      "pls2": 32.59315609282677
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "video_combined",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 35.587922556390716,
+      "ridge100": 36.158669989273015,
+      "svr1": 37.479973897805316,
+      "svr10": 34.58509794825447,
+      "trees": 32.06457324033989,
+      "pls2": 34.24781593384016
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Eduardo",
+    "features": "nested_fusion",
+    "selected": "ridge10",
+    "selected_features": "video_watch",
+    "inner_mae": {
+      "mean": 52.756209150326804,
+      "median": 47.63333333333333,
+      "ridge10": 31.873943281089957,
+      "ridge100": 33.752550170065895,
+      "svr1": 42.420414394659424,
+      "svr10": 40.04599672533897,
+      "trees": 31.980636155202824,
+      "pls2": 32.12288892151498
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "legacy_unverified",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 34.69740535992718,
+      "ridge100": 37.16281446552865,
+      "svr1": 31.255778716919075,
+      "svr10": 35.47316055827987,
+      "trees": 38.03832273220372,
+      "pls2": 35.714507651984846
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "clean_launch",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 34.71132614120965,
+      "ridge100": 37.589301378157884,
+      "svr1": 31.39800918661883,
+      "svr10": 37.573772491408356,
+      "trees": 36.06945263532764,
+      "pls2": 35.480635449505506
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "early_velocity",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 30.207143955542755,
+      "ridge100": 34.97197752200815,
+      "svr1": 26.22922741254701,
+      "svr10": 27.316501123896572,
+      "trees": 31.286639269124407,
+      "pls2": 29.013346238033204
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "fixed_time",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 23.687793632609274,
+      "ridge100": 29.86165123882153,
+      "svr1": 24.620800952219064,
+      "svr10": 24.509459717056778,
+      "trees": 27.10998177161262,
+      "pls2": 22.88641733882557
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "body_normalized",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 25.896230947461213,
+      "ridge100": 30.901181645555297,
+      "svr1": 24.996626499380476,
+      "svr10": 24.64850413850352,
+      "trees": 27.690129320268216,
+      "pls2": 24.059085539597785
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "perspective",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 28.958748716125356,
+      "ridge100": 37.05928084734483,
+      "svr1": 29.50995006803666,
+      "svr10": 25.768692906652607,
+      "trees": 31.915220584746937,
+      "pls2": 30.82549473199654
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_combined",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 22.110433929024683,
+      "ridge100": 28.653550768381933,
+      "svr1": 23.622485906281803,
+      "svr10": 23.702910798472658,
+      "trees": 27.37417624659291,
+      "pls2": 22.28521176531445
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_body",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 26.511178077753332,
+      "ridge100": 24.97794090696823,
+      "svr1": 29.15754282391649,
+      "svr10": 28.993062956654573,
+      "trees": 25.036867773858514,
+      "pls2": 21.35037602925045
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_watch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 21.603940282234774,
+      "ridge100": 26.849923149788076,
+      "svr1": 32.13448953041197,
+      "svr10": 34.378889595660596,
+      "trees": 31.0247361845973,
+      "pls2": 19.03196965934228
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_club",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 28.638816975827073,
+      "ridge100": 34.528064030219376,
+      "svr1": 34.482728093917245,
+      "svr10": 33.016856558064546,
+      "trees": 33.93255393885949,
+      "pls2": 34.4203527853652
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_watch_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 34.837252066578976,
+      "ridge100": 31.39593537158691,
+      "svr1": 37.48282976021132,
+      "svr10": 38.464512240708956,
+      "trees": 32.44030276308054,
+      "pls2": 27.101609396018457
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "video_all_contact",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 30.137900481359118,
+      "ridge100": 33.9266683021666,
+      "svr1": 40.56023967019204,
+      "svr10": 39.9470068462696,
+      "trees": 33.71078159905937,
+      "pls2": 32.90320437569205
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "nested_video",
+    "selected": "pls2",
+    "selected_features": "video_body",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 26.511178077753332,
+      "ridge100": 24.97794090696823,
+      "svr1": 29.15754282391649,
+      "svr10": 28.993062956654573,
+      "trees": 25.036867773858514,
+      "pls2": 21.35037602925045
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Lucas",
+    "features": "nested_fusion",
+    "selected": "pls2",
+    "selected_features": "video_watch",
+    "inner_mae": {
+      "mean": 42.581522699169774,
+      "median": 45.94444444444444,
+      "ridge10": 21.603940282234774,
+      "ridge100": 26.849923149788076,
+      "svr1": 32.13448953041197,
+      "svr10": 34.378889595660596,
+      "trees": 31.0247361845973,
+      "pls2": 19.03196965934228
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "legacy_unverified",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.817645271876504,
+      "ridge100": 31.061287685008512,
+      "svr1": 28.744754879845598,
+      "svr10": 36.559066015604564,
+      "trees": 28.710499012028396,
+      "pls2": 27.58788750530447
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "clean_launch",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.55829340556368,
+      "ridge100": 32.17930084594833,
+      "svr1": 27.17337376487546,
+      "svr10": 36.846718621908444,
+      "trees": 27.32021231483972,
+      "pls2": 27.462713662883534
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 25.27857964177983,
+      "ridge100": 29.808197535134468,
+      "svr1": 25.826728130027593,
+      "svr10": 31.45751267244585,
+      "trees": 24.076372362956963,
+      "pls2": 25.380937077345447
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "fixed_time",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 27.884892432469847,
+      "ridge100": 26.8213635984683,
+      "svr1": 27.149168050468838,
+      "svr10": 29.750545100656932,
+      "trees": 25.453578239221088,
+      "pls2": 26.759702927231523
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "body_normalized",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 29.021957236118077,
+      "ridge100": 27.267733487168297,
+      "svr1": 28.376425833644475,
+      "svr10": 31.185391034085203,
+      "trees": 25.965827047986807,
+      "pls2": 27.050514009284576
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "perspective",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.41061642954049,
+      "ridge100": 33.50798012219565,
+      "svr1": 26.669289317621413,
+      "svr10": 23.546627759853784,
+      "trees": 27.513270782960937,
+      "pls2": 29.94398410817209
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_combined",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.5031227919577,
+      "ridge100": 25.536912443500743,
+      "svr1": 26.61825810036504,
+      "svr10": 26.700403896143364,
+      "trees": 24.52872448285841,
+      "pls2": 25.19980942541088
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_body",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.0508347265139,
+      "ridge100": 20.98739667916269,
+      "svr1": 28.486947415813567,
+      "svr10": 28.370925392044267,
+      "trees": 19.405523809523803,
+      "pls2": 24.457413339550538
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_watch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 25.057612860324973,
+      "ridge100": 24.728688499539903,
+      "svr1": 32.17330208704048,
+      "svr10": 33.55369699141146,
+      "trees": 25.41851856575963,
+      "pls2": 23.74590580775449
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 27.968956751887767,
+      "ridge100": 27.949804828940103,
+      "svr1": 28.029073478125333,
+      "svr10": 26.804162788242675,
+      "trees": 27.18375878684807,
+      "pls2": 26.009141581535065
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_watch_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.043835433189276,
+      "ridge100": 26.485988348305764,
+      "svr1": 33.365107278182485,
+      "svr10": 33.3045096910321,
+      "trees": 28.49789569160998,
+      "pls2": 24.952449130846226
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "video_all_contact",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.01933189281482,
+      "ridge100": 26.30000658860654,
+      "svr1": 34.03929113719142,
+      "svr10": 33.06006130861779,
+      "trees": 29.2105576814059,
+      "pls2": 24.381162173288594
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "video_body",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.0508347265139,
+      "ridge100": 20.98739667916269,
+      "svr1": 28.486947415813567,
+      "svr10": 28.370925392044267,
+      "trees": 19.405523809523803,
+      "pls2": 24.457413339550538
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Rohan",
+    "features": "nested_fusion",
+    "selected": "trees",
+    "selected_features": "video_body",
+    "inner_mae": {
+      "mean": 38.44846632346633,
+      "median": 41.107142857142854,
+      "ridge10": 26.0508347265139,
+      "ridge100": 20.98739667916269,
+      "svr1": 28.486947415813567,
+      "svr10": 28.370925392044267,
+      "trees": 19.405523809523803,
+      "pls2": 24.457413339550538
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "legacy_unverified",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 37.93244862788462,
+      "ridge100": 39.99300129824861,
+      "svr1": 34.00029295820524,
+      "svr10": 43.81651729508212,
+      "trees": 37.0140686703343,
+      "pls2": 41.33679777155335
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "clean_launch",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 35.71442190112631,
+      "ridge100": 39.70608883621858,
+      "svr1": 34.043282906687644,
+      "svr10": 42.42229760675874,
+      "trees": 36.49114633330088,
+      "pls2": 39.475695442177916
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "early_velocity",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 38.58476254595603,
+      "ridge100": 38.71651436252617,
+      "svr1": 29.135504870604205,
+      "svr10": 30.72894173404545,
+      "trees": 32.89299653012417,
+      "pls2": 36.767382256297914
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "fixed_time",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 29.355204429490794,
+      "ridge100": 32.70074248753908,
+      "svr1": 28.86404050551891,
+      "svr10": 28.447799960080914,
+      "trees": 28.196444865319872,
+      "pls2": 28.17258890592454
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "body_normalized",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 31.565845918882854,
+      "ridge100": 33.836173720949624,
+      "svr1": 30.04709681558352,
+      "svr10": 31.82383967337209,
+      "trees": 29.666312444885353,
+      "pls2": 32.881064117660806
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "perspective",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 34.930346451216565,
+      "ridge100": 40.21255481380987,
+      "svr1": 34.359212320251096,
+      "svr10": 31.265156007421023,
+      "trees": 35.965275809283554,
+      "pls2": 39.19504295408681
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_combined",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 29.68797297096678,
+      "ridge100": 32.51887614629942,
+      "svr1": 28.13553064187234,
+      "svr10": 27.336799263914653,
+      "trees": 30.39005682319224,
+      "pls2": 29.287076398223814
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_body",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 36.45831902256047,
+      "ridge100": 31.34490738967467,
+      "svr1": 33.69124039452036,
+      "svr10": 34.0655080872711,
+      "trees": 28.95829750881835,
+      "pls2": 36.42128510836221
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_watch",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 29.566474319039802,
+      "ridge100": 31.88080925905923,
+      "svr1": 32.27894017645307,
+      "svr10": 32.28288681447719,
+      "trees": 28.743110449735457,
+      "pls2": 26.89753566117781
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 40.61642465467756,
+      "ridge100": 33.73427239236295,
+      "svr1": 33.436591355042076,
+      "svr10": 34.3896899073078,
+      "trees": 33.22707440476191,
+      "pls2": 34.17686915901265
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_watch_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 34.561406673652975,
+      "ridge100": 33.237640869148656,
+      "svr1": 36.13140776293492,
+      "svr10": 35.844639484523846,
+      "trees": 30.27546737213404,
+      "pls2": 32.80571704567557
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "video_all_contact",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 33.23850862752811,
+      "ridge100": 33.79970084620214,
+      "svr1": 37.86250756560309,
+      "svr10": 36.35324929727645,
+      "trees": 27.659210813492077,
+      "pls2": 32.869689936219
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "nested_video",
+    "selected": "svr10",
+    "selected_features": "video_combined",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 29.68797297096678,
+      "ridge100": 32.51887614629942,
+      "svr1": 28.13553064187234,
+      "svr10": 27.336799263914653,
+      "trees": 30.39005682319224,
+      "pls2": 29.287076398223814
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 0,
+    "held_golfer": "Sid",
+    "features": "nested_fusion",
+    "selected": "pls2",
+    "selected_features": "video_watch",
+    "inner_mae": {
+      "mean": 44.539363816581556,
+      "median": 43.6875,
+      "ridge10": 29.566474319039802,
+      "ridge100": 31.88080925905923,
+      "svr1": 32.27894017645307,
+      "svr10": 32.28288681447719,
+      "trees": 28.743110449735457,
+      "pls2": 26.89753566117781
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "legacy_unverified",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 13.250812689854916,
+      "ridge100": 11.625371813446671,
+      "svr1": 12.61278815808026,
+      "svr10": 15.657454714179005,
+      "trees": 11.214019502465579,
+      "pls2": 13.943359726867811
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "clean_launch",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 13.990604075276554,
+      "ridge100": 11.684443856791711,
+      "svr1": 14.613537472883847,
+      "svr10": 15.686699376704015,
+      "trees": 11.830992319351738,
+      "pls2": 14.872081866941398
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "early_velocity",
+    "selected": "ridge100",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 11.692588880652604,
+      "ridge100": 11.300966050779182,
+      "svr1": 14.320626697185503,
+      "svr10": 18.866850498086357,
+      "trees": 11.765232684758972,
+      "pls2": 12.086716435883583
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "fixed_time",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 12.27101406394358,
+      "ridge100": 11.352882052512777,
+      "svr1": 14.304134104557509,
+      "svr10": 18.213802777458437,
+      "trees": 10.62760217324432,
+      "pls2": 12.927226901290348
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "body_normalized",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 11.421845418892735,
+      "ridge100": 11.16787348147102,
+      "svr1": 13.549429097862165,
+      "svr10": 19.987174309549978,
+      "trees": 10.712004530509365,
+      "pls2": 11.03856223563581
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "perspective",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 16.081225950056055,
+      "ridge100": 12.125491759973405,
+      "svr1": 15.19568751555943,
+      "svr10": 16.816174836408845,
+      "trees": 11.806401448903328,
+      "pls2": 19.182909458290606
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_combined",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 15.780830729177886,
+      "ridge100": 11.875850312669964,
+      "svr1": 13.91207426899823,
+      "svr10": 16.245174043369392,
+      "trees": 10.930364260975008,
+      "pls2": 16.065725131601756
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_body",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 16.76081898851712,
+      "ridge100": 12.750592009418133,
+      "svr1": 13.785303730057608,
+      "svr10": 15.410861727774817,
+      "trees": 13.036654789038113,
+      "pls2": 17.622715103813317
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_watch",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 22.841753708633423,
+      "ridge100": 14.87415069413177,
+      "svr1": 12.256846250666088,
+      "svr10": 11.811209862289873,
+      "trees": 13.369291887125192,
+      "pls2": 28.42268467527595
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_club",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 15.880655967834267,
+      "ridge100": 11.737186615805863,
+      "svr1": 12.063565132437194,
+      "svr10": 12.896394193722513,
+      "trees": 10.77016622574955,
+      "pls2": 15.89656622294376
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_watch_club",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 21.611850398471848,
+      "ridge100": 14.635442257195049,
+      "svr1": 11.642765739539641,
+      "svr10": 11.206997766052513,
+      "trees": 13.153730158730145,
+      "pls2": 25.005291188747336
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "video_all_contact",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 19.876427220200373,
+      "ridge100": 13.93173623693385,
+      "svr1": 11.939486358157163,
+      "svr10": 11.085262130566397,
+      "trees": 10.876313756613744,
+      "pls2": 22.48824271755484
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "fixed_time",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 12.27101406394358,
+      "ridge100": 11.352882052512777,
+      "svr1": 14.304134104557509,
+      "svr10": 18.213802777458437,
+      "trees": 10.62760217324432,
+      "pls2": 12.927226901290348
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Eduardo",
+    "features": "nested_fusion",
+    "selected": "trees",
+    "selected_features": "fixed_time",
+    "inner_mae": {
+      "mean": 11.441523809523808,
+      "median": 12.233333333333333,
+      "ridge10": 12.27101406394358,
+      "ridge100": 11.352882052512777,
+      "svr1": 14.304134104557509,
+      "svr10": 18.213802777458437,
+      "trees": 10.62760217324432,
+      "pls2": 12.927226901290348
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "legacy_unverified",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 12.032655343904109,
+      "ridge100": 12.239422967768315,
+      "svr1": 13.6990413615122,
+      "svr10": 14.295355082698098,
+      "trees": 12.042745835645848,
+      "pls2": 13.147376850486692
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "clean_launch",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 11.45271183666522,
+      "ridge100": 11.95207514947301,
+      "svr1": 13.570546579742151,
+      "svr10": 13.754332872666946,
+      "trees": 11.591521042900471,
+      "pls2": 12.065254583704935
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "early_velocity",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 12.397463673738402,
+      "ridge100": 11.862223998497662,
+      "svr1": 12.297447043140323,
+      "svr10": 11.583858203866592,
+      "trees": 10.9146731134991,
+      "pls2": 12.770037289432992
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "fixed_time",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 11.802732156685469,
+      "ridge100": 12.620292919533494,
+      "svr1": 12.801952128447171,
+      "svr10": 12.645670033974675,
+      "trees": 13.6657080224061,
+      "pls2": 12.857892021937953
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "body_normalized",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 12.324521098490644,
+      "ridge100": 12.684859933788717,
+      "svr1": 13.062034759542955,
+      "svr10": 12.69598986782992,
+      "trees": 13.90071753127052,
+      "pls2": 13.45222563124568
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "perspective",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 11.821022067633143,
+      "ridge100": 12.097995184124418,
+      "svr1": 12.001541770879328,
+      "svr10": 13.519551582010713,
+      "trees": 12.093009646068648,
+      "pls2": 11.93906910927105
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_combined",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 11.265776097165274,
+      "ridge100": 12.317917472977275,
+      "svr1": 12.349688790703139,
+      "svr10": 11.661667895330721,
+      "trees": 12.888010972542387,
+      "pls2": 11.782293007190583
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_body",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 19.63219802119578,
+      "ridge100": 18.340809772823977,
+      "svr1": 12.270530402902125,
+      "svr10": 11.465811479143433,
+      "trees": 15.393540360873706,
+      "pls2": 22.02916315667809
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_watch",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 15.984934922345738,
+      "ridge100": 14.747530524360737,
+      "svr1": 11.518281247808398,
+      "svr10": 10.921463963301017,
+      "trees": 15.295631746031773,
+      "pls2": 16.49033981123733
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_club",
+    "selected": "pls2",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 5.9487555460147234,
+      "ridge100": 9.388941819004556,
+      "svr1": 11.397532557101282,
+      "svr10": 10.689098116210744,
+      "trees": 8.759880776014102,
+      "pls2": 5.377571612921414
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_watch_club",
+    "selected": "ridge10",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 7.792745268220404,
+      "ridge100": 11.110844412858942,
+      "svr1": 11.230940317738789,
+      "svr10": 10.70335164394827,
+      "trees": 10.634096825396846,
+      "pls2": 7.875295026413827
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "video_all_contact",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 11.287857915040687,
+      "ridge100": 11.568528473679415,
+      "svr1": 11.351813265476554,
+      "svr10": 10.960002814290705,
+      "trees": 10.83694021164025,
+      "pls2": 10.88463418787722
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "early_velocity",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 12.397463673738402,
+      "ridge100": 11.862223998497662,
+      "svr1": 12.297447043140323,
+      "svr10": 11.583858203866592,
+      "trees": 10.9146731134991,
+      "pls2": 12.770037289432992
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Lucas",
+    "features": "nested_fusion",
+    "selected": "pls2",
+    "selected_features": "video_club",
+    "inner_mae": {
+      "mean": 11.630857142857147,
+      "median": 11.266666666666667,
+      "ridge10": 5.9487555460147234,
+      "ridge100": 9.388941819004556,
+      "svr1": 11.397532557101282,
+      "svr10": 10.689098116210744,
+      "trees": 8.759880776014102,
+      "pls2": 5.377571612921414
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "legacy_unverified",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 16.40879704814114,
+      "ridge100": 13.333701688819495,
+      "svr1": 17.112263616355193,
+      "svr10": 20.51082166265846,
+      "trees": 13.876984474707646,
+      "pls2": 18.137107668000528
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "clean_launch",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 14.902211353569667,
+      "ridge100": 13.099182432343524,
+      "svr1": 15.905738302412502,
+      "svr10": 22.217728254878406,
+      "trees": 13.633396964528185,
+      "pls2": 15.633218744914476
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "early_velocity",
+    "selected": "ridge100",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 16.699718046910068,
+      "ridge100": 12.277961463820631,
+      "svr1": 16.8952597458359,
+      "svr10": 15.642281996882234,
+      "trees": 13.6197295189452,
+      "pls2": 18.970497381932095
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "fixed_time",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 17.779520868782097,
+      "ridge100": 13.642260761020827,
+      "svr1": 14.19511582150223,
+      "svr10": 18.429236064084556,
+      "trees": 16.710498800827555,
+      "pls2": 20.48873761271097
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "body_normalized",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 17.733926427988724,
+      "ridge100": 13.66886823700679,
+      "svr1": 14.6150546040538,
+      "svr10": 19.680606734978035,
+      "trees": 16.25240644034944,
+      "pls2": 20.153526776812758
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "perspective",
+    "selected": "svr1",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 16.392279552247345,
+      "ridge100": 12.702739344711453,
+      "svr1": 12.17363198916045,
+      "svr10": 16.97553638945237,
+      "trees": 13.186221084412663,
+      "pls2": 19.627111665235898
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_combined",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 19.317585515295825,
+      "ridge100": 14.0091305000786,
+      "svr1": 13.975914880417763,
+      "svr10": 16.899016818751594,
+      "trees": 16.436258172111167,
+      "pls2": 22.220471855195807
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_body",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 20.249165063059312,
+      "ridge100": 13.467233488098524,
+      "svr1": 13.697037301826269,
+      "svr10": 14.557726069843643,
+      "trees": 14.400495864157657,
+      "pls2": 18.589627361288027
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_watch",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 19.867707875519983,
+      "ridge100": 14.665982748362978,
+      "svr1": 13.917250176201359,
+      "svr10": 14.33548313504391,
+      "trees": 15.038463974478718,
+      "pls2": 19.663530063549995
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_club",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 26.255290020152284,
+      "ridge100": 16.300819017083622,
+      "svr1": 14.635473197509155,
+      "svr10": 16.131832301906968,
+      "trees": 17.029702380952394,
+      "pls2": 27.31307135957798
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_watch_club",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 23.652124378180982,
+      "ridge100": 16.422876734958876,
+      "svr1": 14.836701230506518,
+      "svr10": 15.067658820529406,
+      "trees": 16.46839052287582,
+      "pls2": 23.86882375671038
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "video_all_contact",
+    "selected": "median",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 23.66595481550077,
+      "ridge100": 16.493800975211624,
+      "svr1": 14.191560895867216,
+      "svr10": 14.64812172128065,
+      "trees": 16.17292717086836,
+      "pls2": 21.541506423998843
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "nested_video",
+    "selected": "svr1",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 16.392279552247345,
+      "ridge100": 12.702739344711453,
+      "svr1": 12.17363198916045,
+      "svr10": 16.97553638945237,
+      "trees": 13.186221084412663,
+      "pls2": 19.627111665235898
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Rohan",
+    "features": "nested_fusion",
+    "selected": "svr1",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 12.760915032679733,
+      "median": 12.382352941176471,
+      "ridge10": 16.392279552247345,
+      "ridge100": 12.702739344711453,
+      "svr1": 12.17363198916045,
+      "svr10": 16.97553638945237,
+      "trees": 13.186221084412663,
+      "pls2": 19.627111665235898
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "legacy_unverified",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 22.575841554883574,
+      "ridge100": 20.531867651192165,
+      "svr1": 23.379482183760487,
+      "svr10": 25.63847046325088,
+      "trees": 20.099282619152167,
+      "pls2": 23.707442030445215
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "clean_launch",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 21.95336385560955,
+      "ridge100": 20.232513701807736,
+      "svr1": 24.169634106378062,
+      "svr10": 24.222604976988833,
+      "trees": 19.70494432942261,
+      "pls2": 23.303749117103003
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "early_velocity",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 25.180604730816718,
+      "ridge100": 20.954559651636394,
+      "svr1": 23.01566114067617,
+      "svr10": 20.33288598271803,
+      "trees": 20.91908143869016,
+      "pls2": 26.17297579391839
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "fixed_time",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 24.84204266761739,
+      "ridge100": 21.394400499905895,
+      "svr1": 23.847678534597108,
+      "svr10": 23.48071612092762,
+      "trees": 23.342995974235176,
+      "pls2": 26.9810073387178
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "body_normalized",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 25.102680974656163,
+      "ridge100": 21.498614655464156,
+      "svr1": 24.202185603439478,
+      "svr10": 25.053766169291965,
+      "trees": 23.937849206349266,
+      "pls2": 26.995994763974547
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "perspective",
+    "selected": "trees",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 21.089189790313156,
+      "ridge100": 19.537658330046536,
+      "svr1": 20.482862118098502,
+      "svr10": 23.40022610726143,
+      "trees": 18.897789415898096,
+      "pls2": 24.441643610222815
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_combined",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 25.86235613253868,
+      "ridge100": 21.15386520945603,
+      "svr1": 22.633022848486295,
+      "svr10": 21.550033055915584,
+      "trees": 22.127745571658682,
+      "pls2": 25.76696945733206
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_body",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 43.56022028045709,
+      "ridge100": 29.258068804373202,
+      "svr1": 21.95310273894224,
+      "svr10": 20.380391889184253,
+      "trees": 24.518974465148393,
+      "pls2": 41.83147238367058
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_watch",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 22.321889938359366,
+      "ridge100": 21.160942863470563,
+      "svr1": 20.914628611211914,
+      "svr10": 20.06394525335761,
+      "trees": 21.83373429951693,
+      "pls2": 24.271317377861145
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_club",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 27.43154031235473,
+      "ridge100": 22.120223351684935,
+      "svr1": 21.296301856275942,
+      "svr10": 20.26587924054558,
+      "trees": 20.629706694271896,
+      "pls2": 27.400726473028154
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_watch_club",
+    "selected": "mean",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 26.416366607783846,
+      "ridge100": 22.222683469692036,
+      "svr1": 20.39904424532515,
+      "svr10": 19.728223525041937,
+      "trees": 21.750354727398214,
+      "pls2": 26.54276412840558
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "video_all_contact",
+    "selected": "svr10",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 24.273836951233694,
+      "ridge100": 21.772260598770476,
+      "svr1": 20.294233977140024,
+      "svr10": 19.346283034227614,
+      "trees": 21.045791580400277,
+      "pls2": 25.290129577656117
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "nested_video",
+    "selected": "trees",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 21.089189790313156,
+      "ridge100": 19.537658330046536,
+      "svr1": 20.482862118098502,
+      "svr10": 23.40022610726143,
+      "trees": 18.897789415898096,
+      "pls2": 24.441643610222815
+    }
+  },
+  {
+    "cohort": "matched_club",
+    "cutoff": 100,
+    "held_golfer": "Sid",
+    "features": "nested_fusion",
+    "selected": "trees",
+    "selected_features": "perspective",
+    "inner_mae": {
+      "mean": 19.61973775017253,
+      "median": 20.26086956521739,
+      "ridge10": 21.089189790313156,
+      "ridge100": 19.537658330046536,
+      "svr1": 20.482862118098502,
+      "svr10": 23.40022610726143,
+      "trees": 18.897789415898096,
+      "pls2": 24.441643610222815
+    }
+  }
+]

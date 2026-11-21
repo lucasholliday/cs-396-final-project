@@ -1,0 +1,9 @@
+{
+  "task": "short_carry_under_60yd",
+  "n": 72,
+  "positive_count": 16,
+  "auroc": 0.8197544642857143,
+  "average_precision": 0.5704422777015944,
+  "precision": 0.4230769230769231,
+  "recall": 0.6875
+}

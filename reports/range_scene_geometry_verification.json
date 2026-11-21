@@ -3,6 +3,9 @@
   "frames_checked": 7980,
   "limbs_always_visible": true,
   "finite_transforms": true,
-  "maximum_grip_hand_gap": 0.02400000000000005,
+  "maximum_grip_hand_gap": 0.06200000000000022,
+  "maximum_palm_axis_offset": 8.950904182623621e-16,
+  "maximum_forearm_palm_gap": 3.3450938666784586e-16,
+  "maximum_shaft_hosel_gap": 5.828009994776372e-15,
   "browser_or_webgl_test": false
 }

@@ -7,7 +7,7 @@ import pandas as pd
 ROOT=Path(__file__).resolve().parents[1]
 
 def follow(frames,start,c,seed):
-    first=frames[start];position=np.array([c['x'],c['y']]);origin=np.array([seed['x'],seed['y']]);dt=max(.012,first['playback_s']-seed['playback_s']+.006)
+    first=frames[start];position=np.array([c['x'],c['y']]);origin=np.array([seed['x'],seed['y']]);dt=max(.003,first['playback_s']-seed['playback_s'])
     velocity=(position-origin)/dt;last=first['playback_s'];obs=[dict(frame=start,playback_s=last,**c,residual_px=0.)]
     for f in frames[start+1:]:
         dt=f['playback_s']-last
@@ -15,13 +15,15 @@ def follow(frames,start,c,seed):
         expected=position+velocity*dt;speed=np.linalg.norm(velocity);choices=[]
         for q in f['candidates']:
             v=np.array([q['x'],q['y']])-position;distance=np.linalg.norm(v)
-            if q['y']>position[1]+3 or distance/dt<180 or distance/dt>18000:continue
+            if q['y']>position[1]+3 or distance/dt<180 or distance/dt>28000:continue
+            if len(obs)<=3 and c.get('polarity') is not None and q.get('polarity')!=c.get('polarity'):continue
             cosine=np.dot(v,velocity)/max(distance*speed,1e-6)
             residual=np.linalg.norm(np.array([q['x'],q['y']])-expected)
-            if cosine<.8 or residual>max(18,speed*dt*.7):continue
+            max_res=max(80. if len(obs)<=1 else 25.,speed*dt*.75)
+            if cosine<.75 or residual>max_res:continue
             # Do not jump from a small ball onto a much larger nearby limb.
             if q['area']>max(80,obs[-1]['area']*3):continue
-            choices.append((residual/max(12,speed*dt)+.08*abs(np.log(q['area']/obs[-1]['area'])),q,residual))
+            choices.append((residual/max(12,speed*dt)+.08*abs(np.log(max(1,q['area'])/max(1,obs[-1]['area']))),q,residual))
         if not choices:continue
         _,q,residual=min(choices,key=lambda x:x[0]);new=np.array([q['x'],q['y']]);velocity=.6*(new-position)/dt+.4*velocity;position=new;last=f['playback_s'];obs.append(dict(frame=f['frame'],playback_s=last,**q,residual_px=float(residual)))
     return obs

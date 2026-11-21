@@ -1,0 +1,4 @@
+comparator,mae_reduction,cluster_bootstrap_low,cluster_bootstrap_high,caveat
+Training mean,23.78390157120991,14.897332714607492,31.25411123947195,Only five golfers; descriptive resampling does not account for adaptive feature/tracker development.
+Gemini fixed ridge (retrospective),9.770992365625327,5.770653098456906,15.534193004766273,Only five golfers; descriptive resampling does not account for adaptive feature/tracker development.
+Earlier body video + watch,13.603320411989674,5.355171567820013,25.55261640508483,Only five golfers; descriptive resampling does not account for adaptive feature/tracker development.

@@ -26,7 +26,8 @@ if __name__=='__main__':
   assert len(d['observations']['frames'])==105
   assert len(d['native']['source_pts'])==len(d['native']['review_pts'])
   assert d['native']['cadence_error_max_s']<.0001
-  assert (ROOT/'outputs/native_review'/f"{d['id']}.mp4").exists()
+  media_dir = d['native'].get('media_directory','native_review')
+  assert (ROOT/'outputs'/media_dir/f"{d['id']}.mp4").exists()
  assert sum(d['departure_interval'] is not None for d in data)==12
  assert sum(d['gate_error'] for d in data)==6
  assert sum(d['gate_probability'] is not None for d in data)==31

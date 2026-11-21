@@ -1,0 +1,11 @@
+{
+  "GEMINI.md": "d33fa5f9483f86b844cd0cc69af5ddd53c16317605d89732c51166ac9296f72e",
+  "scripts/video_launch_tracker.py": "3c4ad2e0ab6a536f7e979e6eff56aca7574af6aa522e53eae72f03b061a21641",
+  "scripts/video_launch_benchmark.py": "ff7ad4f55f4ca48bb78e494bdbe04f9d5ebd1ddae5c6419aeb80a3fcbc8c4975",
+  "scripts/ball_continuation.py": "e6129def6cf3da899c6f1b31da288bd107c47db8cdb2a82ea0b27353c794cc98",
+  "configs/video_launch_tracking.json": "d1f9628bbd7fa8802084cb22d51baa7cc6398401e6a41f957edb9dd610829c4e",
+  "data/processed/video_launch_features.csv": "cdd0d5949f06550a02671f4a7b55d96f18812fe93016801cdea04b3d3a149076",
+  "experiments/video_launch_v1/metrics.csv": "ddb4398a4c23b0bff0d873fc95817c6d88e780e6293190e5cf0b119acce58ec9",
+  "experiments/video_launch_v1/predictions.csv": "039fc8d77ad5c4c6c1ed3dd3d4b4b22c606e607dfacffb0b1d3e6bf44f0230b2",
+  "reports/video_launch_tracking_results.md": "d27ac857254aeeb7fbc683a2ac587d55b5ed36f166bed17f230d5e045afbedc3"
+}

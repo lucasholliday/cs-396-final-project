@@ -1,0 +1,6 @@
+golfer,carry,roll,train_turf_factor
+Andrew,slice_drag,anchor_rest,0.98
+Eduardo,current,anchor_rest,1.0
+Lucas,smooth_launch,anchor_rest,1.0
+Rohan,smooth_launch,bounded,0.99
+Sid,smooth_launch,anchor_rest,1.0

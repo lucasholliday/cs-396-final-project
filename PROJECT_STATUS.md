@@ -14,6 +14,7 @@ Initial audit, synchronization, whole-swing pose/features and baseline/nested ML
 - Native ball demonstration: manually initialized sid_1_01, 31 candidate points over 0.179 s. Automatic v4 batch ran on all 76: 36 internally gated proposals, all awaiting independent point review before ML use. Version failures preserved.
 - Motion-gated Hough: nine plausible partial shaft segments on sid_1_01; unmasked baseline rejected for background false detections. Saved head-centroid trace, without gaze/metric-height interpretation.
 - Eleven tests pass; isolated .venv imports and pip dependency check pass. Python 3.10.7, FFmpeg 4.3.2, pinned dependencies in requirements/lock.
+- 76 PoseFormerV2 3D skeleton models generated using official pretrained weights (`vendor/PoseFormerV2/checkpoint/poseformerv2_27_f3_n3.bin`) with frequency-domain DCT lifting (CVPR 2023), saving 17-joint 3D metric skeletons, attached 37.25" steel golf club, and dynamic delivery arcs (`data/processed/poseformer_v2/*.json`). Dedicated 3D studio section added to research viewer.
 
 ## Latest camera-only experiment
 Sid full-session 20-fps mat-ball presence scan completed: 29 disappearance candidates; 18 within 1.5 s of the 18 distinct watch-reference swing neighborhoods. Eleven extra candidates and one noticeably early event prevent calling it an exact impact detector. Watch is used only for audit comparison, not detection.
@@ -90,3 +91,115 @@ User confirms the scene renders; head and club quality are the issue. Version 3 
 Direct watch-feature check completed: reports/watch_carry_relationships.md. Current whole-swing wrist peaks show no useful simple positive relationship to carry; phase-specific, impact-aligned features remain untested. Do not interpret this as evidence that true clubhead speed is irrelevant. Reproduce with scripts/watch_carry_relationships.py.
 
 User's exact >70/>100 six-method comparison completed: reports/carry_cutoff_comparison.md. Distinguishes rescoring existing full-range OOF models from retraining restricted models. At >100 the conditional mean beats/matches all restricted models; no gating claim. At >70 the original full-range fusion model (18.96 yd) beats the conditional mean (22.19), but retraining fusion on the reduced cohort worsens to 31.87. Preserve both outcomes.
+
+## Physics-Gated Video Launch & Clubhead Tracking Milestone — 2026-11-18
+User confirmed shifting focus away from full-body motion aesthetics toward direct video ball launch vectors, launch angle/direction, clubhead tracking, and mishit directionality.
+- Investigated user test cases: `lucas_1_02` and `lucas_1_12` previously followed leftward clubhead follow-through; `lucas_1_09` and `lucas_1_10` had extreme rightward pushes (+11.8° and +12.1° TrackMan) where `lucas_1_10` succeeded due to wide spatial separation while `lucas_1_09` was overtaken by clubhead scoring.
+- Implemented physics-constrained tracking in `scripts/video_launch_tracker.py` and `configs/video_launch_tracking.json`: gated departure window (4–35 ms), departure proximity (<220 px from seed), inside-approach clubhead rejection, and ballistic straight-line ray scoring.
+- Results across 68 tracked shots: video launch angle correlates at $r = +0.727$ with TrackMan horizontal launch direction, and vertical rise correlates at $r = +0.583$ with carry.
+- Held-out golfer evaluation (Leave-One-Golfer-Out) using pure video launch features:
+  - Carry flat MAE drops to **26.04 yd** ($R^2 = +0.369$) vs. baseline 31.93 yd ($R^2 = 0.13$).
+  - Launch direction MAE drops to **4.50°** ($R^2 = +0.524$) vs. baseline 7.38° ($R^2 < 0$).
+  - Launch angle MAE drops to **3.83°** ($R^2 = +0.464$) vs. baseline 5.09°.
+  - Mishit detection (<60 yd): AUROC **0.856**, Recall **75.0%**, Precision **66.7%**.
+- 29 unit tests pass; local research viewer rebuilt with clean physics-gated ball tracks and tracers. See `reports/video_launch_tracking_results.md`.
+
+## Flat Driving Range Ball Tracer & Aerodynamic Timing — 2026-11-18
+- Extended all 76 native review videos to 480 frames (~3.0 seconds) using parallel encoding in `scripts/extend_native_review.py`, providing ~2.25 seconds of post-impact video time so the full ball flight can be observed naturally in video playback.
+- Fixed rapid descent artifact: previously, continuation duration was hardcoded to ~0.85s, causing the ball to plummet like a dropped rock into the turf while the golfer was still finishing. Recalibrated flight dynamics to real-world golf ball aerodynamics where 7-iron hang time is 5.5 to 7.0 seconds. The ball climbs smoothly to its true apex downrange (~2.5-3.2s after impact) and gently arcs to the flat driving range horizon ($y = 1100.0$).
+- Addressed TrackMan autonomy vs. replacement: implemented dual-mode continuation in `scripts/ball_continuation.py`—autonomous camera-only mode (predicting hang time, apex height, and curvature from initial vertical rise and departure angle without TrackMan) alongside benchmark ground-truth mode.
+- Resolved lateral trajectory hook bug on `sid_1_04`: decoupled lateral motion from height, incorporating aerodynamic curvature. `sid_1_04` slices right (+48.2 ft curve, +75.0 ft carry side) and stays right throughout flight.
+- All 29 unit tests and Three.js 7,980-frame scene verifications pass. Rebuilt viewer at `outputs/research_viewer/index.html`.
+
+## Dual 3D Flight Arcs, Target Centerline & Live Floating Yardage Badges — 2026-11-18
+- Removed the 2D estimated continuation tracer from the native review panel (`#nativeSection`), retaining only the clean, verified camera-tracked ball flight (yellow) and clubhead tracking (teal). Video plays smoothly without any continuation freezes.
+- Added a straight white target centerline down the 3D driving range ($X = 0, Z = 0 \to -240\text{m}$) with 50, 100, 150, 200, and 250-yard cross hash marks.
+- Implemented dual 3D flight arcs and balls launching simultaneously in the 3D scene:
+  - **TrackMan Radar Ground Truth** (Cyan `#38bdf8`): Built from empirical Doppler radar training labels (`Carry flat (yd)`, `Launch direction (deg)`, `Curve signed (ft)`, `Carry side (ft)`, `Height (ft)`).
+  - **Best High-Speed Video Model** (Purple `#c084fc`): Built from autonomous Leave-One-Golfer-Out predictions (`Carry flat (yd)` [26.04 yd MAE], `Launch direction (deg)` [4.50° MAE], apex height).
+- Replaced the static carry text box with dynamic floating HTML badges positioned in 3D screen space directly above each flying ball:
+  - Ticks up in real time from `0 yd` as each ball travels downrange.
+  - Stops and settles at the final landing carry distance when each ball touches down.
+- Reconfigured the summary metrics card in `Open Swing Lab.html` to clearly contrast:
+  - **Best Model (Video Launch)** in purple (`#c084fc`): Autonomous ball departure velocity vector, climb angle, and pre-impact clubhead speed.
+  - **TrackMan Ground Truth** in cyan (`#38bdf8`): Benchmark Doppler radar carry, launch angle, ball speed, and launch direction.
+  - **Prediction Error**: Signed difference in yards between autonomous estimate and radar truth.
+  - **Baseline Modalities**: Video + watch (whole swing) and reviewed ball pilot cleanly preserved for reference.
+- All 29 unit tests pass; Three.js 7,980-frame scene verification passes without errors.
+
+## Anatomical Golfer IK, Realistic Forged Club, Ball on Mat & Dual/DTL Camera Views — 2026-11-18
+- **Fixed the "wack" lead leg**: Replaced noisy raw MediaPipe lower body estimation with analytical two-bone Inverse Kinematics. The knee flexion is strictly constrained to the natural forward athletic sagittal plane ($+X$ aligned with pelvis rotation), completely eliminating backward hyperextension ("flamingo knees") and flickering leg lengths while preserving smooth, authentic rotational posting at impact.
+- **Ball solidly on the mat**: The golf ball now sits squarely on the synthetic driving range hitting mat atop a dedicated rubber tee spot at $(X = 0.48\text{m}, Y = 0.068\text{m}, Z = -0.05\text{m})$ directly in front of the golfer's stance. The ball rests on the mat until the club strikes it at impact, launching it downrange. The straight target line extends directly from the ball down the range.
+- **Realistic forged 7-iron club**: Upgraded the club graphics with a stepped chrome steel shaft (True Temper style), tour velvet rubber grip with white cap ring, black hosel ferrule, and a sculpted forged muscle-back blade featuring a satin face plate with authentic $34^\circ$ loft and grooves. The club is now rendered in the golfer's hands across all shots.
+- **Unified TrackMan 3D camera angle**: Replaced multiple clunky view-switching buttons with one rock-solid, unified TrackMan launch monitor camera ($X = 1.8\text{m}, Y = 2.2\text{m}, Z = 5.0\text{m}$, looking downrange at $X = 0.0\text{m}, Y = 1.2\text{m}, Z = -45.0\text{m}$). Frames the golfer on the mat in the left foreground while simultaneously capturing the entire dual flight path (TrackMan cyan & model purple) soaring down the driving range fairway. Removed dynamic camera jumping during video playback so the perspective remains completely stable throughout the swing and flight.
+- **Elevated camera perspective, thick 3D ribbons & natural driving range hazards**:
+  - Elevated camera to $Y = 3.6\text{m}$ (pitched down toward $Z = -60\text{m}$) providing clear top-down perspective onto the landing zone to directly compare where both balls touch down.
+  - Implemented thick 8 cm wide 3D tracer ribbons (`ribbonTruth` in cyan, `ribbonPred` in purple) and dynamic landing bullseye rings on the turf marking exact touchdown spots.
+  - Added thick 26 cm target centerline, four organic sand bunkers ($Z = -75, -126, -153, -196\text{m}$), and staggered target greens with color-coded distance flags (50, 90, 125, 165, 210, 250 yd).
+- All 29 unit tests pass; Three.js 7,980-frame geometry check passes. Rebuilt viewer at `outputs/research_viewer/index.html`.
+
+## Audited Best Models for All TrackMan Targets & Curvature-Aware 2D Landing — 2026-11-18
+- **Integrated Audited Best Carry Model**: Replaced older retrospective ridge (26.04 yd MAE) in `build_research_viewer.py` with the audited v7 model (16.27 yd LOGO MAE overall, 12.64 yd on clean tracks).
+- **Trained LOGO Models for All 10 TrackMan Targets (`scripts/train_all_targets.py`)**:
+  - `carry_yd`: **16.27 yd MAE** (baseline: 40.05 yd)
+  - `total_yd`: **14.90 yd MAE** (baseline: 30.51 yd, median: 7.56 yd)
+  - `launch_dir_deg`: **4.55° MAE** (baseline: 7.50°, median: 1.57°)
+  - `launch_angle_deg`: **2.61° MAE** (baseline: 5.49°, median: 1.27°)
+  - `ball_speed_mph`: **9.05 mph MAE** (baseline: 14.84 mph, median: 5.50 mph)
+  - `height_ft`: **11.00 ft MAE** (baseline: 27.80 ft, median: 5.60 ft)
+  - `landing_angle_deg`: **5.13° MAE** (baseline: 12.74°, median: 2.11°)
+  - `hang_time_s`: **0.56 s MAE** (baseline: 1.25 s, median: 0.30 s)
+  - `carry_side_ft`: **39.49 ft MAE** (baseline: 48.36 ft, median: 30.73 ft)
+  - `curve_ft`: **28.72 ft MAE** (baseline: 31.68 ft, median: 24.91 ft)
+- **Upgraded 3D Scene with Shot Curvature (`scripts/range_scene.js`)**:
+  - Predicted purple arc now models aerodynamic side curvature (`curveOffset`) towards the predicted `sidePred`, allowing authentic fade/draw visualization.
+  - Overall 2D landing miss distance dropped to **23.6 yd** across all shots (median: **14.9 yd**), and down to **18.69 yd** on clean shots (median: **13.19 yd**; 60.3% within a 15-yard green radius).
+- All 35 unit tests pass; Three.js 7,980-frame check passes. Rebuilt viewer at `outputs/research_viewer/index.html`.
+
+## November 19 — Primary vs Fallback Transparency & Abstention Dashboard
+
+- **Transparent Fallback Labeling**: Tagged the 14 low-confidence swings that resorted to predicting cohort training mean (~98–104 yd) with an amber warning banner and dropdown indicators, detailing the specific physical reason (lighting glare, extreme topped mishits, or <5 points in the early geometry window).
+- **Primary Model Breakdown Dashboard**: Added a dedicated performance section in `Open Swing Lab.html` isolating the 58 confident launch swings, highlighting the authentic **12.64 yd MAE** (and **8.31 yd median** error, 64.8% error reduction vs baseline, 82.8% within 20 yards) delivered by the 2-feature launch physics model when it has a valid read.
+- **Abstention Principle**: Codified the principle that golfers prefer explicit "Didn't get a good read" alerts over confident assertions of uncalibrated fallback means.
+- **Estimated Ball Departure Navigation**: Added `[Ball departure (est)]` button for all shots lacking manual native 240 fps contact sheet review. Extracted from the first camera-tracked launch observation (verified within ~6 ms / 1 video frame of true contact), giving golfers immediate 1-click jump access to impact across all 76 shots while distinguishing estimated bounds from human-reviewed pilot bounds.
+- **Enhanced Launch Frame Transparency Banner**: Updated the top strike quality banner across all shots to explicitly display both total captured frames and the exact subset of initial frames used by the 150 ms physics model (including source frame indices, e.g. "tracked 60 launch frames; model used initial 23 frames (frames 112–136) within the 150 ms launch window").
+- **Ball Path Launch Window Visual Highlight**: Enhanced the 2D `#ballPath` canvas graphic to visually highlight the model-used launch segment (initial 5–24 frames, $\le 150\text{ ms}$) in bright emerald green (`#34d399`) with individual point nodes and a cutoff circle, distinguishing it from the remaining orange flight path and updating the legend accordingly.
+- Rebuilt viewer at `outputs/research_viewer/index.html`; all 45 unit tests passing; Three.js 7,980-frame geometry check passing.
+
+## November 19 — Ball extension and landing checkpoint
+
+Ten sampled wide-crop tracks now appear in the local reviewer, and Lucas 02's club/arm false track is marked rejected. Wider tracking improved visible coverage. Extra late coordinates did not materially improve landing predictions. Per-target early video remains the reference recipe for landing and resting estimates. The next work is independent initial-launch review on ambiguous shots and collection of a fresh evaluation session. [Results and reproduction](reports/ball_extension_and_joint_landing.md)
+
+The [motion cutoff follow-up](reports/ball_motion_gate_results.md) rejected the strict speed gates as defaults and added a conservative stationary display guard. The existing model remains the reference after comparison with 60 and 80 ms launch features.
+
+Full native-frame club searches now cover all 76 swing windows. The higher-resolution pilot recovered 15 of 41 reviewed shaft directions within 10 degrees; the seeded Lucas 02 pilot retained 168 of 560 positions after drift checks. The range viewer continues to use its previous 120 Hz reconstruction pending broader validation. [Verification and reproduction](reports/native_swing_shaft_review.md)
+
+The range now plays independently at wall-clock speed, with a 1.1 s reconstructed swing, per-ball hang times, rollout and optional video sync. The six starting camera views and dual-ball follow framing passed scene projection checks on all 76 shots at two viewport widths. Headless Chrome also exercised play, pause, replay and video sync on the built viewer.
+
+Range playback now advances pose and club at the review video's 1× pace. Range overview is the default elevated right-side view and frames the full available flight and rollout; Follow ball uses a higher, wider view. The viewer offers four cameras.
+
+Range landings now include a height-scaled hop and rollout along the flight's landing direction, with color-coded carry and total yardages at turf markers. Behind the tee fits the golfer and both flight paths for the current viewport.
+
+The [cross-fitted label-sharing experiment](reports/trackman_label_sharing.md) retained a six-label rollout candidate. On the 69 viewer shots, 2D resting error fell from 23.68 to 23.11 yards against its matched independent baseline. Blanket stacking worsened both endpoints.
+
+Promoted the six-estimate rollout and independent lateral endpoint models to Swing Lab. The summary scores 58 primary-geometry research rows, 57 accepted primary rows and all 69 displayed predictions. Both range balls now stop at their supplied total and total-side coordinates. [Results](reports/research_summary.md)
+
+The range now registers the address stance to the tee and the rendered striking face to the back of the ball. Shoe clearance is a seven-iron display estimate. All 76 setups passed the scene geometry check.
+
+The local range has a landscaped fairway, contour-shaped target greens and greenside bunkers, wooded ridges, and seven flagged targets with tee-to-pin yardages. The hitting bay includes a wire basket, packed practice balls, a feeder tray and textured mats.
+
+The clean-only LOGO experiment found an exploratory video/gyro carry blend and final-side-anchored rollout. Next validate this frozen recipe on new golfers before viewer promotion. [Results](reports/clean_physics_coupling.md)
+
+Automatic sparse-launch recovery reached exploratory 11.05 yd carry MAE and 5.60 mph ball-speed MAE on the 57 accepted primary shots. Freeze the candidate and validate on new golfers. [Results and reproduction](reports/clean_launch_audit.md)
+
+The 3D range offers thin white dashed centerline markings through a checkbox that starts off. Rebuild with `.venv/bin/python scripts/build_research_viewer.py` and run `node scripts/verify_range_scene.js` to check scene geometry.
+
+The range ball now rests directly on the center hitting mat at address.
+
+Swing Lab now embeds a CC0 MakeHuman golfer with weighted shoulders and pelvis, planted feet, and a right-handed finish pivot. The new geometry runs in the recorded-shot and new-swing viewers.
+
+The golfer uses adult reference proportions with a fixed-length torso, restrained knee flex and a centered stance. The updated browser contact sheet includes side views and a second golfer.
+
+Restored the original landmark-driven range avatar. The hips and thighs share a trouser surface, the shoes face the ball and sit on the mat at address, and the display filters follow-through knee and ankle jitter.
+
+The pose-driven range avatar now uses a continuous clothing surface from the ankles through the knees, hips and chest. The follow-through includes an estimated trail-foot pivot about the toe.

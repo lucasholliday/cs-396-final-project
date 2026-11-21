@@ -1,0 +1,17 @@
+cohort,cutoff,protocol,method,n,mae
+all_labeled,70,"all-shot model, score actual above cutoff",mean,56,29.732163059342234
+all_labeled,70,"all-shot model, score actual above cutoff",nested,56,12.50055049608215
+all_labeled,70,train/test actual above cutoff (oracle),mean,56,21.240476473176376
+all_labeled,70,train/test actual above cutoff (oracle),nested,56,11.21326945053571
+all_labeled,100,"all-shot model, score actual above cutoff",mean,44,33.480526692391095
+all_labeled,100,"all-shot model, score actual above cutoff",nested,44,11.934159660429104
+all_labeled,100,train/test actual above cutoff (oracle),mean,44,11.979831932773108
+all_labeled,100,train/test actual above cutoff (oracle),nested,44,8.395112901872174
+matched_club,70,"all-shot model, score actual above cutoff",mean,50,31.04727172096909
+matched_club,70,"all-shot model, score actual above cutoff",nested,50,11.660756301962408
+matched_club,70,train/test actual above cutoff (oracle),mean,50,22.18868440502587
+matched_club,70,train/test actual above cutoff (oracle),nested,50,14.240181526751966
+matched_club,100,"all-shot model, score actual above cutoff",mean,39,35.584920634920614
+matched_club,100,"all-shot model, score actual above cutoff",nested,39,11.10127602675891
+matched_club,100,train/test actual above cutoff (oracle),mean,39,11.980392156862745
+matched_club,100,train/test actual above cutoff (oracle),nested,39,12.14815320424109

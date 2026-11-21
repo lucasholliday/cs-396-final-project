@@ -1,0 +1,2998 @@
+{
+  "input_tracks": "ball_extension_wide35",
+  "time_units": "source playback seconds relative to candidate launch seed",
+  "variants": {
+    "ungated_150ms": [
+      "none",
+      0.15
+    ],
+    "absolute_150ms": [
+      "absolute",
+      0.15
+    ],
+    "relative_150ms": [
+      "relative",
+      0.15
+    ],
+    "either_150ms": [
+      "either",
+      0.15
+    ],
+    "stall_150ms": [
+      "stall",
+      0.15
+    ],
+    "ungated_80ms": [
+      "none",
+      0.08
+    ],
+    "ungated_60ms": [
+      "none",
+      0.06
+    ],
+    "either_80ms": [
+      "either",
+      0.08
+    ],
+    "either_60ms": [
+      "either",
+      0.06
+    ],
+    "robust_linear_60ms": [
+      "none",
+      0.06
+    ],
+    "robust_linear_80ms": [
+      "none",
+      0.08
+    ]
+  },
+  "features": [
+    "proj_vy",
+    "proj_depth_rate",
+    "proj_vx",
+    "proj_fit_rmse"
+  ],
+  "inner_selections": [
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 18.69432820645853,
+        "ridge60": 23.537008473537,
+        "svr1": 18.17802651166866,
+        "svr10": 15.398394736346342,
+        "routed_svr10": 14.583371849453885
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.27986619445283,
+        "ridge60": 16.02631479457769,
+        "svr1": 14.896281817586782,
+        "svr10": 15.70201418866633
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 16.832855783600802,
+        "ridge60": 19.198154051083584,
+        "svr1": 16.283510636286834,
+        "svr10": 14.270590422122254
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 17.882557016556458,
+        "ridge60": 18.670163083070936,
+        "svr1": 18.10943235739645,
+        "svr10": 19.110655244887283
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 29.95604074035686,
+        "ridge60": 35.69092001724088,
+        "svr1": 29.1871650164105,
+        "svr10": 26.69603585258962,
+        "routed_svr10": 19.12368511947801
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 15.813610854932874,
+        "ridge60": 16.17851302062595,
+        "svr1": 16.579494844765723,
+        "svr10": 18.09138402683534
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.75411254180792,
+        "ridge60": 28.18388377162477,
+        "svr1": 24.69660399348241,
+        "svr10": 21.86035425530392
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 19.429745474646147,
+        "ridge60": 19.272343711145552,
+        "svr1": 19.725492049713687,
+        "svr10": 22.248846904262418
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 26.336769597565777,
+        "ridge60": 32.2877709169057,
+        "svr1": 21.908185901233313,
+        "svr10": 20.984504017542747,
+        "routed_svr10": 17.309968909803395
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.906758046704107,
+        "ridge60": 15.204662511589529,
+        "svr1": 12.704143029437104,
+        "svr10": 12.620566662366269
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 21.47780329515423,
+        "ridge60": 25.62402942270471,
+        "svr1": 18.749246179420876,
+        "svr10": 17.565726066357115
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.38388279845723,
+        "ridge60": 18.86152255103616,
+        "svr1": 16.55569437104787,
+        "svr10": 16.71207030539574
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 25.944144197444473,
+        "ridge60": 29.472561864644824,
+        "svr1": 27.053413042667533,
+        "svr10": 25.128156107351327,
+        "routed_svr10": 19.532488904248154
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 16.104760235633375,
+        "ridge60": 16.07190454970388,
+        "svr1": 16.757079593831225,
+        "svr10": 17.360188630601197
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 20.142596525470545,
+        "ridge60": 22.029285301736834,
+        "svr1": 20.813363385668133,
+        "svr10": 19.178386074488632
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 19.364941209647153,
+        "ridge60": 19.044984135826983,
+        "svr1": 20.794888554481346,
+        "svr10": 21.78371909162152
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 29.66238184800576,
+        "ridge60": 34.25499043245705,
+        "svr1": 23.02958597051101,
+        "svr10": 23.598646448410637,
+        "routed_svr10": 21.40514701170859
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 16.010404764123507,
+        "ridge60": 16.711253635402016,
+        "svr1": 15.166050755250605,
+        "svr10": 16.07992134294868
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 23.6255328300979,
+        "ridge60": 26.019695439756084,
+        "svr1": 20.09366572300739,
+        "svr10": 19.696282328694412
+      }
+    },
+    {
+      "variant": "previous_cached_geometry",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 19.61432952527988,
+        "ridge60": 20.737880860093654,
+        "svr1": 18.93783186165387,
+        "svr10": 20.510610903314014
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 23.49973132485767,
+        "ridge60": 25.54073321278864,
+        "svr1": 21.11635870611045,
+        "svr10": 20.355239256221434,
+        "routed_svr10": 19.450555323554923
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.47931539812271,
+        "ridge60": 15.995198388293959,
+        "svr1": 14.11769250295312,
+        "svr10": 13.83007308438814
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.31942817072955,
+        "ridge60": 20.21802694669819,
+        "svr1": 16.734658415429255,
+        "svr10": 15.986520871252061
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.829785818818518,
+        "ridge60": 18.49554439194978,
+        "svr1": 17.25759656600141,
+        "svr10": 17.1820565509731
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.49000193900362,
+        "ridge60": 36.95148540910885,
+        "svr1": 26.995280118437808,
+        "svr10": 27.83095058271617,
+        "routed_svr10": 20.791252777373884
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.233614877094773,
+        "ridge60": 15.850772018431336,
+        "svr1": 16.215305220379754,
+        "svr10": 17.77876120611879
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 25.13994210104601,
+        "ridge60": 28.206852595649686,
+        "svr1": 21.823168789817608,
+        "svr10": 21.399120068487413
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 16.9866667439394,
+        "ridge60": 18.935262657662072,
+        "svr1": 19.60148560581424,
+        "svr10": 22.197472946450034
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 31.882910385019223,
+        "ridge60": 34.87243307981361,
+        "svr1": 26.777870775206154,
+        "svr10": 23.653930650533407,
+        "routed_svr10": 20.35444923694198
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 14.060613105352688,
+        "ridge60": 15.432297326249552,
+        "svr1": 12.247650916283645,
+        "svr10": 12.279067817236312
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.80820392640228,
+        "ridge60": 26.927335288796527,
+        "svr1": 22.032646348043713,
+        "svr10": 19.788613013327062
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.31941105165758,
+        "ridge60": 19.02874390259276,
+        "svr1": 15.546051204014645,
+        "svr10": 15.872695650648899
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 29.606032138579657,
+        "ridge60": 30.911325844427086,
+        "svr1": 24.47372809589857,
+        "svr10": 23.867634417883377,
+        "routed_svr10": 20.578287288943674
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.09004289218226,
+        "ridge60": 15.736176389116386,
+        "svr1": 14.319875261837337,
+        "svr10": 14.661293838682075
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 21.71071139964269,
+        "ridge60": 23.0334654263857,
+        "svr1": 19.60839773278184,
+        "svr10": 19.428148504626478
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.960927934092282,
+        "ridge60": 18.680215576831856,
+        "svr1": 18.017233273719857,
+        "svr10": 17.75816241701024
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 32.605717783472265,
+        "ridge60": 34.03334073137178,
+        "svr1": 24.270737524652237,
+        "svr10": 23.288606599819225,
+        "routed_svr10": 24.414530442095383
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.331048677970394,
+        "ridge60": 15.256928595453223,
+        "svr1": 12.381726118031368,
+        "svr10": 11.350517199040098
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 23.413535216614576,
+        "ridge60": 24.85732998129354,
+        "svr1": 20.4978038908421,
+        "svr10": 19.792910279409185
+      }
+    },
+    {
+      "variant": "ungated_150ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.889482033975233,
+        "ridge60": 18.762977876363045,
+        "svr1": 14.880173524361558,
+        "svr10": 13.62362058031538
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 23.467998499756295,
+        "ridge60": 25.531426839024064,
+        "svr1": 21.039982719769394,
+        "svr10": 20.286051088499082,
+        "routed_svr10": 19.28752875976622
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.465179561737243,
+        "ridge60": 15.989095004221472,
+        "svr1": 14.105484904331249,
+        "svr10": 13.774141025126411
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.3141262121258,
+        "ridge60": 20.212526118083655,
+        "svr1": 16.72315046496561,
+        "svr10": 15.949048138006802
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.813633919559035,
+        "ridge60": 18.48951577293663,
+        "svr1": 17.235178141157483,
+        "svr10": 17.088336615092892
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.43580451865857,
+        "ridge60": 36.87850611809352,
+        "svr1": 26.753059742588594,
+        "svr10": 27.849935809313333,
+        "routed_svr10": 20.376461454934578
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.226410558157301,
+        "ridge60": 15.845950510348054,
+        "svr1": 16.18278328403045,
+        "svr10": 17.72307900482573
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 25.072659561766336,
+        "ridge60": 28.151688027612387,
+        "svr1": 21.715356200568213,
+        "svr10": 21.435872062476296
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 16.968716835337357,
+        "ridge60": 18.932343143381935,
+        "svr1": 19.635673468522324,
+        "svr10": 22.238735032788846
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 31.812881099373143,
+        "ridge60": 34.843595936990006,
+        "svr1": 26.788794585319504,
+        "svr10": 23.55741931617063,
+        "routed_svr10": 20.366954846790648
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 14.055823250653852,
+        "ridge60": 15.429018178575332,
+        "svr1": 12.254331996108839,
+        "svr10": 12.269727119343797
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.754800482780016,
+        "ridge60": 26.90587105159113,
+        "svr1": 22.032745209410542,
+        "svr10": 19.703698640587692
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.311404699371952,
+        "ridge60": 19.025103637361283,
+        "svr1": 15.531806212710256,
+        "svr10": 15.821704236903345
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 29.594929332717413,
+        "ridge60": 30.897052727197206,
+        "svr1": 24.32096448000668,
+        "svr10": 23.61742612123234,
+        "routed_svr10": 20.35880882117361
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.075017870082267,
+        "ridge60": 15.729895259413967,
+        "svr1": 14.28960638106473,
+        "svr10": 14.648126023794463
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 21.698799065546893,
+        "ridge60": 23.030355439959894,
+        "svr1": 19.5574783218215,
+        "svr10": 19.15639349752018
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.945217707804805,
+        "ridge60": 18.67431633285124,
+        "svr1": 18.00324296985833,
+        "svr10": 17.754535690827204
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 32.47279486362523,
+        "ridge60": 33.961476368745245,
+        "svr1": 24.130011143592778,
+        "svr10": 22.90961580188353,
+        "routed_svr10": 24.075607231058555
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.307622238884996,
+        "ridge60": 15.250398501075088,
+        "svr1": 12.341298256910497,
+        "svr10": 11.306003774250726
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 23.309757378662106,
+        "ridge60": 24.809930755866876,
+        "svr1": 20.424136635727823,
+        "svr10": 19.88902779216689
+      }
+    },
+    {
+      "variant": "absolute_150ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.864670732923742,
+        "ridge60": 18.760816825045918,
+        "svr1": 14.897250292296448,
+        "svr10": 13.65406092501464
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 23.521564156434405,
+        "ridge60": 25.4463805723772,
+        "svr1": 20.939648938316942,
+        "svr10": 20.531039668896245,
+        "routed_svr10": 20.12075962983936
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.47932199531907,
+        "ridge60": 16.004198196711375,
+        "svr1": 14.180029658392431,
+        "svr10": 13.857851066523317
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.168340570758055,
+        "ridge60": 20.10597066490272,
+        "svr1": 16.59536857224284,
+        "svr10": 16.40211863113888
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.830018528349893,
+        "ridge60": 18.502136014103613,
+        "svr1": 17.284535973796018,
+        "svr10": 17.315628049952405
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.19580926659252,
+        "ridge60": 36.774245721569805,
+        "svr1": 27.26788183968529,
+        "svr10": 27.918945075723,
+        "routed_svr10": 20.611128141471738
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.283888588650273,
+        "ridge60": 15.820788816764493,
+        "svr1": 16.25214112216448,
+        "svr10": 17.324587447598027
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.888258868930013,
+        "ridge60": 28.040682319493865,
+        "svr1": 22.259693627807923,
+        "svr10": 21.75648228516775
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 17.021637938533928,
+        "ridge60": 18.900859088228835,
+        "svr1": 19.72268842400142,
+        "svr10": 22.203814393110374
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 31.909788787241308,
+        "ridge60": 34.79374696344038,
+        "svr1": 26.57316092550061,
+        "svr10": 23.664564320840174,
+        "routed_svr10": 20.527524481657995
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 14.09958538050129,
+        "ridge60": 15.455446340963542,
+        "svr1": 12.258024975450693,
+        "svr10": 12.247191343376233
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.58961323399398,
+        "ridge60": 26.823223916355122,
+        "svr1": 21.79397716673,
+        "svr10": 19.894370949864406
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.365610145449565,
+        "ridge60": 19.049459371847153,
+        "svr1": 15.639181814558873,
+        "svr10": 15.785432599448074
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 29.50253045383589,
+        "ridge60": 30.819216736586405,
+        "svr1": 24.198730615020082,
+        "svr10": 24.012742228868465,
+        "routed_svr10": 21.305680670634032
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.092772867869417,
+        "ridge60": 15.738344556621506,
+        "svr1": 14.532571324262701,
+        "svr10": 14.732140940063527
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 21.548320929129456,
+        "ridge60": 22.989391166901097,
+        "svr1": 19.271418353011867,
+        "svr10": 19.376878198160572
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.968655532727617,
+        "ridge60": 18.685545096982334,
+        "svr1": 18.168602435109076,
+        "svr10": 17.789262726683194
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 32.216231763442416,
+        "ridge60": 33.90330874765258,
+        "svr1": 24.33091865822038,
+        "svr10": 23.67550372126177,
+        "routed_svr10": 24.868522532911403
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.331132682164613,
+        "ridge60": 15.253400653724414,
+        "svr1": 12.341409399518634,
+        "svr10": 11.243191897180466
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 23.033521796406596,
+        "ridge60": 24.725501899759415,
+        "svr1": 20.448409324914813,
+        "svr10": 20.004087533178183
+      }
+    },
+    {
+      "variant": "relative_150ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.897494829151185,
+        "ridge60": 18.781699589411595,
+        "svr1": 14.917905132996713,
+        "svr10": 13.660624589141266
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 23.51540304679205,
+        "ridge60": 25.44822792931923,
+        "svr1": 20.938015578088244,
+        "svr10": 20.526944047254123,
+        "routed_svr10": 20.11316453115503
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.477970807571362,
+        "ridge60": 16.00367067930325,
+        "svr1": 14.177748061458809,
+        "svr10": 13.853268028579892
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.169253120221814,
+        "ridge60": 20.10723060276429,
+        "svr1": 16.59337629666222,
+        "svr10": 16.39674304146764
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.828196540948603,
+        "ridge60": 18.501567649725548,
+        "svr1": 17.28427065934796,
+        "svr10": 17.310800169287088
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.19114545677888,
+        "ridge60": 36.760833107825846,
+        "svr1": 27.218488756429586,
+        "svr10": 27.966948376787396,
+        "routed_svr10": 20.70983082687529
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.28567966562212,
+        "ridge60": 15.82096333425615,
+        "svr1": 16.24899698687116,
+        "svr10": 17.32794903754545
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.87585415174898,
+        "ridge60": 28.030280395644276,
+        "svr1": 22.23583292552106,
+        "svr10": 21.75152740003913
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 17.019836638205035,
+        "ridge60": 18.899586807317185,
+        "svr1": 19.715982378094754,
+        "svr10": 22.18450004704821
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 31.86455083570267,
+        "ridge60": 34.77727925782757,
+        "svr1": 26.566980728566413,
+        "svr10": 23.61839998665932,
+        "routed_svr10": 20.5214732027982
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 14.096978588695807,
+        "ridge60": 15.453323651062194,
+        "svr1": 12.261964670179095,
+        "svr10": 12.25483621725294
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.563423448021958,
+        "ridge60": 26.813229639127837,
+        "svr1": 21.796698882014713,
+        "svr10": 19.867192863626773
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.359797526566318,
+        "ridge60": 19.047322648955923,
+        "svr1": 15.634088811471505,
+        "svr10": 15.76523121140791
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 29.502210991786743,
+        "ridge60": 30.817725197176813,
+        "svr1": 24.11581623719057,
+        "svr10": 24.011251937384856,
+        "routed_svr10": 21.30913220443928
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.089699088579556,
+        "ridge60": 15.736994027971402,
+        "svr1": 14.532013156360902,
+        "svr10": 14.719580164303846
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 21.54668983720503,
+        "ridge60": 22.988236135335164,
+        "svr1": 19.264294250921953,
+        "svr10": 19.356759139762097
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.965421967223516,
+        "ridge60": 18.684162548212633,
+        "svr1": 18.161442014639398,
+        "svr10": 17.787537872766617
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 32.17957658883842,
+        "ridge60": 33.88621377824822,
+        "svr1": 24.27679704604436,
+        "svr10": 23.745552340155193,
+        "routed_svr10": 24.902280527911703
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.325658892213493,
+        "ridge60": 15.251814501446574,
+        "svr1": 12.338041124414325,
+        "svr10": 11.223741585522575
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 23.00468257087119,
+        "ridge60": 24.713828536185765,
+        "svr1": 20.38160203367069,
+        "svr10": 20.031783790741294
+      }
+    },
+    {
+      "variant": "either_150ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.891603920244236,
+        "ridge60": 18.779032126491582,
+        "svr1": 14.914635107834851,
+        "svr10": 13.645131783010058
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 23.49973132485767,
+        "ridge60": 25.54073321278864,
+        "svr1": 21.11635870611045,
+        "svr10": 20.355239256221434,
+        "routed_svr10": 19.450555323554923
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.47931539812271,
+        "ridge60": 15.995198388293959,
+        "svr1": 14.11769250295312,
+        "svr10": 13.83007308438814
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.31942817072955,
+        "ridge60": 20.21802694669819,
+        "svr1": 16.734658415429255,
+        "svr10": 15.986520871252061
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.829785818818518,
+        "ridge60": 18.49554439194978,
+        "svr1": 17.25759656600141,
+        "svr10": 17.1820565509731
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.49000193900362,
+        "ridge60": 36.95148540910885,
+        "svr1": 26.995280118437808,
+        "svr10": 27.83095058271617,
+        "routed_svr10": 20.791252777373884
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.233614877094773,
+        "ridge60": 15.850772018431336,
+        "svr1": 16.215305220379754,
+        "svr10": 17.77876120611879
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 25.13994210104601,
+        "ridge60": 28.206852595649686,
+        "svr1": 21.823168789817608,
+        "svr10": 21.399120068487413
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 16.9866667439394,
+        "ridge60": 18.935262657662072,
+        "svr1": 19.60148560581424,
+        "svr10": 22.197472946450034
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 31.882910385019223,
+        "ridge60": 34.87243307981361,
+        "svr1": 26.777870775206154,
+        "svr10": 23.653930650533407,
+        "routed_svr10": 20.35444923694198
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 14.060613105352688,
+        "ridge60": 15.432297326249552,
+        "svr1": 12.247650916283645,
+        "svr10": 12.279067817236312
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 24.80820392640228,
+        "ridge60": 26.927335288796527,
+        "svr1": 22.032646348043713,
+        "svr10": 19.788613013327062
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 17.31941105165758,
+        "ridge60": 19.02874390259276,
+        "svr1": 15.546051204014645,
+        "svr10": 15.872695650648899
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 29.606032138579657,
+        "ridge60": 30.911325844427086,
+        "svr1": 24.47372809589857,
+        "svr10": 23.867634417883377,
+        "routed_svr10": 20.578287288943674
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.09004289218226,
+        "ridge60": 15.736176389116386,
+        "svr1": 14.319875261837337,
+        "svr10": 14.661293838682075
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 21.71071139964269,
+        "ridge60": 23.0334654263857,
+        "svr1": 19.60839773278184,
+        "svr10": 19.428148504626478
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.960927934092282,
+        "ridge60": 18.680215576831856,
+        "svr1": 18.017233273719857,
+        "svr10": 17.75816241701024
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 32.605717783472265,
+        "ridge60": 34.03334073137178,
+        "svr1": 24.270737524652237,
+        "svr10": 23.288606599819225,
+        "routed_svr10": 24.414530442095383
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.331048677970394,
+        "ridge60": 15.256928595453223,
+        "svr1": 12.381726118031368,
+        "svr10": 11.350517199040098
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 23.413535216614576,
+        "ridge60": 24.85732998129354,
+        "svr1": 20.4978038908421,
+        "svr10": 19.792910279409185
+      }
+    },
+    {
+      "variant": "stall_150ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.889482033975233,
+        "ridge60": 18.762977876363045,
+        "svr1": 14.880173524361558,
+        "svr10": 13.62362058031538
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 23.634335774903878,
+        "ridge60": 25.604119036112802,
+        "svr1": 21.46931255871595,
+        "svr10": 23.091134549215916,
+        "routed_svr10": 20.10230529403992
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.868246486553907,
+        "ridge60": 16.155494956020988,
+        "svr1": 14.52830709218402,
+        "svr10": 13.812924593041384
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 18.517719336012057,
+        "ridge60": 20.000149036991548,
+        "svr1": 17.1274312323756,
+        "svr10": 19.522690502808466
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.18380227653048,
+        "ridge60": 18.595872088610285,
+        "svr1": 17.66181166816422,
+        "svr10": 17.456238659451518
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.93106672662622,
+        "ridge60": 36.97576729244854,
+        "svr1": 27.337887513489186,
+        "svr10": 28.572670275704642,
+        "routed_svr10": 19.01505809846333
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.224924002718307,
+        "ridge60": 15.71929497224673,
+        "svr1": 16.04725283195,
+        "svr10": 16.372620592678825
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 25.319645933234675,
+        "ridge60": 28.11209182953666,
+        "svr1": 22.659357730968242,
+        "svr10": 22.21624227366347
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 16.924833093776122,
+        "ridge60": 18.762537051117036,
+        "svr1": 19.769949663909227,
+        "svr10": 20.71731158829015
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.87247649444798,
+        "ridge60": 35.18245445354507,
+        "svr1": 27.870465756716406,
+        "svr10": 26.870528725713857,
+        "routed_svr10": 21.097556249210577
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.950203488986917,
+        "ridge60": 15.384452657673103,
+        "svr1": 12.34290022023243,
+        "svr10": 11.286326093723597
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 25.929032935327484,
+        "ridge60": 27.4651007696157,
+        "svr1": 23.812957423640817,
+        "svr10": 23.646774946815615
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 16.953605218084185,
+        "ridge60": 18.769374473647677,
+        "svr1": 15.554059726348159,
+        "svr10": 15.638097157141313
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 30.366309060368863,
+        "ridge60": 31.911493788079433,
+        "svr1": 25.56768610735147,
+        "svr10": 26.778663066507132,
+        "routed_svr10": 23.938401328037383
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 15.23590070055994,
+        "ridge60": 15.80762668689975,
+        "svr1": 15.379200357146262,
+        "svr10": 15.360028615330673
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 22.879980644501696,
+        "ridge60": 23.58600789037992,
+        "svr1": 20.51111401707767,
+        "svr10": 21.94474164448535
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 17.863077854108774,
+        "ridge60": 18.577065773515233,
+        "svr1": 18.54754997421927,
+        "svr10": 19.880077290420918
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 33.13898357395947,
+        "ridge60": 34.61128399741093,
+        "svr1": 26.539161463280024,
+        "svr10": 26.0207472234767,
+        "routed_svr10": 23.013359714151004
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.588763061716136,
+        "ridge60": 15.120060544066076,
+        "svr1": 13.162479444718283,
+        "svr10": 12.540336081390697
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 24.495057201174443,
+        "ridge60": 25.59639333399824,
+        "svr1": 22.91666038198628,
+        "svr10": 24.115175736186707
+      }
+    },
+    {
+      "variant": "ungated_80ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 16.2577010762286,
+        "ridge60": 18.23713806386079,
+        "svr1": 16.106536484650967,
+        "svr10": 16.735368323901632
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 27.191456169360404,
+        "ridge60": 27.007292811474105,
+        "svr1": 29.003372314238725,
+        "svr10": 33.946890409937076,
+        "routed_svr10": 27.03558100008277
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.66130405564179,
+        "ridge60": 16.27985043089702,
+        "svr1": 14.465668941870742,
+        "svr10": 13.78643481892627
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 19.18731515407458,
+        "ridge60": 19.59305168125621,
+        "svr1": 19.01396544970348,
+        "svr10": 21.583428457747434
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.48728612767448,
+        "ridge60": 19.111271990137336,
+        "svr1": 17.37251768575492,
+        "svr10": 16.763967629394855
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 31.082512079856905,
+        "ridge60": 34.450182010975816,
+        "svr1": 32.46661408161489,
+        "svr10": 36.406814119900154,
+        "routed_svr10": 33.50899574715932
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 13.019183614541506,
+        "ridge60": 15.14701372122034,
+        "svr1": 14.874715344564958,
+        "svr10": 14.87094618565525
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 24.344810750759567,
+        "ridge60": 26.73414913833945,
+        "svr1": 27.4134034091507,
+        "svr10": 30.29308972953229
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 16.364753713013123,
+        "ridge60": 18.65015500548193,
+        "svr1": 19.13353546655548,
+        "svr10": 19.520525288448283
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 35.477525454619396,
+        "ridge60": 36.53810277617865,
+        "svr1": 38.22887656127934,
+        "svr10": 38.41037026859844,
+        "routed_svr10": 28.056732749642222
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 14.00972111768673,
+        "ridge60": 15.581486422180804,
+        "svr1": 13.973654007552776,
+        "svr10": 13.862264415439684
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 27.449289034180683,
+        "ridge60": 28.05215440569323,
+        "svr1": 29.230802125102393,
+        "svr10": 29.596295709455724
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 17.8882441257918,
+        "ridge60": 19.63239727942858,
+        "svr1": 18.063775931733336,
+        "svr10": 18.1078532679487
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 32.90880951245824,
+        "ridge60": 32.221786604687075,
+        "svr1": 34.373812075794895,
+        "svr10": 38.994839575797506,
+        "routed_svr10": 32.285677582390115
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.193014821940476,
+        "ridge60": 15.841752046390386,
+        "svr1": 14.973537651034606,
+        "svr10": 15.542107018980644
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 23.391370496942436,
+        "ridge60": 22.96935933694778,
+        "svr1": 22.872162352561528,
+        "svr10": 27.19010046347269
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 18.516237365833693,
+        "ridge60": 19.175395703945345,
+        "svr1": 18.238603994627585,
+        "svr10": 19.05611140074394
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 35.12000124014538,
+        "ridge60": 35.46860839163484,
+        "svr1": 43.914191562633505,
+        "svr10": 45.17997070204733,
+        "routed_svr10": 30.954084620085503
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.69428119334865,
+        "ridge60": 15.738471647724616,
+        "svr1": 15.484688675992341,
+        "svr10": 15.194114305451112
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 25.101309119419604,
+        "ridge60": 25.044750723997918,
+        "svr1": 31.719621590403786,
+        "svr10": 34.3646072625175
+      }
+    },
+    {
+      "variant": "ungated_60ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 18.25475587993108,
+        "ridge60": 19.447539977336888,
+        "svr1": 19.121532704487382,
+        "svr10": 19.04949598256067
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 23.634335774903878,
+        "ridge60": 25.604119036112802,
+        "svr1": 21.46931255871595,
+        "svr10": 23.091134549215916,
+        "routed_svr10": 20.10230529403992
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.868246486553907,
+        "ridge60": 16.155494956020988,
+        "svr1": 14.52830709218402,
+        "svr10": 13.812924593041384
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 18.517719336012057,
+        "ridge60": 20.000149036991548,
+        "svr1": 17.1274312323756,
+        "svr10": 19.522690502808466
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.18380227653048,
+        "ridge60": 18.595872088610285,
+        "svr1": 17.66181166816422,
+        "svr10": 17.456238659451518
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.93106672662622,
+        "ridge60": 36.97576729244854,
+        "svr1": 27.337887513489186,
+        "svr10": 28.572670275704642,
+        "routed_svr10": 19.01505809846333
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.224924002718307,
+        "ridge60": 15.71929497224673,
+        "svr1": 16.04725283195,
+        "svr10": 16.372620592678825
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 25.319645933234675,
+        "ridge60": 28.11209182953666,
+        "svr1": 22.659357730968242,
+        "svr10": 22.21624227366347
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 16.924833093776122,
+        "ridge60": 18.762537051117036,
+        "svr1": 19.769949663909227,
+        "svr10": 20.71731158829015
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 32.87247649444798,
+        "ridge60": 35.18245445354507,
+        "svr1": 27.870465756716406,
+        "svr10": 26.870528725713857,
+        "routed_svr10": 21.097556249210577
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.950203488986917,
+        "ridge60": 15.384452657673103,
+        "svr1": 12.34290022023243,
+        "svr10": 11.286326093723597
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 25.929032935327484,
+        "ridge60": 27.4651007696157,
+        "svr1": 23.812957423640817,
+        "svr10": 23.646774946815615
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 16.953605218084185,
+        "ridge60": 18.769374473647677,
+        "svr1": 15.554059726348159,
+        "svr10": 15.638097157141313
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 30.366309060368863,
+        "ridge60": 31.911493788079433,
+        "svr1": 25.56768610735147,
+        "svr10": 26.778663066507132,
+        "routed_svr10": 23.938401328037383
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 15.23590070055994,
+        "ridge60": 15.80762668689975,
+        "svr1": 15.379200357146262,
+        "svr10": 15.360028615330673
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 22.879980644501696,
+        "ridge60": 23.58600789037992,
+        "svr1": 20.51111401707767,
+        "svr10": 21.94474164448535
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 17.863077854108774,
+        "ridge60": 18.577065773515233,
+        "svr1": 18.54754997421927,
+        "svr10": 19.880077290420918
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 33.13898357395947,
+        "ridge60": 34.61128399741093,
+        "svr1": 26.539161463280024,
+        "svr10": 26.0207472234767,
+        "routed_svr10": 23.013359714151004
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.588763061716136,
+        "ridge60": 15.120060544066076,
+        "svr1": 13.162479444718283,
+        "svr10": 12.540336081390697
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 24.495057201174443,
+        "ridge60": 25.59639333399824,
+        "svr1": 22.91666038198628,
+        "svr10": 24.115175736186707
+      }
+    },
+    {
+      "variant": "either_80ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 16.2577010762286,
+        "ridge60": 18.23713806386079,
+        "svr1": 16.106536484650967,
+        "svr10": 16.735368323901632
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 27.191456169360404,
+        "ridge60": 27.007292811474105,
+        "svr1": 29.003372314238725,
+        "svr10": 33.946890409937076,
+        "routed_svr10": 27.03558100008277
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.66130405564179,
+        "ridge60": 16.27985043089702,
+        "svr1": 14.465668941870742,
+        "svr10": 13.78643481892627
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 19.18731515407458,
+        "ridge60": 19.59305168125621,
+        "svr1": 19.01396544970348,
+        "svr10": 21.583428457747434
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.48728612767448,
+        "ridge60": 19.111271990137336,
+        "svr1": 17.37251768575492,
+        "svr10": 16.763967629394855
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 31.082512079856905,
+        "ridge60": 34.450182010975816,
+        "svr1": 32.46661408161489,
+        "svr10": 36.406814119900154,
+        "routed_svr10": 33.50899574715932
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 13.019183614541506,
+        "ridge60": 15.14701372122034,
+        "svr1": 14.874715344564958,
+        "svr10": 14.87094618565525
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 24.344810750759567,
+        "ridge60": 26.73414913833945,
+        "svr1": 27.4134034091507,
+        "svr10": 30.29308972953229
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 16.364753713013123,
+        "ridge60": 18.65015500548193,
+        "svr1": 19.13353546655548,
+        "svr10": 19.520525288448283
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 35.477525454619396,
+        "ridge60": 36.53810277617865,
+        "svr1": 38.22887656127934,
+        "svr10": 38.41037026859844,
+        "routed_svr10": 28.056732749642222
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 14.00972111768673,
+        "ridge60": 15.581486422180804,
+        "svr1": 13.973654007552776,
+        "svr10": 13.862264415439684
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 27.449289034180683,
+        "ridge60": 28.05215440569323,
+        "svr1": 29.230802125102393,
+        "svr10": 29.596295709455724
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 17.8882441257918,
+        "ridge60": 19.63239727942858,
+        "svr1": 18.063775931733336,
+        "svr10": 18.1078532679487
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 32.90880951245824,
+        "ridge60": 32.221786604687075,
+        "svr1": 34.373812075794895,
+        "svr10": 38.994839575797506,
+        "routed_svr10": 32.285677582390115
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 15.193014821940476,
+        "ridge60": 15.841752046390386,
+        "svr1": 14.973537651034606,
+        "svr10": 15.542107018980644
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 23.391370496942436,
+        "ridge60": 22.96935933694778,
+        "svr1": 22.872162352561528,
+        "svr10": 27.19010046347269
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 18.516237365833693,
+        "ridge60": 19.175395703945345,
+        "svr1": 18.238603994627585,
+        "svr10": 19.05611140074394
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 35.12000124014538,
+        "ridge60": 35.46860839163484,
+        "svr1": 43.914191562633505,
+        "svr10": 45.17997070204733,
+        "routed_svr10": 30.954084620085503
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 14.69428119334865,
+        "ridge60": 15.738471647724616,
+        "svr1": 15.484688675992341,
+        "svr10": 15.194114305451112
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "ridge60",
+      "scores": {
+        "ridge10": 25.101309119419604,
+        "ridge60": 25.044750723997918,
+        "svr1": 31.719621590403786,
+        "svr10": 34.3646072625175
+      }
+    },
+    {
+      "variant": "either_60ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 18.25475587993108,
+        "ridge60": 19.447539977336888,
+        "svr1": 19.121532704487382,
+        "svr10": 19.04949598256067
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 27.993241821545315,
+        "ridge60": 27.54760438614684,
+        "svr1": 23.758136087335842,
+        "svr10": 23.269645753807417,
+        "routed_svr10": 23.987316616876726
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.57169909436967,
+        "ridge60": 15.897442925371537,
+        "svr1": 14.770303612596893,
+        "svr10": 12.460447869252535
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 21.259530780565882,
+        "ridge60": 21.658466886033494,
+        "svr1": 20.61403327909963,
+        "svr10": 21.328484475977596
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.083683187442336,
+        "ridge60": 18.440061019279632,
+        "svr1": 17.41135393349772,
+        "svr10": 15.092550541982103
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 34.206376158408716,
+        "ridge60": 37.405204588926715,
+        "svr1": 34.00748790169397,
+        "svr10": 33.20927104862072,
+        "routed_svr10": 26.752547777184983
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.093420631434297,
+        "ridge60": 16.014759409386997,
+        "svr1": 14.858299062245141,
+        "svr10": 12.48947774323703
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 25.42916083350459,
+        "ridge60": 28.68497199375853,
+        "svr1": 28.646150946142026,
+        "svr10": 30.441585293884035
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.592594852829766,
+        "ridge60": 19.279972984595677,
+        "svr1": 19.444069401143903,
+        "svr10": 15.747738185940667
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 36.51007833029126,
+        "ridge60": 37.18321267495171,
+        "svr1": 30.737784872424125,
+        "svr10": 28.74510893316303,
+        "routed_svr10": 26.921038452477205
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 14.858924930528035,
+        "ridge60": 15.349679660971422,
+        "svr1": 11.649790632477501,
+        "svr10": 11.474632311361
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 28.035806324411972,
+        "ridge60": 28.845587043370422,
+        "svr1": 27.067977107678157,
+        "svr10": 26.060397404187803
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.19270318201737,
+        "ridge60": 18.972719211120324,
+        "svr1": 15.667567186386526,
+        "svr10": 14.939091713553958
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 35.5161747368219,
+        "ridge60": 34.3550781116691,
+        "svr1": 30.84372464151821,
+        "svr10": 37.75981914190763,
+        "routed_svr10": 28.67836607095791
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 14.41934211820809,
+        "ridge60": 15.073521769500637,
+        "svr1": 13.477464072345088,
+        "svr10": 13.531411296519439
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 26.353794732823722,
+        "ridge60": 26.154444062599865,
+        "svr1": 25.720002703473163,
+        "svr10": 31.17695474961116
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.318468656476583,
+        "ridge60": 17.989464944939655,
+        "svr1": 16.811511536131427,
+        "svr10": 16.263748441318317
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 34.24296094711102,
+        "ridge60": 36.075735376094705,
+        "svr1": 31.88039052005791,
+        "svr10": 39.02526031443956,
+        "routed_svr10": 33.13697271798334
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 13.876071614009833,
+        "ridge60": 15.56417920257926,
+        "svr1": 12.904345547339505,
+        "svr10": 11.723756780929618
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 26.98321598615175,
+        "ridge60": 27.397063280710213,
+        "svr1": 28.84150338448735,
+        "svr10": 34.30567608056506
+      }
+    },
+    {
+      "variant": "robust_linear_60ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.643024748569044,
+        "ridge60": 19.489923098842475,
+        "svr1": 15.939213804547084,
+        "svr10": 15.004353817285713
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Andrew",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 27.804028081041235,
+        "ridge60": 28.48596104754436,
+        "svr1": 25.729228141370466,
+        "svr10": 22.405950980901046,
+        "routed_svr10": 25.46664602527899
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Andrew",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.680639726624342,
+        "ridge60": 15.807789508163506,
+        "svr1": 14.57217459022481,
+        "svr10": 13.101645961452505
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Andrew",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 19.88269289121438,
+        "ridge60": 21.560492490607988,
+        "svr1": 20.53460651462948,
+        "svr10": 20.55143384294937
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Andrew",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.06285290049064,
+        "ridge60": 18.323790859845122,
+        "svr1": 17.552990411650832,
+        "svr10": 16.000286538655565
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Eduardo",
+      "target": "Carry flat (yd)",
+      "selected": "routed_svr10",
+      "scores": {
+        "ridge10": 35.70942447344707,
+        "ridge60": 38.83214524365001,
+        "svr1": 35.14438402812543,
+        "svr10": 31.89081709244253,
+        "routed_svr10": 31.223634270789333
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Eduardo",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 14.857412440153924,
+        "ridge60": 16.043576395277658,
+        "svr1": 13.34458792023775,
+        "svr10": 13.645848091130032
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Eduardo",
+      "target": "Total (yd)",
+      "selected": "ridge10",
+      "scores": {
+        "ridge10": 26.666779659153267,
+        "ridge60": 29.285571369188084,
+        "svr1": 28.46940701207346,
+        "svr10": 27.930865049283177
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Eduardo",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.42050859726093,
+        "ridge60": 19.419743223110835,
+        "svr1": 17.763258557205912,
+        "svr10": 16.621650837533792
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Lucas",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 36.54431630448367,
+        "ridge60": 36.90426573934749,
+        "svr1": 29.408248010458056,
+        "svr10": 25.67378591312449,
+        "routed_svr10": 32.92964831958777
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Lucas",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 15.009223718439582,
+        "ridge60": 15.372049184482213,
+        "svr1": 13.207146249529611,
+        "svr10": 12.447088683985067
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Lucas",
+      "target": "Total (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 27.176780460399907,
+        "ridge60": 28.396411921787138,
+        "svr1": 23.42157522630366,
+        "svr10": 22.70704994015315
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Lucas",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 18.239545918269428,
+        "ridge60": 18.954981487755923,
+        "svr1": 16.56385883378235,
+        "svr10": 15.209861819018448
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Rohan",
+      "target": "Carry flat (yd)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 32.93692147435418,
+        "ridge60": 33.91116485135111,
+        "svr1": 26.60775981583641,
+        "svr10": 26.218768617391184,
+        "routed_svr10": 26.991027533651966
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Rohan",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 14.764329017279904,
+        "ridge60": 15.24218943471283,
+        "svr1": 14.282290449474917,
+        "svr10": 14.54192563867707
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Rohan",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 23.519463715110213,
+        "ridge60": 25.068736717090136,
+        "svr1": 21.30469222331935,
+        "svr10": 24.383466480262648
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Rohan",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.41102714617741,
+        "ridge60": 18.069252402931866,
+        "svr1": 17.636937227425946,
+        "svr10": 17.357931641400082
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Sid",
+      "target": "Carry flat (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 35.73046142926409,
+        "ridge60": 36.220704174362204,
+        "svr1": 28.428506979347404,
+        "svr10": 28.941672517092385,
+        "routed_svr10": 29.523288351599913
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Sid",
+      "target": "Carry side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 14.40400139350256,
+        "ridge60": 15.794260392344711,
+        "svr1": 12.545552606262174,
+        "svr10": 11.672582491783324
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Sid",
+      "target": "Total (yd)",
+      "selected": "svr1",
+      "scores": {
+        "ridge10": 25.980942901045044,
+        "ridge60": 26.455434045493266,
+        "svr1": 24.646819834770636,
+        "svr10": 25.142237921755548
+      }
+    },
+    {
+      "variant": "robust_linear_80ms",
+      "golfer": "Sid",
+      "target": "Total side (ft; R+)",
+      "selected": "svr10",
+      "scores": {
+        "ridge10": 17.90214605631248,
+        "ridge60": 19.876618858222443,
+        "svr1": 15.131083345736508,
+        "svr10": 13.991387092596751
+      }
+    }
+  ]
+}

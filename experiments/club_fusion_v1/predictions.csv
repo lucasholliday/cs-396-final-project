@@ -1,0 +1,1041 @@
+shot_id,golfer,target,model_name,actual,predicted,error
+andrew_1_01,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),-7.33,12.81,20.15
+andrew_1_02,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),50.0,27.99,-22.01
+andrew_1_03,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),-4.25,20.76,25.01
+andrew_1_04,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),-3.42,23.58,27.0
+andrew_1_07,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),-2.5,15.66,18.16
+andrew_1_08,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),-2.0,25.98,27.98
+andrew_1_09,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),59.75,26.89,-32.86
+andrew_1_10,Andrew,Curve signed (ft; R+),Vision-Only (Single Angle),-4.0,16.44,20.44
+eduardo_1_01,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),10.17,21.07,10.91
+eduardo_1_02,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),6.42,20.84,14.42
+eduardo_1_03,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),20.83,22.32,1.49
+eduardo_1_04,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),11.25,21.59,10.34
+eduardo_1_05,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),28.0,22.29,-5.71
+eduardo_1_06,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),48.75,26.48,-22.27
+eduardo_1_07,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),-19.0,17.5,36.5
+eduardo_1_08,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),6.0,34.19,28.19
+eduardo_1_09,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),20.75,21.62,0.87
+eduardo_1_10,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),12.08,19.08,6.99
+eduardo_1_11,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),46.92,6.84,-40.08
+eduardo_1_12,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),-15.42,10.08,25.5
+eduardo_1_13,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),51.33,25.52,-25.81
+eduardo_1_14,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),52.42,26.81,-25.61
+eduardo_1_15,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),42.17,22.51,-19.66
+eduardo_1_16,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),-18.0,27.32,45.32
+eduardo_1_17,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),48.33,25.98,-22.35
+eduardo_1_18,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),14.33,32.6,18.27
+eduardo_1_19,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),-9.08,18.55,27.63
+eduardo_1_20,Eduardo,Curve signed (ft; R+),Vision-Only (Single Angle),0.0,37.28,37.28
+lucas_1_01,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),-49.17,25.16,74.33
+lucas_1_02,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),-69.67,18.74,88.4
+lucas_1_03,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),5.67,26.16,20.5
+lucas_1_04,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),3.33,30.96,27.63
+lucas_1_05,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),-20.08,25.21,45.29
+lucas_1_06,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),101.42,28.71,-72.7
+lucas_1_07,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),-6.42,25.87,32.29
+lucas_1_08,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),-67.0,25.24,92.24
+lucas_1_09,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),79.42,27.75,-51.67
+lucas_1_10,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),-1.33,30.72,32.05
+lucas_1_11,Lucas,Curve signed (ft; R+),Vision-Only (Single Angle),-26.25,25.2,51.45
+rohan_1_01,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),-2.83,20.9,23.73
+rohan_1_02,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),43.25,16.27,-26.98
+rohan_2_01,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),23.17,15.76,-7.41
+rohan_2_02,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),5.0,32.67,27.67
+rohan_2_03,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),49.17,17.53,-31.63
+rohan_2_04,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),-8.58,15.66,24.24
+rohan_2_05,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),7.0,13.75,6.75
+rohan_2_06,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),-8.58,7.18,15.76
+rohan_2_07,Rohan,Curve signed (ft; R+),Vision-Only (Single Angle),50.5,15.71,-34.79
+sid_1_01,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),48.83,10.79,-38.04
+sid_1_02,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),43.0,10.26,-32.74
+sid_1_03,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),19.25,9.16,-10.09
+sid_1_04,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),48.17,12.97,-35.2
+sid_1_05,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),44.33,9.53,-34.81
+sid_1_06,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),22.83,9.42,-13.41
+sid_1_07,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),51.92,13.38,-38.54
+sid_1_08,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),57.58,13.98,-43.6
+sid_1_09,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),44.58,10.23,-34.35
+sid_1_10,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),51.08,11.83,-39.25
+sid_1_11,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),41.25,0.47,-40.78
+sid_1_12,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),46.75,11.21,-35.54
+sid_1_13,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),58.75,11.82,-46.93
+sid_1_14,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),45.25,-6.67,-51.92
+sid_1_15,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),59.0,12.67,-46.33
+sid_1_16,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),35.0,11.88,-23.12
+sid_1_17,Sid,Curve signed (ft; R+),Vision-Only (Single Angle),36.58,9.64,-26.94
+andrew_1_01,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),-7.33,13.41,20.74
+andrew_1_02,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),50.0,34.83,-15.17
+andrew_1_03,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),-4.25,-5.7,-1.45
+andrew_1_04,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),-3.42,15.26,18.68
+andrew_1_07,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),-2.5,-8.79,-6.29
+andrew_1_08,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),-2.0,6.93,8.93
+andrew_1_09,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),59.75,33.25,-26.5
+andrew_1_10,Andrew,Curve signed (ft; R+),Vision-Only (Full Launch),-4.0,19.36,23.36
+eduardo_1_01,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),10.17,19.8,9.63
+eduardo_1_02,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),6.42,32.66,26.24
+eduardo_1_03,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),20.83,12.47,-8.37
+eduardo_1_04,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),11.25,10.67,-0.58
+eduardo_1_05,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),28.0,30.85,2.85
+eduardo_1_06,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),48.75,17.26,-31.49
+eduardo_1_07,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),-19.0,24.78,43.78
+eduardo_1_08,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),6.0,18.04,12.04
+eduardo_1_09,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),20.75,38.86,18.11
+eduardo_1_10,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),12.08,19.89,7.81
+eduardo_1_11,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),46.92,-4.27,-51.19
+eduardo_1_12,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),-15.42,8.36,23.78
+eduardo_1_13,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),51.33,37.61,-13.72
+eduardo_1_14,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),52.42,47.44,-4.98
+eduardo_1_15,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),42.17,10.61,-31.55
+eduardo_1_16,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),-18.0,38.29,56.29
+eduardo_1_17,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),48.33,20.48,-27.85
+eduardo_1_18,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),14.33,11.26,-3.08
+eduardo_1_19,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),-9.08,1.19,10.27
+eduardo_1_20,Eduardo,Curve signed (ft; R+),Vision-Only (Full Launch),0.0,6.29,6.29
+lucas_1_01,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),-49.17,14.31,63.48
+lucas_1_02,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),-69.67,10.79,80.46
+lucas_1_03,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),5.67,28.87,23.2
+lucas_1_04,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),3.33,20.09,16.75
+lucas_1_05,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),-20.08,23.45,43.54
+lucas_1_06,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),101.42,33.49,-67.93
+lucas_1_07,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),-6.42,31.27,37.69
+lucas_1_08,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),-67.0,24.43,91.43
+lucas_1_09,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),79.42,26.08,-53.34
+lucas_1_10,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),-1.33,18.02,19.36
+lucas_1_11,Lucas,Curve signed (ft; R+),Vision-Only (Full Launch),-26.25,22.77,49.02
+rohan_1_01,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),-2.83,1.73,4.57
+rohan_1_02,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),43.25,16.98,-26.27
+rohan_2_01,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),23.17,15.73,-7.44
+rohan_2_02,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),5.0,18.16,13.16
+rohan_2_03,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),49.17,20.9,-28.27
+rohan_2_04,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),-8.58,1.56,10.14
+rohan_2_05,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),7.0,14.94,7.94
+rohan_2_06,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),-8.58,2.86,11.44
+rohan_2_07,Rohan,Curve signed (ft; R+),Vision-Only (Full Launch),50.5,4.38,-46.12
+sid_1_01,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),48.83,24.15,-24.68
+sid_1_02,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),43.0,21.85,-21.15
+sid_1_03,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),19.25,13.16,-6.09
+sid_1_04,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),48.17,23.03,-25.14
+sid_1_05,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),44.33,17.45,-26.88
+sid_1_06,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),22.83,16.66,-6.18
+sid_1_07,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),51.92,28.4,-23.52
+sid_1_08,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),57.58,35.56,-22.02
+sid_1_09,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),44.58,54.87,10.29
+sid_1_10,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),51.08,18.94,-32.14
+sid_1_11,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),41.25,0.23,-41.02
+sid_1_12,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),46.75,20.61,-26.14
+sid_1_13,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),58.75,23.96,-34.79
+sid_1_14,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),45.25,-20.44,-65.69
+sid_1_15,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),59.0,27.78,-31.22
+sid_1_16,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),35.0,19.26,-15.74
+sid_1_17,Sid,Curve signed (ft; R+),Vision-Only (Full Launch),36.58,13.0,-23.58
+andrew_1_01,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-7.33,29.63,36.96
+andrew_1_02,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),50.0,5.12,-44.88
+andrew_1_03,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-4.25,0.81,5.06
+andrew_1_04,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-3.42,8.17,11.59
+andrew_1_07,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-2.5,15.04,17.54
+andrew_1_08,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-2.0,7.79,9.79
+andrew_1_09,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),59.75,7.67,-52.08
+andrew_1_10,Andrew,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-4.0,6.69,10.69
+eduardo_1_01,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),10.17,11.88,1.72
+eduardo_1_02,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),6.42,6.02,-0.4
+eduardo_1_03,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),20.83,14.01,-6.83
+eduardo_1_04,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),11.25,-11.42,-22.67
+eduardo_1_05,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),28.0,14.73,-13.27
+eduardo_1_06,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),48.75,8.9,-39.85
+eduardo_1_07,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-19.0,-4.49,14.51
+eduardo_1_08,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),6.0,16.94,10.94
+eduardo_1_09,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),20.75,15.45,-5.3
+eduardo_1_10,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),12.08,14.76,2.68
+eduardo_1_11,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),46.92,19.79,-27.13
+eduardo_1_12,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-15.42,8.72,24.14
+eduardo_1_13,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),51.33,14.79,-36.54
+eduardo_1_14,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),52.42,7.41,-45.01
+eduardo_1_15,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),42.17,18.07,-24.1
+eduardo_1_16,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-18.0,9.47,27.47
+eduardo_1_17,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),48.33,19.94,-28.39
+eduardo_1_18,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),14.33,24.99,10.66
+eduardo_1_19,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-9.08,27.9,36.98
+eduardo_1_20,Eduardo,Curve signed (ft; R+),Club IMU Only (Face-to-Path),0.0,20.34,20.34
+lucas_1_01,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-49.17,7.67,56.84
+lucas_1_02,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-69.67,4.9,74.57
+lucas_1_03,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),5.67,10.68,5.01
+lucas_1_04,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),3.33,8.63,5.3
+lucas_1_05,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-20.08,9.86,29.95
+lucas_1_06,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),101.42,11.69,-89.72
+lucas_1_07,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-6.42,7.27,13.69
+lucas_1_08,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-67.0,6.99,73.99
+lucas_1_09,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),79.42,5.53,-73.89
+lucas_1_10,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-1.33,9.31,10.65
+lucas_1_11,Lucas,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-26.25,8.39,34.64
+rohan_1_01,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-2.83,25.03,27.86
+rohan_1_02,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),43.25,17.89,-25.36
+rohan_2_01,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),23.17,15.46,-7.71
+rohan_2_02,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),5.0,13.12,8.12
+rohan_2_03,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),49.17,16.25,-32.92
+rohan_2_04,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-8.58,19.83,28.41
+rohan_2_05,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),7.0,13.88,6.88
+rohan_2_06,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),-8.58,15.6,24.18
+rohan_2_07,Rohan,Curve signed (ft; R+),Club IMU Only (Face-to-Path),50.5,23.6,-26.9
+sid_1_01,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),48.83,45.81,-3.03
+sid_1_02,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),43.0,38.53,-4.47
+sid_1_03,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),19.25,36.44,17.19
+sid_1_04,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),48.17,34.29,-13.88
+sid_1_05,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),44.33,35.79,-8.54
+sid_1_06,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),22.83,32.75,9.91
+sid_1_07,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),51.92,44.96,-6.96
+sid_1_08,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),57.58,38.83,-18.75
+sid_1_09,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),44.58,38.49,-6.09
+sid_1_10,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),51.08,38.16,-12.93
+sid_1_11,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),41.25,34.31,-6.94
+sid_1_12,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),46.75,42.0,-4.75
+sid_1_13,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),58.75,38.64,-20.11
+sid_1_14,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),45.25,41.89,-3.36
+sid_1_15,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),59.0,48.95,-10.05
+sid_1_16,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),35.0,40.79,5.79
+sid_1_17,Sid,Curve signed (ft; R+),Club IMU Only (Face-to-Path),36.58,34.11,-2.47
+andrew_1_01,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,-7.33,20.55,27.88
+andrew_1_02,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,50.0,21.8,-28.2
+andrew_1_03,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,-4.25,-13.47,-9.22
+andrew_1_04,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,-3.42,8.51,11.93
+andrew_1_07,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,-2.5,-6.6,-4.1
+andrew_1_08,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,-2.0,3.88,5.88
+andrew_1_09,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,59.75,21.84,-37.91
+andrew_1_10,Andrew,Curve signed (ft; R+),Visual-Inertial Fusion,-4.0,4.31,8.31
+eduardo_1_01,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,10.17,14.1,3.94
+eduardo_1_02,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,6.42,6.85,0.43
+eduardo_1_03,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,20.83,17.01,-3.83
+eduardo_1_04,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,11.25,-11.14,-22.39
+eduardo_1_05,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,28.0,16.65,-11.35
+eduardo_1_06,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,48.75,14.96,-33.79
+eduardo_1_07,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,-19.0,-11.28,7.72
+eduardo_1_08,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,6.0,28.71,22.71
+eduardo_1_09,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,20.75,18.66,-2.09
+eduardo_1_10,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,12.08,8.03,-4.06
+eduardo_1_11,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,46.92,-13.99,-60.91
+eduardo_1_12,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,-15.42,-6.25,9.17
+eduardo_1_13,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,51.33,33.27,-18.06
+eduardo_1_14,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,52.42,23.0,-29.42
+eduardo_1_15,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,42.17,17.77,-24.4
+eduardo_1_16,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,-18.0,25.01,43.01
+eduardo_1_17,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,48.33,26.25,-22.09
+eduardo_1_18,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,14.33,32.39,18.05
+eduardo_1_19,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,-9.08,17.73,26.81
+eduardo_1_20,Eduardo,Curve signed (ft; R+),Visual-Inertial Fusion,0.0,29.84,29.84
+lucas_1_01,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,-49.17,6.43,55.6
+lucas_1_02,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,-69.67,-1.57,68.09
+lucas_1_03,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,5.67,19.56,13.89
+lucas_1_04,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,3.33,13.74,10.4
+lucas_1_05,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,-20.08,11.73,31.82
+lucas_1_06,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,101.42,25.01,-76.4
+lucas_1_07,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,-6.42,13.9,20.32
+lucas_1_08,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,-67.0,10.76,77.76
+lucas_1_09,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,79.42,14.59,-64.83
+lucas_1_10,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,-1.33,14.82,16.15
+lucas_1_11,Lucas,Curve signed (ft; R+),Visual-Inertial Fusion,-26.25,10.05,36.3
+rohan_1_01,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,-2.83,13.32,16.16
+rohan_1_02,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,43.25,14.03,-29.22
+rohan_2_01,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,23.17,5.26,-17.91
+rohan_2_02,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,5.0,20.39,15.39
+rohan_2_03,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,49.17,14.44,-34.73
+rohan_2_04,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,-8.58,5.08,13.67
+rohan_2_05,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,7.0,-0.62,-7.62
+rohan_2_06,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,-8.58,-7.39,1.19
+rohan_2_07,Rohan,Curve signed (ft; R+),Visual-Inertial Fusion,50.5,7.97,-42.53
+sid_1_01,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,48.83,78.03,29.19
+sid_1_02,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,43.0,65.54,22.54
+sid_1_03,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,19.25,53.51,34.26
+sid_1_04,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,48.17,61.46,13.3
+sid_1_05,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,44.33,57.03,12.69
+sid_1_06,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,22.83,51.92,29.09
+sid_1_07,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,51.92,82.29,30.38
+sid_1_08,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,57.58,82.99,25.4
+sid_1_09,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,44.58,100.29,55.71
+sid_1_10,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,51.08,61.72,10.64
+sid_1_11,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,41.25,34.4,-6.85
+sid_1_12,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,46.75,68.62,21.87
+sid_1_13,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,58.75,69.45,10.7
+sid_1_14,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,45.25,21.41,-23.84
+sid_1_15,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,59.0,85.43,26.43
+sid_1_16,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,35.0,66.29,31.29
+sid_1_17,Sid,Curve signed (ft; R+),Visual-Inertial Fusion,36.58,50.38,13.79
+andrew_1_01,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),-26.0,-6.76,19.24
+andrew_1_02,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),128.0,46.69,-81.31
+andrew_1_03,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),-7.0,21.24,28.24
+andrew_1_04,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),-13.0,31.17,44.17
+andrew_1_07,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),-28.0,3.27,31.27
+andrew_1_08,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),2.0,39.63,37.63
+andrew_1_09,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),136.0,42.81,-93.19
+andrew_1_10,Andrew,Carry side (ft; R+),Vision-Only (Single Angle),-35.0,6.03,41.03
+eduardo_1_01,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),12.0,20.28,8.28
+eduardo_1_02,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),-4.0,19.55,23.55
+eduardo_1_03,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),22.0,24.15,2.15
+eduardo_1_04,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),11.0,21.9,10.9
+eduardo_1_05,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),26.0,24.04,-1.96
+eduardo_1_06,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),90.0,37.03,-52.97
+eduardo_1_07,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),-44.0,9.23,53.23
+eduardo_1_08,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),4.0,60.88,56.88
+eduardo_1_09,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),22.0,21.99,-0.01
+eduardo_1_10,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),-14.0,14.1,28.1
+eduardo_1_11,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),124.0,-23.79,-147.79
+eduardo_1_12,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),-40.0,-13.75,26.25
+eduardo_1_13,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),145.0,34.06,-110.94
+eduardo_1_14,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),92.0,38.04,-53.96
+eduardo_1_15,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),86.0,24.73,-61.27
+eduardo_1_16,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),-58.0,39.62,97.62
+eduardo_1_17,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),103.0,35.47,-67.53
+eduardo_1_18,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),41.0,55.97,14.97
+eduardo_1_19,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),-37.0,12.47,49.47
+eduardo_1_20,Eduardo,Carry side (ft; R+),Vision-Only (Single Angle),4.0,70.45,66.45
+lucas_1_01,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),-41.0,24.09,65.09
+lucas_1_02,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),-65.0,-10.3,54.7
+lucas_1_03,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),41.0,29.44,-11.56
+lucas_1_04,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),9.0,55.12,46.12
+lucas_1_05,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),-8.0,24.34,32.34
+lucas_1_06,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),181.0,43.08,-137.92
+lucas_1_07,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),21.0,27.89,6.89
+lucas_1_08,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),-57.0,24.52,81.52
+lucas_1_09,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),140.0,37.94,-102.06
+lucas_1_10,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),9.0,53.83,44.83
+lucas_1_11,Lucas,Carry side (ft; R+),Vision-Only (Single Angle),-22.0,24.3,46.3
+rohan_1_01,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),-2.0,30.6,32.6
+rohan_1_02,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),-10.0,18.73,28.73
+rohan_2_01,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),-43.0,17.4,60.4
+rohan_2_02,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),4.0,60.83,56.83
+rohan_2_03,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),25.0,21.97,-3.03
+rohan_2_04,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),-17.0,17.16,34.16
+rohan_2_05,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),-76.0,12.26,88.26
+rohan_2_06,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),-40.0,-4.62,35.38
+rohan_2_07,Rohan,Carry side (ft; R+),Vision-Only (Single Angle),-1.0,17.29,18.29
+sid_1_01,Sid,Carry side (ft; R+),Vision-Only (Single Angle),35.0,14.56,-20.44
+sid_1_02,Sid,Carry side (ft; R+),Vision-Only (Single Angle),34.0,13.15,-20.85
+sid_1_03,Sid,Carry side (ft; R+),Vision-Only (Single Angle),-2.0,10.26,12.26
+sid_1_04,Sid,Carry side (ft; R+),Vision-Only (Single Angle),75.0,20.3,-54.7
+sid_1_05,Sid,Carry side (ft; R+),Vision-Only (Single Angle),22.0,11.23,-10.77
+sid_1_06,Sid,Carry side (ft; R+),Vision-Only (Single Angle),-1.0,10.96,11.96
+sid_1_07,Sid,Carry side (ft; R+),Vision-Only (Single Angle),79.0,21.38,-57.62
+sid_1_08,Sid,Carry side (ft; R+),Vision-Only (Single Angle),86.0,22.97,-63.03
+sid_1_09,Sid,Carry side (ft; R+),Vision-Only (Single Angle),19.0,13.08,-5.92
+sid_1_10,Sid,Carry side (ft; R+),Vision-Only (Single Angle),65.0,17.31,-47.69
+sid_1_11,Sid,Carry side (ft; R+),Vision-Only (Single Angle),15.0,-12.67,-27.67
+sid_1_12,Sid,Carry side (ft; R+),Vision-Only (Single Angle),39.0,15.68,-23.32
+sid_1_13,Sid,Carry side (ft; R+),Vision-Only (Single Angle),66.0,17.28,-48.72
+sid_1_14,Sid,Carry side (ft; R+),Vision-Only (Single Angle),41.0,-31.49,-72.49
+sid_1_15,Sid,Carry side (ft; R+),Vision-Only (Single Angle),83.0,19.52,-63.48
+sid_1_16,Sid,Carry side (ft; R+),Vision-Only (Single Angle),34.0,17.42,-16.58
+sid_1_17,Sid,Carry side (ft; R+),Vision-Only (Single Angle),18.0,11.52,-6.48
+andrew_1_01,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),-26.0,-0.69,25.31
+andrew_1_02,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),128.0,62.68,-65.32
+andrew_1_03,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),-7.0,-5.76,1.24
+andrew_1_04,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),-13.0,27.11,40.11
+andrew_1_07,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),-28.0,-20.84,7.16
+andrew_1_08,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),2.0,20.34,18.34
+andrew_1_09,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),136.0,57.15,-78.85
+andrew_1_10,Andrew,Carry side (ft; R+),Vision-Only (Full Launch),-35.0,10.51,45.51
+eduardo_1_01,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),12.0,27.41,15.41
+eduardo_1_02,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),-4.0,24.97,28.97
+eduardo_1_03,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),22.0,29.05,7.05
+eduardo_1_04,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),11.0,18.77,7.77
+eduardo_1_05,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),26.0,29.7,3.7
+eduardo_1_06,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),90.0,34.56,-55.44
+eduardo_1_07,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),-44.0,2.85,46.85
+eduardo_1_08,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),4.0,46.77,42.77
+eduardo_1_09,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),22.0,33.36,11.36
+eduardo_1_10,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),-14.0,7.69,21.69
+eduardo_1_11,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),124.0,-67.39,-191.39
+eduardo_1_12,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),-40.0,-17.11,22.89
+eduardo_1_13,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),145.0,66.14,-78.86
+eduardo_1_14,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),92.0,63.64,-28.36
+eduardo_1_15,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),86.0,22.41,-63.59
+eduardo_1_16,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),-58.0,60.69,118.69
+eduardo_1_17,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),103.0,38.51,-64.49
+eduardo_1_18,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),41.0,36.65,-4.35
+eduardo_1_19,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),-37.0,2.75,39.75
+eduardo_1_20,Eduardo,Carry side (ft; R+),Vision-Only (Full Launch),4.0,34.81,30.81
+lucas_1_01,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),-41.0,16.69,57.69
+lucas_1_02,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),-65.0,-5.89,59.11
+lucas_1_03,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),41.0,27.07,-13.93
+lucas_1_04,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),9.0,44.07,35.07
+lucas_1_05,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),-8.0,16.62,24.62
+lucas_1_06,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),181.0,48.62,-132.38
+lucas_1_07,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),21.0,27.63,6.63
+lucas_1_08,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),-57.0,18.34,75.34
+lucas_1_09,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),140.0,42.13,-97.87
+lucas_1_10,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),9.0,41.48,32.48
+lucas_1_11,Lucas,Carry side (ft; R+),Vision-Only (Full Launch),-22.0,16.07,38.07
+rohan_1_01,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),-2.0,8.14,10.14
+rohan_1_02,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),-10.0,26.91,36.91
+rohan_2_01,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),-43.0,10.21,53.21
+rohan_2_02,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),4.0,46.32,42.32
+rohan_2_03,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),25.0,29.25,4.25
+rohan_2_04,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),-17.0,1.7,18.7
+rohan_2_05,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),-76.0,1.97,77.97
+rohan_2_06,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),-40.0,-9.98,30.02
+rohan_2_07,Rohan,Carry side (ft; R+),Vision-Only (Full Launch),-1.0,-1.41,-0.41
+sid_1_01,Sid,Carry side (ft; R+),Vision-Only (Full Launch),35.0,24.46,-10.54
+sid_1_02,Sid,Carry side (ft; R+),Vision-Only (Full Launch),34.0,21.3,-12.7
+sid_1_03,Sid,Carry side (ft; R+),Vision-Only (Full Launch),-2.0,6.0,8.0
+sid_1_04,Sid,Carry side (ft; R+),Vision-Only (Full Launch),75.0,46.34,-28.66
+sid_1_05,Sid,Carry side (ft; R+),Vision-Only (Full Launch),22.0,12.1,-9.9
+sid_1_06,Sid,Carry side (ft; R+),Vision-Only (Full Launch),-1.0,11.05,12.05
+sid_1_07,Sid,Carry side (ft; R+),Vision-Only (Full Launch),79.0,39.25,-39.75
+sid_1_08,Sid,Carry side (ft; R+),Vision-Only (Full Launch),86.0,49.68,-36.32
+sid_1_09,Sid,Carry side (ft; R+),Vision-Only (Full Launch),19.0,110.46,91.46
+sid_1_10,Sid,Carry side (ft; R+),Vision-Only (Full Launch),65.0,35.91,-29.09
+sid_1_11,Sid,Carry side (ft; R+),Vision-Only (Full Launch),15.0,-20.94,-35.94
+sid_1_12,Sid,Carry side (ft; R+),Vision-Only (Full Launch),39.0,20.68,-18.32
+sid_1_13,Sid,Carry side (ft; R+),Vision-Only (Full Launch),66.0,28.22,-37.78
+sid_1_14,Sid,Carry side (ft; R+),Vision-Only (Full Launch),41.0,-48.78,-89.78
+sid_1_15,Sid,Carry side (ft; R+),Vision-Only (Full Launch),83.0,36.97,-46.03
+sid_1_16,Sid,Carry side (ft; R+),Vision-Only (Full Launch),34.0,20.67,-13.33
+sid_1_17,Sid,Carry side (ft; R+),Vision-Only (Full Launch),18.0,6.71,-11.29
+andrew_1_01,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),-26.0,75.97,101.97
+andrew_1_02,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),128.0,11.02,-116.98
+andrew_1_03,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),-7.0,0.72,7.72
+andrew_1_04,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),-13.0,18.25,31.25
+andrew_1_07,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),-28.0,27.64,55.64
+andrew_1_08,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),2.0,17.75,15.75
+andrew_1_09,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),136.0,16.19,-119.81
+andrew_1_10,Andrew,Carry side (ft; R+),Club IMU Only (Face-to-Path),-35.0,14.38,49.38
+eduardo_1_01,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),12.0,30.84,18.84
+eduardo_1_02,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),-4.0,24.26,28.26
+eduardo_1_03,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),22.0,40.23,18.23
+eduardo_1_04,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),11.0,-5.84,-16.84
+eduardo_1_05,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),26.0,40.62,14.62
+eduardo_1_06,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),90.0,26.42,-63.58
+eduardo_1_07,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),-44.0,6.16,50.16
+eduardo_1_08,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),4.0,44.98,40.98
+eduardo_1_09,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),22.0,43.33,21.33
+eduardo_1_10,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),-14.0,40.72,54.72
+eduardo_1_11,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),124.0,50.98,-73.02
+eduardo_1_12,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),-40.0,29.85,69.85
+eduardo_1_13,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),145.0,42.09,-102.91
+eduardo_1_14,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),92.0,29.49,-62.51
+eduardo_1_15,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),86.0,48.11,-37.89
+eduardo_1_16,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),-58.0,32.7,90.7
+eduardo_1_17,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),103.0,53.11,-49.89
+eduardo_1_18,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),41.0,61.18,20.18
+eduardo_1_19,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),-37.0,68.07,105.07
+eduardo_1_20,Eduardo,Carry side (ft; R+),Club IMU Only (Face-to-Path),4.0,52.99,48.99
+lucas_1_01,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),-41.0,-5.96,35.04
+lucas_1_02,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),-65.0,-13.24,51.76
+lucas_1_03,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),41.0,2.73,-38.27
+lucas_1_04,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),9.0,-2.16,-11.16
+lucas_1_05,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),-8.0,3.72,11.72
+lucas_1_06,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),181.0,7.22,-173.78
+lucas_1_07,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),21.0,-2.65,-23.65
+lucas_1_08,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),-57.0,-5.76,51.24
+lucas_1_09,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),140.0,-9.9,-149.9
+lucas_1_10,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),9.0,-0.07,-9.07
+lucas_1_11,Lucas,Carry side (ft; R+),Club IMU Only (Face-to-Path),-22.0,0.29,22.29
+rohan_1_01,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),-2.0,30.69,32.69
+rohan_1_02,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),-10.0,26.38,36.38
+rohan_2_01,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),-43.0,25.27,68.27
+rohan_2_02,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),4.0,23.39,19.39
+rohan_2_03,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),25.0,25.85,0.85
+rohan_2_04,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),-17.0,27.91,44.91
+rohan_2_05,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),-76.0,23.76,99.76
+rohan_2_06,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),-40.0,25.03,65.03
+rohan_2_07,Rohan,Carry side (ft; R+),Club IMU Only (Face-to-Path),-1.0,30.35,31.35
+sid_1_01,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),35.0,-32.68,-67.68
+sid_1_02,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),34.0,-28.06,-62.06
+sid_1_03,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),-2.0,-28.72,-26.72
+sid_1_04,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),75.0,-29.01,-104.01
+sid_1_05,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),22.0,-26.75,-48.75
+sid_1_06,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),-1.0,-24.37,-23.37
+sid_1_07,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),79.0,-33.89,-112.89
+sid_1_08,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),86.0,-33.91,-119.91
+sid_1_09,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),19.0,-29.43,-48.43
+sid_1_10,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),65.0,-28.87,-93.87
+sid_1_11,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),15.0,-28.61,-43.61
+sid_1_12,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),39.0,-27.83,-66.83
+sid_1_13,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),66.0,-33.57,-99.57
+sid_1_14,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),41.0,-28.78,-69.78
+sid_1_15,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),83.0,-29.45,-112.45
+sid_1_16,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),34.0,-30.4,-64.4
+sid_1_17,Sid,Carry side (ft; R+),Club IMU Only (Face-to-Path),18.0,-27.67,-45.67
+andrew_1_01,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,-26.0,51.48,77.48
+andrew_1_02,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,128.0,46.86,-81.14
+andrew_1_03,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,-7.0,-20.67,-13.67
+andrew_1_04,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,-13.0,22.63,35.63
+andrew_1_07,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,-28.0,-9.92,18.08
+andrew_1_08,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,2.0,15.04,13.04
+andrew_1_09,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,136.0,46.46,-89.54
+andrew_1_10,Andrew,Carry side (ft; R+),Visual-Inertial Fusion,-35.0,5.32,40.32
+eduardo_1_01,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,12.0,34.42,22.42
+eduardo_1_02,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,-4.0,11.19,15.19
+eduardo_1_03,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,22.0,50.54,28.54
+eduardo_1_04,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,11.0,-13.28,-24.28
+eduardo_1_05,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,26.0,37.26,11.26
+eduardo_1_06,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,90.0,42.84,-47.16
+eduardo_1_07,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,-44.0,-32.52,11.48
+eduardo_1_08,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,4.0,77.43,73.43
+eduardo_1_09,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,22.0,37.93,15.93
+eduardo_1_10,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,-14.0,17.69,31.69
+eduardo_1_11,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,124.0,-48.79,-172.79
+eduardo_1_12,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,-40.0,-17.77,22.23
+eduardo_1_13,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,145.0,80.63,-64.37
+eduardo_1_14,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,92.0,54.58,-37.42
+eduardo_1_15,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,86.0,53.32,-32.68
+eduardo_1_16,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,-58.0,62.62,120.62
+eduardo_1_17,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,103.0,70.51,-32.49
+eduardo_1_18,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,41.0,87.7,46.7
+eduardo_1_19,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,-37.0,52.01,89.01
+eduardo_1_20,Eduardo,Carry side (ft; R+),Visual-Inertial Fusion,4.0,82.73,78.73
+lucas_1_01,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,-41.0,-5.22,35.78
+lucas_1_02,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,-65.0,-34.5,30.5
+lucas_1_03,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,41.0,9.18,-31.82
+lucas_1_04,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,9.0,24.33,15.33
+lucas_1_05,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,-8.0,-1.15,6.85
+lucas_1_06,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,181.0,33.43,-147.57
+lucas_1_07,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,21.0,1.18,-19.82
+lucas_1_08,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,-57.0,-7.42,49.58
+lucas_1_09,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,140.0,13.9,-126.1
+lucas_1_10,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,9.0,25.45,16.45
+lucas_1_11,Lucas,Carry side (ft; R+),Visual-Inertial Fusion,-22.0,-4.54,17.46
+rohan_1_01,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,-2.0,12.44,14.44
+rohan_1_02,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,-10.0,22.17,32.17
+rohan_2_01,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,-43.0,2.82,45.82
+rohan_2_02,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,4.0,42.46,38.46
+rohan_2_03,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,25.0,23.45,-1.55
+rohan_2_04,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,-17.0,2.08,19.08
+rohan_2_05,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,-76.0,-9.19,66.81
+rohan_2_06,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,-40.0,-19.98,20.02
+rohan_2_07,Rohan,Carry side (ft; R+),Visual-Inertial Fusion,-1.0,0.01,1.01
+sid_1_01,Sid,Carry side (ft; R+),Visual-Inertial Fusion,35.0,13.91,-21.09
+sid_1_02,Sid,Carry side (ft; R+),Visual-Inertial Fusion,34.0,10.08,-23.92
+sid_1_03,Sid,Carry side (ft; R+),Visual-Inertial Fusion,-2.0,-6.11,-4.11
+sid_1_04,Sid,Carry side (ft; R+),Visual-Inertial Fusion,75.0,27.19,-47.81
+sid_1_05,Sid,Carry side (ft; R+),Visual-Inertial Fusion,22.0,0.94,-21.06
+sid_1_06,Sid,Carry side (ft; R+),Visual-Inertial Fusion,-1.0,-0.1,0.9
+sid_1_07,Sid,Carry side (ft; R+),Visual-Inertial Fusion,79.0,26.29,-52.71
+sid_1_08,Sid,Carry side (ft; R+),Visual-Inertial Fusion,86.0,34.5,-51.5
+sid_1_09,Sid,Carry side (ft; R+),Visual-Inertial Fusion,19.0,87.56,68.56
+sid_1_10,Sid,Carry side (ft; R+),Visual-Inertial Fusion,65.0,19.52,-45.48
+sid_1_11,Sid,Carry side (ft; R+),Visual-Inertial Fusion,15.0,-35.1,-50.1
+sid_1_12,Sid,Carry side (ft; R+),Visual-Inertial Fusion,39.0,11.13,-27.87
+sid_1_13,Sid,Carry side (ft; R+),Visual-Inertial Fusion,66.0,13.43,-52.57
+sid_1_14,Sid,Carry side (ft; R+),Visual-Inertial Fusion,41.0,-59.97,-100.97
+sid_1_15,Sid,Carry side (ft; R+),Visual-Inertial Fusion,83.0,28.4,-54.6
+sid_1_16,Sid,Carry side (ft; R+),Visual-Inertial Fusion,34.0,8.81,-25.19
+sid_1_17,Sid,Carry side (ft; R+),Visual-Inertial Fusion,18.0,-5.86,-23.86
+andrew_1_01,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),-12.1,-5.73,6.37
+andrew_1_02,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),22.5,6.88,-15.62
+andrew_1_03,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),-2.3,0.87,3.17
+andrew_1_04,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),-8.9,3.22,12.12
+andrew_1_07,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),-18.6,-3.37,15.23
+andrew_1_08,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),4.4,5.21,0.81
+andrew_1_09,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),19.8,5.97,-13.83
+andrew_1_10,Andrew,Launch direction (deg; R+),Vision-Only (Single Angle),-22.2,-2.72,19.48
+eduardo_1_01,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),0.3,-0.49,-0.79
+eduardo_1_02,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-1.8,-0.66,1.14
+eduardo_1_03,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),0.2,0.37,0.17
+eduardo_1_04,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-0.1,-0.13,-0.03
+eduardo_1_05,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-0.4,0.35,0.75
+eduardo_1_06,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),8.4,3.26,-5.14
+eduardo_1_07,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-4.4,-2.97,1.43
+eduardo_1_08,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),5.9,8.6,2.7
+eduardo_1_09,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),0.3,-0.11,-0.41
+eduardo_1_10,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-4.8,-1.88,2.92
+eduardo_1_11,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),22.7,-10.36,-33.06
+eduardo_1_12,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-5.1,-8.11,-3.01
+eduardo_1_13,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),25.2,2.59,-22.61
+eduardo_1_14,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),7.8,3.48,-4.32
+eduardo_1_15,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),8.3,0.5,-7.8
+eduardo_1_16,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-9.7,3.84,13.54
+eduardo_1_17,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),12.6,2.91,-9.69
+eduardo_1_18,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),11.9,7.5,-4.4
+eduardo_1_19,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),-6.5,-2.24,4.26
+eduardo_1_20,Eduardo,Launch direction (deg; R+),Vision-Only (Single Angle),14.5,10.74,-3.76
+lucas_1_01,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),0.9,0.22,-0.68
+lucas_1_02,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),0.5,-10.2,-10.7
+lucas_1_03,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),4.6,1.84,-2.76
+lucas_1_04,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),4.4,9.62,5.22
+lucas_1_05,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),1.9,0.3,-1.6
+lucas_1_06,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),13.1,5.98,-7.12
+lucas_1_07,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),3.5,1.37,-2.13
+lucas_1_08,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),1.2,0.35,-0.85
+lucas_1_09,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),11.8,4.42,-7.38
+lucas_1_10,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),12.1,9.23,-2.87
+lucas_1_11,Lucas,Launch direction (deg; R+),Vision-Only (Single Angle),0.5,0.29,-0.21
+rohan_1_01,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),0.4,2.33,1.93
+rohan_1_02,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),-7.1,-0.51,6.59
+rohan_2_01,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),-9.5,-0.83,8.67
+rohan_2_02,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),7.4,9.57,2.17
+rohan_2_03,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),-3.9,0.26,4.16
+rohan_2_04,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),-5.3,-0.89,4.41
+rohan_2_05,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),-10.9,-2.06,8.84
+rohan_2_06,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),-17.1,-6.1,11.0
+rohan_2_07,Rohan,Launch direction (deg; R+),Vision-Only (Single Angle),-7.9,-0.86,7.04
+sid_1_01,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-2.1,0.97,3.07
+sid_1_02,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-1.4,0.63,2.03
+sid_1_03,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-3.5,-0.07,3.43
+sid_1_04,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),4.3,2.36,-1.94
+sid_1_05,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-3.3,0.16,3.46
+sid_1_06,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-3.5,0.1,3.6
+sid_1_07,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),4.2,2.61,-1.59
+sid_1_08,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),5.1,3.0,-2.1
+sid_1_09,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-3.7,0.61,4.31
+sid_1_10,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),2.0,1.63,-0.37
+sid_1_11,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-3.7,-5.6,-1.9
+sid_1_12,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-1.0,1.24,2.24
+sid_1_13,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),1.2,1.63,0.43
+sid_1_14,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-0.5,-10.14,-9.64
+sid_1_15,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),3.7,2.17,-1.53
+sid_1_16,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-0.4,1.66,2.06
+sid_1_17,Sid,Launch direction (deg; R+),Vision-Only (Single Angle),-2.7,0.24,2.94
+andrew_1_01,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),-12.1,-3.11,8.99
+andrew_1_02,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),22.5,8.67,-13.83
+andrew_1_03,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),-2.3,1.42,3.72
+andrew_1_04,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),-8.9,4.4,13.3
+andrew_1_07,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),-18.6,-2.92,15.68
+andrew_1_08,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),4.4,6.51,2.11
+andrew_1_09,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),19.8,7.32,-12.48
+andrew_1_10,Andrew,Launch direction (deg; R+),Vision-Only (Full Launch),-22.2,-1.93,20.27
+eduardo_1_01,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),0.3,0.97,0.67
+eduardo_1_02,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-1.8,-1.63,0.17
+eduardo_1_03,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),0.2,2.89,2.69
+eduardo_1_04,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-0.1,1.26,1.36
+eduardo_1_05,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-0.4,0.06,0.46
+eduardo_1_06,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),8.4,4.59,-3.81
+eduardo_1_07,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-4.4,-5.44,-1.04
+eduardo_1_08,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),5.9,9.23,3.33
+eduardo_1_09,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),0.3,-0.93,-1.23
+eduardo_1_10,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-4.8,-3.1,1.7
+eduardo_1_11,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),22.7,-17.14,-39.84
+eduardo_1_12,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-5.1,-9.05,-3.95
+eduardo_1_13,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),25.2,6.04,-19.16
+eduardo_1_14,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),7.8,4.85,-2.95
+eduardo_1_15,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),8.3,2.2,-6.1
+eduardo_1_16,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-9.7,5.89,15.59
+eduardo_1_17,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),12.6,4.53,-8.07
+eduardo_1_18,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),11.9,7.98,-3.92
+eduardo_1_19,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),-6.5,-0.92,5.58
+eduardo_1_20,Eduardo,Launch direction (deg; R+),Vision-Only (Full Launch),14.5,9.9,-4.6
+lucas_1_01,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),0.9,0.46,-0.44
+lucas_1_02,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),0.5,-8.9,-9.4
+lucas_1_03,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),4.6,0.79,-3.81
+lucas_1_04,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),4.4,10.53,6.13
+lucas_1_05,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),1.9,-0.87,-2.77
+lucas_1_06,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),13.1,5.95,-7.15
+lucas_1_07,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),3.5,0.22,-3.28
+lucas_1_08,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),1.2,-0.72,-1.92
+lucas_1_09,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),11.8,5.43,-6.37
+lucas_1_10,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),12.1,10.3,-1.8
+lucas_1_11,Lucas,Launch direction (deg; R+),Vision-Only (Full Launch),0.5,-0.85,-1.35
+rohan_1_01,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),0.4,1.6,1.2
+rohan_1_02,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),-7.1,0.76,7.86
+rohan_2_01,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),-9.5,-2.16,7.34
+rohan_2_02,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),7.4,10.83,3.43
+rohan_2_03,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),-3.9,0.85,4.75
+rohan_2_04,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),-5.3,-1.44,3.86
+rohan_2_05,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),-10.9,-3.69,7.21
+rohan_2_06,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),-17.1,-4.91,12.19
+rohan_2_07,Rohan,Launch direction (deg; R+),Vision-Only (Full Launch),-7.9,-2.42,5.48
+sid_1_01,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-2.1,0.03,2.13
+sid_1_02,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-1.4,-0.26,1.14
+sid_1_03,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-3.5,-1.75,1.75
+sid_1_04,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),4.3,4.99,0.69
+sid_1_05,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-3.3,-1.31,1.99
+sid_1_06,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-3.5,-1.39,2.11
+sid_1_07,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),4.2,2.68,-1.52
+sid_1_08,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),5.1,3.33,-1.77
+sid_1_09,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-3.7,9.58,13.28
+sid_1_10,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),2.0,3.45,1.45
+sid_1_11,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-3.7,-6.71,-3.01
+sid_1_12,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-1.0,0.14,1.14
+sid_1_13,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),1.2,1.05,-0.15
+sid_1_14,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-0.5,-11.05,-10.55
+sid_1_15,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),3.7,2.16,-1.54
+sid_1_16,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-0.4,0.6,1.0
+sid_1_17,Sid,Launch direction (deg; R+),Vision-Only (Full Launch),-2.7,-1.45,1.25
+andrew_1_01,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-12.1,13.06,25.16
+andrew_1_02,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),22.5,2.29,-20.21
+andrew_1_03,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-2.3,0.69,2.99
+andrew_1_04,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-8.9,3.43,12.33
+andrew_1_07,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-18.6,4.19,22.79
+andrew_1_08,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),4.4,3.39,-1.01
+andrew_1_09,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),19.8,3.01,-16.79
+andrew_1_10,Andrew,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-22.2,2.78,24.98
+eduardo_1_01,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),0.3,-0.35,-0.65
+eduardo_1_02,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-1.8,-0.83,0.97
+eduardo_1_03,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),0.2,-0.48,-0.68
+eduardo_1_04,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-0.1,-1.57,-1.47
+eduardo_1_05,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-0.4,-0.41,-0.01
+eduardo_1_06,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),8.4,-0.19,-8.59
+eduardo_1_07,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-4.4,-1.48,2.92
+eduardo_1_08,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),5.9,-0.44,-6.34
+eduardo_1_09,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),0.3,-0.38,-0.68
+eduardo_1_10,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-4.8,-0.36,4.44
+eduardo_1_11,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),22.7,-0.34,-23.04
+eduardo_1_12,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-5.1,-0.48,4.62
+eduardo_1_13,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),25.2,-0.43,-25.63
+eduardo_1_14,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),7.8,-0.73,-8.53
+eduardo_1_15,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),8.3,-0.01,-8.31
+eduardo_1_16,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-9.7,-0.62,9.08
+eduardo_1_17,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),12.6,-0.31,-12.91
+eduardo_1_18,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),11.9,-0.03,-11.93
+eduardo_1_19,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-6.5,-0.69,5.81
+eduardo_1_20,Eduardo,Launch direction (deg; R+),Club IMU Only (Face-to-Path),14.5,-0.1,-14.6
+lucas_1_01,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),0.9,-2.98,-3.88
+lucas_1_02,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),0.5,-4.01,-4.51
+lucas_1_03,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),4.6,-1.9,-6.5
+lucas_1_04,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),4.4,-2.3,-6.7
+lucas_1_05,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),1.9,-1.27,-3.17
+lucas_1_06,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),13.1,-0.98,-14.08
+lucas_1_07,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),3.5,-2.08,-5.58
+lucas_1_08,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),1.2,-2.86,-4.06
+lucas_1_09,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),11.8,-3.45,-15.25
+lucas_1_10,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),12.1,-2.13,-14.23
+lucas_1_11,Lucas,Launch direction (deg; R+),Club IMU Only (Face-to-Path),0.5,-1.72,-2.22
+rohan_1_01,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),0.4,0.35,-0.05
+rohan_1_02,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-7.1,0.75,7.85
+rohan_2_01,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-9.5,1.22,10.72
+rohan_2_02,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),7.4,1.01,-6.39
+rohan_2_03,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-3.9,1.19,5.09
+rohan_2_04,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-5.3,1.06,6.36
+rohan_2_05,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-10.9,1.09,11.99
+rohan_2_06,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-17.1,0.93,18.03
+rohan_2_07,Rohan,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-7.9,1.11,9.01
+sid_1_01,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-2.1,-12.59,-10.49
+sid_1_02,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-1.4,-10.78,-9.38
+sid_1_03,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-3.5,-10.66,-7.16
+sid_1_04,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),4.3,-10.46,-14.76
+sid_1_05,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-3.3,-10.19,-6.89
+sid_1_06,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-3.5,-9.34,-5.84
+sid_1_07,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),4.2,-12.73,-16.93
+sid_1_08,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),5.1,-11.99,-17.09
+sid_1_09,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-3.7,-11.05,-7.35
+sid_1_10,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),2.0,-10.9,-12.9
+sid_1_11,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-3.7,-10.38,-6.68
+sid_1_12,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-1.0,-11.16,-10.16
+sid_1_13,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),1.2,-11.9,-13.1
+sid_1_14,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-0.5,-11.33,-10.83
+sid_1_15,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),3.7,-12.33,-16.03
+sid_1_16,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-0.4,-11.53,-11.13
+sid_1_17,Sid,Launch direction (deg; R+),Club IMU Only (Face-to-Path),-2.7,-10.17,-7.47
+andrew_1_01,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,-12.1,6.59,18.69
+andrew_1_02,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,22.5,7.61,-14.89
+andrew_1_03,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,-2.3,-0.28,2.02
+andrew_1_04,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,-8.9,4.75,13.65
+andrew_1_07,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,-18.6,-0.63,17.97
+andrew_1_08,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,4.4,5.96,1.56
+andrew_1_09,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,19.8,7.16,-12.64
+andrew_1_10,Andrew,Launch direction (deg; R+),Visual-Inertial Fusion,-22.2,-0.2,22.0
+eduardo_1_01,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,0.3,-0.61,-0.91
+eduardo_1_02,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-1.8,-5.06,-3.26
+eduardo_1_03,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,0.2,1.05,0.85
+eduardo_1_04,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-0.1,-4.56,-4.46
+eduardo_1_05,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-0.4,-1.81,-1.41
+eduardo_1_06,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,8.4,3.26,-5.14
+eduardo_1_07,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-4.4,-11.07,-6.67
+eduardo_1_08,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,5.9,7.78,1.88
+eduardo_1_09,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,0.3,-2.94,-3.24
+eduardo_1_10,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-4.8,-4.86,-0.06
+eduardo_1_11,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,22.7,-19.05,-41.75
+eduardo_1_12,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-5.1,-11.64,-6.54
+eduardo_1_13,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,25.2,4.02,-21.18
+eduardo_1_14,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,7.8,1.67,-6.13
+eduardo_1_15,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,8.3,1.62,-6.68
+eduardo_1_16,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-9.7,3.2,12.9
+eduardo_1_17,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,12.6,3.3,-9.3
+eduardo_1_18,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,11.9,7.87,-4.03
+eduardo_1_19,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,-6.5,-2.3,4.2
+eduardo_1_20,Eduardo,Launch direction (deg; R+),Visual-Inertial Fusion,14.5,9.3,-5.2
+lucas_1_01,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,0.9,-2.97,-3.87
+lucas_1_02,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,0.5,-12.86,-13.36
+lucas_1_03,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,4.6,-2.14,-6.74
+lucas_1_04,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,4.4,7.32,2.92
+lucas_1_05,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,1.9,-2.94,-4.84
+lucas_1_06,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,13.1,3.67,-9.43
+lucas_1_07,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,3.5,-2.62,-6.12
+lucas_1_08,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,1.2,-4.22,-5.42
+lucas_1_09,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,11.8,1.18,-10.62
+lucas_1_10,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,12.1,7.09,-5.01
+lucas_1_11,Lucas,Launch direction (deg; R+),Visual-Inertial Fusion,0.5,-3.34,-3.84
+rohan_1_01,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,0.4,0.28,-0.12
+rohan_1_02,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,-7.1,-0.21,6.89
+rohan_2_01,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,-9.5,-2.5,7.0
+rohan_2_02,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,7.4,9.31,1.91
+rohan_2_03,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,-3.9,0.27,4.17
+rohan_2_04,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,-5.3,-2.24,3.06
+rohan_2_05,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,-10.9,-4.05,6.85
+rohan_2_06,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,-17.1,-5.82,11.28
+rohan_2_07,Rohan,Launch direction (deg; R+),Visual-Inertial Fusion,-7.9,-2.92,4.98
+sid_1_01,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-2.1,-7.7,-5.6
+sid_1_02,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-1.4,-7.04,-5.64
+sid_1_03,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-3.5,-8.31,-4.81
+sid_1_04,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,4.3,-2.54,-6.84
+sid_1_05,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-3.3,-7.64,-4.34
+sid_1_06,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-3.5,-7.26,-3.76
+sid_1_07,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,4.2,-5.48,-9.68
+sid_1_08,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,5.1,-4.61,-9.71
+sid_1_09,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-3.7,0.68,4.38
+sid_1_10,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,2.0,-4.05,-6.05
+sid_1_11,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-3.7,-12.91,-9.21
+sid_1_12,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-1.0,-6.78,-5.78
+sid_1_13,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,1.2,-6.57,-7.77
+sid_1_14,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-0.5,-17.45,-16.95
+sid_1_15,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,3.7,-5.58,-9.28
+sid_1_16,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-0.4,-6.63,-6.23
+sid_1_17,Sid,Launch direction (deg; R+),Visual-Inertial Fusion,-2.7,-7.79,-5.09
+andrew_1_01,Andrew,Carry flat (yd),Vision-Only (Single Angle),29.0,139.8,110.8
+andrew_1_02,Andrew,Carry flat (yd),Vision-Only (Single Angle),73.0,76.52,3.52
+andrew_1_03,Andrew,Carry flat (yd),Vision-Only (Single Angle),24.0,106.66,82.66
+andrew_1_04,Andrew,Carry flat (yd),Vision-Only (Single Angle),21.0,94.89,73.89
+andrew_1_07,Andrew,Carry flat (yd),Vision-Only (Single Angle),27.0,127.93,100.93
+andrew_1_08,Andrew,Carry flat (yd),Vision-Only (Single Angle),9.0,84.89,75.89
+andrew_1_09,Andrew,Carry flat (yd),Vision-Only (Single Angle),81.0,81.11,0.11
+andrew_1_10,Andrew,Carry flat (yd),Vision-Only (Single Angle),31.0,124.66,93.66
+eduardo_1_01,Eduardo,Carry flat (yd),Vision-Only (Single Angle),125.0,99.03,-25.97
+eduardo_1_02,Eduardo,Carry flat (yd),Vision-Only (Single Angle),107.0,99.3,-7.7
+eduardo_1_03,Eduardo,Carry flat (yd),Vision-Only (Single Angle),127.0,97.59,-29.41
+eduardo_1_04,Eduardo,Carry flat (yd),Vision-Only (Single Angle),112.0,98.43,-13.57
+eduardo_1_05,Eduardo,Carry flat (yd),Vision-Only (Single Angle),103.0,97.63,-5.37
+eduardo_1_06,Eduardo,Carry flat (yd),Vision-Only (Single Angle),96.0,92.8,-3.2
+eduardo_1_07,Eduardo,Carry flat (yd),Vision-Only (Single Angle),112.0,103.13,-8.87
+eduardo_1_08,Eduardo,Carry flat (yd),Vision-Only (Single Angle),12.0,83.94,71.94
+eduardo_1_09,Eduardo,Carry flat (yd),Vision-Only (Single Angle),123.0,98.39,-24.61
+eduardo_1_10,Eduardo,Carry flat (yd),Vision-Only (Single Angle),105.0,101.32,-3.68
+eduardo_1_11,Eduardo,Carry flat (yd),Vision-Only (Single Angle),71.0,115.39,44.39
+eduardo_1_12,Eduardo,Carry flat (yd),Vision-Only (Single Angle),92.0,111.67,19.67
+eduardo_1_13,Eduardo,Carry flat (yd),Vision-Only (Single Angle),79.0,93.91,14.91
+eduardo_1_14,Eduardo,Carry flat (yd),Vision-Only (Single Angle),99.0,92.43,-6.57
+eduardo_1_15,Eduardo,Carry flat (yd),Vision-Only (Single Angle),103.0,97.37,-5.63
+eduardo_1_16,Eduardo,Carry flat (yd),Vision-Only (Single Angle),80.0,91.84,11.84
+eduardo_1_17,Eduardo,Carry flat (yd),Vision-Only (Single Angle),86.0,93.38,7.38
+eduardo_1_18,Eduardo,Carry flat (yd),Vision-Only (Single Angle),43.0,85.77,42.77
+eduardo_1_19,Eduardo,Carry flat (yd),Vision-Only (Single Angle),83.0,101.93,18.93
+eduardo_1_20,Eduardo,Carry flat (yd),Vision-Only (Single Angle),6.0,80.39,74.39
+lucas_1_01,Lucas,Carry flat (yd),Vision-Only (Single Angle),155.0,91.33,-63.67
+lucas_1_02,Lucas,Carry flat (yd),Vision-Only (Single Angle),154.0,110.83,-43.17
+lucas_1_03,Lucas,Carry flat (yd),Vision-Only (Single Angle),146.0,88.3,-57.7
+lucas_1_04,Lucas,Carry flat (yd),Vision-Only (Single Angle),26.0,73.74,47.74
+lucas_1_05,Lucas,Carry flat (yd),Vision-Only (Single Angle),119.0,91.19,-27.81
+lucas_1_06,Lucas,Carry flat (yd),Vision-Only (Single Angle),125.0,80.56,-44.44
+lucas_1_07,Lucas,Carry flat (yd),Vision-Only (Single Angle),146.0,89.17,-56.83
+lucas_1_08,Lucas,Carry flat (yd),Vision-Only (Single Angle),158.0,91.08,-66.92
+lucas_1_09,Lucas,Carry flat (yd),Vision-Only (Single Angle),105.0,83.48,-21.52
+lucas_1_10,Lucas,Carry flat (yd),Vision-Only (Single Angle),16.0,74.47,58.47
+lucas_1_11,Lucas,Carry flat (yd),Vision-Only (Single Angle),132.0,91.21,-40.79
+rohan_1_01,Rohan,Carry flat (yd),Vision-Only (Single Angle),20.0,96.78,76.78
+rohan_1_02,Rohan,Carry flat (yd),Vision-Only (Single Angle),143.0,104.95,-38.05
+rohan_2_01,Rohan,Carry flat (yd),Vision-Only (Single Angle),132.0,105.86,-26.14
+rohan_2_02,Rohan,Carry flat (yd),Vision-Only (Single Angle),10.0,75.99,65.99
+rohan_2_03,Rohan,Carry flat (yd),Vision-Only (Single Angle),118.0,102.72,-15.28
+rohan_2_04,Rohan,Carry flat (yd),Vision-Only (Single Angle),32.0,106.03,74.03
+rohan_2_05,Rohan,Carry flat (yd),Vision-Only (Single Angle),146.0,109.4,-36.6
+rohan_2_06,Rohan,Carry flat (yd),Vision-Only (Single Angle),36.0,121.01,85.01
+rohan_2_07,Rohan,Carry flat (yd),Vision-Only (Single Angle),125.0,105.93,-19.07
+sid_1_01,Sid,Carry flat (yd),Vision-Only (Single Angle),126.0,86.48,-39.52
+sid_1_02,Sid,Carry flat (yd),Vision-Only (Single Angle),128.0,87.21,-40.79
+sid_1_03,Sid,Carry flat (yd),Vision-Only (Single Angle),114.0,88.73,-25.27
+sid_1_04,Sid,Carry flat (yd),Vision-Only (Single Angle),122.0,83.46,-38.54
+sid_1_05,Sid,Carry flat (yd),Vision-Only (Single Angle),129.0,88.22,-40.78
+sid_1_06,Sid,Carry flat (yd),Vision-Only (Single Angle),131.0,88.37,-42.63
+sid_1_07,Sid,Carry flat (yd),Vision-Only (Single Angle),129.0,82.9,-46.1
+sid_1_08,Sid,Carry flat (yd),Vision-Only (Single Angle),110.0,82.06,-27.94
+sid_1_09,Sid,Carry flat (yd),Vision-Only (Single Angle),132.0,87.25,-44.75
+sid_1_10,Sid,Carry flat (yd),Vision-Only (Single Angle),132.0,85.03,-46.97
+sid_1_11,Sid,Carry flat (yd),Vision-Only (Single Angle),132.0,100.77,-31.23
+sid_1_12,Sid,Carry flat (yd),Vision-Only (Single Angle),130.0,85.89,-44.11
+sid_1_13,Sid,Carry flat (yd),Vision-Only (Single Angle),134.0,85.05,-48.95
+sid_1_14,Sid,Carry flat (yd),Vision-Only (Single Angle),134.0,110.64,-23.36
+sid_1_15,Sid,Carry flat (yd),Vision-Only (Single Angle),126.0,83.87,-42.13
+sid_1_16,Sid,Carry flat (yd),Vision-Only (Single Angle),81.0,84.97,3.97
+sid_1_17,Sid,Carry flat (yd),Vision-Only (Single Angle),127.0,88.07,-38.93
+andrew_1_01,Andrew,Carry flat (yd),Vision-Only (Full Launch),29.0,123.87,94.87
+andrew_1_02,Andrew,Carry flat (yd),Vision-Only (Full Launch),73.0,77.43,4.43
+andrew_1_03,Andrew,Carry flat (yd),Vision-Only (Full Launch),24.0,82.28,58.28
+andrew_1_04,Andrew,Carry flat (yd),Vision-Only (Full Launch),21.0,84.03,63.03
+andrew_1_07,Andrew,Carry flat (yd),Vision-Only (Full Launch),27.0,107.48,80.48
+andrew_1_08,Andrew,Carry flat (yd),Vision-Only (Full Launch),9.0,58.76,49.76
+andrew_1_09,Andrew,Carry flat (yd),Vision-Only (Full Launch),81.0,84.19,3.19
+andrew_1_10,Andrew,Carry flat (yd),Vision-Only (Full Launch),31.0,121.83,90.83
+eduardo_1_01,Eduardo,Carry flat (yd),Vision-Only (Full Launch),125.0,91.64,-33.36
+eduardo_1_02,Eduardo,Carry flat (yd),Vision-Only (Full Launch),107.0,124.36,17.36
+eduardo_1_03,Eduardo,Carry flat (yd),Vision-Only (Full Launch),127.0,71.09,-55.91
+eduardo_1_04,Eduardo,Carry flat (yd),Vision-Only (Full Launch),112.0,78.37,-33.63
+eduardo_1_05,Eduardo,Carry flat (yd),Vision-Only (Full Launch),103.0,116.57,13.57
+eduardo_1_06,Eduardo,Carry flat (yd),Vision-Only (Full Launch),96.0,74.17,-21.83
+eduardo_1_07,Eduardo,Carry flat (yd),Vision-Only (Full Launch),112.0,123.4,11.4
+eduardo_1_08,Eduardo,Carry flat (yd),Vision-Only (Full Launch),12.0,53.76,41.76
+eduardo_1_09,Eduardo,Carry flat (yd),Vision-Only (Full Launch),123.0,131.64,8.64
+eduardo_1_10,Eduardo,Carry flat (yd),Vision-Only (Full Launch),105.0,110.42,5.42
+eduardo_1_11,Eduardo,Carry flat (yd),Vision-Only (Full Launch),71.0,103.92,32.92
+eduardo_1_12,Eduardo,Carry flat (yd),Vision-Only (Full Launch),92.0,103.35,11.35
+eduardo_1_13,Eduardo,Carry flat (yd),Vision-Only (Full Launch),79.0,92.22,13.22
+eduardo_1_14,Eduardo,Carry flat (yd),Vision-Only (Full Launch),99.0,126.43,27.43
+eduardo_1_15,Eduardo,Carry flat (yd),Vision-Only (Full Launch),103.0,73.56,-29.44
+eduardo_1_16,Eduardo,Carry flat (yd),Vision-Only (Full Launch),80.0,102.48,22.48
+eduardo_1_17,Eduardo,Carry flat (yd),Vision-Only (Full Launch),86.0,78.65,-7.35
+eduardo_1_18,Eduardo,Carry flat (yd),Vision-Only (Full Launch),43.0,45.7,2.7
+eduardo_1_19,Eduardo,Carry flat (yd),Vision-Only (Full Launch),83.0,74.87,-8.13
+eduardo_1_20,Eduardo,Carry flat (yd),Vision-Only (Full Launch),6.0,21.6,15.6
+lucas_1_01,Lucas,Carry flat (yd),Vision-Only (Full Launch),155.0,64.4,-90.6
+lucas_1_02,Lucas,Carry flat (yd),Vision-Only (Full Launch),154.0,83.89,-70.11
+lucas_1_03,Lucas,Carry flat (yd),Vision-Only (Full Launch),146.0,98.87,-47.13
+lucas_1_04,Lucas,Carry flat (yd),Vision-Only (Full Launch),26.0,47.82,21.82
+lucas_1_05,Lucas,Carry flat (yd),Vision-Only (Full Launch),119.0,92.41,-26.59
+lucas_1_06,Lucas,Carry flat (yd),Vision-Only (Full Launch),125.0,90.79,-34.21
+lucas_1_07,Lucas,Carry flat (yd),Vision-Only (Full Launch),146.0,106.34,-39.66
+lucas_1_08,Lucas,Carry flat (yd),Vision-Only (Full Launch),158.0,93.95,-64.05
+lucas_1_09,Lucas,Carry flat (yd),Vision-Only (Full Launch),105.0,74.67,-30.33
+lucas_1_10,Lucas,Carry flat (yd),Vision-Only (Full Launch),16.0,43.91,27.91
+lucas_1_11,Lucas,Carry flat (yd),Vision-Only (Full Launch),132.0,90.78,-41.22
+rohan_1_01,Rohan,Carry flat (yd),Vision-Only (Full Launch),20.0,77.44,57.44
+rohan_1_02,Rohan,Carry flat (yd),Vision-Only (Full Launch),143.0,101.3,-41.7
+rohan_2_01,Rohan,Carry flat (yd),Vision-Only (Full Launch),132.0,110.31,-21.69
+rohan_2_02,Rohan,Carry flat (yd),Vision-Only (Full Launch),10.0,47.89,37.89
+rohan_2_03,Rohan,Carry flat (yd),Vision-Only (Full Launch),118.0,105.0,-13.0
+rohan_2_04,Rohan,Carry flat (yd),Vision-Only (Full Launch),32.0,92.59,60.59
+rohan_2_05,Rohan,Carry flat (yd),Vision-Only (Full Launch),146.0,113.26,-32.74
+rohan_2_06,Rohan,Carry flat (yd),Vision-Only (Full Launch),36.0,101.96,65.96
+rohan_2_07,Rohan,Carry flat (yd),Vision-Only (Full Launch),125.0,98.98,-26.02
+sid_1_01,Sid,Carry flat (yd),Vision-Only (Full Launch),126.0,131.87,5.87
+sid_1_02,Sid,Carry flat (yd),Vision-Only (Full Launch),128.0,127.01,-0.99
+sid_1_03,Sid,Carry flat (yd),Vision-Only (Full Launch),114.0,114.19,0.19
+sid_1_04,Sid,Carry flat (yd),Vision-Only (Full Launch),122.0,90.02,-31.98
+sid_1_05,Sid,Carry flat (yd),Vision-Only (Full Launch),129.0,122.55,-6.45
+sid_1_06,Sid,Carry flat (yd),Vision-Only (Full Launch),131.0,120.88,-10.12
+sid_1_07,Sid,Carry flat (yd),Vision-Only (Full Launch),129.0,126.32,-2.68
+sid_1_08,Sid,Carry flat (yd),Vision-Only (Full Launch),110.0,142.02,32.02
+sid_1_09,Sid,Carry flat (yd),Vision-Only (Full Launch),132.0,131.71,-0.29
+sid_1_10,Sid,Carry flat (yd),Vision-Only (Full Launch),132.0,90.59,-41.41
+sid_1_11,Sid,Carry flat (yd),Vision-Only (Full Launch),132.0,101.95,-30.05
+sid_1_12,Sid,Carry flat (yd),Vision-Only (Full Launch),130.0,122.46,-7.54
+sid_1_13,Sid,Carry flat (yd),Vision-Only (Full Launch),134.0,125.02,-8.98
+sid_1_14,Sid,Carry flat (yd),Vision-Only (Full Launch),134.0,77.15,-56.85
+sid_1_15,Sid,Carry flat (yd),Vision-Only (Full Launch),126.0,127.63,1.63
+sid_1_16,Sid,Carry flat (yd),Vision-Only (Full Launch),81.0,116.27,35.27
+sid_1_17,Sid,Carry flat (yd),Vision-Only (Full Launch),127.0,112.29,-14.71
+andrew_1_01,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),29.0,76.54,47.54
+andrew_1_02,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),73.0,99.58,26.58
+andrew_1_03,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),24.0,102.7,78.7
+andrew_1_04,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),21.0,96.66,75.66
+andrew_1_07,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),27.0,94.56,67.56
+andrew_1_08,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),9.0,96.79,87.79
+andrew_1_09,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),81.0,97.68,16.68
+andrew_1_10,Andrew,Carry flat (yd),Club IMU Only (Face-to-Path),31.0,98.36,67.36
+eduardo_1_01,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),125.0,69.91,-55.09
+eduardo_1_02,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),107.0,64.13,-42.87
+eduardo_1_03,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),127.0,61.57,-65.43
+eduardo_1_04,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),112.0,64.09,-47.91
+eduardo_1_05,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),103.0,62.87,-40.13
+eduardo_1_06,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),96.0,70.8,-25.2
+eduardo_1_07,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),112.0,62.78,-49.22
+eduardo_1_08,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),12.0,61.46,49.46
+eduardo_1_09,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),123.0,61.03,-61.97
+eduardo_1_10,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),105.0,63.08,-41.92
+eduardo_1_11,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),71.0,60.0,-11.0
+eduardo_1_12,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),92.0,64.5,-27.5
+eduardo_1_13,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),79.0,61.03,-17.97
+eduardo_1_14,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),99.0,60.94,-38.06
+eduardo_1_15,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),103.0,62.33,-40.67
+eduardo_1_16,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),80.0,61.52,-18.48
+eduardo_1_17,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),86.0,57.89,-28.11
+eduardo_1_18,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),43.0,59.09,16.09
+eduardo_1_19,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),83.0,51.98,-31.02
+eduardo_1_20,Eduardo,Carry flat (yd),Club IMU Only (Face-to-Path),6.0,60.03,54.03
+lucas_1_01,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),155.0,57.8,-97.2
+lucas_1_02,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),154.0,59.78,-94.22
+lucas_1_03,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),146.0,28.05,-117.95
+lucas_1_04,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),26.0,60.02,34.02
+lucas_1_05,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),119.0,55.12,-63.88
+lucas_1_06,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),125.0,43.1,-81.9
+lucas_1_07,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),146.0,63.54,-82.46
+lucas_1_08,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),158.0,47.9,-110.1
+lucas_1_09,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),105.0,50.82,-54.18
+lucas_1_10,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),16.0,40.94,24.94
+lucas_1_11,Lucas,Carry flat (yd),Club IMU Only (Face-to-Path),132.0,54.86,-77.14
+rohan_1_01,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),20.0,130.49,110.49
+rohan_1_02,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),143.0,128.13,-14.87
+rohan_2_01,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),132.0,120.09,-11.91
+rohan_2_02,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),10.0,126.4,116.4
+rohan_2_03,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),118.0,120.62,2.62
+rohan_2_04,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),32.0,119.49,87.49
+rohan_2_05,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),146.0,123.14,-22.86
+rohan_2_06,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),36.0,126.28,90.28
+rohan_2_07,Rohan,Carry flat (yd),Club IMU Only (Face-to-Path),125.0,114.78,-10.22
+sid_1_01,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),126.0,46.11,-79.89
+sid_1_02,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),128.0,54.86,-73.14
+sid_1_03,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),114.0,57.53,-56.47
+sid_1_04,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),122.0,60.21,-61.79
+sid_1_05,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),129.0,58.2,-70.8
+sid_1_06,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),131.0,61.85,-69.15
+sid_1_07,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),129.0,47.26,-81.74
+sid_1_08,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),110.0,54.93,-55.07
+sid_1_09,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),132.0,55.04,-76.96
+sid_1_10,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),132.0,55.39,-76.61
+sid_1_11,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),132.0,60.21,-71.79
+sid_1_12,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),130.0,50.51,-79.49
+sid_1_13,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),134.0,55.14,-78.86
+sid_1_14,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),134.0,50.74,-83.26
+sid_1_15,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),126.0,41.95,-84.05
+sid_1_16,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),81.0,52.22,-28.78
+sid_1_17,Sid,Carry flat (yd),Club IMU Only (Face-to-Path),127.0,60.39,-66.61
+andrew_1_01,Andrew,Carry flat (yd),Visual-Inertial Fusion,29.0,131.08,102.08
+andrew_1_02,Andrew,Carry flat (yd),Visual-Inertial Fusion,73.0,82.21,9.21
+andrew_1_03,Andrew,Carry flat (yd),Visual-Inertial Fusion,24.0,82.67,58.67
+andrew_1_04,Andrew,Carry flat (yd),Visual-Inertial Fusion,21.0,85.36,64.36
+andrew_1_07,Andrew,Carry flat (yd),Visual-Inertial Fusion,27.0,102.0,75.0
+andrew_1_08,Andrew,Carry flat (yd),Visual-Inertial Fusion,9.0,58.94,49.94
+andrew_1_09,Andrew,Carry flat (yd),Visual-Inertial Fusion,81.0,87.21,6.21
+andrew_1_10,Andrew,Carry flat (yd),Visual-Inertial Fusion,31.0,126.5,95.5
+eduardo_1_01,Eduardo,Carry flat (yd),Visual-Inertial Fusion,125.0,73.36,-51.64
+eduardo_1_02,Eduardo,Carry flat (yd),Visual-Inertial Fusion,107.0,107.09,0.09
+eduardo_1_03,Eduardo,Carry flat (yd),Visual-Inertial Fusion,127.0,43.17,-83.83
+eduardo_1_04,Eduardo,Carry flat (yd),Visual-Inertial Fusion,112.0,74.9,-37.1
+eduardo_1_05,Eduardo,Carry flat (yd),Visual-Inertial Fusion,103.0,90.23,-12.77
+eduardo_1_06,Eduardo,Carry flat (yd),Visual-Inertial Fusion,96.0,57.95,-38.05
+eduardo_1_07,Eduardo,Carry flat (yd),Visual-Inertial Fusion,112.0,113.92,1.92
+eduardo_1_08,Eduardo,Carry flat (yd),Visual-Inertial Fusion,12.0,21.65,9.65
+eduardo_1_09,Eduardo,Carry flat (yd),Visual-Inertial Fusion,123.0,103.69,-19.31
+eduardo_1_10,Eduardo,Carry flat (yd),Visual-Inertial Fusion,105.0,83.54,-21.46
+eduardo_1_11,Eduardo,Carry flat (yd),Visual-Inertial Fusion,71.0,68.42,-2.58
+eduardo_1_12,Eduardo,Carry flat (yd),Visual-Inertial Fusion,92.0,83.06,-8.94
+eduardo_1_13,Eduardo,Carry flat (yd),Visual-Inertial Fusion,79.0,64.85,-14.15
+eduardo_1_14,Eduardo,Carry flat (yd),Visual-Inertial Fusion,99.0,105.93,6.93
+eduardo_1_15,Eduardo,Carry flat (yd),Visual-Inertial Fusion,103.0,42.08,-60.92
+eduardo_1_16,Eduardo,Carry flat (yd),Visual-Inertial Fusion,80.0,79.85,-0.15
+eduardo_1_17,Eduardo,Carry flat (yd),Visual-Inertial Fusion,86.0,42.32,-43.68
+eduardo_1_18,Eduardo,Carry flat (yd),Visual-Inertial Fusion,43.0,3.9,-39.1
+eduardo_1_19,Eduardo,Carry flat (yd),Visual-Inertial Fusion,83.0,26.64,-56.36
+eduardo_1_20,Eduardo,Carry flat (yd),Visual-Inertial Fusion,6.0,-16.9,-22.9
+lucas_1_01,Lucas,Carry flat (yd),Visual-Inertial Fusion,155.0,50.1,-104.9
+lucas_1_02,Lucas,Carry flat (yd),Visual-Inertial Fusion,154.0,74.28,-79.72
+lucas_1_03,Lucas,Carry flat (yd),Visual-Inertial Fusion,146.0,48.3,-97.7
+lucas_1_04,Lucas,Carry flat (yd),Visual-Inertial Fusion,26.0,36.0,10.0
+lucas_1_05,Lucas,Carry flat (yd),Visual-Inertial Fusion,119.0,65.3,-53.7
+lucas_1_06,Lucas,Carry flat (yd),Visual-Inertial Fusion,125.0,54.01,-70.99
+lucas_1_07,Lucas,Carry flat (yd),Visual-Inertial Fusion,146.0,81.67,-64.33
+lucas_1_08,Lucas,Carry flat (yd),Visual-Inertial Fusion,158.0,61.26,-96.74
+lucas_1_09,Lucas,Carry flat (yd),Visual-Inertial Fusion,105.0,52.06,-52.94
+lucas_1_10,Lucas,Carry flat (yd),Visual-Inertial Fusion,16.0,19.07,3.07
+lucas_1_11,Lucas,Carry flat (yd),Visual-Inertial Fusion,132.0,64.19,-67.81
+rohan_1_01,Rohan,Carry flat (yd),Visual-Inertial Fusion,20.0,103.72,83.72
+rohan_1_02,Rohan,Carry flat (yd),Visual-Inertial Fusion,143.0,126.04,-16.96
+rohan_2_01,Rohan,Carry flat (yd),Visual-Inertial Fusion,132.0,126.43,-5.57
+rohan_2_02,Rohan,Carry flat (yd),Visual-Inertial Fusion,10.0,78.58,68.58
+rohan_2_03,Rohan,Carry flat (yd),Visual-Inertial Fusion,118.0,123.33,5.33
+rohan_2_04,Rohan,Carry flat (yd),Visual-Inertial Fusion,32.0,110.91,78.91
+rohan_2_05,Rohan,Carry flat (yd),Visual-Inertial Fusion,146.0,131.4,-14.6
+rohan_2_06,Rohan,Carry flat (yd),Visual-Inertial Fusion,36.0,126.97,90.97
+rohan_2_07,Rohan,Carry flat (yd),Visual-Inertial Fusion,125.0,110.51,-14.49
+sid_1_01,Sid,Carry flat (yd),Visual-Inertial Fusion,126.0,88.72,-37.28
+sid_1_02,Sid,Carry flat (yd),Visual-Inertial Fusion,128.0,93.12,-34.88
+sid_1_03,Sid,Carry flat (yd),Visual-Inertial Fusion,114.0,83.43,-30.57
+sid_1_04,Sid,Carry flat (yd),Visual-Inertial Fusion,122.0,62.39,-59.61
+sid_1_05,Sid,Carry flat (yd),Visual-Inertial Fusion,129.0,92.29,-36.71
+sid_1_06,Sid,Carry flat (yd),Visual-Inertial Fusion,131.0,94.41,-36.59
+sid_1_07,Sid,Carry flat (yd),Visual-Inertial Fusion,129.0,83.87,-45.13
+sid_1_08,Sid,Carry flat (yd),Visual-Inertial Fusion,110.0,106.52,-3.48
+sid_1_09,Sid,Carry flat (yd),Visual-Inertial Fusion,132.0,98.73,-33.27
+sid_1_10,Sid,Carry flat (yd),Visual-Inertial Fusion,132.0,58.16,-73.84
+sid_1_11,Sid,Carry flat (yd),Visual-Inertial Fusion,132.0,76.6,-55.4
+sid_1_12,Sid,Carry flat (yd),Visual-Inertial Fusion,130.0,84.08,-45.92
+sid_1_13,Sid,Carry flat (yd),Visual-Inertial Fusion,134.0,90.78,-43.22
+sid_1_14,Sid,Carry flat (yd),Visual-Inertial Fusion,134.0,43.31,-90.69
+sid_1_15,Sid,Carry flat (yd),Visual-Inertial Fusion,126.0,80.19,-45.81
+sid_1_16,Sid,Carry flat (yd),Visual-Inertial Fusion,81.0,79.49,-1.51
+sid_1_17,Sid,Carry flat (yd),Visual-Inertial Fusion,127.0,84.33,-42.67

@@ -61,3 +61,30 @@ Acceleration clipping descriptors are newly evaluated as censoring patterns in a
 - Direct raw watch review reconfirms rotation extrema clustered near 35 recorded units per axis (six sessions), but exporter units/range and saturation flags remain unverified. Descriptive carry correlations cannot establish that this limiting, rather than contact/timing/measurement differences, explains weak peak-feature performance.
 
 - Latest >70/>100 comparison uses strict actual-carry thresholds, 50/39 of the same 65 club-covered shots. Four golfers remain >100 because Andrew has no qualifying outcomes. Restricted-training results assume known eligibility and must not be presented as deployable all-shot accuracy or verified well-struck contact labels.
+
+## November 19 tracking and endpoint audit
+
+- The old native crop ended at source image y=650. Native images confirm that some ball tracks continue above it. The wider crop and gap settings were tested on all 76 shots, with ten sampled tails enabled for review.
+- Native frames show Lucas 02's automatic proposal jumping onto the golfer/club. The viewer abstains. No replacement has been verified. Lucas 09 remains a short rightward candidate.
+- The club fusion table contains numeric vision-derived stand-ins on eight missing-club shots. Require `has_club_imu` for matched club comparisons.
+- Extended points are candidate evidence outside the sampled native reviews. The known reference annotations do not establish precision on the late tail. TrackMan labels used for carry landing versus final resting position have different meanings and are scored separately.
+
+- Three-point image-speed thresholds can reject visible balls still in flight. Keep physical speed and apparent playback pixel speed distinct. 60/80 ms windows are based on source playback timestamps and proposed departure, with median six/eight observed detections per available track.
+
+Full-window shaft candidates can follow range markings across consecutive frames. Direction references for Sid 01 and Lucas 02 are approximate visual readings. An assisted clubhead track on Lucas 02 also drifted between correct-looking spot checks. See [native-frame review](reports/native_swing_shaft_review.md).
+
+Range real-time mode standardizes the available pose clip to 1.1 seconds for display. The launch phase uses the available departure bracket or an approximate impact. Trajectories between tee, apex and landing and the duration of turf rollout are reconstructed.
+
+The previous 1.1-second range swing normalization was removed. One elapsed second now advances the pose by one second on the review video timeline. Departure estimates and reconstructed ball paths retain their existing uncertainty.
+
+Hop height and turf movement are illustrative. Sid 14 and Eduardo 17 have independently predicted totals shorter than their predicted carries. The viewer preserves both outputs and illustrates the negative difference with a rollback.
+
+The viewer supplies resting side by extending the airborne tangent; the benchmark can predict the recorded total-side coordinate directly. Comparing different lateral methods accounts for most of the improvement relative to the viewer in the label-sharing experiment.
+
+Endpoint reporting: the historical 58 primary geometry rows include the rejected Lucas 02 track. The viewer displays 57 of these and 12 other labeled shots. Retain the 58-shot result for comparative research and identify it separately from accepted-track performance.
+
+The avatar’s opening shoe-to-ball spacing is a display estimate scaled to the reconstructed seven-iron length. The single-camera, hip-relative body landmarks do not supply calibrated stance-to-ball distance.
+
+Clean-cohort rollout evaluation has TrackMan landing and resting coordinates but no measured arrival azimuth or intermediate turf path. Opposite-heading counts test internal geometry; sign agreement uses recorded displacement.
+
+Six visually reviewed early launches show clear wrong-object associations on Andrew 04 and Eduardo 11. Lucas 04 has a large carry miss despite close point agreement. Single-reviewer cropped-point annotations are provisional. [Review](reports/clean_launch_audit.md)

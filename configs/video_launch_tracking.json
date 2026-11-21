@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "description": "Physics-constrained ball launch and pre-impact clubhead tracking from high-speed video.",
+  "seed_max_departure_elapsed_s": 0.035,
+  "seed_min_departure_elapsed_s": 0.004,
+  "initial_candidate_max_dist_px": 220.0,
+  "initial_candidate_min_dist_px": 15.0,
+  "initial_candidate_min_area": 10,
+  "initial_candidate_left_margin_px": 25.0,
+  "min_track_length": 4,
+  "min_vertical_rise_px": 40.0,
+  "min_track_duration_s": 0.015,
+  "club_follow_through_angle_threshold_deg": -10.0,
+  "club_follow_through_dx_threshold_px": -80.0,
+  "clubhead_pre_impact_frames": 2,
+  "clubhead_search_radius_x_px": 180.0,
+  "clubhead_search_radius_y_px": 250.0
+}

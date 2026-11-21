@@ -1,0 +1,26 @@
+{
+  "version": 11,
+  "before_peak_s": 1.25,
+  "duration_s": 2.1,
+  "native_crop": [
+    180,
+    180,
+    900,
+    1570
+  ],
+  "seed_bounds_native": [
+    570,
+    1400,
+    880,
+    1710
+  ],
+  "background_frames": 30,
+  "positive_difference": 22,
+  "brightness_minimum": 110,
+  "minimum_component_area": 3,
+  "maximum_component_area": 850,
+  "maximum_component_width": 65,
+  "maximum_component_height": 140,
+  "notes": "Wide-crop extension experiment, retaining original seed and launch prefix for controlled comparison.",
+  "dual_polarity": true
+}

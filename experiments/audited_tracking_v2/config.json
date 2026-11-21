@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "initial_elapsed_min": 0.004,
+  "initial_elapsed_max": 0.035,
+  "initial_radius_min": 15,
+  "initial_radius_max": 220,
+  "min_area": 10,
+  "min_points": 4,
+  "min_rise": 40,
+  "min_duration": 0.015,
+  "shaft_distance": 14,
+  "shaft_penalty": 45,
+  "body_penalty": 40,
+  "contact_grace": 0.025
+}

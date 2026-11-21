@@ -1,0 +1,101 @@
+{
+  "features": {
+    "vertical_only": [
+      "proj_vy"
+    ],
+    "vertical_timing": [
+      "proj_vy",
+      "proj_shift"
+    ],
+    "vertical_curve": [
+      "proj_vy",
+      "proj_depth_rate"
+    ],
+    "vertical_direction": [
+      "proj_vy",
+      "proj_angle"
+    ],
+    "vertical_quality": [
+      "proj_vy",
+      "proj_fit_rmse"
+    ],
+    "vertical_quadratic": [
+      "proj_vy",
+      "proj_vy_squared"
+    ],
+    "vertical_watch": [
+      "proj_vy",
+      "watch_gyro_p95",
+      "watch_accel_p95"
+    ],
+    "vertical_club": [
+      "proj_vy",
+      "club_gyro_p95",
+      "club_gyro_rms"
+    ],
+    "vertical_watch_full": [
+      "proj_vy",
+      "watch_gyro_max",
+      "watch_gyro_p95",
+      "watch_gyro_rms",
+      "watch_gyro_area",
+      "watch_gyro_peak_width_s",
+      "watch_accel_max",
+      "watch_accel_p95",
+      "watch_accel_rms",
+      "watch_accel_area",
+      "watch_accel_peak_width_s"
+    ],
+    "vertical_club_full": [
+      "proj_vy",
+      "club_gyro_max",
+      "club_gyro_p95",
+      "club_gyro_rms",
+      "club_gyro_area",
+      "club_gyro_peak_width_s"
+    ],
+    "vertical_fusion": [
+      "proj_vy",
+      "watch_gyro_max",
+      "watch_gyro_p95",
+      "watch_gyro_rms",
+      "watch_gyro_area",
+      "watch_gyro_peak_width_s",
+      "watch_accel_max",
+      "watch_accel_p95",
+      "watch_accel_rms",
+      "watch_accel_area",
+      "watch_accel_peak_width_s",
+      "club_gyro_max",
+      "club_gyro_p95",
+      "club_gyro_rms",
+      "club_gyro_area",
+      "club_gyro_peak_width_s"
+    ],
+    "projection": [
+      "proj_vy",
+      "proj_vx",
+      "proj_depth_rate",
+      "proj_shift",
+      "proj_fit_rmse"
+    ]
+  },
+  "families": [
+    "mean",
+    "median",
+    "ridge10",
+    "ridge100",
+    "svr1",
+    "svr10",
+    "trees",
+    "pls2"
+  ],
+  "cutoffs": [
+    0,
+    100
+  ],
+  "target": "Carry flat (yd)",
+  "seed": 396,
+  "protocol": "Outer leave-golfer-out; three-group inner CV; >100 is actual-outcome oracle filtering. All-shot mode includes every labeled shot and imputed missing tracks.",
+  "legacy_warning": "Unverified blob speeds retained only as an audit comparator, excluded from nested feature selection."
+}
